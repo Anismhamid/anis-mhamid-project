@@ -24,7 +24,7 @@
   margin-left: -80px;
   margin-top: -50px;
   border-radius: 5px;
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(140, 140, 140);
   animation: dot1_ 3s cubic-bezier(0.55, 0.3, 0.24, 0.99) infinite;
 }
 

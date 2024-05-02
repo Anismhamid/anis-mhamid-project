@@ -1,5 +1,20 @@
 @import "../../sass/components/bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css";
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+.profile-picture-box {
+  margin: auto 50px;
+  width: 70px;
+  height: 70px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-image: url("../../img/profile.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.profile-picture-box img {
+  width: 100%;
+}
+
 #main-section {
   font-family: "Heebo", sans-serif;
   height: 90vh;
