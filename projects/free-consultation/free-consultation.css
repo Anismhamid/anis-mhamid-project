@@ -1,0 +1,201 @@
+@import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.content-box .border-bottom, .content-box .form-box form .filed-box, .content-box .form-box form, .content-box {
+  display: flex;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+}
+
+.image-box {
+  width: 50%;
+  height: 100%;
+}
+.image-box .border-top {
+  width: 50%;
+  height: 15px;
+  background-color: #FDBD03;
+}
+.image-box img {
+  width: 100%;
+  height: 80%;
+  margin: 80px auto;
+  -o-object-fit: contain;
+     object-fit: contain;
+}
+
+.content-box {
+  width: 50%;
+  height: 100%;
+  align-items: center;
+}
+.content-box .title-box {
+  text-align: right;
+}
+.content-box .title-box h1 {
+  margin-bottom: 40px;
+  font: normal normal 900 66px/97px Heebo;
+  color: #FDBD03;
+}
+.content-box .title-box p {
+  margin-bottom: 20px;
+  text-align: right;
+  font: normal normal normal 20px/29px Heebo;
+  color: #020253;
+}
+.content-box .form-box {
+  width: 80%;
+}
+.content-box .form-box form {
+  flex-wrap: wrap;
+}
+.content-box .form-box form .filed-box {
+  width: 50%;
+  flex-direction: column;
+  margin-top: 30px;
+}
+.content-box .form-box form .filed-box input,
+.content-box .form-box form .filed-box .textarea {
+  text-align: right;
+  width: 90%;
+  border: none;
+  height: 40px;
+  background: #E5EEFF 0% 0% no-repeat padding-box;
+  border-bottom: 4px solid #FDBD03;
+}
+.content-box .form-box form .filed-box .textarea {
+  width: 190%;
+  height: 170px;
+}
+.content-box .form-box form .filed-box .button {
+  text-align: center;
+  width: 40%;
+  margin-top: 20px;
+  border: none;
+  background-color: #FDBD03;
+  font: normal normal bold 22px/30px Heebo;
+}
+.content-box .border-bottom {
+  width: 50%;
+  height: 15px;
+  background-color: #FDBD03;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  align-items: center;
+  justify-content: end;
+}
+
+.social-icons {
+  margin-right: 20px;
+  position: relative;
+  bottom: 80px;
+  left: 50px;
+  width: 70px;
+  height: 70px;
+  border-radius: 100%;
+  background: #FDBD03 0% 0% no-repeat padding-box;
+  box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.1607843137);
+}
+.social-icons img {
+  width: 30%;
+  position: absolute;
+  top: 0;
+  right: 0;
+  left: 0;
+  bottom: 0;
+  margin: auto;
+}
+
+.whatsapp {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+}
+
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+  }
+  .image-box {
+    width: 100vw;
+    height: 30vh;
+  }
+  .image-box .border-top {
+    width: 90%;
+  }
+  .image-box img {
+    height: 70%;
+    margin: 20px auto;
+  }
+  .whatsapp {
+    left: 20px;
+    top: 20px;
+    width: 60px;
+    height: 60px;
+  }
+  .content-box {
+    flex-direction: column;
+    width: 100vw;
+    height: 70vh;
+  }
+  .content-box .form-box h1 {
+    font-size: 12vw;
+  }
+  .content-box .form-box .title-box {
+    text-align: center;
+  }
+  .content-box .form-box .title-box p {
+    margin-bottom: 0;
+  }
+  .content-box .form-box form {
+    width: 100%;
+    flex-direction: column;
+  }
+  .content-box .form-box form .filed-box {
+    margin-top: 10px;
+  }
+  .content-box .form-box form .filed-box input {
+    width: 190%;
+  }
+  .content-box .form-box form .filed-box input[type=submit] {
+    width: 190%;
+  }
+  .content-box .form-box form .filed-box .textarea {
+    height: 50px;
+  }
+  .content-box .border-bottom {
+    width: 100%;
+  }
+  .content-box .border-bottom .social-icons {
+    left: 0;
+    bottom: 40px;
+    width: 60px;
+    height: 60px;
+  }
+}
+@media (max-width: 550px) {
+  .border-bottom .social-icons {
+    width: 10px;
+    height: 10px;
+  }
+  .image-box {
+    height: 20vh;
+  }
+  .content-box .form-box h1 {
+    margin: 0;
+    font-size: 14vw;
+  }
+  .content-box .form-box p {
+    padding: 0;
+    font-size: 1em;
+  }
+}/*# sourceMappingURL=free-consultation.css.map */

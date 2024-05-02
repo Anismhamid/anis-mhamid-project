@@ -1,0 +1,39 @@
+$main-title: 8rem;
+$main-description: 1.5rem;
+$main-content: 0.8rem;
+$text-shadow: 1px 1px 40px #00000087;
+$main-title-font: "Satisfy", cursive;
+$vp-width: 100vw;
+$vp-height: 100vh;
+$box-width: 100%;
+$not-full-width: 70%;
+
+
+
+$white: #fff;
+
+// media queiries
+$laptop: 1007px;
+$mobile: 768px;
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+%flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    width: $vp-width;
+    height: $vp-height;
+    background-image: linear-gradient(to bottom, #281EFF, #2DFF8C);
+    font-family: "Varela Round", sans-serif;
+    color: #ffffffc4;
+    @extend %flex;
+}

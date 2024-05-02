@@ -1,0 +1,296 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Heebo", sans-serif;
+}
+
+
+.container {
+    width: 100vw;
+    height: 100vh;
+    background: url('./images/sharon-pittaway-iMdsjoiftZo-unsplash.jpg') no-repeat center;
+    background-size: cover;
+
+    color: rgb(247, 250, 66);
+    text-align: center;
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.images-container {
+    width: 60%;
+    height: 100%;
+    border-left: 5px groove #fff;
+    display: grid;
+    grid-template-columns: repeat(3, 2fr);
+    grid-template-rows: repeat(2, 4fr);
+    gap: 20px;
+    
+    >img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+        box-shadow: 2px 7px 14px 0px rgb(0, 0, 0);
+    }
+}
+
+.content-container {
+    width: 40%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.484);
+    position: relative;
+
+    h1 {
+        margin-top: 50px;
+        font-size: 2.5em;
+        font-weight: bold;
+        padding: 30px 0;
+    }
+
+    h2 {
+        font-size: 2em;
+        padding-bottom: 5px;
+
+        span.sp1 {
+            color: magenta;
+        }
+
+        span.sp2 {
+            color: rgb(85, 201, 195);
+        }
+
+        span.sp3 {
+            color: aqua;
+        }
+
+        span.sp4 {
+            color: rgb(255, 167, 59);
+        }
+
+        span.sp5 {
+            color: mistyrose;
+        }
+    }
+
+    p {
+        width: 80%;
+        margin: auto;
+        font-size: 1.5em;
+        line-height: 1.5;
+    }
+}
+
+.form-box {
+    width: 100%;
+    height: 250px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    border-top: 2px solid rgb(62, 62, 62);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.737);
+    background: rgba(255, 255, 255, 0.531);
+    box-shadow: 0px 0px 20px 5px inset black;
+
+
+    form {
+        width: 80%;
+        margin: 0 auto;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        margin-top: 50px;
+
+        .filed-box {
+            width: 50%;
+            display: flex;
+            flex-direction: column;
+            text-align: right;
+
+            label {
+                font-size: 1.2em;
+                color: rgb(0, 0, 0);
+                font-weight: bold;
+            }
+
+            input {
+                border: none;
+                width: 100%;
+                height: 2.5em;
+                box-shadow: 1px 1px 10px inset black;
+            }
+
+            button {
+                width: 100%;
+                margin-left: auto;
+                margin: 20px auto;
+            }
+        }
+
+        .submit-button {
+            position: relative;
+            margin-top: 25px;
+            border: none;
+            width: 15%;
+            height: 2.5em;
+            background-color: rgb(192, 194, 51);
+            font-size: 12pt;
+            color: #fff;
+            font-weight: bold;
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .container {
+        flex-direction: column-reverse;
+        overflow: hidden;
+
+    }
+
+    .images-container {
+        width: 100%;
+        height: 35vh;
+        object-fit: fill;
+    }
+
+    .content-container {
+        width: 100%;
+        height: 65vh;
+
+        h1 {
+            margin: 20px auto 0 auto;
+            font-size: 5vw;
+        }
+
+        h2 {
+            span {
+                font-size: 0.8em;
+            }
+        }
+
+        p {
+            width: 100%;
+            font-size: 1.5em;
+        }
+    }
+
+    .form-box {
+        width: 100%;
+        bottom: 0;
+
+        form {
+            flex-direction: column;
+
+            .filed-box {
+                width: 100%;
+
+                label {
+                    width: 50%;
+                    margin: 0 auto;
+                }
+
+                button {
+                    width: 50%;
+                    margin-left: auto;
+                    margin: 5px auto;
+                }
+
+                input {
+                    width: 50%;
+                    margin: 0 auto;
+
+                }
+            }
+        }
+
+        .submit-button {
+            width: 100%;
+        }
+    }
+}
+
+@media (max-width:568px) {
+
+    .content-container {
+
+        h1 {
+            margin-top: 10px;
+        }
+
+        h2 {
+            span {
+                padding-top: 0;
+                font-size: 0.7em;
+            }
+        }
+
+        form-box {
+            form {
+                .filed-box {
+                    width: 100%;
+
+                    label,
+                    input,
+                    button {
+                        width: 100%;
+                    }
+                }
+            }
+        }
+
+    }
+}
+
+@media (max-width:380px) {
+
+    .images-container {
+        height: 25vh;
+    }
+
+    .content-container {
+        height: 75vh;
+
+        .form-box {
+            height: 220px;
+        }
+
+        h1 {
+            font-size: 1.8em;
+        }
+
+        h2 {
+            padding: 0;
+
+            span {
+                width: 0.2em;
+            }
+        }
+
+        p {
+            width: 100%;
+            font-size: 1.5em;
+        }
+    }
+}
+
+@media (max-width:280px) {
+    .content-container {
+        height: 75vh;
+
+        p {
+            display: none;
+        }
+
+        .form-box {
+            height: 200px;
+
+            form {
+                margin-top: 10px;
+            }
+        }
+    }
+}
+
+

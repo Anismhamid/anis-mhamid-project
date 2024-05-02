@@ -1,0 +1,70 @@
+@import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
+
+//full view port width
+$vpWidth: 100vw;
+$percentW80: 80%;
+
+//colors
+
+$main-bg-color: #e0e0e0;
+
+$black: #000;
+
+$white: #fff;
+
+$mini-black: #101010;
+
+$border-color: #dc4c36;
+
+$title-color: $white;
+
+$main-section-gradient: radial-gradient(ellipse at 28% 0%, $white 0%, rgba(0, 0, 0, 0.5) 100%),
+    linear-gradient(180deg, $black 0%, $black 69%, $black 70%, $black 100%);
+
+
+$gradient: linear-gradient(to right, #00000094, $black);
+
+
+
+
+
+//box shadow
+$box-shadow: 0px 8px 9px #ffffffa3;
+
+$box-shadow2: 0px 0px 20px #0000001b;
+
+
+
+
+
+
+
+//fonts
+$main-font-size: 3rem;
+
+$description-font-size: 2.2em;
+$small-description-font-size: 1.5em;
+
+$bold: 900;
+
+
+
+$border: 5px solid $border-color;
+
+
+$about-bg: rgb(33, 37, 41);
+$contact-bg: #3A3A3A;
+
+$logo-radios: 900px 0 900px 168px;
+
+$orange: #FDBD03;
+
+$profile-picutre: './img/profile-image.png';
+
+//media queries
+$small-mobile: 375px;
+$mobile: 568px;
+$tablet: 768px;
+$laptop: 992px;
+$desktop: 1200px;
+$large-devices: 1400px;

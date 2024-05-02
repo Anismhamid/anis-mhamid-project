@@ -1,0 +1,83 @@
+#about {
+    font-family: "Heebo", sans-serif;
+    padding: 100px 20px;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: $border;
+    @include flex(flex, center, center);
+    flex-direction: column;
+    background: $about-bg;
+    font-style: normal;
+    color: $title-color;
+
+    // extended class profile picture from navbar 
+    .profile-picture-box {
+        @extend .profile-picture-box;
+            margin: 50px auto;
+            width: 150px;
+            height: 150px;
+    }
+
+    .title-container {
+        margin: 0 auto;
+        padding: 5px;
+
+        .title {
+            font-size: $main-font-size;
+            font-weight: $bold;
+            padding-bottom: 100px;
+        }
+
+        .description {
+            font-size: $main-font-size / 2.4;
+            font-weight: normal;
+            padding-bottom: 100px;
+        }
+    }
+}
+
+@media (max-width:$laptop) {
+    #about {
+        .title-container {
+
+            .title {
+                font-size: $description-font-size;
+            }
+
+            .description {
+                width: 100%;
+                font-size: 1.5em;
+                padding: 0;
+                margin: 2em auto;
+            }
+        }
+
+        img {
+            width: 80%;
+        }
+    }
+}
+
+@media (max-width:$small-mobile) {
+    #about {
+        .profile-picture-box {
+            width: 90px;
+            height: 90px;
+        }
+
+        .title-container {
+            width: 100%;
+
+            .title {
+                font-size: 2em;
+            }
+
+            .description {
+                width: 80%;
+                font-size: 1em;
+                padding: 0;
+                margin: 50px auto;
+            }
+        }
+    }
+}

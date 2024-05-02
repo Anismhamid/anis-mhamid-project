@@ -1,0 +1,9 @@
+#skills {
+    position: relative;
+    @include flex(flex, center, space-around);
+    box-shadow: $box-shadow;
+background: rgb(108 117 125);
+    & img {
+        height: 6vh;
+    }
+}

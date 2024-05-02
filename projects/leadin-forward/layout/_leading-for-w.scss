@@ -1,0 +1,152 @@
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container {
+            width: 100vw;
+            height: 100vh;
+        }
+
+        .main-div {
+            height: 70vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: url('./images/Path15.png') no-repeat;
+            background-size: cover;
+            background-position: bottom;
+        }
+
+        .top-div {
+            width: 60%;
+            height: 35%;
+            text-align: center;
+        }
+
+        h1 {
+            color: #D3E10E;
+            font: normal normal bold 5.5vw Assistant;
+        }
+
+        p {
+            color: #F9F9F9;
+            font: normal normal normal 1.25em Assistant;
+
+            margin:0 auto {
+                top: 30px;
+                bottom: 0;
+            }
+        }
+
+        .form-container {
+            width: 60%;
+            height: 16%;
+
+            margin:0 auto {
+                top: 40px;
+                bottom: 0;
+            }
+
+            padding-top: 50px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+
+            form {
+                width: 100%;
+                display: flex;
+                align-items: center;
+                justify-content: space-evenly;
+            }
+
+            .input-group {
+                margin-bottom: 20px;
+
+
+                label {
+                    display: block;
+                    margin-bottom: 5px;
+                    font: normal normal bold 1em/14px Assistant;
+                    color: #011560;
+                }
+
+                input {
+                    width: 20vw;
+                    height: 35px;
+                    border: none;
+                    border-bottom: 3px solid #D3E10E;
+                    background: #E5EEFF;
+                    font: normal normal bold 1em Assistant;
+                }
+            }
+
+            .send {
+                font-size: 1.2rem;
+                font-weight: bold;
+                padding: 0 50px;
+                height: 40px;
+                border: none;
+                background-color: #D3E10E;
+                color: #011560;
+            }
+        }
+
+
+        @media(max-width:1200px) {
+            .top-div {
+                width: 90%;
+            }
+
+            h1 {
+                font-size: 3em;
+            }
+        }
+
+
+        @media(max-width:992px) {
+            .form-container {
+                width: 80%;
+            }
+        }
+
+
+        @media(max-width:557px) {
+            h1 {
+                font-size: 1.7em;
+            }
+
+            p {
+                font-size: 1em;
+                width: 100%;
+            }
+
+            .main-div {
+                height: 40vh;
+            }
+
+            .form-container {
+                width: 80%;
+                height: 40%;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+
+                form {
+                    flex-direction: column;
+
+                    .input-group {
+                        width: 100%;
+
+                        input {
+                            width: 100%;
+                        }
+                    }
+
+                    .send {
+                        width: 100%;
+                    }
+                }
+            }
+        }

@@ -1,0 +1,99 @@
+.inner-container {
+    width: $not-full-width;
+    @extend %flex;
+    text-align: center;
+    flex-direction: column;
+
+    >.main-title {
+        width: $box-width;
+        @extend %flex;
+        font: normal normal normal 160px/231px Satisfy;
+        text-shadow: $text-shadow;
+        color: $white;
+    }
+
+    >.main-description {
+        font-size: $main-description;
+        font-weight: normal;
+        color: $white;
+    }
+
+    & .main-content {
+        font-size: $main-content;
+        margin: 10px 20px 30px;
+    }
+}
+
+form {
+    width: 80%;
+    @extend %flex;
+    justify-content: space-evenly;
+
+    .input-filed {
+        width: 40%;
+        display: block;
+        margin-left: 30px;
+        text-align: right;
+
+        input {
+            width: 100%;
+            height: 40px;
+            background-color: #F6F6F624;
+            border: 2px solid $white;
+        }
+    }
+
+    button {
+        width: 170px;
+        height: 40px;
+        border: none;
+        margin-top: 20px;
+        background-color: $white;
+        color: #2823FD;
+    }
+}
+
+@media (max-width: $laptop) {
+    form {
+        width: 80%;
+    }
+
+    .inner-container>.main-title {
+        font-size: 15vw;
+    }
+}
+
+@media (max-width: $mobile) {
+
+    .inner-container {
+        width: 80%;
+
+        &>.main-title {
+            font-size: 18vw;
+        }
+
+        &>.main-description {
+            font-size: 1.3rem;
+            padding: 10px 0;
+        }
+
+        & .main-content {
+            font-size: $main-content;
+        }
+
+        & form {
+            width: 100%;
+            margin-top: 50px;
+            flex-direction: column;
+
+            &>.input-filed {
+                width: 100%;
+                margin: 5px auto;
+            }
+
+            button {
+                width: 100%;
+            }
+        }
+    }
+}

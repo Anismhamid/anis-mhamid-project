@@ -1,0 +1,15 @@
+.profile-picture-box {
+    margin:auto 50px;
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    overflow: hidden;
+    background-image: url('../../img/profile.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    img {
+        width: 100%;
+    }
+}

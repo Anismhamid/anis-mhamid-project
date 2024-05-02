@@ -1,0 +1,11 @@
+@mixin flex($display:flex, $align-items:center, $justify-content:center) {
+    display: $display;
+    align-items: $align-items;
+    justify-content: $justify-content;
+}
+
+
+%mini-black {
+    color: $mini-black;
+}
+
