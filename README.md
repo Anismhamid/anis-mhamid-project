@@ -30,7 +30,7 @@ This project is a website developed by Anis mhamid as part of a personal web pro
 - FontAwesome: for web icons.
 
 ## call us:
-- For any inquiries or comments, please contact us, email: anesmhamed1@gmail.com - phone: 0538346915
+- For any inquiries or comments, please contact us, email: anesmhamed1@gmail.com - phone: +972-538346915
 
 ## Author:
 This website was developed by Anis mhamid.
