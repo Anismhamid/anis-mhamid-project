@@ -13,9 +13,9 @@
     // extended class profile picture from navbar 
     .profile-picture-box {
         @extend .profile-picture-box;
-            margin: 50px auto;
-            width: 150px;
-            height: 150px;
+        margin: 50px auto;
+        width: 150px;
+        height: 150px;
     }
 
     .title-container {
@@ -29,7 +29,7 @@
         }
 
         .description {
-            font-size: $main-font-size / 2.4;
+            font-size: calc($main-font-size / 2.4);
             font-weight: normal;
             padding-bottom: 100px;
         }

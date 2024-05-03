@@ -9,10 +9,8 @@
 .container {
     width: 100vw;
     height: 100vh;
-    background: url('./images/sharon-pittaway-iMdsjoiftZo-unsplash.jpg') no-repeat center;
-    background-size: cover;
-
-    color: rgb(247, 250, 66);
+    font-size: 1.2em;
+    color: rgb(186, 117, 48);
     text-align: center;
     display: flex;
     flex-direction: row-reverse;
@@ -22,11 +20,9 @@
     width: 60%;
     height: 100%;
     border-left: 5px groove #fff;
-    display: grid;
-    grid-template-columns: repeat(3, 2fr);
-    grid-template-rows: repeat(2, 4fr);
+    display: flex;
     gap: 20px;
-    
+
     >img {
         object-fit: cover;
         width: 100%;
@@ -36,16 +32,19 @@
 }
 
 .content-container {
-    width: 40%;
+    min-width: 40%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.484);
     position: relative;
+    & img{
+        width:50%;
+    }
 
     h1 {
         margin-top: 50px;
-        font-size: 2.5em;
+        font-size: 2em;
         font-weight: bold;
         padding: 30px 0;
+        background: rgba(0, 0, 0, 0.737);
     }
 
     h2 {
@@ -53,45 +52,36 @@
         padding-bottom: 5px;
 
         span.sp1 {
-            color: magenta;
+            color: rgb(136, 0, 136);
         }
 
         span.sp2 {
-            color: rgb(85, 201, 195);
+            color: rgb(155, 0, 0);
         }
 
         span.sp3 {
-            color: aqua;
+            color: rgb(114, 19, 68);
         }
 
         span.sp4 {
-            color: rgb(255, 167, 59);
+            color: rgb(65, 37, 3);
         }
 
         span.sp5 {
-            color: mistyrose;
+            color: rgb(163, 52, 40);
         }
-    }
-
-    p {
-        width: 80%;
-        margin: auto;
-        font-size: 1.5em;
-        line-height: 1.5;
     }
 }
 
 .form-box {
     width: 100%;
-    height: 250px;
+    height:70%;
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    border-top: 2px solid rgb(62, 62, 62);
-    border-bottom: 2px solid rgba(0, 0, 0, 0.737);
-    background: rgba(255, 255, 255, 0.531);
-    box-shadow: 0px 0px 20px 5px inset black;
+    border-top: 12px solid rgba(0, 0, 0, 0.774);
+    background:linear-gradient(to bottom right,rgba(0, 0, 0, 0.627),white,rgba(0, 0, 0, 0.766));
 
 
     form {
@@ -109,22 +99,24 @@
             text-align: right;
 
             label {
-                font-size: 1.2em;
-                color: rgb(0, 0, 0);
+                font-size: 1em;
+                color: rgb(255, 255, 255);
                 font-weight: bold;
+                padding: 20px 0 5px 0;
             }
 
             input {
                 border: none;
                 width: 100%;
                 height: 2.5em;
-                box-shadow: 1px 1px 10px inset black;
+                box-shadow: 1px 1px 10px black;
             }
 
             button {
                 width: 100%;
                 margin-left: auto;
                 margin: 20px auto;
+                cursor: pointer;
             }
         }
 
@@ -134,8 +126,8 @@
             border: none;
             width: 15%;
             height: 2.5em;
-            background-color: rgb(192, 194, 51);
-            font-size: 12pt;
+            background-color: rgba(0, 0, 0, 0.737);
+            font-size: 1em;
             color: #fff;
             font-weight: bold;
         }
@@ -145,152 +137,149 @@
 @media (max-width:768px) {
     .container {
         flex-direction: column-reverse;
-        overflow: hidden;
-
     }
 
     .images-container {
         width: 100%;
-        height: 35vh;
+        height: 40vh;
         object-fit: fill;
     }
 
     .content-container {
         width: 100%;
-        height: 65vh;
-
+        height: 40vh;
         h1 {
-            margin: 20px auto 0 auto;
-            font-size: 5vw;
-        }
-
-        h2 {
-            span {
-                font-size: 0.8em;
+                margin: 20px auto 0 auto;
+                font-size: 5vw;
             }
-        }
+    
+}}
+//         h2 {
+//             span {
+//                 font-size: 0.8em;
+//             }
+//         }
 
-        p {
-            width: 100%;
-            font-size: 1.5em;
-        }
-    }
+//         p {
+//             width: 100%;
+//             font-size: 1.5em;
+//         }
+//     }
 
-    .form-box {
-        width: 100%;
-        bottom: 0;
+//     .form-box {
+//         width: 100%;
+//         height: 60%;
+//         bottom: 0;
 
-        form {
-            flex-direction: column;
+//         form {
+//             flex-direction: column;
 
-            .filed-box {
-                width: 100%;
+//             .filed-box {
+//                 width: 100%;
 
-                label {
-                    width: 50%;
-                    margin: 0 auto;
-                }
+//                 label {
+//                     width: 50%;
+//                     margin: 0 auto;
+//                 }
 
-                button {
-                    width: 50%;
-                    margin-left: auto;
-                    margin: 5px auto;
-                }
+//                 button {
+//                     width: 50%;
+//                     margin-left: auto;
+//                     margin: 5px auto;
+//                 }
 
-                input {
-                    width: 50%;
-                    margin: 0 auto;
+//                 input {
+//                     width: 50%;
+//                     margin: 0 auto;
 
-                }
-            }
-        }
+//                 }
+//             }
+//         }
 
-        .submit-button {
-            width: 100%;
-        }
-    }
-}
+//         .submit-button {
+//             width: 100%;
+//         }
+//     }
+// }
 
-@media (max-width:568px) {
+// @media (max-width:568px) {
 
-    .content-container {
+//     .content-container {
 
-        h1 {
-            margin-top: 10px;
-        }
+//         h1 {
+//             margin-top: 10px;
+//         }
 
-        h2 {
-            span {
-                padding-top: 0;
-                font-size: 0.7em;
-            }
-        }
+//         h2 {
+//             span {
+//                 padding-top: 0;
+//                 font-size: 0.7em;
+//             }
+//         }
 
-        form-box {
-            form {
-                .filed-box {
-                    width: 100%;
+//         form-box {
+//             form {
+//                 .filed-box {
+//                     width: 100%;
 
-                    label,
-                    input,
-                    button {
-                        width: 100%;
-                    }
-                }
-            }
-        }
+//                     label,
+//                     input,
+//                     button {
+//                         width: 100%;
+//                     }
+//                 }
+//             }
+//         }
 
-    }
-}
+//     }
+// }
 
-@media (max-width:380px) {
+// @media (max-width:380px) {
 
-    .images-container {
-        height: 25vh;
-    }
+//     .images-container {
+//         height: 25vh;
+//     }
 
-    .content-container {
-        height: 75vh;
+//     .content-container {
+//         height: 75vh;
 
-        .form-box {
-            height: 220px;
-        }
+//         .form-box {
+//             height: 220px;
+//         }
 
-        h1 {
-            font-size: 1.8em;
-        }
+//         h1 {
+//             font-size: 1.8em;
+//         }
 
-        h2 {
-            padding: 0;
+//         h2 {
+//             padding: 0;
 
-            span {
-                width: 0.2em;
-            }
-        }
+//             span {
+//                 width: 0.2em;
+//             }
+//         }
 
-        p {
-            width: 100%;
-            font-size: 1.5em;
-        }
-    }
-}
+//         p {
+//             width: 100%;
+//             font-size: 1.5em;
+//         }
+//     }
+// }
 
-@media (max-width:280px) {
-    .content-container {
-        height: 75vh;
+// @media (max-width:280px) {
+//     .content-container {
+//         height: 75vh;
 
-        p {
-            display: none;
-        }
+//         p {
+//             display: none;
+//         }
 
-        .form-box {
-            height: 200px;
+//         .form-box {
+//             height: 200px;
 
-            form {
-                margin-top: 10px;
-            }
-        }
-    }
-}
-
-
+//             form {
+//                 margin-top: 10px;
+//             }
+//         }
+//     }
+// }
