@@ -392,9 +392,9 @@ div.card1 .card-body .button {
   }
 }
 #contact {
-  background-color: #212f3d;
+  background-color: rgb(33, 37, 41);
   text-align: right;
-  border-top: 20px solid #577a9c;
+  border-top: 5px solid #dc4c36;
   color: white;
 }
 

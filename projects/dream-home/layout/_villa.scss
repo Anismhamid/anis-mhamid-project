@@ -35,8 +35,9 @@
     min-width: 40%;
     height: 100%;
     position: relative;
-    & img{
-        width:50%;
+
+    & img {
+        width: 50%;
     }
 
     h1 {
@@ -75,13 +76,9 @@
 
 .form-box {
     width: 100%;
-    height:70%;
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    right: 0;
+    height: 100%;
     border-top: 12px solid rgba(0, 0, 0, 0.774);
-    background:linear-gradient(to bottom right,rgba(0, 0, 0, 0.627),white,rgba(0, 0, 0, 0.766));
+    background: linear-gradient(to bottom right, rgba(0, 0, 0, 0.627), white, rgba(0, 0, 0, 0.766));
 
 
     form {
@@ -102,7 +99,7 @@
                 font-size: 1em;
                 color: rgb(255, 255, 255);
                 font-weight: bold;
-                padding: 20px 0 5px 0;
+                padding: 15px 0 5px 0;
             }
 
             input {
@@ -141,145 +138,73 @@
 
     .images-container {
         width: 100%;
-        height: 40vh;
-        object-fit: fill;
+        height: 30%;
+        object-fit: cover;
     }
 
     .content-container {
         width: 100%;
-        height: 40vh;
-        h1 {
-                margin: 20px auto 0 auto;
-                font-size: 5vw;
+        height: 70%;
+
+        & img {
+            width: 30%;
+        }
+
+        .form-box {
+            height: 100%;
+
+            form {
+                margin-top: 0;
             }
-    
-}}
-//         h2 {
-//             span {
-//                 font-size: 0.8em;
-//             }
-//         }
 
-//         p {
-//             width: 100%;
-//             font-size: 1.5em;
-//         }
-//     }
+            h2 {
+                >span {
+                    font-size: 0.7em;
+                }
+            }
+        }
 
-//     .form-box {
-//         width: 100%;
-//         height: 60%;
-//         bottom: 0;
+        h1 {
+            margin: 20px auto 0 auto;
+            font-size: 1.5em;
+        }
+    }
+}
 
-//         form {
-//             flex-direction: column;
+@media (max-width:370px) {
+    .images-container {
+        height: 25%;
 
-//             .filed-box {
-//                 width: 100%;
+    }
 
-//                 label {
-//                     width: 50%;
-//                     margin: 0 auto;
-//                 }
+    .content-container {
+        height: 75%;
 
-//                 button {
-//                     width: 50%;
-//                     margin-left: auto;
-//                     margin: 5px auto;
-//                 }
+        & img {
+            width: 50%;
+        }
 
-//                 input {
-//                     width: 50%;
-//                     margin: 0 auto;
+        h1 {
+            padding: 5px 0;
+            margin: 5px auto 0 auto;
+            font-size: 1.1em;
+        }
 
-//                 }
-//             }
-//         }
+        h2 {
+            font-size: 1.3em;
+        }
 
-//         .submit-button {
-//             width: 100%;
-//         }
-//     }
-// }
 
-// @media (max-width:568px) {
 
-//     .content-container {
+        .form-box {
 
-//         h1 {
-//             margin-top: 10px;
-//         }
+            form {
+                .filed-box{
+                    width: 90%;
+                }
+            }
+        }
 
-//         h2 {
-//             span {
-//                 padding-top: 0;
-//                 font-size: 0.7em;
-//             }
-//         }
 
-//         form-box {
-//             form {
-//                 .filed-box {
-//                     width: 100%;
-
-//                     label,
-//                     input,
-//                     button {
-//                         width: 100%;
-//                     }
-//                 }
-//             }
-//         }
-
-//     }
-// }
-
-// @media (max-width:380px) {
-
-//     .images-container {
-//         height: 25vh;
-//     }
-
-//     .content-container {
-//         height: 75vh;
-
-//         .form-box {
-//             height: 220px;
-//         }
-
-//         h1 {
-//             font-size: 1.8em;
-//         }
-
-//         h2 {
-//             padding: 0;
-
-//             span {
-//                 width: 0.2em;
-//             }
-//         }
-
-//         p {
-//             width: 100%;
-//             font-size: 1.5em;
-//         }
-//     }
-// }
-
-// @media (max-width:280px) {
-//     .content-container {
-//         height: 75vh;
-
-//         p {
-//             display: none;
-//         }
-
-//         .form-box {
-//             height: 200px;
-
-//             form {
-//                 margin-top: 10px;
-//             }
-//         }
-//     }
-// }
+    }
+}
