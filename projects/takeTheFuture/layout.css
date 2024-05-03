@@ -2,24 +2,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  font-family: "Heebo", sans-serif;
 }
 
 .container {
   width: 100vw;
+  height: 100vh;
 }
 
 .main-div {
   background-repeat: no-repeat;
   background-size: cover;
-}
-.main-div .data {
-  position: relative;
-  top: 50px;
-  width: 80%;
-  margin: 0 auto;
-  font-family: "Heebo", sans-serif;
-  color: #fff;
-  text-align: right;
 }
 
 .second-div {
@@ -29,55 +22,64 @@
   background-color: rgba(26, 26, 26, 0.8235294118);
   text-align: center;
 }
-
-form {
-  margin-top: 5px;
-}
-
-.input {
+.second-div .data {
+  position: relative;
+  top: 50px;
+  width: 80%;
+  margin: 0 auto;
+  color: #fff;
+  text-align: right;
   width: 100%;
-  height: 40px;
-  border: 1px solid #D31C75;
 }
-
-h1 {
+.second-div .data h1 {
   display: block;
-  width: 300px;
-  font-size: 2.25em;
+  font-size: 2em;
   font-weight: bold;
   padding: 10px;
   padding-bottom: 0;
   line-height: 1.3;
+  text-align: center;
 }
-
-p {
-  font-family: heebo;
-  font-weight: regular;
-  font-size: 14pt;
-  color: #f9f9f9;
-  margin: 10px 0;
-  text-align: justify;
+.second-div .data p {
+  width: 90%;
+  font-weight: normal;
+  font-size: 1.1em;
+  color: #f3f3f3;
+  margin: 10px auto;
   text-align: center;
 }
 
-button {
+form {
+  margin-top: 5px;
+  width: 80%;
+  margin: auto;
+}
+form label {
+  display: block;
+}
+form .input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #D31C75;
+  margin: 10px auto;
+}
+form button {
   margin-top: 20px;
   width: 100px;
   height: 40px;
-  font-size: 15px;
+  font-size: 1em;
   font-weight: bold;
   background-color: #D31C75;
   border: none;
   color: #d3d3d3;
 }
 
-@media (min-width: 0) and (max-width: 576px) {
+@media (max-width: 576px) {
   h1 {
-    width: 100%;
-    font-size: 1.5rem;
+    font-size: 6.6vw;
   }
   .second-div {
-    width: 80vw;
+    width: 80%;
     height: 560px;
     top: 120px;
     margin: 0 auto;

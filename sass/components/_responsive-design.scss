@@ -8,7 +8,7 @@
     margin-left: -80px;
     margin-top: -50px;
     border-radius: 5px;
-    background-color: rgb(140, 140, 140);
+    background-color: rgb(178, 146, 86);
     -webkit-animation: dot1_ 3s cubic-bezier(0.55, 0.3, 0.24, 0.99) infinite;
     animation: dot1_ 3s cubic-bezier(0.55, 0.3, 0.24, 0.99) infinite;
 }
@@ -35,7 +35,7 @@
     margin-top: 50px;
     margin-left: -20px;
     border-radius: 0 0 5px 5px;
-    background-color: red;
+    background-color: $black;
     -webkit-animation-name: dot3_;
     animation-name: dot3_;
 }
