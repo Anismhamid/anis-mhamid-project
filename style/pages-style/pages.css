@@ -258,12 +258,9 @@
   background-color: #212529;
 }
 #project-section > .project-picture-box {
-  width: 70%;
+  width: 80%;
   margin: auto;
   padding: 100px 0;
-}
-#project-section > .project-picture-box > .picture-box {
-  box-shadow: 0px 8px 9px rgba(255, 255, 255, 0.6392156863);
 }
 #project-section > .project-picture-box img {
   width: 100%;

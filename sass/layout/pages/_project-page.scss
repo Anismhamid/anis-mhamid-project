@@ -2,13 +2,9 @@
     background-color: #212529;
 
     &>.project-picture-box {
-        width: 70%;
+        width: 80%;
         margin: auto;
         padding: 100px 0;
-
-        &>.picture-box {
-            box-shadow: $box-shadow;
-        }
 
         & img {
             width: 100%;

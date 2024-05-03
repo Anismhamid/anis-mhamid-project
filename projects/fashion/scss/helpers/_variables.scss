@@ -1,0 +1,14 @@
+$red: rgb(255, 102, 75);
+$green: rgb(84, 205, 75);
+$blue: rgb(88, 99, 227);
+$black: rgb(17, 17, 17);
+$white: rgba(255, 255, 255, 0.668);
+$yellow: rgba(255, 255, 246, 0.689);
+
+%flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+}
