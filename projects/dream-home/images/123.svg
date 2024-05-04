@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Pixodesk SVG (https://pixodesk.com) -->
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:pixodesk="https://pixodesk.com" viewBox="0 0 1920 1080" text-rendering="geometricPrecision" shape-rendering="geometricPrecision" fill="none">
+  <defs>
+    <radialGradient id="13620" spreadMethod="pad" cx="-1949.4354099512207" cy="465.4782503747768" fx="-1949.4354099512207" fy="465.4782503747768" r="1977.3400000000008" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="rgb(255,255,255)"/>
+      <stop offset="100%" stop-color="rgb(229,250,255)"/>
+    </radialGradient>
+  </defs>
+  <path fill="url(#13620)" fill-rule="evenodd" stroke="#79aad93e" stroke-width="26" stroke-dashoffset="56" stroke-linecap="round" stroke-linejoin="round" transform="translate(1920.7654, 246.577)" d="M9.9846,97.5335C-16.7511,265.2018,-236.1868,614.5351,-298.3457,514.5955C-391.4251,364.9416,-650.2691,764.2932,-828.2657,696.3555C-1163.6257,568.3555,-1340.2657,424.9955,-1202.0257,673.3155C-1138.6151,787.2198,-1475.7601,516.9392,-1621.8657,680.9955C-1763.8878,840.4666,-1922.5633,483.6886,-1954.6657,642.5955C-2005.8657,896.0355,-1852.2657,855.0755,-1852.2657,855.0755L8.8543,842.2755L9.9846,97.5335z"/>
+</svg>
