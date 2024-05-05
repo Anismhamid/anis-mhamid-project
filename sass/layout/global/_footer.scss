@@ -13,6 +13,7 @@ footer {
 .footer-section h3 {
     font-size: 1.2em;
     margin-bottom: 10px;
+    padding: 50px;
 
 }
 
@@ -49,12 +50,12 @@ footer {
 
 .social-links li a {
     img {
-    width: 2em;
+        width: 2em;
 
-    &:hover {
-        color: $border-color;
+        &:hover {
+            color: $border-color;
+        }
     }
-}
 }
 
 .copy {

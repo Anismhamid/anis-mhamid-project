@@ -4,7 +4,7 @@
     text-align: center;
     margin: 0 auto;
     border-bottom: $border;
-    @include flex(flex, center, center);
+    @include flex();
     flex-direction: column;
     background: $about-bg;
     font-style: normal;
@@ -29,9 +29,18 @@
         }
 
         .description {
+            width: 70%;
             font-size: calc($main-font-size / 2.4);
             font-weight: normal;
             padding-bottom: 100px;
+            margin: 0 auto;
+        }
+        .read-more-button{
+            @extend .button;
+        }
+
+        .remaining-content {
+            margin: 20px;
         }
     }
 }
@@ -46,9 +55,8 @@
 
             .description {
                 width: 100%;
-                font-size: 1.5em;
                 padding: 0;
-                margin: 2em auto;
+                margin: 50px auto;
             }
         }
 

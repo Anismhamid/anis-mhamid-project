@@ -121,19 +121,15 @@
 @media (max-width:$tablet) {
 
     .content-box,
-    .form-box {
+    .form-box,
+    .input {
         width: 100%;
+    }
 
-        .form-box {
-
-            form {
-
-                & .filed-box {
-                    width: 80%;
-                    & .input {
-                        width: 100%;
-                    }
-                }
+    .form-box {
+        form {
+            & .filed-box {
+                width: 80%;
             }
         }
     }
@@ -158,5 +154,5 @@
             }
         }
     }
-    
+
 }

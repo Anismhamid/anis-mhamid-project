@@ -1,12 +1,33 @@
-# Project Description:
-Tools that were used in developing this project: HTML, CSS, SASS, and bootstrap
+# Project Description
+Tools that were used in developing this project: HTML, CSS, SASS, and Bootstrap.
 
-## introduction:
-This project is a website developed by Anis mhamid as part of a personal web project. The website aims to showcase our work in the field of web development and illustrate our skills and achievements.
+## Introduction
+This project is a website developed by Anis Mhamid as part of a personal web project. The website aims to showcase our work in the field of web development and illustrate our skills and achievements.
 
-## Content:
+## Navbar
+It contains links for easy navigation throughout the website.
+Remains accessible across all pages for seamless movement between sections.
+
+## Section (About Us)
+Provides insight into the project or company's mission, values, and background.
+
+## Section (Our Services)
+Showcases the services offered in a clear and concise manner for visitors to understand available solutions.
+
+## Section (Our Projects)
+Highlights past projects or works, demonstrating the project or company's capabilities and expertise.
+
+## Section (Contact Us)
+Offers a platform for visitors to reach out via a contact form or direct contact information.
+
+# Footer
+Contains additional useful links, including quick links to different website sections.
+Social media links enable users to connect through various platforms.
+Includes copyright information to protect intellectual property.
+
+## Content
 1. **File structure:**
-    - The project contains well organized HTML files and SASS folders.
+    - The project contains well-organized HTML files and SASS folders.
 
 2. **Using SASS:**
     - SASS was used to organize CSS styles and make them more manageable and easy to maintain.
@@ -17,20 +38,22 @@ This project is a website developed by Anis mhamid as part of a personal web pro
 
 3. **Basic files:**
     - main.css file: contains all SASS styles.
-     - pages.css file: contains all SASS styles.
-- New files created to organize patterns logically and structurally.
+    - pages.css file: contains all SASS styles.
+    - New files created to organize patterns logically and structurally.
 
-## Employment:
+## Employment
 1. Download the project files.
 2. Open the index.html file in your web browser to view the site.
 
-##Dependencies:
+## Dependencies
 - SASS: to organize and improve the writing of CSS styles.
 - Bootstrap: To create a responsive and attractive design.
 - FontAwesome: for web icons.
 
-## call us:
-- For any inquiries or comments, please contact us, email: anesmhamed1@gmail.com - phone: +972-538346915
+## Call Us
+For any inquiries or comments, please contact us:
+- Email: anesmhamed1@gmail.com
+- Phone: +972-538346915
 
-## Author:
-This website was developed by Anis mhamid.
+## Author
+Anis Mhamid.

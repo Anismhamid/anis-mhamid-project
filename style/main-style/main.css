@@ -114,7 +114,7 @@
     border-radius: 10px;
   }
 }
-.button {
+.button, #about .title-container .read-more-button {
   -moz-appearance: none;
   -webkit-appearance: none;
   appearance: none;
@@ -129,8 +129,9 @@
   transition: all 0.15s ease;
 }
 
-.button::before,
-.button::after {
+.button::before, #about .title-container .read-more-button::before,
+.button::after,
+#about .title-container .read-more-button::after {
   content: "";
   display: block;
   position: absolute;
@@ -188,11 +189,11 @@
   position: relative;
 }
 
-.button:hover {
+.button:hover, #about .title-container .read-more-button:hover {
   transform: scale(1.05);
 }
 
-.button:hover .button_sl {
+.button:hover .button_sl, #about .title-container .read-more-button:hover .button_sl {
   width: calc(100% + 15px);
 }
 
@@ -305,9 +306,14 @@
   padding-bottom: 100px;
 }
 #about .title-container .description {
+  width: 70%;
   font-size: 1.25rem;
   font-weight: normal;
   padding-bottom: 100px;
+  margin: 0 auto;
+}
+#about .title-container .remaining-content {
+  margin: 20px;
 }
 
 @media (max-width: 992px) {
@@ -316,9 +322,8 @@
   }
   #about .title-container .description {
     width: 100%;
-    font-size: 1.5em;
     padding: 0;
-    margin: 2em auto;
+    margin: 50px auto;
   }
   #about img {
     width: 80%;
@@ -370,7 +375,7 @@ div.card1 > img {
   border-radius: 11px 11px 0px 0px;
   margin: 9px auto;
 }
-div.card1 .card-body .button {
+div.card1 .card-body .button, div.card1 .card-body #about .title-container .read-more-button, #about .title-container div.card1 .card-body .read-more-button {
   position: absolute;
   bottom: -30px;
   left: 30%;
@@ -496,16 +501,12 @@ div.card1 .card-body .button {
 
 @media (max-width: 768px) {
   .content-box,
-  .form-box {
+  .form-box,
+  .input {
     width: 100%;
   }
-  .content-box .form-box form .filed-box,
-  .form-box .form-box form .filed-box {
+  .form-box form .filed-box {
     width: 80%;
-  }
-  .content-box .form-box form .filed-box .input,
-  .form-box .form-box form .filed-box .input {
-    width: 100%;
   }
   .image {
     display: none;
@@ -537,6 +538,7 @@ footer {
 .footer-section h3 {
   font-size: 1.2em;
   margin-bottom: 10px;
+  padding: 50px;
 }
 
 .footer-section ul {

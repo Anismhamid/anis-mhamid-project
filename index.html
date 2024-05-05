@@ -92,7 +92,7 @@
                 <div class="profile-picture-box"></div>
                 <div class="title-container">
                     <h2 class="title">קצת עלי</h2>
-                    <p class="description pb-4">
+                    <p class="description lead pb-4">
                         אני מייצג מומחיות מרשימה ועשייה מקצועית בתחום הטכנולוגיה. עם הידע והכישורים שלי בפיתוח תוכנה,
                         עיצוב
                         ממשקים
@@ -106,6 +106,7 @@
                         ופתרונות
                         מתקדמים שמתאימים לצרכיהם הייחודיים.
                     </p>
+
                     <p class="description lead pb-4">
                         הידע שלי ב-HTML, CSS, SASS, Bootstrap, מאפשר לי ליצור ממשקים מודרניים, רספונסיביים ומתקדמים
                         שמספקים
@@ -113,7 +114,34 @@
                         חוויות
                         משתמש מרשימות ונוחות.
                     </p>
+                    <div class="remaining-content" style="display: none;">
+                        <p class="description lead pb-4">
+                            בנוסף יש לי את היכולת לפתח אפליקציות שולחן עבודה באמצעות Python ו- CustomTkinter
+                        </p>
+                        <p class="description lead pb-4">
+                            בנוסף לניהול מסדי נתונים,
+                            אני יכול להתמודד עם מסדי נתונים כמו MariaDB (MySQL) ולבצע שאילתות ולטעון ולפרוק נתונים
+                            ביעילות.
+                        </p>
+                        <p class="description lead pb-4">
+                            תקשורת נתונים,
+                            אני יכול לתקשר עם מסדי נתונים ולעצב נתונים בצורה קלה להבנה ולשימוש.
+                        </p>
+                        <p class="description lead pb-4">
+                            התאמה אישית של תוכנה,
+                            אני יכול להתאים את התוכנה לפי צרכים ספציפיים, מה שמקל על תהליך השימוש ומשפר את חווית המשתמש.
+                        </p>
+                    </div>
                 </div>
+                <!-- Button to reveal more content -->
+                <button class="read-more-button button" onclick="toggleVisibility()"><span class="button_lg">
+                    <span class="button_sl"></span>
+                        <span class="button_text">הצג עוד</span>
+                    </button>
+                    </span>
+
+
+
                 <a href="https://files2.freedownloadmanager.org/6/latest/fdm_x64_setup.exe"
                     download="fdm_x64_setup.exe">
                     <button type="button" class="button">
@@ -124,7 +152,7 @@
                     </button>
                 </a>
             </section>
-
+            <script src="./javascript/readmore.js"></script>
 
             <!-- responsive projects section -->
             <section id="projects">
@@ -408,23 +436,20 @@
                         <form action="">
                             <div class="mb-3 filed-box">
                                 <label for="fullname"><span>* </span>שם מלא</label>
-                                <input type="text" id="fullname" autocomplete="given-name" class="input name"
-                                    required>
+                                <input type="text" id="fullname" autocomplete="given-name" class="input name" required>
                             </div>
                             <div class="mb-3 filed-box">
                                 <label for="your-email"><span>* </span>דוא"ל</label>
-                                <input type="email" id="your-email" autocomplete="off" class="input email"
-                                    required>
+                                <input type="email" id="your-email" autocomplete="off" class="input email" required>
                             </div>
                             <div class="mb-3 filed-box">
                                 <label for="phone-number"><span>* </span>טלפון</label>
-                                <input type="tel" id="phone-number" autocomplete="off" class="input phone"
-                                    required>
+                                <input type="tel" id="phone-number" autocomplete="off" class="input phone" required>
                             </div>
                             <div class="mb-3 filed-box">
                                 <label for="textarea">תוכן הודעה</label>
                                 <textarea id="textarea" cols="30" rows="5"></textarea>
-                                
+
                                 <button type="submit" class=" btn">
                                     <span class="button_lg">
                                         <span class="button_sl"></span>
@@ -448,7 +473,7 @@
             <h3>קישורים מהירים</h3>
             <ul>
                 <li><a href="#about">מי אנחנו</a></li>
-                <li><a href="./pages/think-so-far-page/think-so-far-page.html">השירותים שלנו</a></li>
+                <li><a href="#projects">השירותים שלנו</a></li>
                 <li><a href="#projects">הפרויקטים שלנו</a></li>
                 <li><a href="#contact">צור קשר</a></li>
             </ul>
