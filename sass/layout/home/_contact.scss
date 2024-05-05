@@ -38,139 +38,99 @@
     }
 }
 
+@keyframes formBG {
+    0% {
+        filter: blur(50px) hue-rotate(0deg);
+    }
+
+    100% {
+        filter: blur(50px) hue-rotate(360deg);
+    }
+}
+
 .form-box {
     width: 100%;
-    margin: 0 auto;
     position: relative;
+
+    &::before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: conic-gradient(from 90deg at 40% -25%, #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700, #ffd700, #ffd700, #ffd700);
+        filter: blur(100%);
+        animation: formBG 3s infinite;
+        transition: all 0.5s linear inherit;
+    }
 
     form {
         position: relative;
-        width: 50%;
-        margin: 0 auto;
         z-index: 2;
+        width: 100%;
+        @include flex;
+        flex-direction: column;
+        background: rgba(25, 28, 31, 0.700);
+        border-radius: 50px;
+        margin: 0 auto;
 
-        .required-star {
-            color: red;
-            font-size: 1.3em;
-        }
 
         .filed-box {
+            width: 50%;
             margin-top: 5px;
-            display: flex;
-            flex-direction: column;
             font-size: 1.1em;
             font-weight: bold;
+            display: flex;
+            flex-direction: column;
+            margin: 0 auto;
 
-            input,
-            textarea {
-                background-color: #577a9c;
+            span {
+                color: $border-color;
+                font-weight: bold;
+            }
+
+            .input {
+                height: 40px;
+                font-size: 16pt;
+                color: $white;
+                font-weight: bold;
+            }
+
+            & .input,
+            & #textarea {
+                background: rgb(28, 31, 34);
                 border: none;
-                border-bottom: 4px solid white;
-                border-radius: 8px;
-            }
-
-            .required-star.name {
-                width: 40%;
-            }
-            .required-star.email {
-                width: 50%;
-            }
-            .required-star.email {
-                width: 60%;
+                border-bottom: 4px solid rgb(195, 195, 195);
             }
         }
 
 
-        button {
-            width: 100%;
 
-            :hover {
-                background: #dedede96;
-            }
+        button:hover {
+            background: #dedede96;
         }
 
         .button_lg {
             width: 100%;
             background-color: rgba(255, 255, 255, 0.196);
         }
-
-    }
-
-    .rounded-border {
-        width: 80%;
-        height: 100%;
-        background: $about-bg;
-        position: relative;
-        display: flex;
-        place-content: center;
-        place-items: center;
-        overflow: hidden;
-        border-radius: 10px;
-        position: absolute;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-        margin: auto;
-        z-index: 1;
-
-
-        &::before {
-            content: '';
-            position: absolute;
-            width: 400%;
-            background-image: linear-gradient(0deg, rgb(255, 255, 255), rgb(0, 0, 0), $about-bg, $about-bg, #ffffff, white,);
-            height: 400%;
-            animation: rotBGimg 10s linear alternate infinite;
-            transition: all 0.5s linear;
-        }
-
-        &::after {
-            content: '';
-            position: absolute;
-            background: $about-bg;
-            filter: blur(30px);
-            inset: 5px;
-            border-radius: 15px;
-
-        }
     }
 }
 
-
-@keyframes rotBGimg {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    25% {
-        transform: rotate(70deg);
-    }
-
-    50% {
-        transform: rotate(170deg);
-    }
-
-    75% {
-        transform: rotate(270deg);
-    }
-
-    100% {
-        transform: rotate(360deg);
-    }
-}
 
 
 @media (max-width:$tablet) {
-    .content-box {
-        width: 100vw;
+
+    .content-box,
+    .form-box {
+        width: 100%;
 
         .form-box {
-            width: 100vw;
 
             form {
-                .filed-box {
-                    input {
+
+                & .filed-box {
+                    width: 80%;
+                    & .input {
                         width: 100%;
                     }
                 }
@@ -181,9 +141,6 @@
     .image {
         display: none;
     }
-    .rounded-border{
-        width: 100%;
-    }
 }
 
 @media (max-width:$mobile) {
@@ -193,7 +150,7 @@
         }
 
         .form-box {
-            width: 80%;
+            width: 100%;
             margin: 0 auto;
 
             form {
@@ -201,4 +158,5 @@
             }
         }
     }
+    
 }

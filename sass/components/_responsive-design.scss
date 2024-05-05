@@ -8,7 +8,8 @@
     margin-left: -80px;
     margin-top: -50px;
     border-radius: 5px;
-    background-color: rgb(178, 146, 86);
+    background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%),
+        radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
     -webkit-animation: dot1_ 3s cubic-bezier(0.55, 0.3, 0.24, 0.99) infinite;
     animation: dot1_ 3s cubic-bezier(0.55, 0.3, 0.24, 0.99) infinite;
 }
@@ -35,7 +36,7 @@
     margin-top: 50px;
     margin-left: -20px;
     border-radius: 0 0 5px 5px;
-    background-color: $black;
+    background: $white;
     -webkit-animation-name: dot3_;
     animation-name: dot3_;
 }
