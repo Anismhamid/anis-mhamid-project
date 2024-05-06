@@ -30,6 +30,7 @@ div.card1 {
         width: 100%;
         border-radius: 11px 11px 0px 0px;
         margin: 9px auto;
+        object-fit: cover;
     }
 
     .card-body {
@@ -53,6 +54,9 @@ div.card1 {
 }
 
 @media (max-width:$mobile) {
+    .loader{
+        display: none;
+    }
     #projects {
 
         .content {
