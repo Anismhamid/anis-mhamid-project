@@ -9,7 +9,7 @@
   width: 100vw;
   font-size: 1.2em;
   color: rgb(255, 255, 255);
-  background: rgba(138, 157, 176, 0.7450980392);
+  background: #0099ff;
 }
 
 .grid-images-box {
@@ -55,6 +55,7 @@
   width: 100%;
   height: 100%;
   text-align: center;
+  background-size: cover;
 }
 .content-container > img {
   -o-object-fit: cover;
