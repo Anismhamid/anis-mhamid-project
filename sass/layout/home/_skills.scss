@@ -1,9 +1,10 @@
 #skills {
+    width: $vpWidth;
     position: relative;
     @include flex(flex, center, space-around);
     box-shadow: $box-shadow;
-background: rgb(108 117 125);
+    background: rgb(11, 14, 15);
     & img {
-        height: 6vh;
+        height: 5vh;
     }
 }

@@ -1,8 +1,8 @@
     $white: rgb(255, 255, 255);
-    $black: rgb(0, 0, 0);
-    $primary: #0099ff;
-    $button-color: radial-gradient(#ffec1d, 70%, #9b9d11);
+    $black: rgb(23, 23, 23);
+    $button-color: $white;
     $hover-button-color: rgba(154, 142, 13, 0.851);
+    $primary: linear-gradient(to left bottom, $white, #d3d3d3, #a9a9a9, #646464, #616161, #606060, #5a5a5a, #595959, #747373, #a9a9a9, #d3d3d3, $white);
 
     * {
         margin: 0;
@@ -14,51 +14,56 @@
 
     .container {
         width: 100vw;
-        font-size: 1.2em;
-        color: $white;
-        background: $primary;
+        color: $black;
+        background-image: $primary;
     }
 
     .grid-images-box {
-        width: 100%;
+        width: 90%;
         display: grid;
         grid-template-columns: auto auto;
         grid-template-rows: auto;
-        gap: 20px;
+        gap: 100px;
         margin: 10px auto;
 
-        & img {
-            width: 100%;
-            margin: 0 auto;
+        .img-box {
+            border-radius: 40px;
+            overflow: hidden;
+
+            >img {
+                width: 100%;
+                margin: 0 auto;
+            }
         }
+
     }
 
     .social-box {
         width: 100%;
         grid-column: 2/3;
         grid-row: 3/4;
-        padding: 10px;
+        padding: 100px 0;
         display: flex;
         align-items: center;
         justify-content: space-around;
 
         .social-button {
             border: none;
-            width: 70px;
-            height: 70px;
+            width: 75px;
+            height: 75px;
             border-radius: 50%;
             background: $button-color;
             cursor: pointer;
-            box-shadow: 0px 0px 6px 6px $white, 0px 0px 6px rgb(166, 166, 166) inset;
-            transition: all 0.5s initial;
+
 
             & img {
-                width: 40%;
+                width: 60%;
             }
 
             &:hover {
-                background: $hover-button-color;
-
+                background: $primary;
+                border: 1px groove #ffffff;
+                transition: all 0.3s ease-in-out;
             }
         }
     }
@@ -67,63 +72,77 @@
         width: 100%;
         height: 100%;
         text-align: center;
-        
+
         &>img {
             object-fit: cover;
             width: 80%;
-            height: 100%;  
+            height: 100%;
         }
-            background-size: cover;
+
+
         .logo {
             width: 300px;
-
         }
 
         .title-box {
-            background: rgba(0, 0, 0, 0.417);
             text-align: center;
-            padding: 30px;
 
             h1 {
-                font-size: 2em;
+                color: #fff;
+                font-size: 6em;
                 font-weight: bold;
-                padding: 30px 0;
+                padding: 50px 0;
+                text-shadow: 1px 1px 20px #000000;
             }
 
             h2 {
-                font-size: 1.5em;
-                padding-bottom: 5px;
+                color: #d3d3d3;
+                font-size: 3em;
+                padding: 100px 0;
 
                 .sp1 {
-                    color: rgb(136, 0, 136);
+                    color: #DC1887;
                 }
 
                 .sp2 {
-                    color: rgb(155, 0, 0);
+                    color: rgb(209, 83, 83);
                 }
 
                 .sp3 {
-                    color: rgb(114, 19, 68);
+                    color: rgb(197, 73, 137);
                 }
 
                 .sp4 {
-                    color: rgb(209, 209, 209);
+                    color: rgb(195, 131, 82);
                 }
 
                 .sp5 {
-                    color: rgb(163, 52, 40);
+                    color: rgb(217, 108, 96);
                 }
             }
         }
     }
 
     @media (max-width:556px) {
+        .content-container .title-box {
+            & h1 {
+                font-size: 2.5em;
+                padding: 0;
+            }
+
+            & h2 {
+                font-size: 2.1em;
+                padding: 50px 0;
+            }
+        }
+
         .grid-images-box {
             grid-template-columns: auto;
         }
 
         .content-container {
             & .logo {
+                padding-top: 50px;
                 width: 60%;
 
             }

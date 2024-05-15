@@ -1,6 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+.navo {
+  width: 100vw;
+}
+
 .profile-picture-box, #about .profile-picture-box {
-  margin: auto 50px;
+  margin: auto 20px auto 0;
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -24,7 +28,7 @@
   margin-left: -80px;
   margin-top: -50px;
   border-radius: 5px;
-  background: radial-gradient(ellipse farthest-corner at right bottom, #FEDB37 0%, #FDB931 8%, #9f7928 30%, #8A6E2F 40%, transparent 80%), radial-gradient(ellipse farthest-corner at left top, #FFFFFF 0%, #FFFFAC 8%, #D1B464 25%, #5d4a1f 62.5%, #5d4a1f 100%);
+  background: #fff;
   animation: dot1_ 3s cubic-bezier(0.55, 0.3, 0.24, 0.99) infinite;
 }
 
@@ -35,7 +39,7 @@
   margin-top: -45px;
   margin-left: -75px;
   border-radius: 3px;
-  background-image: url("../../img/WhatsApp-Image.jpg");
+  background-image: url("../../img/alberto-bigoni-p_O3tf0YhS4-unsplash.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -49,7 +53,7 @@
   margin-top: 50px;
   margin-left: -20px;
   border-radius: 0 0 5px 5px;
-  background: #fff;
+  background: #4151be;
   animation-name: dot3_;
 }
 @keyframes dot1_ {
@@ -199,10 +203,11 @@
 
 #main-section {
   font-family: "Heebo", sans-serif;
-  height: 90vh;
-  background: radial-gradient(ellipse at 28% 0%, #fff 0%, rgba(0, 0, 0, 0.5) 100%), linear-gradient(180deg, #000 0%, #000 69%, #000 70%, #000 100%) fixed;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.514), rgb(0, 0, 0)), url("../../../img/alberto-bigoni-p_O3tf0YhS4-unsplash.jpg") center center no-repeat;
+  background-size: cover;
   background-blend-mode: normal, normal, screen, overlay, normal;
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -210,21 +215,23 @@
   color: #101010;
 }
 #main-section .main-title-box {
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 #main-section .main-title-box .title {
+  display: block;
   padding: 50px;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
 }
 #main-section .main-title-box .description {
-  font-size: 2.2em;
+  font-size: 2.5em;
 }
 #main-section .main-title-box .description span {
-  font-size: 3rem;
+  font-size: 4rem;
   color: #dc4c36;
 }
 
@@ -246,8 +253,11 @@
 }
 
 @media (max-width: 568px) {
+  #main-section {
+    width: 100vw;
+  }
   #main-section .main-title-box .title {
-    font-size: 2.2em;
+    font-size: 2.5em;
     font-weight: 900;
   }
   #main-section .main-title-box .description {
@@ -266,18 +276,20 @@
   }
 }
 #skills {
+  width: 100vw;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-around;
   box-shadow: 0px 8px 9px rgba(255, 255, 255, 0.6392156863);
-  background: rgb(108, 117, 125);
+  background: rgb(11, 14, 15);
 }
 #skills img {
-  height: 6vh;
+  height: 5vh;
 }
 
 #about {
+  width: 100vw;
   font-family: "Heebo", sans-serif;
   padding: 100px 20px;
   text-align: center;
@@ -287,7 +299,7 @@
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: rgb(33, 37, 41);
+  background: rgb(8, 10, 11);
   font-style: normal;
   color: #fff;
 }
@@ -301,13 +313,13 @@
   padding: 5px;
 }
 #about .title-container .title {
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: 900;
   padding-bottom: 100px;
 }
 #about .title-container .description {
   width: 70%;
-  font-size: 1.25rem;
+  font-size: 1.6666666667rem;
   font-weight: normal;
   padding-bottom: 100px;
   margin: 0 auto;
@@ -318,7 +330,7 @@
 
 @media (max-width: 992px) {
   #about .title-container .title {
-    font-size: 2.2em;
+    font-size: 2.5em;
   }
   #about .title-container .description {
     width: 100%;
@@ -348,14 +360,17 @@
   }
 }
 #projects {
-  width: 100%;
+  width: 100vw;
   text-align: center;
   background: #e0e0e0;
   color: #000;
 }
+#projects .content {
+  text-align: center;
+}
 #projects .content .title {
-  padding: 100px 0px;
-  font-size: 3rem;
+  padding: 100px;
+  font-size: 4rem;
   font-weight: 900;
   box-shadow: 0px 4px 20px #ffffff;
 }
@@ -365,30 +380,30 @@
   font-size: 1.2em;
 }
 
-div.card1 {
+.card1 {
   border-radius: 30px;
   background: lightgrey;
   transition: all 0.6s ease-in-out;
 }
-div.card1 > img {
+.card1 > img {
   width: 100%;
   border-radius: 11px 11px 0px 0px;
   margin: 9px auto;
   -o-object-fit: cover;
      object-fit: cover;
 }
-div.card1 .card-body .button, div.card1 .card-body #about .title-container .read-more-button, #about .title-container div.card1 .card-body .read-more-button {
+.card1 .card-body .button, .card1 .card-body #about .title-container .read-more-button, #about .title-container .card1 .card-body .read-more-button {
   position: absolute;
   bottom: -30px;
   left: 30%;
 }
 
-.animation-card {
+.shadow-card {
   position: relative;
   overflow: hidden;
   box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
 }
-.animation-card:hover {
+.shadow-card:hover {
   box-shadow: 15px 15px 30px #bebebe, 15px 15px 30px #ffffff, 15px 15px 30px #acacac inset, -15px -15px 30px #b6b6b6 inset;
 }
 
@@ -396,33 +411,37 @@ div.card1 .card-body .button, div.card1 .card-body #about .title-container .read
   .loader {
     display: none;
   }
+  #projects .rows {
+    width: 100%;
+  }
   #projects .content .title {
     font-size: 1.5em;
   }
 }
 #contact {
-  background-color: rgb(33, 37, 41);
+  width: 100vw;
+  background-color: rgb(8, 10, 11);
   text-align: right;
   border-top: 5px solid #dc4c36;
   color: white;
 }
 
-.image {
+#contact .image {
   width: 50%;
   text-align: center;
 }
-.image img {
+#contact .image img {
   width: 100%;
 }
 
-.content-box {
+#contact .content-box {
   width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-.content-box .contact-title-box {
+#contact .content-box .contact-title-box {
   width: 80%;
   position: relative;
   top: 0;
@@ -431,10 +450,10 @@ div.card1 .card-body .button, div.card1 .card-body #about .title-container .read
   margin: 0 auto;
   min-width: 150px;
 }
-.content-box .contact-title-box h2 {
-  font-size: 2.2em;
+#contact .content-box .contact-title-box h2 {
+  font-size: 2.5em;
 }
-.content-box .contact-title-box p {
+#contact .content-box .contact-title-box p {
   font-weight: bold;
 }
 
@@ -446,11 +465,11 @@ div.card1 .card-body .button, div.card1 .card-body #about .title-container .read
     filter: blur(50px) hue-rotate(360deg);
   }
 }
-.form-box {
+#contact .content-box .form-box {
   width: 100%;
   position: relative;
 }
-.form-box::before {
+#contact .content-box .form-box::before {
   position: absolute;
   content: "";
   width: 100%;
@@ -460,7 +479,7 @@ div.card1 .card-body .button, div.card1 .card-body #about .title-container .read
   animation: formBG 3s infinite;
   transition: all 0.5s linear inherit;
 }
-.form-box form {
+#contact .content-box .form-box form {
   position: relative;
   z-index: 2;
   width: 100%;
@@ -472,7 +491,7 @@ div.card1 .card-body .button, div.card1 .card-body #about .title-container .read
   border-radius: 50px;
   margin: 0 auto;
 }
-.form-box form .filed-box {
+#contact .content-box .form-box form .filed-box {
   width: 50%;
   margin-top: 5px;
   font-size: 1.1em;
@@ -481,25 +500,25 @@ div.card1 .card-body .button, div.card1 .card-body #about .title-container .read
   flex-direction: column;
   margin: 0 auto;
 }
-.form-box form .filed-box span {
+#contact .content-box .form-box form .filed-box span {
   color: #dc4c36;
   font-weight: bold;
 }
-.form-box form .filed-box .input {
+#contact .content-box .form-box form .filed-box .input {
   height: 40px;
   font-size: 16pt;
   color: #fff;
   font-weight: bold;
 }
-.form-box form .filed-box .input, .form-box form .filed-box #textarea {
+#contact .content-box .form-box form .filed-box .input, #contact .content-box .form-box form .filed-box #textarea {
   background: rgb(28, 31, 34);
   border: none;
   border-bottom: 4px solid rgb(195, 195, 195);
 }
-.form-box form button:hover {
+#contact .content-box .form-box form button:hover {
   background: rgba(222, 222, 222, 0.5882352941);
 }
-.form-box form .button_lg {
+#contact .content-box .form-box form .button_lg {
   width: 100%;
   background-color: rgba(255, 255, 255, 0.196);
 }
@@ -510,7 +529,18 @@ div.card1 .card-body .button, div.card1 .card-body #about .title-container .read
   .input {
     width: 100%;
   }
-  .form-box form .filed-box {
+  #contact .content-box .contact-title-box {
+    text-align: center;
+    width: 100vw;
+  }
+  #contact .content-box .contact-title-box .title {
+    padding: 80px 10px;
+  }
+  #contact .content-box .form-box {
+    width: 100vw;
+    padding-top: 30px;
+  }
+  #contact .content-box .form-box form .filed-box {
     width: 80%;
   }
   .image {
@@ -530,6 +560,7 @@ div.card1 .card-body .button, div.card1 .card-body #about .title-container .read
   }
 }
 footer {
+  width: 100vw;
   border-top: 5px solid #dc4c36;
   color: #fff;
   padding: 40px 0;

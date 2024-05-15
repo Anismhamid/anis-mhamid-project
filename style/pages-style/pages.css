@@ -1,7 +1,11 @@
 @import "../../sass/components/bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css";
 @import url("https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap");
+.navo {
+  width: 100vw;
+}
+
 .profile-picture-box {
-  margin: auto 50px;
+  margin: auto 20px auto 0;
   width: 70px;
   height: 70px;
   border-radius: 50%;
@@ -17,10 +21,11 @@
 
 #main-section {
   font-family: "Heebo", sans-serif;
-  height: 90vh;
-  background: radial-gradient(ellipse at 28% 0%, #fff 0%, rgba(0, 0, 0, 0.5) 100%), linear-gradient(180deg, #000 0%, #000 69%, #000 70%, #000 100%) fixed;
+  width: 100vw;
+  height: 100vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.514), rgb(0, 0, 0)), url("../../../img/alberto-bigoni-p_O3tf0YhS4-unsplash.jpg") center center no-repeat;
+  background-size: cover;
   background-blend-mode: normal, normal, screen, overlay, normal;
-  text-align: center;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -28,21 +33,23 @@
   color: #101010;
 }
 #main-section .main-title-box {
+  color: #fff;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
 #main-section .main-title-box .title {
+  display: block;
   padding: 50px;
-  font-size: 3rem;
+  font-size: 4rem;
   font-weight: bold;
 }
 #main-section .main-title-box .description {
-  font-size: 2.2em;
+  font-size: 2.5em;
 }
 #main-section .main-title-box .description span {
-  font-size: 3rem;
+  font-size: 4rem;
   color: #dc4c36;
 }
 
@@ -64,8 +71,11 @@
 }
 
 @media (max-width: 568px) {
+  #main-section {
+    width: 100vw;
+  }
   #main-section .main-title-box .title {
-    font-size: 2.2em;
+    font-size: 2.5em;
     font-weight: 900;
   }
   #main-section .main-title-box .description {
@@ -266,18 +276,20 @@
 }
 
 #skills {
+  width: 100vw;
   position: relative;
   display: flex;
   align-items: center;
   justify-content: space-around;
   box-shadow: 0px 8px 9px rgba(255, 255, 255, 0.6392156863);
-  background: rgb(108, 117, 125);
+  background: rgb(11, 14, 15);
 }
 #skills img {
-  height: 6vh;
+  height: 5vh;
 }
 
 footer {
+  width: 100vw;
   border-top: 5px solid #dc4c36;
   color: #fff;
   padding: 40px 0;

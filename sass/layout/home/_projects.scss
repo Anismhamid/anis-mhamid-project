@@ -1,13 +1,15 @@
 #projects {
-    width: 100%;
+    width: $vpWidth;
     text-align: center;
     background: $main-bg-color;
     color: $black;
 
 
     .content {
+        text-align: center;
+
         .title {
-            padding: 100px 0px;
+            padding: 100px;
             font-size: $main-font-size;
             font-weight: $bold;
             box-shadow: 0px 4px 20px #ffffff;
@@ -21,7 +23,7 @@
     }
 }
 
-div.card1 {
+.card1 {
     border-radius: 30px;
     background: lightgrey;
     transition: all 0.6s ease-in-out;
@@ -34,6 +36,7 @@ div.card1 {
     }
 
     .card-body {
+
         .button {
             position: absolute;
             bottom: -30px;
@@ -42,7 +45,7 @@ div.card1 {
     }
 }
 
-.animation-card {
+.shadow-card {
     position: relative;
     overflow: hidden;
     box-shadow: 15px 15px 30px #bebebe, -15px -15px 30px #ffffff;
@@ -54,10 +57,15 @@ div.card1 {
 }
 
 @media (max-width:$mobile) {
-    .loader{
+    .loader {
         display: none;
     }
+
     #projects {
+        .rows {
+            width: 100%;
+
+        }
 
         .content {
             .title {

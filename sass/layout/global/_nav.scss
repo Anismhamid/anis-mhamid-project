@@ -1,5 +1,8 @@
+.navo{
+    width: $vpWidth;
+} 
 .profile-picture-box {
-    margin:auto 50px;
+    margin: auto 20px auto 0;
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -8,6 +11,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
+    
 
     img {
         width: 100%;

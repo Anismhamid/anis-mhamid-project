@@ -1,11 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@100..900&display=swap');
 
-//full view port width
-$vpWidth: 100vw;
-$percentW80: 80%;
-
-//colors
-
 $main-bg-color: #e0e0e0;
 
 $black: #000;
@@ -15,6 +9,14 @@ $white: #fff;
 $mini-black: #101010;
 
 $border-color: #dc4c36;
+
+//full view port width
+$vpWidth: 100vw;
+$percentW80: 80%;
+
+//colors
+
+
 
 $title-color: $white;
 
@@ -40,9 +42,9 @@ $box-shadow2: 0px 0px 20px #0000001b;
 
 
 //fonts
-$main-font-size: 3rem;
+$main-font-size: 4rem;
 
-$description-font-size: 2.2em;
+$description-font-size: 2.5em;
 $small-description-font-size: 1.5em;
 
 $bold: 900;
@@ -52,7 +54,7 @@ $bold: 900;
 $border: 5px solid $border-color;
 
 
-$about-bg: rgb(33, 37, 41);
+$about-bg: rgb(8, 10, 11);
 $contact-bg: #3A3A3A;
 
 $logo-radios: 900px 0 900px 168px;

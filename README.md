@@ -1,6 +1,6 @@
 ## Description
 
-This project is a website developed by [Anis Mahamid] to showcase his work in web development and demonstrate his skills and achievements. The site includes sections such as "About Us," "Services," "Our Projects," and "Contact Us." It serves as a platform for Anis Mahamid to present his expertise in web development and highlight his accomplishments in the field.
+This project is a website developed by Anis Mahamid to showcase his work in web development and demonstrate his skills and achievements. The site includes sections such as "About Us," "Services," "Our Projects," and "Contact Us." It serves as a platform for Anis Mahamid to present his expertise in web development and highlight his accomplishments in the field.
 
 ## table of contents
 
@@ -25,6 +25,22 @@ This project is a website developed by [Anis Mahamid] to showcase his work in we
 
 - **HTML Files**: Contains well-organized HTML files for different sections of the site.
 - **SASS Folders**: Used to organize CSS styles and make them more manageable and easy to maintain. - **main.css**: Contains all SASS styles. - **pages.css**: Contains all SASS styles. - Other files created to organize the patterns logically and structurally.
+
+## Projects
+
+- 1 **(Let Us Lead You Forward)**
+
+  - This project talks about user experience and attractive responsive design.
+  - Provides an enjoyable and comfortable viewing experience for users on various devices.
+  - Focuses on interactivity and ease of use through an elegant and functional design.
+  - Provides clear and simple browsing options that enable users to explore content easily.
+    
+    **(Here And Now)**
+
+  - This project is distinguished by beauty and elegance in design.
+  - Provides a fun and easy browsing experience for users.
+  - Orients users nicely and makes them feel comfortable and welcome.
+  - Uses an eye-catching image to attract visitors and encourage them to explore more content.
 
 ## employment
 
