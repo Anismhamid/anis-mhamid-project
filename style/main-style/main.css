@@ -202,10 +202,9 @@
 }
 
 #main-section {
-  font-family: "Heebo", sans-serif;
   width: 100vw;
   height: 100vh;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.514), rgb(0, 0, 0)), url("../../../img/alberto-bigoni-p_O3tf0YhS4-unsplash.jpg") center center no-repeat;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.514), rgb(0, 0, 0)), url("../../img/alberto-bigoni-p_O3tf0YhS4-unsplash.jpg") center center no-repeat;
   background-size: cover;
   background-blend-mode: normal, normal, screen, overlay, normal;
   display: flex;
@@ -213,6 +212,7 @@
   justify-content: center;
   flex-direction: column;
   color: #101010;
+  text-align: center;
 }
 #main-section .main-title-box {
   color: #fff;
