@@ -21,7 +21,7 @@
 
 #main-section {
   width: 100vw;
-  height: 100vh;
+  height: 90vh;
   background: linear-gradient(to bottom, rgba(0, 0, 0, 0.514), rgb(0, 0, 0)), url("../../img/alberto-bigoni-p_O3tf0YhS4-unsplash.jpg") center center no-repeat;
   background-size: cover;
   background-blend-mode: normal, normal, screen, overlay, normal;
@@ -286,7 +286,7 @@
   background: rgb(11, 14, 15);
 }
 #skills img {
-  height: 5vh;
+  height: 6vh;
 }
 
 footer {
