@@ -32,36 +32,52 @@ This project is a website developed by Anis Mahamid to showcase his work in web 
 ### Take the Future
 
 **Description:** Take the Future is a project designed to deliver an advanced and visually appealing user experience across various devices.
+
 **Skills Used:** HTML, CSS, JavaScript, SASS, Bootstrap.
+
 **Results:** The page offers an attractive and intuitive user experience on different devices, featuring a sophisticated design that seamlessly blends elegance and functionality.
+
 
 ### Here and Now
 
 **Description:** Here and Now stands out with its elegant design, creating a delightful browsing experience for users. 
+
 **Skills Used:** HTML, CSS, JavaScript, SASS.
+
 **Results:** The page impresses with its clean and organized design, enhancing user experience and ease of navigation.
+
 
 ### Free Consultation
 
 **Description:** Free Consultation is an interactive page showcasing the "Free Consultation" service to users.
+
 **Skills Used:** HTML, CSS, JavaScript, SASS.
+
 **Results:** The page boasts a responsive design, ensuring optimal viewing experience across various devices.
+
 
 ### Let Us Lead You Forward
 
 **Description:** Let Us Lead You Forward offers a unique, attractive, and elegant user experience.
+
 **Skills Used:** HTML, CSS, JavaScript, SASS.
+
 **Results:** The page provides a distinct and captivating user experience, leaving a lasting impression on visitors.
+
 
 ### Let Us Build Your Dream Home
 
 **Description:**  This design facilitates user experience.
+
 **Skills Used:** HTML, CSS, JavaScript, SASS.
+
 **Results:** The page is responsive to different devices, meaning its design is suitable for different screen sizes and types of devices, from desktop computers to mobile phones.
+
 
 ### Welcome to Our Fashion World
 
 **Description:** The page provides an attractive and easy-to-use user experience on different devices.
+
 **Skills Used:** HTML, CSS, JavaScript, SASS.
 
 ### Thinking Outside the Box
