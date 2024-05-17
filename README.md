@@ -28,19 +28,59 @@ This project is a website developed by Anis Mahamid to showcase his work in web 
 
 ## Projects
 
-- 1 **(Let Us Lead You Forward)**
 
-  - This project talks about user experience and attractive responsive design.
-  - Provides an enjoyable and comfortable viewing experience for users on various devices.
-  - Focuses on interactivity and ease of use through an elegant and functional design.
-  - Provides clear and simple browsing options that enable users to explore content easily.
-    
-    **(Here And Now)**
+### Take the Future
 
-  - This project is distinguished by beauty and elegance in design.
-  - Provides a fun and easy browsing experience for users.
-  - Orients users nicely and makes them feel comfortable and welcome.
-  - Uses an eye-catching image to attract visitors and encourage them to explore more content.
+**Description:** Take the Future is a project designed to deliver an advanced and visually appealing user experience across various devices.
+**Skills Used:** HTML, CSS, JavaScript, SASS, Bootstrap.
+**Results:** The page offers an attractive and intuitive user experience on different devices, featuring a sophisticated design that seamlessly blends elegance and functionality.
+
+### Here and Now
+
+**Description:** Here and Now stands out with its elegant design, creating a delightful browsing experience for users. 
+**Skills Used:** HTML, CSS, JavaScript, SASS.
+**Results:** The page impresses with its clean and organized design, enhancing user experience and ease of navigation.
+
+### Free Consultation
+
+**Description:** Free Consultation is an interactive page showcasing the "Free Consultation" service to users.
+**Skills Used:** HTML, CSS, JavaScript, SASS.
+**Results:** The page boasts a responsive design, ensuring optimal viewing experience across various devices.
+
+### Let Us Lead You Forward
+
+**Description:** Let Us Lead You Forward offers a unique, attractive, and elegant user experience.
+**Skills Used:** HTML, CSS, JavaScript, SASS.
+**Results:** The page provides a distinct and captivating user experience, leaving a lasting impression on visitors.
+
+### Let Us Build Your Dream Home
+
+**Description:**  This design facilitates user experience.
+**Skills Used:** HTML, CSS, JavaScript, SASS.
+**Results:** The page is responsive to different devices, meaning its design is suitable for different screen sizes and types of devices, from desktop computers to mobile phones.
+
+### Welcome to Our Fashion World
+
+**Description:** The page provides an attractive and easy-to-use user experience on different devices.
+**Skills Used:** HTML, CSS, JavaScript, SASS.
+
+### Thinking Outside the Box
+
+**Description:**  The page is responsive to different devices, meaning its design is suitable for different screen sizes and types of devices, from desktop computers to mobile phones.
+**Skills Used:** HTML, CSS, JavaScript, SASS.
+**Results:** design facilitates user experience, providing convenience and ease for users on a variety of devices, ensuring a smooth and pleasant user experience.
+
+### See the world up close
+
+**Description:** This page is a perfect example of a combination of elegance and functionality in web design, using the "Assistant" font that allows for pleasant reading and magnificent colors that relax the eye.
+**Skills Used:** HTML, CSS, JavaScript, SASS.
+**Results:** Its responsiveness to all screen sizes, which makes the user experience smooth. Adheres to the high quality and interactivity, offers an impressive balance between design and functionality.
+
+### Good coffee for the morning
+
+**Description:** The page was designed in a way that allows for a smooth and pleasant user experience for all types of screens. When opening the page on a large screen, the right area is dedicated to a large and impressive image of the coffee, along with the attached registration form. This reflects the design of the page and allows the user to fill in the details easily. At the same time, the larger the The screen is smaller, the design adapts itself accordingly: the image is merged and adapted to the size of the screen and the form is arranged in a more efficient way in order to maintain the user's comfort and make it easier for him to fill in the details.
+**Skills Used:** HTML, CSS, JavaScript, SASS.
+**Results:** the page provides a high-quality and pleasant experience for users of all types of screens and devices.
 
 ## employment
 
@@ -57,9 +97,9 @@ This project is a website developed by Anis Mahamid to showcase his work in web 
 
 For any inquiries or comments, please contact us:
 
-- **E-mail**: [anesmhamed1@gmail.com]
-- **the phone**: [+972 538346915]
+- **E-mail**: anesmhamed1@gmail.com
+- **the phone**: +972 538346915
 
 ## Author
 
-[anis mhamid]
+anis mhamid
