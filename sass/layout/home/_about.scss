@@ -5,7 +5,7 @@
     text-align: center;
     margin: 0 auto;
     border-bottom: $border;
-    @include flex();
+    @include flex;
     flex-direction: column;
     background: $about-bg;
     font-style: normal;
@@ -36,7 +36,8 @@
             padding-bottom: 100px;
             margin: 0 auto;
         }
-        .read-more-button{
+
+        .read-more-button {
             @extend .button;
         }
 

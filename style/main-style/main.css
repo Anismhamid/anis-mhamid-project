@@ -18,6 +18,80 @@
   width: 100%;
 }
 
+#main-section {
+  width: 100vw;
+  height: 90vh;
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.514), rgb(0, 0, 0)), url("../../img/alberto-bigoni-p_O3tf0YhS4-unsplash.jpg") center center no-repeat;
+  background-size: cover;
+  background-blend-mode: normal, normal, screen, overlay, normal;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color: #101010;
+  text-align: center;
+}
+#main-section .main-title-box {
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+#main-section .main-title-box .title {
+  display: block;
+  padding: 50px;
+  font-size: 4rem;
+  font-weight: bold;
+}
+#main-section .main-title-box .description {
+  font-size: 2.5em;
+}
+#main-section .main-title-box .description span {
+  font-size: 4rem;
+  color: #dc4c36;
+}
+
+.back-to-top {
+  width: 50px;
+  height: 150px;
+  position: fixed;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+}
+.back-to-top ::before {
+  content: "top";
+  color: #fff;
+  font-size: 1.3em;
+  font-weight: bold;
+  color: #000;
+  text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.905);
+}
+
+@media (max-width: 568px) {
+  #main-section {
+    width: 100vw;
+  }
+  #main-section .main-title-box .title {
+    font-size: 2.5em;
+    font-weight: 900;
+  }
+  #main-section .main-title-box .description {
+    max-width: 600px;
+    font-size: 1.3em;
+  }
+}
+@media (max-width: 375px) {
+  #main-section .main-title-box .title {
+    padding-top: 100px;
+    font-size: 1.8em;
+  }
+  #main-section .main-title-box .description {
+    font-size: 1.1em;
+    min-width: 200px;
+  }
+}
 .loader {
   position: absolute;
   top: -70px;
@@ -201,80 +275,6 @@
   width: calc(100% + 15px);
 }
 
-#main-section {
-  width: 100vw;
-  height: 90vh;
-  background: linear-gradient(to bottom, rgba(0, 0, 0, 0.514), rgb(0, 0, 0)), url("../../img/alberto-bigoni-p_O3tf0YhS4-unsplash.jpg") center center no-repeat;
-  background-size: cover;
-  background-blend-mode: normal, normal, screen, overlay, normal;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  color: #101010;
-  text-align: center;
-}
-#main-section .main-title-box {
-  color: #fff;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-#main-section .main-title-box .title {
-  display: block;
-  padding: 50px;
-  font-size: 4rem;
-  font-weight: bold;
-}
-#main-section .main-title-box .description {
-  font-size: 2.5em;
-}
-#main-section .main-title-box .description span {
-  font-size: 4rem;
-  color: #dc4c36;
-}
-
-.back-to-top {
-  width: 50px;
-  height: 150px;
-  position: fixed;
-  right: 0;
-  bottom: 0;
-  z-index: 2;
-}
-.back-to-top ::before {
-  content: "top";
-  color: #fff;
-  font-size: 1.3em;
-  font-weight: bold;
-  color: #000;
-  text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.905);
-}
-
-@media (max-width: 568px) {
-  #main-section {
-    width: 100vw;
-  }
-  #main-section .main-title-box .title {
-    font-size: 2.5em;
-    font-weight: 900;
-  }
-  #main-section .main-title-box .description {
-    max-width: 600px;
-    font-size: 1.3em;
-  }
-}
-@media (max-width: 375px) {
-  #main-section .main-title-box .title {
-    padding-top: 100px;
-    font-size: 1.8em;
-  }
-  #main-section .main-title-box .description {
-    font-size: 1.1em;
-    min-width: 200px;
-  }
-}
 #skills {
   width: 100vw;
   position: relative;
