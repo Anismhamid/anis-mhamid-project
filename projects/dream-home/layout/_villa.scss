@@ -14,8 +14,9 @@
 
     .container {
         width: 100vw;
+        height: 100cvh;
         color: $black;
-        background-image: $primary;
+        background-image: url(../images/svg.svg), linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
     }
 
     .grid-images-box {
@@ -27,11 +28,13 @@
         margin: 10px auto;
 
         .img-box {
-            border-radius: 40px;
             overflow: hidden;
+            border: 1px solid #ffffff;
+            background: url(../images/svg-for-images.svg) center center no-repeat;
+            background-size: contain;
 
             >img {
-                width: 100%;
+                width: 60%;
                 margin: 0 auto;
             }
         }
@@ -69,56 +72,68 @@
     }
 
     .content-container {
+
+
+        
         width: 100%;
         height: 100%;
         text-align: center;
+        background: url(../images/aLatter.svg) center center no-repeat;
+        background-size: auto;
+
 
         &>img {
             object-fit: cover;
-            width: 80%;
+            width: 70%;
             height: 100%;
         }
 
 
-        .logo {
+        div#logo-box .logo {
             width: 300px;
         }
+    }
 
-        .title-box {
-            text-align: center;
+    .content-container .title-box {
+        text-align: center;
+        color: #fff;
 
-            h1 {
-                color: #fff;
-                font-size: 6em;
-                font-weight: bold;
-                padding: 50px 0;
-                text-shadow: 1px 1px 20px #000000;
+        h1 {
+            font-size: 6em;
+            font-weight: bold;
+            padding: 50px 0;
+            text-shadow: 1px 1px 20px #000000;
+        }
+h2{
+    width: 70%;
+    margin: 100px auto;
+    font-size: 2em;
+    line-height: 1.5;
+    color: #e0dada;
+}
+        h3 {
+            color: #d3d3d3;
+            font-size: 2.5em;
+            padding: 100px 0;
+
+            .sp1 {
+                color: #DC1887;
             }
 
-            h2 {
-                color: #d3d3d3;
-                font-size: 3em;
-                padding: 100px 0;
+            .sp2 {
+                color: rgb(209, 83, 83);
+            }
 
-                .sp1 {
-                    color: #DC1887;
-                }
+            .sp3 {
+                color: rgb(197, 73, 137);
+            }
 
-                .sp2 {
-                    color: rgb(209, 83, 83);
-                }
+            .sp4 {
+                color: rgb(195, 131, 82);
+            }
 
-                .sp3 {
-                    color: rgb(197, 73, 137);
-                }
-
-                .sp4 {
-                    color: rgb(195, 131, 82);
-                }
-
-                .sp5 {
-                    color: rgb(217, 108, 96);
-                }
+            .sp5 {
+                color: rgb(217, 108, 96);
             }
         }
     }
@@ -144,6 +159,7 @@
             & .logo {
                 padding-top: 50px;
                 width: 60%;
+
 
             }
         }

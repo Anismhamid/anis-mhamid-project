@@ -7,8 +7,9 @@
 
 .container {
   width: 100vw;
+  height: 100cvh;
   color: rgb(23, 23, 23);
-  background-image: linear-gradient(to left bottom, rgb(255, 255, 255), #d3d3d3, #a9a9a9, #646464, #616161, #606060, #5a5a5a, #595959, #747373, #a9a9a9, #d3d3d3, rgb(255, 255, 255));
+  background-image: url(../images/svg.svg), linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
 }
 
 .grid-images-box {
@@ -20,11 +21,13 @@
   margin: 10px auto;
 }
 .grid-images-box .img-box {
-  border-radius: 40px;
   overflow: hidden;
+  border: 1px solid #ffffff;
+  background: url(../images/svg-for-images.svg) center center no-repeat;
+  background-size: contain;
 }
 .grid-images-box .img-box > img {
-  width: 100%;
+  width: 60%;
   margin: 0 auto;
 }
 
@@ -58,44 +61,54 @@
   width: 100%;
   height: 100%;
   text-align: center;
+  background: url(../images/aLatter.svg) center center no-repeat;
+  background-size: auto;
 }
 .content-container > img {
   -o-object-fit: cover;
      object-fit: cover;
-  width: 80%;
+  width: 70%;
   height: 100%;
 }
-.content-container .logo {
+.content-container div#logo-box .logo {
   width: 300px;
 }
+
 .content-container .title-box {
   text-align: center;
+  color: #fff;
 }
 .content-container .title-box h1 {
-  color: #fff;
   font-size: 6em;
   font-weight: bold;
   padding: 50px 0;
   text-shadow: 1px 1px 20px #000000;
 }
 .content-container .title-box h2 {
+  width: 70%;
+  margin: 100px auto;
+  font-size: 2em;
+  line-height: 1.5;
+  color: #e0dada;
+}
+.content-container .title-box h3 {
   color: #d3d3d3;
-  font-size: 3em;
+  font-size: 2.5em;
   padding: 100px 0;
 }
-.content-container .title-box h2 .sp1 {
+.content-container .title-box h3 .sp1 {
   color: #DC1887;
 }
-.content-container .title-box h2 .sp2 {
+.content-container .title-box h3 .sp2 {
   color: rgb(209, 83, 83);
 }
-.content-container .title-box h2 .sp3 {
+.content-container .title-box h3 .sp3 {
   color: rgb(197, 73, 137);
 }
-.content-container .title-box h2 .sp4 {
+.content-container .title-box h3 .sp4 {
   color: rgb(195, 131, 82);
 }
-.content-container .title-box h2 .sp5 {
+.content-container .title-box h3 .sp5 {
   color: rgb(217, 108, 96);
 }
 
