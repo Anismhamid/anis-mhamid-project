@@ -9,7 +9,8 @@
   width: 100vw;
   height: 100cvh;
   color: rgb(23, 23, 23);
-  background-image: url(../images/svg.svg), linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+  background-image: url(./images/svg.svg), linear-gradient(rgb(0, 0, 0), rgb(0, 0, 0));
+  background-size: auto;
 }
 
 .grid-images-box {
@@ -17,17 +18,18 @@
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
-  gap: 100px;
-  margin: 10px auto;
+  gap: 70px;
+  margin: 10px auto 0 auto;
 }
 .grid-images-box .img-box {
+  -o-border-image: stretch;
+     border-image: stretch;
   overflow: hidden;
-  border: 1px solid #ffffff;
   background: url(../images/svg-for-images.svg) center center no-repeat;
-  background-size: contain;
+  background-size: cover;
 }
 .grid-images-box .img-box > img {
-  width: 60%;
+  width: 100%;
   margin: 0 auto;
 }
 
