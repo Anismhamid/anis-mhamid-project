@@ -45,33 +45,33 @@
     }
 
     .layer:nth-child(1) {
-        background-image: url(../../img/1.png);
+        background-image: $layer-1-background;
 
     }
 
     .layer:nth-child(2) {
-        background-image: url(../../img/2.png);
+        background-image: $layer-2-background;
     }
 
     .layer:nth-child(3) {
-        background-image: url(../../img/3.png);
+        background-image: $layer-3-background;
     }
 
     .layer:nth-child(4) {
-        background-image: url(../../img/4.png);
+        background-image: $layer-4-background;
     }
 
     .layer:nth-child(5) {
-        background-image: url(../../img/5.png);
+        background-image: $layer-5-background;
         width: 80%;
     }
 
     .layer:nth-child(6) {
-        background-image: url(../../img/6.png);
+        background-image: $layer-6-background;
     }
 
     .layer:nth-child(7) {
-        background-image: url(../../img/7.png);
+        background-image: $layer-7-background;
     }
 }
 
