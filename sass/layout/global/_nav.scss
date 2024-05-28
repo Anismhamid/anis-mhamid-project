@@ -1,6 +1,17 @@
-.navo{
-    width: $vpWidth;
-} 
+.navo {
+    width: 100%;
+}
+
+.links-settings {
+    color: #d70683;
+    font-size: 1.2em;
+
+    &:hover {
+        color: #ff0099;
+        filter: drop-shadow(3px 3px 30px white);
+    }
+}
+
 .profile-picture-box {
     margin: auto 20px auto 0;
     width: 70px;
@@ -11,9 +22,10 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
-    
+
 
     img {
         width: 100%;
     }
+
 }

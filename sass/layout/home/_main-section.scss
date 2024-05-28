@@ -10,7 +10,7 @@
     text-align: center;
 
     .main-title-box {
-        color: $white;
+        color: #e58225;
         @include flex;
         flex-direction: column;
         flex-wrap: wrap;
@@ -85,7 +85,7 @@
     bottom: 0;
     z-index: 2;
 
-    ::before {
+    &::before {
         content: 'top';
         color: $white;
         font-size: 1.3em;
@@ -98,9 +98,10 @@
 
 @media (max-width:$laptop) {
     .animatedBackground {
-        .layer:nth-child(4){
+        .layer:nth-child(4) {
             background-image: none;
         }
+
         .layer:nth-child(7) {
             background-image: none;
         }
@@ -126,7 +127,8 @@
     }
 
     .animatedBackground {
-        .layer {
+
+        .layer:nth-child(5) {
             z-index: 0;
         }
 

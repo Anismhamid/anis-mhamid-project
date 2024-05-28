@@ -12,7 +12,6 @@
 
 <body>
 
-
     <header>
         <nav class="navbar navbar-expand-lg fixed-top">
             <div class="profile-picture-box">
@@ -29,16 +28,16 @@
             <div class="collapse navbar-collapse" dir="ltr" id="navbarSupportedContent">
                 <ul class="navbar-nav me-3 mb-2 mb-lg-0 h6">
                     <li class="nav-item">
-                        <a class="nav-link active link-light me-auto" aria-current="page" href="#main-section">Home</a>
+                        <a class="nav-link links-settings me-auto" aria-current="page" href="#main-section">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link-light" href="#about" alt>About me</a>
+                        <a class="nav-link links-settings" href="#about" alt>About me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link-light" href="#projects">Projects</a>
+                        <a class="nav-link links-settings" href="#projects">Projects</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link link-light" href="#contact">Contact Us</a>
+                        <a class="nav-link links-settings" href="#contact">Contact Us</a>
                     </li>
                 </ul>
             </div>
@@ -47,26 +46,27 @@
 
     <main>
         <!-- main section -->
-            <section id="main-section" class="bg-dark">
-                <div class="main-title-box">
-                    <h1 class="title">תיק עבודות</h1>
-                    <p class="description my-3">התכוננו לגלות את העולם שלנו מלא ביצירתיות ומצוינות, וליהנות מחוויית גלישה בלתי
-                        נשכחת<span>!</span></p>
-                </div>
-                <div class="back-to-top">
-                    <a href="#top"><img src="img/back-to-top.png" alt="back to top"></a>
-                </div>
-            </section>
-            <!-- animation background -->
-            <div class="animatedBackground">
-                <div class="layer"></div>
-                <div class="layer"></div>
-                <div class="layer"></div>
-                <div class="layer"></div>
-                <div class="layer"></div>
-                <div class="layer"></div>
-                <div class="layer"></div>
+        <section id="main-section" class="bg-dark">
+            <div class="main-title-box">
+                <h1 class="title">תיק עבודות</h1>
+                <p class="description my-3">התכוננו לגלות את העולם שלנו מלא ביצירתיות ומצוינות, וליהנות מחוויית גלישה
+                    בלתי
+                    נשכחת<span>!</span></p>
             </div>
+            <div class="back-to-top">
+                <a href="#top"><img src="img/back-to-top.png" alt="back to top"></a>
+            </div>
+        </section>
+        <!-- animation background -->
+        <div class="animatedBackground">
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+            <div class="layer"></div>
+        </div>
 
 
         <!-- Tools was i know -->
@@ -138,19 +138,15 @@
                 </div>
             </div>
             <!-- Button to reveal more content -->
-            <button class="read-more-button button" onclick="toggleVisibility()"><span class="button_lg">
-                    <span class="button_sl"></span>
-                    <span class="button_text">הצג עוד</span>
+            <button id="button" class="read-more-button" onclick="toggleVisibility()">
+                <span>הצג עוד</span>
             </button>
             </span>
 
-            <!-- Button to download the CV  --> 
+            <!-- Button to download the CV  -->
             <a href="../CV.docx" download="CV.docx">
-                <button type="button" class="button">
-                    <span class="button_lg">
-                        <span class="button_sl"></span>
-                        <span class="button_text">להורדת קורות חיים</span>
-                    </span>
+                <button type="button" id="button">
+                    <span>להורדת קורות חיים</span>
                 </button>
             </a>
         </section>
@@ -164,254 +160,229 @@
                 <p class="description pb-5">חקור את הגלריה שלנו של פרויקטים נבחרים כדי לראות מדגם של יכולות
                     עיצוב
                     ופיתוח האתר והאפליקציות שלנו. כל פרויקט משקף את
-                    המחויבות שלנו לאיכות וחדשנות".
+                    המחויבות שלנו לאיכות וחדשנות
                 </p>
             </div>
-            <div>
-                <div class="row rows gap-1 d-flex justify-content-around my-4">
+            <div class="row gap-1 d-flex justify-content-around my-4">
 
-                    <div class="card card1 shadow-card col-xxs-12 col-sm-6 col-lg-4 my-4" style="width: 25em;">
-                        <img src="./img/pages-images/takeTheFuture.png" class="card-img-top"
-                            alt="anis mhamid let us lead you forward">
+                <div class="card card1 shadow-card col-xxs-12 col-sm-6 col-lg-4 my-4" style="width: 25em;">
+                    <img src="./img/pages-images/takeTheFuture.png" class="card-img-top"
+                        alt="anis mhamid let us lead you forward">
 
-                        <div class="card-body">
-                            <h5 class="card-title">תן לנו להוביל אותך קדימה</h5>
-                            <p class="lead pb-4" style="font-size: 1rem;">הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש
-                                במכשירים שונים, שכן הוא
-                                משקף
-                                הקפדה על פרטים ועיצוב משוכלל המשלב אלגנטיות
-                                ופונקציונליות יעילה, המבטיח אינטראקציה חלקה ונוחה למשתמשים עם התוכן. השימוש בצבעים,
-                                הטקסט,
-                                והרקע
-                                מתאימים באופן מושלם
-                                ומעניקים חווית צפייה נעימה ומרשימה. כמו כן, העמוד מציע אפשרויות ניווט ברורות ופשוטות
-                                שמאפשרות
-                                למשתמשים לגלות את התוכן
-                                בקלות ולתקשר בצורה נוחה. ההתאמה הגמישה של העמוד לשוניות המכשירים השונים מעצבת חוויה
-                                מרעננת
-                                ומותאמת
-                                אישית לכל אדם וכל
-                                צורך.</p>
-                            <a href="./pages/future.html" target="_blank">
-                                <button type="button" class="button">
-                                    <span class="button_lg">
-                                        <span class="button_sl"></span>
-                                        <span class="button_text">לעמוד הפרויקט</span>
-                                    </span>
-                                </button>
-                            </a>
-                        </div>
+                    <div class="card-body">
+                        <h5 class="card-title">תן לנו להוביל אותך קדימה</h5>
+                        <p class="lead pb-4" style="font-size: 1rem;">הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש
+                            במכשירים שונים, שכן הוא
+                            משקף
+                            הקפדה על פרטים ועיצוב משוכלל המשלב אלגנטיות
+                            ופונקציונליות יעילה, המבטיח אינטראקציה חלקה ונוחה למשתמשים עם התוכן. השימוש בצבעים,
+                            הטקסט,
+                            והרקע
+                            מתאימים באופן מושלם
+                            ומעניקים חווית צפייה נעימה ומרשימה. כמו כן, העמוד מציע אפשרויות ניווט ברורות ופשוטות
+                            שמאפשרות
+                            למשתמשים לגלות את התוכן
+                            בקלות ולתקשר בצורה נוחה. ההתאמה הגמישה של העמוד לשוניות המכשירים השונים מעצבת חוויה
+                            מרעננת
+                            ומותאמת
+                            אישית לכל אדם וכל
+                            צורך</p>
+                        <a href="./pages/future.html" target="_blank">
+                            <button type="button" id="button">
+                                <span>לעמוד הפרויקט</span>
+                            </button>
+                        </a>
                     </div>
-                    <div class="card card1 shadow-card col-xxs-12 col-sm-6 col-lg-4 my-4" style="width: 25em;">
-                        <img src="./img/pages-images/hereAndNow.png" class="card-img-top"
-                            alt="anis mhamid here And Now">
-
-                        <div class="card-body">
-                            <h5 class="card-title">כאן ועכשיו</h5>
-                            <p class="lead pb-4" style="font-size: 1rem;">הדף המאופיין ביופיו האלגנטי. העמוד משדר אווירה
-                                נהדרת. העיצוב הנקי
-                                והמאורגן שלו הופך את חווית הגלישה למהנה ונוחה
-                                למשתמשים. הטקסטים הקיימים מנחים את המבקרים בעדינות וקלים להבנה, גורמים להם להרגיש רצוי
-                                ומבורכים.
-                                בנוסף, התמונה הכוללת של
-                                העמוד משקפת משיכה מיוחדת שגורמת למבקרים לרצות לחקור יותר מהתוכן שלו ולנצל את ההצעות
-                                הזמינות.
-                                בסך
-                                הכל, לדף יש אסתטיקה
-                                בולטת שמושכת את העין והופכת את החוויה המקוונת למשתמשים למהנה ומרגשת.</p>
-                            <a href="./pages/here-and-now.html" target="_blank">
-                                <button type="button" class="button">
-                                    <span class="button_lg">
-                                        <span class="button_sl"></span>
-                                        <span class="button_text">לעמוד הפרויקט</span>
-                                    </span>
-                                </button>
-                            </a>
-                        </div>
-
-                    </div>
-
-                    <div class="card card1 shadow-card col-xxs-12 col-sm-6 col-lg-4 my-4" style="width: 25em;">
-                        <img src="./img/pages-images/free-consultation-porject5-image.png" class="card-img-top"
-                            alt="anis mhamid free-consultation-page">
-
-                        <div class="card-body">
-                            <h5 class="card-title">ייעוץ חינם</h5>
-                            <p class="lead pb-4" style="font-size: 1rem;">דף רספונסיבי שמשמש להצגת שירות "ייעוץ חינם"
-                                למשתמשים. מופיע כותרת
-                                "ייעוץ
-                                חינם" עם תיאור קצר של השירות. קיים טופס למילוי
-                                פרטים אישיים כגון שם מלא, דוא"ל ופרטי הפניה. קיימות גם סמלים חברתיים ליצירת קשר ומספר
-                                טלפון
-                                ליצירת
-                                קשר ישיר. הדף מכיל
-                                עיצוב רספונסיבי שמתאים לגדלי מסכים ולתצורות שונות של התקנים.</p>
-                            <a href="./pages/free-consultation-page.html" target="_blank">
-                                <button type="button" class="button">
-                                    <span class="button_lg">
-                                        <span class="button_sl"></span>
-                                        <span class="button_text">לעמוד הפרויקט</span>
-                                    </span>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-
                 </div>
 
-                <div class="row rows gap-1 d-flex justify-content-around my-4">
-
-                    <div class="card card1 shadow-card col-xxs-8 col-sm-6 col-lg-4 my-4" style="width: 25em;">
-                        <img src="./img/pages-images/leading-forward.png" class="card-img-top img"
-                            alt="anis mhamid leading forward">
 
 
-                        <div class="card-body">
-                            <h5 class="card-title">תן לנו להוביל אותך קדימה</h5>
-                            <p class="lead pb-4" style="font-size: 1rem;">דף מספק חווית משתמש ייחודית ומרתקת למשתמשים,
-                                ומתאפיין באלגנטיות.
-                                הדף מעוצב
-                                בקפידה כדי להבטיח תאימות לדרישות כל גדלים
-                                המסכים, כולל התקני נייד וטבלטים, כך שהוא עובד בצורה חלקה ומצוינת על כל המכשירים והמסכים.
-                            </p>
-                            <a href="pages/leading-forward.html" target="_blank"">
-                                <button type=" button" class="button">
-                                <span class="button_lg">
-                                    <span class="button_sl"></span>
-                                    <span class="button_text">לעמוד הפרויקט</span>
+                <div class="card card1 shadow-card col-xxs-12 col-sm-6 col-lg-4 my-4" style="width: 25em;">
+                    <img src="./img/pages-images/hereAndNow.png" class="card-img-top" alt="anis mhamid here And Now">
+
+                    <div class="card-body">
+                        <h5 class="card-title">כאן ועכשיו</h5>
+                        <p class="lead pb-4" style="font-size: 1rem;">הדף המאופיין ביופיו האלגנטי. העמוד משדר אווירה
+                            נהדרת. העיצוב הנקי
+                            והמאורגן שלו הופך את חווית הגלישה למהנה ונוחה
+                            למשתמשים. הטקסטים הקיימים מנחים את המבקרים בעדינות וקלים להבנה, גורמים להם להרגיש רצוי
+                            ומבורכים.
+                            בנוסף, התמונה הכוללת של
+                            העמוד משקפת משיכה מיוחדת שגורמת למבקרים לרצות לחקור יותר מהתוכן שלו ולנצל את ההצעות
+                            הזמינות.
+                            בסך
+                            הכל, לדף יש אסתטיקה
+                            בולטת שמושכת את העין והופכת את החוויה המקוונת למשתמשים למהנה ומרגשת.</p>
+                        <a href="./pages/here-and-now.html" target="_blank">
+                            <button type="button" id="button">
+                                <span>לעמוד הפרויקט</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+
+
+                <div class="card card1 shadow-card col-xxs-12 col-sm-6 col-lg-4 my-4" style="width: 25em;">
+                    <img src="./img/pages-images/free-consultation-porject5-image.png" class="card-img-top"
+                        alt="anis mhamid free-consultation-page">
+
+                    <div class="card-body">
+                        <h5 class="card-title">ייעוץ חינם</h5>
+                        <p class="lead pb-4" style="font-size: 1rem;">דף רספונסיבי שמשמש להצגת שירות "ייעוץ חינם"
+                            למשתמשים. מופיע כותרת
+                            "ייעוץ
+                            חינם" עם תיאור קצר של השירות. קיים טופס למילוי
+                            פרטים אישיים כגון שם מלא, דוא"ל ופרטי הפניה. קיימות גם סמלים חברתיים ליצירת קשר ומספר
+                            טלפון
+                            ליצירת
+                            קשר ישיר. הדף מכיל
+                            עיצוב רספונסיבי שמתאים לגדלי מסכים ולתצורות שונות של התקנים.</p>
+                        <a href="./pages/free-consultation-page.html" target="_blank">
+                            <button type="button" id="button">
+                                <span>לעמוד הפרויקט</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row rows gap-1 d-flex justify-content-around my-4">
+
+                <div class="card card1 shadow-card col-xxs-8 col-sm-6 col-lg-4 my-4" style="width: 25em;">
+                    <img src="./img/pages-images/leading-forward.png" class="card-img-top img"
+                        alt="anis mhamid leading forward">
+
+
+                    <div class="card-body">
+                        <h5 class="card-title">תן לנו להוביל אותך קדימה</h5>
+                        <p class="lead pb-4" style="font-size: 1rem;">דף מספק חווית משתמש ייחודית ומרתקת למשתמשים,
+                            ומתאפיין באלגנטיות.
+                            הדף מעוצב
+                            בקפידה כדי להבטיח תאימות לדרישות כל גדלים
+                            המסכים, כולל התקני נייד וטבלטים, כך שהוא עובד בצורה חלקה ומצוינת על כל המכשירים והמסכים.
+                        </p>
+                        <a href="pages/leading-forward.html" target="_blank"">
+                                <button type=" button" id="button">
+                            <span>לעמוד הפרויקט</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card card1 shadow-card col-xxs-8 col-sm-6 col-lg-4 my-4" style="width: 25em;">
+                    <img src="./img/pages-images/morning-coffe.jpg" class="card-img-top"
+                        alt="anis mhamid leading forward">
+
+
+                    <div class="card-body">
+                        <h5 class="card-title">קפה טוב לבוקר</h5>
+                        <p class="lead pb-4" style="font-size: 1rem;">העמוד תוכנן בצורה שמאפשרת חוויית משתמש חלקה
+                            ונעימה לכל סוגי
+                            המסכים. בעת פתיחת העמוד במסך גדול, האיזור הימני מוקדש
+                            לתמונה גדולה ומרשימה של הקפה, יחד עם טופס ההרשמה המצורף. זאת מבטה את עיצוב העמוד ומאפשרת
+                            למשתמש למלא את הפרטים בקלות.
+                            במקביל, ככל שגודל המסך קטן יותר, העיצוב מתאים את עצמו בהתאם: התמונה נמזגת ומתאימה לגודל
+                            המסך
+                            והטופס מסודר בצורה יעילה
+                            יותר על מנת לשמור על נוחות המשתמש ולהקל עליו במילוי הפרטים. בכך, העמוד מספק חוויה
+                            איכותית
+                            ונעימה למשתמשים מכל סוגי
+                            המסכים והמכשירים
+                        </p>
+                        <a href="./pages/morning-coffe-page.html" target="_blank">
+                            <button type="button" id="button">
+                                <span>לעמוד הפרויקט</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="card card1 shadow-card col-xxs-8 col-sm-6 col-lg-4 my-4" style="width: 25em;">
+                    <img src="./img/pages-images/see-the-wold.jpg" class="card-img-top"
+                        alt="anis mhamid leading forward">
+
+
+                    <div class="card-body">
+                        <h5 class="card-title">תראה את העולם מקרוב</h5>
+                        <p class="lead pb-4" style="font-size: 1rem;">עמוד זה מהווה דוגמה מושלמת לשילוב של אלגנטיות
+                            ופונקציונליות בעיצוב
+                            אתרים, תוך שימוש בפונט "Assistant" המאפשר קריאה נעימה
+                            וצבעים מרהיבים המרגיעים את העין. ההיענות שלו לכל גדלי המסכים, מה שהופך את חווית המשתמש
+                            לחלקה.
+                            מקפיד על האיכות הגבוהה והאינטראקטיביות, מציע איזון מרשים בין עיצוב ופונקציונליות</p>
+                        <a href="./pages/see-the-wold-page.html" target="_blank">
+                            <button type=" button" id="button">
+                                <span>לעמוד הפרויקט</span>
+                            </button>
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+
+            <div class="row rows gap-1 d-flex justify-content-around my-4">
+
+                <div class="card card1 shadow-card col-xxs-8 col-sm-6 col-lg-4 my-4" style="width: 25em;">
+                    <img src="./img/pages-images/think-so-far.png" class="card-img-top"
+                        alt="anis mhamid leading forward">
+
+
+                    <div class="card-body">
+                        <h5 class="card-title">לחשוב מחוץ לקופסה</h5>
+                        <p class="lead pb-4" style="font-size: 1rem;">הדף רספונסיבי למכשירים שונים, מה שאומר שעיצובו
+                            מתאים לגדלי מסכים
+                            שונים
+                            ולסוגי מכשירים שונים, ממחשבים
+                            שולחניים עד
+                            הטלפונים הניידים. העיצוב הזה מקל על חוויית המשתמש, מספק נוחות וקלות למשתמשים במגוון
+                            מכשירים,
+                            ומבטיח
+                            חוויית משתמש חלקה
+                            ונעימה</p>
+                        <a href="./pages/think-so-far-page.html" target="_blank">
+                            <button type=" button" id="button">
+                                <span>לעמוד הפרויקט</span>
                                 </span>
-                                </button>
-                            </a>
-                        </div>
+                            </button>
+                        </a>
+
                     </div>
-
-                    <div class="card card1 shadow-card col-xxs-8 col-sm-6 col-lg-4 my-4" style="width: 25em;">
-                        <img src="./img/pages-images/morning-coffe.jpg" class="card-img-top"
-                            alt="anis mhamid leading forward">
-
-
-                        <div class="card-body">
-                            <h5 class="card-title">קפה טוב לבוקר</h5>
-                            <p class="lead pb-4" style="font-size: 1rem;">"העמוד תוכנן בצורה שמאפשרת חוויית משתמש חלקה
-                                ונעימה לכל סוגי
-                                המסכים. בעת פתיחת העמוד במסך גדול, האיזור הימני מוקדש
-                                לתמונה גדולה ומרשימה של הקפה, יחד עם טופס ההרשמה המצורף. זאת מבטה את עיצוב העמוד ומאפשרת
-                                למשתמש למלא את הפרטים בקלות.
-                                במקביל, ככל שגודל המסך קטן יותר, העיצוב מתאים את עצמו בהתאם: התמונה נמזגת ומתאימה לגודל
-                                המסך
-                                והטופס מסודר בצורה יעילה
-                                יותר על מנת לשמור על נוחות המשתמש ולהקל עליו במילוי הפרטים. בכך, העמוד מספק חוויה
-                                איכותית
-                                ונעימה למשתמשים מכל סוגי
-                                המסכים והמכשירים."
-                            </p>
-                            <a href="./pages/morning-coffe-page.html" target="_blank">
-                                <button type="button" class="button">
-                                    <span class="button_lg">
-                                        <span class="button_sl"></span>
-                                        <span class="button_text">לעמוד הפרויקט</span>
-                                    </span>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-
-                    <div class="card card1 shadow-card col-xxs-8 col-sm-6 col-lg-4 my-4" style="width: 25em;">
-                        <img src="./img/pages-images/see-the-wold.jpg" class="card-img-top"
-                            alt="anis mhamid leading forward">
-
-
-                        <div class="card-body">
-                            <h5 class="card-title">תראה את העולם מקרוב</h5>
-                            <p class="lead pb-4" style="font-size: 1rem;">עמוד זה מהווה דוגמה מושלמת לשילוב של אלגנטיות
-                                ופונקציונליות בעיצוב
-                                אתרים, תוך שימוש בפונט "Assistant" המאפשר קריאה נעימה
-                                וצבעים מרהיבים המרגיעים את העין. ההיענות שלו לכל גדלי המסכים, מה שהופך את חווית המשתמש
-                                לחלקה.
-                                מקפיד על האיכות הגבוהה והאינטראקטיביות, מציע איזון מרשים בין עיצוב ופונקציונליות.</p>
-                            <a href="./pages/see-the-wold-page.html" target="_blank">
-                                <button type=" button" class="button">
-                                    <span class="button_lg">
-                                        <span class="button_sl"></span>
-                                        <span class="button_text">לעמוד הפרויקט</span>
-                                    </span>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-
                 </div>
 
-                <div class="row rows gap-1 d-flex justify-content-around my-4">
 
-                    <div class="card card1 shadow-card col-xxs-8 col-sm-6 col-lg-4 my-4" style="width: 25em;">
-                        <img src="./img/pages-images/think-so-far.png" class="card-img-top"
-                            alt="anis mhamid leading forward">
+                <div class="card card1 shadow-card col-xxs-8 col-sm-6 col-lg-4 my-4" style="width: 25em;">
+                    <img src="./img/pages-images/dream-home.jpg" class="card-img-top" alt="anis mhamid dream-home">
 
-
-                        <div class="card-body">
-                            <h5 class="card-title">לחשוב מחוץ לקופסה</h5>
-                            <p class="lead pb-4" style="font-size: 1rem;">הדף רספונסיבי למכשירים שונים, מה שאומר שעיצובו
-                                מתאים לגדלי מסכים
-                                שונים
-                                ולסוגי מכשירים שונים, ממחשבים
-                                שולחניים עד
-                                הטלפונים הניידים. העיצוב הזה מקל על חוויית המשתמש, מספק נוחות וקלות למשתמשים במגוון
-                                מכשירים,
-                                ומבטיח
-                                חוויית משתמש חלקה
-                                ונעימה.</p>
-                            <a href="./pages/think-so-far-page.html" target="_blank">
-                                <button type=" button" class="button">
-                                    <span class="button_lg">
-                                        <span class="button_sl"></span>
-                                        <span class="button_text">לעמוד הפרויקט</span>
-                                    </span>
-                                </button>
-                            </a>
-
-                        </div>
+                    <div class="card-body">
+                        <h5 class="card-title">תן לנו לבנות את בית החלומות שלך</h5>
+                        <p class="lead pb-4" style="font-size: 1rem;">הדף רספונסיבי למכשירים שונים, מה שאומר שעיצובו
+                            מתאים לגדלי מסכים
+                            שונים
+                            ולסוגי מכשירים שונים, ממחשבים
+                            שולחניים עד
+                            הטלפונים הניידים. העיצוב הזה מקל על חוויית המשתמש</p>
+                        <a href="./pages/dream-home.html" target="_blank">
+                            <button type=" button" id="button">
+                                <span>לעמוד הפרויקט</span>
+                            </button>
+                        </a>
                     </div>
+                </div>
 
 
-                    <div class="card card1 shadow-card col-xxs-8 col-sm-6 col-lg-4 my-4" style="width: 25em;">
-                        <img src="./img/pages-images/dream-home.jpg" class="card-img-top" alt="anis mhamid dream-home">
-
-                        <div class="card-body">
-                            <h5 class="card-title">תן לנו לבנות את בית החלומות שלך</h5>
-                            <p class="lead pb-4" style="font-size: 1rem;">הדף רספונסיבי למכשירים שונים, מה שאומר שעיצובו
-                                מתאים לגדלי מסכים
-                                שונים
-                                ולסוגי מכשירים שונים, ממחשבים
-                                שולחניים עד
-                                הטלפונים הניידים. העיצוב הזה מקל על חוויית המשתמש</p>
-                            <a href="./pages/dream-home.html" target="_blank">
-                                <button type=" button" class="button">
-                                    <span class="button_lg">
-                                        <span class="button_sl"></span>
-                                        <span class="button_text">לעמוד הפרויקט</span>
-                                    </span>
-                                </button>
-                            </a>
-                        </div>
-                    </div>
-
-
-                    <div class="card card1 shadow-card col-xxs-8 col-sm-6 col-lg-4 my-4" style="width: 25em;">
-                        <img src="./img/pages-images/sashion.jpg" class="card-img-top" alt="anis mhamid dream-home">
-                        <div class="card-body">
-                            <h5 class="card-title">ברוכים הבאים לעולם האופנה שלנו</h5>
-                            <p class="lead pb-4" style="font-size: 1rem;">הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש
-                                במכשירים שונים</p>
-                            <a href="./pages/fation.html" target="_blank">
-                                <button type=" button" class="button">
-                                    <span class="button_lg">
-                                        <span class="button_sl"></span>
-                                        <span class="button_text">לעמוד הפרויקט</span>
-                                    </span>
-                                </button>
-                            </a>
-                        </div>
+                <div class="card card1 shadow-card col-xxs-8 col-sm-6 col-lg-4 my-4" style="width: 25em;">
+                    <img src="./img/pages-images/sashion.jpg" class="card-img-top" alt="anis mhamid dream-home">
+                    <div class="card-body">
+                        <h5 class="card-title">ברוכים הבאים לעולם האופנה שלנו</h5>
+                        <p class="lead pb-4" style="font-size: 1rem;">הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש
+                            במכשירים שונים</p>
+                        <a href="./pages/fation.html" target="_blank">
+                            <button type=" button" id="button">
+                                <span>לעמוד הפרויקט</span>
+                            </button>
+                        </a>
                     </div>
                 </div>
             </div>

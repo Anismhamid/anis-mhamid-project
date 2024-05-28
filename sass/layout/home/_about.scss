@@ -1,6 +1,6 @@
 #about {
-    position: relative;
     width: $vpWidth;
+    position: relative;
     font-family: "Heebo", sans-serif;
     padding: 100px 20px;
     text-align: center;
@@ -38,14 +38,15 @@
             margin: 0 auto;
         }
 
-        .read-more-button {
-            @extend .button;
-        }
 
         .remaining-content {
             margin: 20px;
         }
     }
+        .read-more-button {
+            @extend #button;
+            margin-bottom: 100px;
+        }
 }
 
 @media (max-width:$laptop) {
