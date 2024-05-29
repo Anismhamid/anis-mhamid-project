@@ -13,11 +13,13 @@
     color: $title-color;
 
     // extended class profile picture from navbar 
-    .profile-picture-box {
+    .about-picture {
         @extend .profile-picture-box;
         margin: 50px auto;
         width: 150px;
         height: 150px;
+        @extend %hover;
+        transition: all 0.5s ease-in-out;
     }
 
     .title-container {
@@ -43,10 +45,11 @@
             margin: 20px;
         }
     }
-        .read-more-button {
-            @extend #button;
-            margin-bottom: 100px;
-        }
+
+    .read-more-button {
+        @extend #button;
+        margin-bottom: 100px;
+    }
 }
 
 @media (max-width:$laptop) {

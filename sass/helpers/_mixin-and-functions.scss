@@ -8,3 +8,9 @@
 %mini-black {
     color: $mini-black;
 }
+
+%hover {
+    &:hover {
+        transform: scale(1.6);
+    }
+}

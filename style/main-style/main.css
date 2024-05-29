@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+#about .about-picture:hover, #skills img:hover {
+  transform: scale(1.6);
+}
+
 .navo {
   width: 100%;
 }
@@ -18,18 +22,18 @@
   filter: drop-shadow(3px 3px 30px white);
 }
 
-.profile-picture-box, #about .profile-picture-box {
+.profile-picture-box, #about .about-picture {
   margin: auto 20px auto 0;
   width: 70px;
   height: 70px;
-  border-radius: 50%;
+  border-radius: 25%;
   overflow: hidden;
-  background-image: url("../../img/profile.jpg");
+  background-image: url("../../img/ufmtech.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
-.profile-picture-box img, #about .profile-picture-box img {
+.profile-picture-box img, #about .about-picture img {
   width: 100%;
 }
 
@@ -291,6 +295,7 @@ a {
 }
 #skills img {
   height: 6vh;
+  transition: all 0.5s ease-in-out;
 }
 
 #about {
@@ -309,10 +314,11 @@ a {
   font-style: normal;
   color: #fff;
 }
-#about .profile-picture-box {
+#about .about-picture {
   margin: 50px auto;
   width: 150px;
   height: 150px;
+  transition: all 0.5s ease-in-out;
 }
 #about .title-container {
   margin: 0 auto;
@@ -351,7 +357,7 @@ a {
   }
 }
 @media (max-width: 375px) {
-  #about .profile-picture-box {
+  #about .profile-picture-box, #about .about-picture {
     width: 90px;
     height: 90px;
   }

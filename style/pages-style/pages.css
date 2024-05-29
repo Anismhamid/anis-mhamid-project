@@ -23,15 +23,19 @@
   margin: auto 20px auto 0;
   width: 70px;
   height: 70px;
-  border-radius: 50%;
+  border-radius: 25%;
   overflow: hidden;
-  background-image: url("../../img/profile.jpg");
+  background-image: url("../../img/ufmtech.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .profile-picture-box img {
   width: 100%;
+}
+
+#skills img:hover {
+  transform: scale(1.6);
 }
 
 #main-section {
@@ -293,6 +297,7 @@ a {
 }
 #skills img {
   height: 6vh;
+  transition: all 0.5s ease-in-out;
 }
 
 footer {
