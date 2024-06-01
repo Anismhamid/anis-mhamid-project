@@ -7,7 +7,7 @@
 }
 
 .navo {
-  width: 100%;
+  width: 100vw;
 }
 
 .links-settings {
@@ -40,10 +40,12 @@
 
 #main-section {
   width: 100vw;
-  height: 90vh;
+  height: 130vh;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(to right, #00014a, #281f6f);
+  background: url("../../img/cosmic-timetraveler-iUY61D226QY-unsplash.jpg"), linear-gradient(to right, #00014a, #281f6f);
+  background-repeat: repeat;
+  background-size: cover;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,12 +99,18 @@
 .animatedBackground .layer:nth-child(5) {
   background-image: url(../../img/5.png);
   width: 80%;
+  background-position: -400px -100px;
 }
 .animatedBackground .layer:nth-child(6) {
   background-image: url(../../img/6.png);
 }
 .animatedBackground .layer:nth-child(7) {
   background-image: url(../../img/7.png);
+}
+.animatedBackground .layer:nth-child(8) {
+  background-image: url(../../img/1.png);
+  background-position: center;
+  background-size: cover;
 }
 
 .back-to-top {
