@@ -511,7 +511,7 @@ a {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: rgba(25, 28, 31, 0.7);
+  background: rgba(25, 28, 31, 0.025);
   border-radius: 50px;
   margin: 0 auto;
 }
@@ -524,27 +524,55 @@ a {
   flex-direction: column;
   margin: 0 auto;
 }
-#contact .content-box .form-box form .filed-box span {
-  color: #dc4c36;
-  font-weight: bold;
-}
 #contact .content-box .form-box form .filed-box .input {
-  height: 40px;
-  font-size: 16pt;
   color: #fff;
-  font-weight: bold;
-}
-#contact .content-box .form-box form .filed-box .input, #contact .content-box .form-box form .filed-box #textarea {
-  background: rgb(28, 31, 34);
-  border: none;
-  border-bottom: 4px solid rgb(195, 195, 195);
-}
-#contact .content-box .form-box form button:hover {
-  background: rgba(222, 222, 222, 0.5882352941);
-}
-#contact .content-box .form-box form .button_lg {
+  font-size: 0.9rem;
+  background-color: transparent;
   width: 100%;
-  background-color: rgba(255, 255, 255, 0.196);
+  box-sizing: border-box;
+  padding-inline: 0.5em;
+  padding-block: 0.7em;
+  border: none;
+  border-bottom: var(--border-height) solid var(--border-before-color);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+#contact .content-box .form-box form .filed-box .input-border {
+  position: absolute;
+  background: var(--border-after-color);
+  width: 0%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  transition: width 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
+}
+#contact .content-box .form-box form .filed-box .input:focus {
+  outline: none;
+}
+#contact .content-box .form-box form .filed-box .input:focus + .input-border {
+  width: 100%;
+}
+#contact .content-box .form-box form .filed-box .form-control {
+  position: relative;
+  --width-of-input: 300px;
+}
+#contact .content-box .form-box form .filed-box .input-alt {
+  font-size: 1.2rem;
+  padding-inline: 1em;
+  padding-block: 0.8em;
+  box-shadow: 0 4px 8px rgb(0, 0, 0);
+}
+#contact .content-box .form-box form .filed-box .input-border-alt {
+  height: 3px;
+  background: linear-gradient(90deg, #FF6464 0%, #FFBF59 50%, #47C9FF 100%);
+  transition: width 0.4s cubic-bezier(0.42, 0, 0.58, 1);
+}
+#contact .content-box .form-box form .filed-box .input-alt:focus + .input-border-alt {
+  width: 100%;
+}
+#contact .content-box .form-box form button {
+  margin-top: 20px;
+  padding: 20px;
+  background: rgba(222, 222, 222, 0.7450980392);
 }
 
 @media (max-width: 768px) {
