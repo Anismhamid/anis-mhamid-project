@@ -11,7 +11,7 @@
 
 
 <body>
-    <header class="sticky-top">
+    <header class="fixed-top">
         <nav class="navbar navo navbar-expand-lg">
             <div class="profile-picture-box">
                 <a class="navbar-brand" href="./index.html">
@@ -24,6 +24,7 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
 
+
             <div class="collapse navbar-collapse" dir="ltr" id="navbarSupportedContent">
                 <ul class="navbar-nav me-3 mb-2 mb-lg-0 h6">
                     <li class="nav-item">
@@ -33,7 +34,10 @@
                         <a class="nav-link links-settings" href="#about" alt>About me</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link links-settings" href="#projects">Projects</a>
+                        <a class="nav-link links-settings" href="#projects">HTML - CSS</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link links-settings" href="#js">javaScript - Bootstrap</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link links-settings" href="#contact">Contact Us</a>
@@ -140,7 +144,7 @@
             </div>
             <!-- Button to reveal more content -->
             <button id="button" class="read-more-button" onclick="toggleVisibility()">
-                <span>הצג עוד</span>
+                <span id="read-more">הצג עוד</span>
             </button>
             </span>
 
@@ -168,14 +172,14 @@
 
             <div class="container-fluid">
 
+                <div class="row">
 
-                <div class="row w-100">
-
-                    <div class="col-sm-12 m-auto col-lg-4 my-4">
-                        <div class="card card1 h-100 shadow-card w-75">
-                            <img src="./img/pages-images/takeTheFuture.png" class="card-img-top"
-                                alt="anis mhamid let us lead you forward">
-
+                    <div class="col-sm-12 m-auto col-md-8 col-lg-4 my-4">
+                        <div class="card card1 h-100 shadow-card w-100">
+                            <div class="card-img">
+                                <img src="./img/pages-images/takeTheFuture.png" class="card-img-top"
+                                    alt="anis mhamid let us lead you forward">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">תן לנו להוביל אותך קדימה</h5>
                                 <p class="lead pb-4 card-text">
@@ -190,11 +194,12 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-12 m-auto col-lg-4 my-4">
-                        <div class="card card1 h-100 shadow-card w-75">
-                            <img src="./img/pages-images/hereAndNow.png" class="card-img-top"
-                                alt="anis mhamid here And Now">
-
+                    <div class="col-sm-12 m-auto col-md-8 col-lg-4 my-4">
+                        <div class="card card1 h-100 shadow-card w-100">
+                            <div class="card-img">
+                                <img src="./img/pages-images/hereAndNow.png" class="card-img-top"
+                                    alt="anis mhamid here And Now">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">כאן ועכשיו</h5>
                                 <p class="lead pb-4 card-text">
@@ -209,11 +214,12 @@
                         </div>
                     </div>
 
-                    <div class="col-sm-12 m-auto col-lg-4 my-4">
-                        <div class="card card1 h-100 shadow-card w-75">
-                            <img src="./img/pages-images/free-consultation-porject5-image.png" class="card-img-top"
-                                alt="anis mhamid free-consultation-page">
-
+                    <div class="col-sm-12 m-auto col-md-8 col-lg-4 my-4">
+                        <div class="card card1 h-100 shadow-card w-100">
+                            <div class="card-img">
+                                <img src="./img/pages-images/free-consultation-porject5-image.png" class="card-img-top"
+                                    alt="anis mhamid free-consultation-page">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">ייעוץ חינם</h5>
                                 <p class="lead pb-4 card-text">
@@ -231,11 +237,12 @@
                 </div>
 
                 <div class="row my-4">
-
-                    <div class="col-sm-12 m-auto col-lg-4 my-4">
-                        <div class="card card1 h-100 shadow-card w-75">
-                            <img src="./img/pages-images/leading-forward.png" class="card-img-top img"
-                                alt="anis mhamid leading forward">
+                    <div class="col-sm-12 m-auto col-md-8 col-lg-4 my-4">
+                        <div class="card card1 h-100 shadow-card w-100">
+                            <div class="card-img">
+                                <img src="./img/pages-images/leading-forward.png" class="card-img-top img"
+                                    alt="anis mhamid leading forward">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">תן לנו להוביל אותך קדימה</h5>
                                 <p class="lead pb-4 card-text">
@@ -249,11 +256,12 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-sm-12 m-auto col-lg-4 my-4">
-                        <div class="card card1 h-100 shadow-card w-75">
-                            <img src="./img/pages-images/morning-coffe.jpg" class="card-img-top"
-                                alt="anis mhamid leading forward">
+                    <div class="col-sm-12 m-auto col-md-8 col-lg-4 my-4">
+                        <div class="card card1 h-100 shadow-card w-100">
+                            <div class="card-img">
+                                <img src="./img/pages-images/morning-coffe.jpg" class="card-img-top"
+                                    alt="anis mhamid leading forward">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">קפה טוב לבוקר</h5>
                                 <p class="lead pb-4 card-text">
@@ -269,11 +277,12 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-sm-12 m-auto col-lg-4 my-4">
-                        <div class="card card1 h-100 shadow-card w-75">
-                            <img src="./img/pages-images/see-the-wold.jpg" class="card-img-top"
-                                alt="anis mhamid leading forward">
+                    <div class="col-sm-12 m-auto col-md-8 col-lg-4 my-4">
+                        <div class="card card1 h-100 shadow-card w-100">
+                            <div class="card-img">
+                                <img src="./img/pages-images/see-the-wold.jpg" class="card-img-top"
+                                    alt="anis mhamid leading forward">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">תראה את העולם מקרוב</h5>
                                 <p class="lead pb-4 card-text">
@@ -293,13 +302,12 @@
 
 
                 <div class="row my-4">
-
-                    <div class="col-sm-12 m-auto col-lg-4 my-4">
-                        <div class="card card1 h-100 shadow-card w-75">
-                            <img src="./img/pages-images/think-so-far.png" class="card-img-top"
-                                alt="anis mhamid leading forward">
-
-
+                    <div class="col-sm-12 m-auto col-md-8 col-lg-4 my-4">
+                        <div class="card card1 h-100 shadow-card w-100">
+                            <div class="card-img">
+                                <img src="./img/pages-images/think-so-far.png" class="card-img-top"
+                                    alt="anis mhamid leading forward">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">לחשוב מחוץ לקופסה</h5>
                                 <p class="lead pb-4 card-text">הדף רספונסיבי למכשירים שונים, מה שאומר שעיצובו
@@ -322,13 +330,12 @@
                             </div>
                         </div>
                     </div>
-
-
-                    <div class="col-sm-12 m-auto col-lg-4 my-4">
-                        <div class="card card1 h-100 shadow-card w-75">
-                            <img src="./img/pages-images/dream-home.jpg" class="card-img-top"
-                                alt="anis mhamid dream-home">
-
+                    <div class="col-sm-12 m-auto col-md-8 col-lg-4 my-4">
+                        <div class="card card1 h-100 shadow-card w-100">
+                            <div class="card-img">
+                                <img src="./img/pages-images/dream-home.jpg" class="card-img-top"
+                                    alt="anis mhamid dream-home">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">תן לנו לבנות את בית החלומות שלך</h5>
                                 <p class="lead pb-4 card-text">הדף רספונסיבי למכשירים שונים, מה שאומר שעיצובו
@@ -345,11 +352,12 @@
                             </div>
                         </div>
                     </div>
-
-
-                    <div class="col-sm-12 m-auto col-lg-4 my-4">
-                        <div class="card card1 h-100 shadow-card w-75">
-                            <img src="./img/pages-images/sashion.jpg" class="card-img-top" alt="anis mhamid dream-home">
+                    <div class="col-sm-12 m-auto col-md-8 col-lg-4 my-4">
+                        <div class="card card1 h-100 shadow-card w-100">
+                            <div class="card-img">
+                                <img src="./img/pages-images/sashion.jpg" class="card-img-top"
+                                    alt="anis mhamid dream-home">
+                            </div>
                             <div class="card-body">
                                 <h5 class="card-title">ברוכים הבאים לעולם האופנה שלנו</h5>
                                 <p class="lead pb-4 card-text">הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש
@@ -367,12 +375,12 @@
 
 
                 <h2 class="display-3 shadow text-bg-dark">Bootstrap - JavaScript</h2>
-
-                <div class="row my-4">
-                    <div class="col-sm-12 m-auto m-auto col-lg-4 my-4">
-                        <div class="card card1 h-100 shadow-card w-75">
-                            <img src="./img/Calculator.png" class="card-img-top" alt="anis mhamid leading forward">
-
+                <div id="js" class="row my-4">
+                    <div class="col-sm-12 m-auto col-md-8 col-lg-4 my-4">
+                        <div class="card card1 h-100 shadow-card w-100">
+                            <div class="card-img">
+                                <img src="./img/Calculator.png" class="card-img-top" alt="anis mhamid leading forward">
+                            </div>
 
                             <div class="card-body">
                                 <h5 class="card-title">Calculator</h5>
@@ -391,11 +399,12 @@
                             </div>
                         </div>
                     </div>
+                    <div class="col-sm-12 m-auto col-md-8 col-lg-4 my-4">
+                        <div class="card card1 h-100 shadow-card w-100">
+                            <div class="card-img">
+                                <img src="./img/FlappyBird.png" class="card-img-top" alt="anis mhamid dream-home">
+                            </div>
 
-                    <div class="col-sm-12 m-auto col-lg-4 my-4">
-                        <div class="card card1 h-100 shadow-card w-75">
-                            <img src="./img/pages-images/dream-home.jpg" class="card-img-top"
-                                alt="anis mhamid dream-home">
 
                             <div class="card-body">
                                 <h5 class="card-title">תן לנו לבנות את בית החלומות שלך</h5>
@@ -405,7 +414,7 @@
                                     ולסוגי מכשירים שונים, ממחשבים
                                     שולחניים עד
                                     הטלפונים הניידים. העיצוב הזה מקל על חוויית המשתמש</p>
-                                <a href="./pages/dream-home.html" target="_blank">
+                                <a href="./pages/flappyBird.html" target="_blank">
                                     <button type=" button" id="button">
                                         <span>לעמוד הפרויקט</span>
                                     </button>
@@ -413,14 +422,87 @@
                             </div>
                         </div>
                     </div>
-
-                    <div class="col-sm-12 m-auto col-lg-4 my-4">
-                        <div class="card card1 h-100 shadow-card w-75">
-                            <img src="./img/pages-images/sashion.jpg" class="card-img-top" alt="anis mhamid dream-home">
+                    <div class="col-sm-12 m-auto col-md-8 col-lg-4 my-4">
+                        <div class="card card1 h-100 shadow-card w-100">
+                            <div class="card-img">
+                                <img src="./img/products.png" class="card-img-top" alt="anis mhamid dream-home">
+                            </div>
                             <div class="card-body">
-                                <h5 class="card-title">ברוכים הבאים לעולם האופנה שלנו</h5>
-                                <p class="lead pb-4 card-text">הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש
-                                    במכשירים שונים</p>
+                                <h5 class="card-title">עגלת קניות</h5>
+                                <p class="lead pb-4 card-text">
+                                    הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש
+                                    במכשירים שונים
+                                </p>
+                                <a href="./pages/fation.html" target="_blank">
+                                    <button type=" button" id="button">
+                                        <span>לעמוד הפרויקט</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+
+                <div class="row my-4">
+                    <div class="col-sm-12 m-auto col-md-8 col-lg-4 my-4">
+                        <div class="card card1 h-100 shadow-card w-100">
+                            <div class="card-img">
+                                <img src="./img/gueassTheNumberr.png" class="card-img-top" alt="anis mhamid Gueass The Number Project">
+                            </div>
+
+                            <div class="card-body">
+                                <h5 class="card-title">Gueass The Number</h5>
+                                <p class="lead pb-4 card-text">
+                                    Use HTML to build the page structure and front-end.
+                                    Using Bootstrap to improve the interface design and make it responsive.
+                                    Use JavaScript to implement programming logic and calculations.
+                                </p>
+                                <a href="./pages/" target="_blank">
+                                    <button type=" button" id="button">
+                                        <span>לעמוד הפרויקט</span>
+                                        </span>
+                                    </button>
+                                </a>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 m-auto col-md-8 col-lg-4 my-4">
+                        <div class="card card1 h-100 shadow-card w-100">
+                            <div class="card-img">
+                                <img src="./img/FlappyBird.png" class="card-img-top" alt="anis mhamid dream-home">
+                            </div>
+
+
+                            <div class="card-body">
+                                <h5 class="card-title">תן לנו לבנות את בית החלומות שלך</h5>
+                                <p class="lead pb-4 card-text">הדף רספונסיבי למכשירים שונים, מה שאומר שעיצובו
+                                    מתאים לגדלי מסכים
+                                    שונים
+                                    ולסוגי מכשירים שונים, ממחשבים
+                                    שולחניים עד
+                                    הטלפונים הניידים. העיצוב הזה מקל על חוויית המשתמש</p>
+                                <a href="./pages/flappyBird.html" target="_blank">
+                                    <button type=" button" id="button">
+                                        <span>לעמוד הפרויקט</span>
+                                    </button>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-12 m-auto col-md-8 col-lg-4 my-4">
+                        <div class="card card1 h-100 shadow-card w-100">
+                            <div class="card-img">
+                                <img src="./img/products.png" class="card-img-top" alt="anis mhamid dream-home">
+                            </div>
+                            <div class="card-body">
+                                <h5 class="card-title">עגלת קניות</h5>
+                                <p class="lead pb-4 card-text">
+                                    הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש
+                                    במכשירים שונים
+                                </p>
                                 <a href="./pages/fation.html" target="_blank">
                                     <button type=" button" id="button">
                                         <span>לעמוד הפרויקט</span>
@@ -489,9 +571,6 @@
                 <img src="./img/Rectangle41.png" alt="envelope image">
             </div>
         </section>
-
-
-
     </main>
 
     <footer class="bg-dark">

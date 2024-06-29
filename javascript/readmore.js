@@ -1,12 +1,12 @@
 function toggleVisibility() {
-    var moreText = document.getElementsByClassName("remaining-content")[0];
-    var buttonText = document.getElementsByClassName("button_text")[0];
+    let moreText = document.getElementsByClassName("remaining-content")[0];
+    let buttonText = document.getElementById("read-more");
 
     if (moreText.style.display === "none") {
         moreText.style.display = "block";
-        buttonText.innerHTML = "הסתר"; // Change button text when content is revealed
+        buttonText.innerHTML = "פחות";
     } else {
         moreText.style.display = "none";
-        buttonText.innerHTML = "הצג עוד"; // Change button text when content is hidden
+        buttonText.innerHTML = "הצג עוד";
     }
 }
