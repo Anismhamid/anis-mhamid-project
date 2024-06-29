@@ -10,9 +10,9 @@ initializeHole()
 hole.addEventListener('animationiteration', () => {
 
     let random = -((Math.random() * 600) + 200);
-    
+
     hole.style.top = random + "px";
-    
+
     counter++;
 });
 
