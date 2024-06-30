@@ -47,8 +47,16 @@ let startTheGame = setInterval(function () {
     let blockHiegth = parseInt(window.getComputedStyle(block).getPropertyValue("height"));
     let holeTop = parseInt(window.getComputedStyle(hole).getPropertyValue("top"));
     let cTop = -(800 - characterTop);
-    if ((characterTop > blockHiegth + 50) || ((blockLeft < 100) && (blockLeft > -50) && ((cTop < holeTop + 50) || (cTop + 50 > holeTop + 200)))) {
+    console.log(cTop);
+    if ((characterTop >= blockHiegth -30) || ((blockLeft < 100) && (blockLeft > -50) && ((cTop < holeTop) || (cTop > holeTop + 150)))) {
         alert("Game over. Score: " + (counter - 2));
+        console.log(`charTop = ${characterTop}`);
+        console.log(`blockHiegth + 50 = ${blockHiegth + 50}`);
+        console.log(`blockLeft = ${blockLeft}`);
+        console.log(`cTop = ${cTop} `);
+        console.log(`cTop + 50 = ${cTop + 50},`);
+        console.log(`holeTop + 200 = ${holeTop + 200} }`);
+
         document.getElementById('char-img').src = 'gameImages/bird3.png'
         character.style.top = 100 + "px";
         counter = 0;

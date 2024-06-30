@@ -13,6 +13,7 @@
     margin: auto;
     overflow: hidden;
     background: url('./gameImages/deshe2.png');
+    /* background: #000; */
     background-size: cover;
     background-position: center;
 
@@ -25,6 +26,7 @@
     left: 100%;
     animation: block 5s infinite linear;
     background: url('./gameImages/aniss.png');
+    background: transparent;
     background-size: cover;
     background-position: center;
     z-index: 2;
@@ -50,14 +52,20 @@
     animation: block 5s infinite linear;
     z-index: 3;
     border-radius: 50%;
+    background: transparent;
 
-    box-shadow:
-        inset 10px 0px 40px #000000;
-    background: url('./gameImages/OEcM.gif');
     background-size: cover;
     background-position: center;
 
 }
+#hole::before{
+content:  '';
+width: 100px;
+height: 100%;
+position: absolute;
+border-bottom: 1px solid #fff;
+border-top: 1px solid #fff;
+border-radius: 10%;}
 
 #character {
     width: 50px;
@@ -66,19 +74,16 @@
     top: 100px;
     left: 100px;
     border-radius: 50%;
-    z-index: 1;
-    transition: all 1s inherit initial;
+    z-index: 2;
+    transition: all 1s inherit;
 }
 
 #score-div {
-    display: flex;
-    align-items: center;
-    justify-content: center;
     position: absolute;
-    top: 200px;
-    left: 50%;
+    top: 0px;
+    left: 0;
     z-index: 4;
-    font-size: 3rem;
+    font-size: 1.5rem;
 }
 
 
