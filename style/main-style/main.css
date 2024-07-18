@@ -5,6 +5,10 @@
   box-sizing: border-box;
 }
 
+ul, li {
+  list-style-type: none;
+}
+
 #about .about-picture:hover, #skills img:hover {
   transform: scale(1.6);
 }
@@ -306,97 +310,27 @@ a {
   transition: all 0.5s ease-in-out;
 }
 
-#bicycle-man {
-  height: 100px;
-  position: absolute;
-  top: 150px;
-  right: 0;
-  animation: bicycle 30s linear infinite;
-  transition: right 1s initial;
-  z-index: 3;
-}
-
 #bicycle-man1 {
   height: 100px;
   position: absolute;
-  top: 250px;
+  bottom: 250px;
   right: auto;
   animation: bicycle1 30s linear infinite;
-  transition: right 1s initial;
+  transition: right 7s initial;
   z-index: 3;
 }
 
-@keyframes bicycle {
-  0% {
-    right: 100%;
-    transform: rotate(10deg);
-  }
-  10% {
-    transform: rotate(50deg);
-  }
-  20% {
-    transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(360deg);
-  }
-  100% {
-    left: 0;
-    transform: rotate(0deg);
-  }
-}
 @keyframes bicycle1 {
   0% {
     right: 100%;
-    transform: rotate(50deg);
-  }
-  10% {
-    transform: rotate(10deg);
-  }
-  20% {
-    transform: rotate(0deg);
-  }
-  30% {
-    transform: rotate(20deg);
+    top: 100%;
+    transform: rotate(-30deg);
   }
   50% {
-    transform: rotate(0deg);
-  }
-  60% {
-    transform: rotate(225deg);
-  }
-  70% {
-    transform: rotate(0deg);
-  }
-  80% {
-    transform: rotate(0deg);
+    top: 10%;
   }
   90% {
     transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(360deg);
   }
   100% {
     right: 0;
