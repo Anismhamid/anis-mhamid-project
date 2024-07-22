@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+ul, li {
+  list-style-type: none;
+}
+
 .navo {
   width: 100vw;
 }
@@ -179,107 +183,34 @@ a {
   background: #eee;
   cursor: pointer;
   border: 1px solid rgba(173, 173, 173, 0.333);
-  box-shadow: 0px 1px 12px rgb(122, 122, 122), 0px -2px 3px rgb(255, 255, 255) inset;
-  transition: all 0.3s;
+  background: linear-gradient(225deg, #000000, #000000);
+  box-shadow: -20px 20px 60px #211911, 20px -20px 60px #181818;
+  animation: buttonsAnime infinite initial;
+  transition: all 0.5s;
 }
 
+@keyframes buttonsAnime {
+  0% {
+    box-shadow: 0px 5px 12px rgb(255, 255, 255), 0px -2px 3px rgb(255, 255, 255) inset;
+  }
+  50% {
+    box-shadow: 0px 5px 12px rgb(255, 7, 7), 0px -2px 3px rgb(255, 0, 0) inset;
+  }
+  100% {
+    box-shadow: 0px 5px 12px rgb(255, 255, 255), 0px -2px 3px rgb(255, 255, 255) inset;
+  }
+}
 #button:hover {
   border: 1px solid rgb(217, 217, 217);
-}
-
-#button:active {
-  box-shadow: 0px 5px 12px rgb(79, 79, 79), 0px -2px 3px rgb(255, 255, 255) inset;
+  box-shadow: 0px 5px 12px rgb(255, 255, 255), 0px -2px 3px rgb(255, 255, 255) inset;
   transform: scale(0.9);
 }
 
-.Btn {
-  width: 50px;
-  height: 50px;
-  border: none;
-  border-radius: 50%;
-  background-color: rgb(27, 27, 27);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-  cursor: pointer;
-  position: relative;
-  transition-duration: 0.3s;
-  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.11);
+#button:active {
+  box-shadow: 0px 5px 12px rgb(255, 255, 255), 0px -2px 3px rgb(255, 255, 255) inset;
+  transform: scale(0.8);
 }
 
-.svgIcon {
-  fill: #2196f3;
-}
-
-.icon2 {
-  width: 18px;
-  height: 5px;
-  border-bottom: 2px solid #2196f3;
-  border-left: 2px solid #2196f3;
-  border-right: 2px solid #2196f3;
-}
-
-.tooltip {
-  position: absolute;
-  right: -80px;
-  opacity: 0;
-  background-color: rgb(12, 12, 12);
-  color: white;
-  padding: 5px 10px;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition-duration: 0.2s;
-  pointer-events: none;
-  letter-spacing: 0.5px;
-}
-
-.tooltip::before {
-  position: absolute;
-  content: "";
-  width: 10px;
-  height: 10px;
-  background-color: rgb(12, 12, 12);
-  background-size: 1000%;
-  background-position: center;
-  transform: rotate(45deg);
-  left: -5%;
-  transition-duration: 0.3s;
-}
-
-.Btn:hover .tooltip {
-  opacity: 1;
-  transition-duration: 0.3s;
-}
-
-.Btn:hover {
-  background-color: #2196f3;
-  transition-duration: 0.3s;
-}
-
-.Btn:hover .icon2 {
-  border-bottom: 2px solid black;
-  border-left: 2px solid black;
-  border-right: 2px solid black;
-}
-
-.Btn:hover .svgIcon {
-  fill: black;
-  animation: slide-in-top 0.6s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
-}
-
-@keyframes slide-in-top {
-  0% {
-    transform: translateY(-10px);
-    opacity: 0;
-  }
-  100% {
-    transform: translateY(0px);
-    opacity: 1;
-  }
-}
 #project-section {
   width: 100%;
   background-color: #212529;
@@ -308,97 +239,27 @@ a {
   transition: all 0.5s ease-in-out;
 }
 
-#bicycle-man {
-  height: 100px;
-  position: absolute;
-  top: 150px;
-  right: 0;
-  animation: bicycle 30s linear infinite;
-  transition: right 1s initial;
-  z-index: 3;
-}
-
 #bicycle-man1 {
   height: 100px;
   position: absolute;
-  top: 250px;
+  bottom: 250px;
   right: auto;
   animation: bicycle1 30s linear infinite;
-  transition: right 1s initial;
+  transition: right 7s initial;
   z-index: 3;
 }
 
-@keyframes bicycle {
-  0% {
-    right: 100%;
-    transform: rotate(10deg);
-  }
-  10% {
-    transform: rotate(50deg);
-  }
-  20% {
-    transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(360deg);
-  }
-  100% {
-    left: 0;
-    transform: rotate(0deg);
-  }
-}
 @keyframes bicycle1 {
   0% {
     right: 100%;
-    transform: rotate(50deg);
-  }
-  10% {
-    transform: rotate(10deg);
-  }
-  20% {
-    transform: rotate(0deg);
-  }
-  30% {
-    transform: rotate(20deg);
+    top: 100%;
+    transform: rotate(-30deg);
   }
   50% {
-    transform: rotate(0deg);
-  }
-  60% {
-    transform: rotate(225deg);
-  }
-  70% {
-    transform: rotate(0deg);
-  }
-  80% {
-    transform: rotate(0deg);
+    top: 10%;
   }
   90% {
     transform: rotate(0deg);
-  }
-  20% {
-    transform: rotate(360deg);
   }
   100% {
     right: 0;
