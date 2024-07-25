@@ -145,7 +145,6 @@ function resetBoard() {
 function disableCells(cellIds) {
     cellIds.forEach(id => {
         disableBoard(id);
-        console.log(`disabled - ${[id]}`);
     });
 }
 
@@ -155,25 +154,28 @@ function disableCells(cellIds) {
 function disableBoard(boardId) {
     let cells = document.querySelectorAll(`#${boardId} .a`);
     cells.forEach(cell => {
-        console.log([cell]);
         cell.onclick = null;
     });
 }
 
 
-
-function resetBbackgroundColor(boardId) {
-    let cells = document.querySelectorAll(`.${boardId} .a`);
-    cells.forEach(cell => {
-        cell.style.backgroundColor = '#000'
-    });
+function handleCellDisableAndColor(cellIds, boardId, enableBoardId, colorClass) {
+    let disableCellsResult = disableCells(cellIds);
+    if (disableCellsResult) {
+        enableBoard(enableBoardId);
+        resetBbackgroundColor(boardId);
+    } else {
+        setBoardColorRed(boardId, colorClass);
+        setBoardColorRed(boardId, colorClass)
+    }
 }
 
-let func1 = () => {
-    let disableCells1 = disableCells(['B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']);
-    if (disableCells1) {
-        enableBoard('A');
-        resetBbackgroundColor('A');
+
+let func1 = (disableCells1 = ['B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'], resetColor = 'A', BoardColor = 'A') => {
+    let disableCellsResult = disableCells(disableCells1);
+    if (disableCellsResult) {
+        resetBbackgroundColor(resetColor);
+        enableBoard(BoardColor);
 
     } else {
         setBoardColorRed('A', 'light');
@@ -197,7 +199,6 @@ let func2 = () => {
         setBoardColorRed('I', 'warning');
     }
 }
-
 let func3 = () => {
     let disableCells3 = disableCells(['A', 'B', 'C', 'D', 'E', 'F', 'H', 'I']);
     if (disableCells3) {
@@ -330,7 +331,7 @@ let disableCellsBasedOnPlayer = function (cellId) {
         case 'G1':
         case 'H1':
         case 'I1':
-            func1()
+            func1(['B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'], 'A', 'a', 'light')
             break;
 
         case 'A2':
