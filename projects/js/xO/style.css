@@ -28,7 +28,6 @@
     width: 70px;
     height: 70px;
     margin: auto;
-    /* box-shadow: 0px 0px 1px 1px black; */
     background-color: #fdc54a;
     display: flex;
     justify-content: center;
@@ -38,7 +37,7 @@
     cursor: pointer;
     position: relative;
     z-index: 1;
-    box-shadow:inset 1px 1px 20px  rgba(0, 0, 0, 0.546), 0 0 #000000;
+    box-shadow:inset 1px 1px 20px  rgba(0, 0, 0, 0.717), 0 0 #000000;
 }
 
 #turn {
@@ -47,65 +46,15 @@
     margin: 0 auto;
     position: relative;
     font-size: 4rem;
-    top: -80px;
+    top: -70px;
     right: -15px;
 }
 
 .nums {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 15rem;
-    position: absolute;
-    right: px;
-    z-index: 1;
-    animation: shadow 3s infinite;
-    font-weight: bold;
-    filter: blur(50px);
+
+    display: none;
 }
 
-@keyframes shadow {
-    0% {
-        color: rgb(255, 255, 255);
-    }
-
-    20% {
-        color: rgb(239, 216, 103);
-    }
-    30% {
-        color: rgb(255, 255, 255);
-    }
-
-    40% {
-        color: rgb(239, 216, 103);
-    }
-    50% {
-        color: rgb(255, 255, 255);
-    }
-
-    60% {
-        color: rgb(239, 216, 103);
-    }
-    70% {
-        color: rgb(255, 255, 255);
-    }
-
-    90% {
-        color: rgb(239, 216, 103);
-    }
-    100% {
-        color: rgb(255, 255, 255);
-    }
-
-    80% {
-        color: rgb(239, 216, 103);
-    }
-}
-
-.col-md-3.m-1 {
-    border: 5px solid #000000;
-    margin: auto;
-}
 
 @media (max-width:576px) {
     .a {
@@ -115,31 +64,12 @@
     }
 
     .nums {
-        color: rgb(194, 16, 16);
-        font-size: 6rem;
-        transition: color 100s initial;
-        animation: shadow 1s infinite;
+        display: none;
     }
 
-    @keyframes shadow {
-        0% {
-            color: rgb(255, 255, 255);
-        }
-
-        50% {
-            color: rgb(170, 45, 45);
-        }
-
-        70% {
-            color: rgb(255, 0, 0);
-        }
-
-        100% {
-            color: rgb(171, 52, 52);
-        }
-    }
 
     #turn {
         right: -10px;
+        top: 20px;
     }
 }
