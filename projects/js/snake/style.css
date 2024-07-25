@@ -1,0 +1,62 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#main-container{
+    background: url('./e327f46027899af3e9573ef51450bb54.avif');
+    background-position: bottom;
+    background-size: cover;
+    height: 100vh;
+}
+
+#dd {
+    width: 150px;
+    height: 300px;
+    position: relative;
+    overflow: hidden;
+    border-left: 5px solid #00ff04;
+    border-right: 5px solid #00ff04;
+    background: linear-gradient(rgba(0, 0, 0, 0.388),rgb(0, 0, 0)),url('./e327f46027899af3e9573ef51450bb54.avif');
+        background-position: bottom;
+        background-size: cover;
+}
+#topp,#bottomm{
+    width: 100px;
+    height: 60px;
+    background: #2e2e2e;
+}
+#leftt,#rightt{
+    width: 100px;
+    height: 70px;
+    background: #000;
+}
+
+#snake {
+    width: 5px;
+    height: 5px;
+    background: #ffffff;
+    position: absolute;
+    top: 30px;
+    left: 30px;
+    border-radius: 50%;
+}
+
+#food {
+    width: 10px;
+    height: 10px;
+    position: absolute;
+    border-radius: 50%;
+    background: url('./png-clipart-apple-red-illustration-apple-hand-painted-watercolor-painting-food.png');
+    background-size: cover;
+    background-position: center;
+    border-radius: 100%;
+}
+
+.snake-body-part {
+    width: 5px;
+    height: 5px;
+    background: radial-gradient(#839f2d,white,rgb(0, 0, 0));
+    position: absolute;
+    border-radius: 50%;
+}

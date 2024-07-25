@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Snake Game</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="./style.css">
+    <script src="./javaScript.js" defer></script>
+</head>
+
+<body>
+    <div class="container-fluid" id="main-container">
+        <div class="card">
+            <h5 class="text-light-emphasis bg-light card-text text-center">Snake Game - Score: <span id="score">0</span>
+                <hr class="border border-danger border-2 opacity-50">
+                You have <span id="score2" class="text-center card-text fw-bold"><span class="">10</span></span> left to
+                eat
+            </h5>
+            <div class="card-body">
+                <div id="dd" class="w-100"> 
+                    <div id="snake"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row w-75 bg-black m-auto rounded-bottom-5">
+            <div class="col">
+                <h5 class="card-subtitle">speed</h5>
+                <select aria-valuetext="speed" name="selection" id="gameSpeed" class="w-25 mx-auto rounded-5"
+                    onchange="gameSpeed()">
+                    <option value="1">1</option>
+                    <option value="5">5</option>
+                    <option value="7">7</option>
+                    <option value="10">10</option>
+                </select>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-12 m-auto text-center">
+                <button class="btn btn-outline-light" onclick="changeDirection('up')" id="topp"><i
+                        class="fa-solid fa-arrow-up"></i></button>
+            </div>
+            <div class="col-12 m-auto text-center">
+                <button class="btn btn-outline-light mx-3" onclick="changeDirection('left')" id="leftt"><i
+                        class="fa-solid fa-arrow-left"></i></button>
+                <button class="btn btn-outline-light mx-3" onclick="changeDirection('right')" id="rightt"><i
+                        class="fa-solid fa-arrow-right"></i></button>
+            </div>
+            <div class="col-12 m-auto text-center">
+                <button class="btn btn-outline-light" onclick="changeDirection('down')" id="bottomm"><i
+                        class="fa-solid fa-arrow-down"></i></button>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
