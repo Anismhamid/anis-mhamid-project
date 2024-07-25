@@ -20,10 +20,9 @@ if (player1Name != '' && player2Name != '') {
     document.getElementById('player-X').innerText = player1Name
     document.getElementById('player-O').innerText = player2Name
 } else {
-    document.getElementById('player-O').innerHTML = `<i class="fa-solid fa-o fa-spin text-danger"></i> - Player`
     document.getElementById('player-X').innerHTML = `<i class="fa-solid fa-x fa-spin"></i> - Player`
+    document.getElementById('player-O').innerHTML = `<i class="fa-solid fa-o fa-spin text-danger"></i> - Player`
 }
-setBoardColorRed()
 
 
 
@@ -50,7 +49,7 @@ function insert_X_Y(cellId) {
         }
         else if (currentPlayer === 'O') {
             disableCellsBasedOnPlayer(cellId);
-            cell.style.color = 'red'
+            cell.style.color = 'red';
         }
 
 
@@ -90,9 +89,11 @@ function handleGameEnd(winner) {
     if (winner === 'X') {
         xCounter++;
         document.getElementById('result-left').innerText = xCounter;
+        switchPlayers()
     } else if (winner === 'O') {
         oCounter++;
         document.getElementById('result-right').innerText = oCounter;
+        switchPlayers()
     }
     // resetBoard();
 }
@@ -179,7 +180,7 @@ let func1 = (disableCells1 = ['B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'], resetColo
 
     } else {
         setBoardColorRed('A', 'light');
-        setBoardColorRed('a', 'danger');
+        setBoardColorRed('a', 'warning');
     }
 }
 let func2 = () => {
@@ -331,7 +332,7 @@ let disableCellsBasedOnPlayer = function (cellId) {
         case 'G1':
         case 'H1':
         case 'I1':
-            func1(['B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'], 'A', 'a', 'light')
+            func1(['B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'], 'A', 'a', 'success')
             break;
 
         case 'A2':

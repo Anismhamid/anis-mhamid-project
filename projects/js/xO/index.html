@@ -16,427 +16,430 @@
     <link rel="stylesheet" href="./style.css">
 
 </head>
-<div class="container-fluid container-lg bg-danger text-center ">
-    <div class="border bg-body-tertiary border-black h-100 w-100">
+<div class="container-fluid container-lg bg-warning text-center ">
 
-        <div class="row bg-dark-subtle sticky-top result border border-black">
+    <div class="border border-black">
 
-            <div class="row">
-                <div class="col-4 fs-4 text-primary fw-bold" id="player-X"></div>
-                <div class="col-4 display-2">Game</div>
-                <div class="col-4 fs-4 text-danger fw-bold" id="player-O"></div>
+
+
+        <div class="card w-100">
+            <div class="row bg-dark-subtle sticky-top result border border-black">
+
+                <div class="row">
+                    <div class="col-4 fs-4 text-primary fw-bold" id="player-X"></div>
+                    <div class="col-4 display-2"><i class='fab fa-buromobelexperte'
+                            style='font-size:100px;color:red'></i></div>
+                    <div class="col-4 fs-4 text-danger fw-bold" id="player-O"></div>
+                </div>
+
+
+
+
+
+
+                <div class="row">
+                    <div class="col-4 text-primary fs-4 fw-bold" id="result-left">0</div>
+                    <div class="col-4  fs-6  fw-bold" id="result-center">0</div>
+                    <div class="col-4 text-danger text-center fs-4 fw-bold" id="result-right">0</div>
+                    <div class="col-12 fs-1 text-success fw-bold" id="turn">X</div>
+                </div>
             </div>
 
-            <div class="row">
-                <div class="col-4 text-primary fs-4 fw-bold" id="result-left">0</div>
-                <div class="col-4  fs-6  fw-bold" id="result-center">0</div>
-                <div class="col-4 text-danger text-center fs-4 fw-bold" id="result-right">0</div>
-                <div class="col-12 fs-1 text-success fw-bold" id="turn">X</div>
-            </div>
 
-        </div>
-        <div class="row my-2">
+            =
             <!-- A, B, C -->
-            <div class="col-4 col-md-8 m-auto">
-                <div class="row my-1 fs-1 d-flex justify-content-between">
+            <div class="row my-1 fs-1 d-flex justify-content-between">
 
-
-                    <!--  game  A    -->
-                    <div class="col-md-4  bg-dark m-1" id="A"><span class="nums">1</span>
-                        <div class="row my-1 d-flex justify-content-between m-auto">
-                            <div class="col-4 my-1">
-                                <div class="a gx-0 " id="A1" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1">
-                                <div class="a" id="A2" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1">
-                                <div class="a" id="A3" onclick="insert_X_Y(this.id)"></div>
-                            </div>
+                <!--  game  A    -->
+                <div class="col-4 bg-light" id="A"><span class="nums">1</span>
+                    <div class="row my-1 d-flex justify-content-between m-auto">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a gx-0 " id="A1" onclick="insert_X_Y(this.id)"></div>
                         </div>
-                        <div class="row  d-flex justify-content-between m-auto">
-                            <div class="col-4 my-1">
-                                <div class="a" id="A4" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1">
-                                <div class="a" id="A5" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1">
-                                <div class="a" id="A6" onclick="insert_X_Y(this.id)"></div>
-                            </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a" id="A2" onclick="insert_X_Y(this.id)"></div>
                         </div>
-                        <div class="row m-auto d-flex justify-content-between ">
-                            <div class="col-4 my-1">
-                                <div class="a" id="A7" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1">
-                                <div class="a" id="A8" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1">
-                                <div class="a" id="A9" class=" " onclick="insert_X_Y(this.id)"></div>
-                            </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a" id="A3" onclick="insert_X_Y(this.id)"></div>
                         </div>
                     </div>
-
-                    <!--     game  B    -->
-                    <div class="col-md-4 m-1 bg-dark " id="B"><span class="nums">2</span>
-                        <div class="row d-flex justify-content-between m-auto">
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a b" id="B1" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a b" id="B2" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a b" id="B3" onclick="insert_X_Y(this.id)"></div>
-                            </div>
+                    <div class="row  d-flex justify-content-between m-auto">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a" id="A4" onclick="insert_X_Y(this.id)"></div>
                         </div>
-                        <div class="row  d-flex justify-content-between m-auto">
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a b" id="B4" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a b" id="B5" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a b" id="B6" onclick="insert_X_Y(this.id)"></div>
-                            </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a" id="A5" onclick="insert_X_Y(this.id)"></div>
                         </div>
-                        <div class="row  d-flex justify-content-between m-auto">
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a b" id="B7" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a b " id="B8" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a b" id="B9" class=" " onclick="insert_X_Y(this.id)"></div>
-                            </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a" id="A6" onclick="insert_X_Y(this.id)"></div>
                         </div>
                     </div>
-
-
-
-                    <!--     game  C    -->
-                    <div class="col-md-4 m-1 bg-dark " id="C"><span class="nums">3</span>
-
-                        <div class="row  d-flex justify-content-between m-auto">
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a c" id="C1" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a c" id="C2" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a c" id="C3" onclick="insert_X_Y(this.id)"></div>
-                            </div>
+                    <div class="row m-auto d-flex justify-content-between ">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a" id="A7" onclick="insert_X_Y(this.id)"></div>
                         </div>
-
-
-                        <div class="row  d-flex justify-content-between m-auto">
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a c" id="C4" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a c" id="C5" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a c" id="C6" onclick="insert_X_Y(this.id)"></div>
-                            </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a" id="A8" onclick="insert_X_Y(this.id)"></div>
                         </div>
-
-
-                        <div class="row  d-flex justify-content-between m-auto">
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a c" id="C7" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a c" id="C8" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a c" id="C9" class=" " onclick="insert_X_Y(this.id)"></div>
-                            </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a" id="A9" class=" " onclick="insert_X_Y(this.id)"></div>
                         </div>
                     </div>
                 </div>
+
+                <!--     game  D    -->
+                <div class="col-4 bg-light" id="D"><span class="nums">4</span>
+
+                    <div class="row d-flex justify-content-between m-auto">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a d" id="D1" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a d" id="D2" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a d" id="D3" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                    </div>
+
+                    <div class="row  d-flex justify-content-between m-auto">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a d" id="D4" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a d" id="D5" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a d" id="D6" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                    </div>
+
+                    <div class="row  d-flex justify-content-between m-auto">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a d" id="D7" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a d" id="D8" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a d" id="D9" class=" " onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--     game  G    -->
+                <div class="col-4 bg-light" id="G"><span class="nums">3</span>
+
+                    <div class="row  d-flex justify-content-between m-auto">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a c" id="C1" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a c" id="C2" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a c" id="C3" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="row  d-flex justify-content-between m-auto">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a c" id="C4" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a c" id="C5" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a c" id="C6" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                    </div>
+
+
+                    <div class="row  d-flex justify-content-between m-auto">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a c" id="C7" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a c" id="C8" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a c" id="C9" class=" " onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- </div> -->
             </div>
 
             <!-- D, E, F -->
-            <div class="col-4 col-lg-12 m-auto">
-                <div class="row my-1 fs-1 d-flex justify-content-between">
+            <div class="row my-1 fs-1 d-flex justify-content-between">
 
-
-                    <!--     game  D    -->
-                    <div class="col-md-3 m-1 bg-dark " id="D"><span class="nums">4</span>
-
-                        <div class="row d-flex justify-content-between m-auto">
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a d" id="D1" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a d" id="D2" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a d" id="D3" onclick="insert_X_Y(this.id)"></div>
-                            </div>
+                <!--     game  B    -->
+                <div class="col-4 bg-light " id="B"><span class="nums">2</span>
+                    <div class="row d-flex justify-content-between m-auto">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a b" id="B1" onclick="insert_X_Y(this.id)"></div>
                         </div>
-
-                        <div class="row  d-flex justify-content-between m-auto">
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a d" id="D4" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a d" id="D5" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a d" id="D6" onclick="insert_X_Y(this.id)"></div>
-                            </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a b" id="B2" onclick="insert_X_Y(this.id)"></div>
                         </div>
-
-                        <div class="row  d-flex justify-content-between m-auto">
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a d" id="D7" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a d" id="D8" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a d" id="D9" class=" " onclick="insert_X_Y(this.id)"></div>
-                            </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a b" id="B3" onclick="insert_X_Y(this.id)"></div>
                         </div>
                     </div>
+                    <div class="row  d-flex justify-content-between m-auto">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a b" id="B4" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a b" id="B5" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a b" id="B6" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                    </div>
+                    <div class="row  d-flex justify-content-between m-auto">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a b" id="B7" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a b " id="B8" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a b" id="B9" class=" " onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                    </div>
+                </div>
 
 
 
-                    <!--     game  E    -->
-                    <div class="col-md-3 m-1 bg-dark " id="E"><span class="nums">5</span>
+                <!--     game  E    -->
+                <div class="col-4 bg-light " id="E"><span class="nums">5</span>
 
-                        <div class="row  d-flex justify-content-between m-auto">
+                    <div class="row  d-flex justify-content-between m-auto">
 
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a e" id="E1" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a e" id="E2" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a e" id="E3" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a e" id="E1" onclick="insert_X_Y(this.id)"></div>
                         </div>
 
-                        <div class="row  d-flex justify-content-between m-auto">
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a e" id="E4" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a e" id="E5" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a e" id="E6" onclick="insert_X_Y(this.id)"></div>
-                            </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a e" id="E2" onclick="insert_X_Y(this.id)"></div>
                         </div>
 
-                        <div class="row  d-flex justify-content-between m-auto">
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a e" id="E7" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a e" id="E8" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a e" id="E9" class=" " onclick="insert_X_Y(this.id)"></div>
-                            </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a e" id="E3" onclick="insert_X_Y(this.id)"></div>
                         </div>
 
                     </div>
 
-
-
-
-                    <!--     game  F    -->
-                    <div class="col-md-3 m-1 bg-dark " id="F"><span class="nums">6</span>
-                        <div class="row  d-flex justify-content-between m-auto">
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a f" id="F1" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a f" id="F2" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a f" id="F3" onclick="insert_X_Y(this.id)"></div>
-                            </div>
+                    <div class="row  d-flex justify-content-between m-auto">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a e" id="E4" onclick="insert_X_Y(this.id)"></div>
                         </div>
-                        <div class="row  d-flex justify-content-between m-auto">
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a f" id="F4" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a f" id="F5" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a f" id="F6" onclick="insert_X_Y(this.id)"></div>
-                            </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a e" id="E5" onclick="insert_X_Y(this.id)"></div>
                         </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a e" id="E6" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                    </div>
 
-                        <div class="row  d-flex justify-content-between m-auto">
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a f" id="F7" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a f" id="F8" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a f" id="F9" class=" " onclick="insert_X_Y(this.id)"></div>
-                            </div>
+                    <div class="row  d-flex justify-content-between m-auto">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a e" id="E7" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a e" id="E8" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a e" id="E9" class=" " onclick="insert_X_Y(this.id)"></div>
                         </div>
                     </div>
 
                 </div>
+
+
+
+
+                <!--     game  H    -->
+                <div class="col-4 bg-light " id="H"><span class="nums">6</span>
+                    <div class="row  d-flex justify-content-between m-auto">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a f" id="F1" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a f" id="F2" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a f" id="F3" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                    </div>
+                    <div class="row  d-flex justify-content-between m-auto">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a f" id="F4" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a f" id="F5" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a f" id="F6" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                    </div>
+
+                    <div class="row  d-flex justify-content-between m-auto">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a f" id="F7" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a f" id="F8" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a f" id="F9" class=" " onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                    </div>
+                </div>
+
             </div>
 
             <!-- G, H, I -->
-            <div class="col-4 col-lg-12 m-auto">
-                <div class="row my-1 fs-1 d-flex justify-content-between">
+            <div class="row my-1 fs-1 d-flex justify-content-between">
 
-                    <!--     game  G    -->
-                    <div class="col-md-3 m-1 bg-dark " id="G"><span class="nums">7</span>
-                        <div class="row  d-flex justify-content-between m-auto">
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a g" id="G1" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a g" id="G2" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a g" id="G3" onclick="insert_X_Y(this.id)"></div>
-                            </div>
+                <!--     game  C    -->
+                <div class="col-4 bg-light " id="C"><span class="nums">7</span>
+                    <div class="row  d-flex justify-content-between m-auto">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a g" id="G1" onclick="insert_X_Y(this.id)"></div>
                         </div>
-                        <div class="row  d-flex justify-content-between m-auto">
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a g" id="G4" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a g" id="G5" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a g" id="G6" onclick="insert_X_Y(this.id)"></div>
-                            </div>
+
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a g" id="G2" onclick="insert_X_Y(this.id)"></div>
                         </div>
-                        <div class="row  d-flex justify-content-between m-auto">
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a g" id="G7" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a g" id="G8" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a g" id="G9" class=" " onclick="insert_X_Y(this.id)"></div>
-                            </div>
+
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a g" id="G3" onclick="insert_X_Y(this.id)"></div>
                         </div>
                     </div>
-
-
-
-                    <!--     game  H    -->
-                    <div class="col-md-3 m-1 bg-dark " id="H"><span class="nums">8</span>
-                        <div class="row  d-flex justify-content-between m-auto">
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a h" id="H1" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a h" id="H2" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a h" id="H3" onclick="insert_X_Y(this.id)"></div>
-                            </div>
+                    <div class="row  d-flex justify-content-between m-auto">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a g" id="G4" onclick="insert_X_Y(this.id)"></div>
                         </div>
-                        <div class="row  d-flex justify-content-between m-auto">
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a h" id="H4" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a h" id="H5" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a h" id="H6" onclick="insert_X_Y(this.id)"></div>
-                            </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a g" id="G5" onclick="insert_X_Y(this.id)"></div>
                         </div>
-                        <div class="row  d-flex justify-content-between m-auto">
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a h" id="H7" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a h" id="H8" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a h" id="H9" class=" " onclick="insert_X_Y(this.id)"></div>
-                            </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a g" id="G6" onclick="insert_X_Y(this.id)"></div>
                         </div>
                     </div>
-
-
-
-
-                    <!--     game  I    -->
-                    <div class="col-md-3 m-1 bg-dark" id="I"><span class="nums">9</span>
-                        <div class="row  d-flex justify-content-between m-auto">
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a i" id="I1" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a i" id="I2" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a i" id="I3" onclick="insert_X_Y(this.id)"></div>
-                            </div>
+                    <div class="row  d-flex justify-content-between m-auto">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a g" id="G7" onclick="insert_X_Y(this.id)"></div>
                         </div>
-                        <div class="row  d-flex justify-content-between m-auto">
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a i" id="I4" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a i" id="I5" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a i" id="I6" onclick="insert_X_Y(this.id)"></div>
-                            </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a g" id="G8" onclick="insert_X_Y(this.id)"></div>
                         </div>
-                        <div class="row  d-flex justify-content-between m-auto">
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a i" id="I7" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a i" id="I8" onclick="insert_X_Y(this.id)"></div>
-                            </div>
-                            <div class="col-4 my-1 bg-dark">
-                                <div class="a i" id="I9" class=" " onclick="insert_X_Y(this.id)"></div>
-                            </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a g" id="G9" class=" " onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--     game  F    -->
+                <div class="col-4 bg-light " id="F"><span class="nums">8</span>
+                    <div class="row  d-flex justify-content-between m-auto">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a h" id="H1" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a h" id="H2" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a h" id="H3" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                    </div>
+                    <div class="row  d-flex justify-content-between m-auto">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a h" id="H4" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a h" id="H5" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a h" id="H6" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                    </div>
+                    <div class="row  d-flex justify-content-between m-auto">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a h" id="H7" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a h" id="H8" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a h" id="H9" class=" " onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!--     game  I    -->
+                <div class="col-4 bg-light" id="I"><span class="nums">9</span>
+                    <div class="row  d-flex justify-content-between m-auto">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a i" id="I1" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a i" id="I2" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a i" id="I3" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                    </div>
+                    <div class="row  d-flex justify-content-between m-auto">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a i" id="I4" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a i" id="I5" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a i" id="I6" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                    </div>
+                    <div class="row  d-flex justify-content-between m-auto">
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a i" id="I7" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a i" id="I8" onclick="insert_X_Y(this.id)"></div>
+                        </div>
+                        <div class="col-4 my-1 bg-dark">
+                            <div class="a i" id="I9" class=" " onclick="insert_X_Y(this.id)"></div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
 
-        <div class="row w-75 my-5 m-auto ">
-            <div class="col-md-6 m-auto">
-                <button id="restartButton" type="reset" class="btn btn-outline-primary w-100"
-                    onclick="resetGame()">Reset</button>
-            </div>
-        </div>
+
+
     </div>
+
+</div>
+<div class="row w-75 my-5 m-auto ">
+    <div class="col-md-6 m-auto">
+        <button id="restartButton" type="reset" class="btn btn-outline-primary w-100"
+            onclick="resetGame()">Reset</button>
+    </div>
+</div>
+
+
 </div>
 <script src="./javaScript.js"></script>
 </body>
