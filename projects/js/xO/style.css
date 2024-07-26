@@ -25,9 +25,8 @@
 
 
 .a {
-    width: 70px;
-    height: 70px;
-    margin: auto;
+    width: 100px;
+    height: 100px;
     background-color: #fdc54a;
     display: flex;
     justify-content: center;
@@ -37,7 +36,8 @@
     cursor: pointer;
     position: relative;
     z-index: 1;
-    box-shadow:inset 1px 1px 20px  rgba(0, 0, 0, 0.717), 0 0 #000000;
+    margin: 0 auto;
+    box-shadow: inset 1px 1px 10px rgb(0, 0, 0), 0 0 #000000;
 }
 
 #turn {
@@ -58,18 +58,18 @@
 
 @media (max-width:576px) {
     .a {
+        position: relative;
+        left: 5px;
         width: 30px;
-        height: 30px;
+        height: 40px;
         margin: auto;
-    }
-
-    .nums {
-        display: none;
+        border: 1px solid #000000a8;
+        font-size: 2rem;
     }
 
 
     #turn {
         right: -10px;
-        top: 20px;
+        top: -20px;
     }
 }
