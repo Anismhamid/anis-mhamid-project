@@ -37,11 +37,13 @@
     position: relative;
     z-index: 1;
     margin: 0 auto;
-    box-shadow: inset 1px 1px 10px rgb(0, 0, 0), 0 0 #000000;
+    box-shadow: inset 4px -0px 8px rgb(0, 0, 0), 0 0 #fffbfb;
 }
-.a:hover{
+
+.a:hover {
     background: #00000015;
 }
+
 #turn {
     width: 10px;
     height: 10px;
@@ -52,16 +54,19 @@
     right: -15px;
 }
 
-.nums {
 
-    display: none;
+@media (max-width:970px) {
+    .a {
+        width: 60px;
+        height: 60px;
+        margin: auto;
+        border: 1px solid #000000a8;
+        font-size: 2rem;
+    }
 }
-
 
 @media (max-width:576px) {
     .a {
-        position: relative;
-        left: 5px;
         width: 30px;
         height: 40px;
         margin: auto;
