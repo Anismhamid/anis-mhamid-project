@@ -44,7 +44,7 @@ function insert_X_Y(cellId) {
         let cell = document.getElementById(cellId);
         if (currentPlayer === 'X') {
             disableCellsBasedOnPlayer(cellId);
-            cell.style.color = 'blue'
+            cell.style.color = '#001'
 
         }
         else if (currentPlayer === 'O') {
@@ -100,27 +100,33 @@ function handleGameEnd(winner) {
 
 // פונקציה לבדיקת זוכה
 function checkWinner() {
-const winningCombinations = [
-    [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
-    [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
-    [0, 4, 8], [2, 4, 6] // Diagonals
-];
+    const winningCombinations = [
+        [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
+        [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
+        [0, 4, 8], [2, 4, 6] // Diagonals
+    ];
 
-for (let boardId of Object.keys(boardState)) {
-    let cells = boardState[boardId];
+    for (let boardId of Object.keys(boardState)) {
+        let cells = boardState[boardId];
 
-    for (let combination of winningCombinations) {
-        let [a, b, c] = combination;
-        if (cells[a] !== '' && cells[a] === cells[b] && cells[b] === cells[c]) {
-            disableBoard(boardId); // Disable the specific board
-            setBoardColorRed(boardId, 'danger');
-            
-            return cells[a]; // Return the winner ('X' or 'O')
+
+        for (let combination of winningCombinations) {
+            let [a, b, c] = combination;
+            if (cells[a] !== '' && cells[a] === cells[b] && cells[b] === cells[c]) {
+                // disableBoard(boardId);
+                setBoardColorRed(boardId, 'success');
+                if (boardId == 'A1' || 'C1' || 'D1' || 'E1' || 'F1' || 'G1' || 'H1' || 'I1') {
+                    console.log(boardId);
+                    disableBoard(['A', 'B', 'C', 'D', 'E', 'G', 'H', 'I'
+                    ]);
+                }
+                return cells[a]; // Return the winner ('X' or 'O')
+            }
         }
     }
+    return null;
 }
-return null;
-}
+
 
 
 
@@ -150,8 +156,6 @@ function disableCells(cellIds) {
     });
 }
 
-
-
 // פונקציה להשבתת קליקים בלוח מסוים
 function disableBoard(boardId) {
     let cells = document.querySelectorAll(`#${boardId} .a`);
@@ -161,53 +165,41 @@ function disableBoard(boardId) {
 }
 
 
-// function handleCellDisableAndColor(cellIds, boardId, enableBoardId, colorClass) {
-//     let disableCellsResult = disableCells(cellIds);
-//     if (disableCellsResult) {
-//         enableBoard(enableBoardId);
-//         resetBbackgroundColor(boardId);
-//     } else {
-//         setBoardColorRed(boardId, colorClass);
-//         setBoardColorRed(boardId, colorClass)
-//     }
-// }
 
-
-let func1 = (disableCells1 = ['B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'], resetColor = 'A', BoardColor = 'A') => {
-    let disableCellsResult = disableCells(disableCells1);
-    if (disableCellsResult) {
-        resetBbackgroundColor(resetColor,);
-        enableBoard(BoardColor);
-
+let func1 = () => {
+    let disableCells2 = disableCells(['B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']);
+    if (disableCells2) {
+        enableBoard('A');
+        // resetBbackgroundColor('A');
     } else {
-        setBoardColorRed(resetColor, 'light');
-        setBoardColorRed('a', 'warning');
+        setBoardColorRed('A', 'light')
+        setBoardColorRed('B', 'warning');
+        setBoardColorRed('C', 'warning');
+        setBoardColorRed('D', 'warning');
+        setBoardColorRed('E', 'warning');
+        setBoardColorRed('F', 'warning');
+        setBoardColorRed('G', 'warning');
+        setBoardColorRed('H', 'warning');
+        setBoardColorRed('I', 'warning');
     }
 }
-
-
-
-
-
-
-
-// let func2 = () => {
-//     let disableCells2 = disableCells(['A', 'B', 'C', 'E', 'F', 'G', 'H', 'I']);
-//     if (disableCells2) {
-//         enableBoard('D');
-//         resetBbackgroundColor('D');
-//     } else {
-//         setBoardColorRed('D', 'light')
-//         setBoardColorRed('A', 'warning');
-//         setBoardColorRed('B', 'warning');
-//         setBoardColorRed('C', 'warning');
-//         setBoardColorRed('E', 'warning');
-//         setBoardColorRed('F', 'warning');
-//         setBoardColorRed('G', 'warning');
-//         setBoardColorRed('H', 'warning');
-//         setBoardColorRed('I', 'warning');
-//     }
-// }
+let func2 = () => {
+    let disableCells2 = disableCells(['A', 'B', 'C', 'E', 'F', 'G', 'H', 'I']);
+    if (disableCells2) {
+        enableBoard('D');
+        resetBbackgroundColor('D');
+    } else {
+        setBoardColorRed('D', 'light')
+        setBoardColorRed('A', 'warning');
+        setBoardColorRed('B', 'warning');
+        setBoardColorRed('C', 'warning');
+        setBoardColorRed('E', 'warning');
+        setBoardColorRed('F', 'warning');
+        setBoardColorRed('G', 'warning');
+        setBoardColorRed('H', 'warning');
+        setBoardColorRed('I', 'warning');
+    }
+}
 let func3 = () => {
     let disableCells3 = disableCells(['A', 'B', 'C', 'D', 'E', 'F', 'H', 'I']);
     if (disableCells3) {
@@ -324,116 +316,45 @@ let func9 = () => {
 let disableCellsBasedOnPlayer = function (cellId) {
     enableAllCells()
     switch (cellId) {
-        case 'A1':
-        case 'B1':
-        case 'C1':
-        case 'D1':
-        case 'E1':
-        case 'F1':
-        case 'G1':
-        case 'H1':
-        case 'I1':
-            func1(['B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'], 'A', 'a')
+        case 'A1': case 'B1': case 'C1': case 'D1': case 'E1': case 'F1': case 'G1': case 'H1': case 'I1':
+            func1()
+            checkWinner()
+            break;
+        case 'A2': case 'B2': case 'C2': case 'D2': case 'E2': case 'F2': case 'G2': case 'H2': case 'I2':
+            func2()
+            checkWinner()
+            break;
+        case 'A3': case 'B3': case 'C3': case 'D3': case 'E3': case 'F3': case 'G3': case 'H3': case 'I3':
+            func3()
+            checkWinner()
+            break;
+        case 'A4': case 'B4': case 'C4': case 'D4': case 'E4': case 'F4': case 'G4': case 'H4': case 'I4':
+            func4()
+            checkWinner()
+            break;
+        case 'A5': case 'B5': case 'C5': case 'D5': case 'E5': case 'F5': case 'G5': case 'H5': case 'I5':
+            func5()
+            checkWinner()
+            break;
+        case 'A6': case 'B6': case 'C6': case 'D6': case 'E6': case 'F6': case 'G6': case 'H6': case 'I6':
+            func6()
+            checkWinner()
+            break;
+        case 'A7': case 'B7': case 'C7': case 'D7': case 'E7': case 'F7': case 'G7': case 'H7': case 'I7':
+            func7()
+            checkWinner()
+            break;
+        case 'A8': case 'B8': case 'C8': case 'D8': case 'E8': case 'F8': case 'G8': case 'H8': case 'I8':
+            func8()
+            checkWinner()
+            break;
+        case 'A9': case 'B9': case 'C9': case 'D9': case 'E9': case 'F9': case 'G9': case 'H9': case 'I9':
+            func9()
             checkWinner()
             break;
 
-        case 'A2':
-        case 'B2':
-        case 'C2':
-        case 'D2':
-        case 'E2':
-        case 'F2':
-        case 'G2':
-        case 'H2':
-        case 'I2':
-            func1(['A', 'B', 'C', 'E', 'F', 'G', 'H', 'I'],'D','a')
-            break;
-
-        case 'A3':
-        case 'B3':
-        case 'C3':
-        case 'D3':
-        case 'E3':
-        case 'F3':
-        case 'G3':
-        case 'H3':
-        case 'I3':
-            func3()
-            break;
-
-        case 'A4':
-        case 'B4':
-        case 'C4':
-        case 'D4':
-        case 'E4':
-        case 'F4':
-        case 'G4':
-        case 'H4':
-        case 'I4':
-            func4()
-            break;
-
-        case 'A5':
-        case 'B5':
-        case 'C5':
-        case 'D5':
-        case 'E5':
-        case 'F5':
-        case 'G5':
-        case 'H5':
-        case 'I5':
-            func5()
-            break;
-
-        case 'A6':
-        case 'B6':
-        case 'C6':
-        case 'D6':
-        case 'E6':
-        case 'F6':
-        case 'G6':
-        case 'H6':
-        case 'I6':
-            func6()
-            break;
-
-        case 'A7':
-        case 'B7':
-        case 'C7':
-        case 'D7':
-        case 'E7':
-        case 'F7':
-        case 'G7':
-        case 'H7':
-        case 'I7':
-            func7()
-            break;
-
-        case 'A8':
-        case 'B8':
-        case 'C8':
-        case 'D8':
-        case 'E8':
-        case 'F8':
-        case 'G8':
-        case 'H8':
-        case 'I8':
-            func8()
-            break;
-
-        case 'A9':
-        case 'B9':
-        case 'C9':
-        case 'D9':
-        case 'E9':
-        case 'F9':
-        case 'G9':
-        case 'H9':
-        case 'I9':
-            func9()
-            break;
-
         default:
+            enableAllCells()
             break;
     }
 }
