@@ -100,25 +100,26 @@ function handleGameEnd(winner) {
 
 // פונקציה לבדיקת זוכה
 function checkWinner() {
-    const winningCombinations = [
-        [0, 1, 2], [3, 4, 5], [6, 7, 8], // שורות
-        [0, 3, 6], [1, 4, 7], [2, 5, 8], // עמודות
-        [0, 4, 8], [2, 4, 6] // אלכסונים
-    ];
+const winningCombinations = [
+    [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
+    [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
+    [0, 4, 8], [2, 4, 6] // Diagonals
+];
 
-    // חזור על כל לוח
-    for (let boardId in boardState) {
-        let cells = boardState[boardId];
+for (let boardId of Object.keys(boardState)) {
+    let cells = boardState[boardId];
 
-        // בדוק כל שילוב מנצח
-        for (let combination of winningCombinations) {
-            let [a, b, c] = combination;
-            if (cells[a] !== '' && cells[a] === cells[b] && cells[b] === cells[c]) {
-                return cells[a]; // החזר את המנצח ('X' או 'O')
-            }
+    for (let combination of winningCombinations) {
+        let [a, b, c] = combination;
+        if (cells[a] !== '' && cells[a] === cells[b] && cells[b] === cells[c]) {
+            disableBoard(boardId); // Disable the specific board
+            setBoardColorRed(boardId, 'danger');
+            
+            return cells[a]; // Return the winner ('X' or 'O')
         }
     }
-    return null; // החזר null אם אין זוכה
+}
+return null;
 }
 
 
@@ -160,46 +161,53 @@ function disableBoard(boardId) {
 }
 
 
-function handleCellDisableAndColor(cellIds, boardId, enableBoardId, colorClass) {
-    let disableCellsResult = disableCells(cellIds);
-    if (disableCellsResult) {
-        enableBoard(enableBoardId);
-        resetBbackgroundColor(boardId);
-    } else {
-        setBoardColorRed(boardId, colorClass);
-        setBoardColorRed(boardId, colorClass)
-    }
-}
+// function handleCellDisableAndColor(cellIds, boardId, enableBoardId, colorClass) {
+//     let disableCellsResult = disableCells(cellIds);
+//     if (disableCellsResult) {
+//         enableBoard(enableBoardId);
+//         resetBbackgroundColor(boardId);
+//     } else {
+//         setBoardColorRed(boardId, colorClass);
+//         setBoardColorRed(boardId, colorClass)
+//     }
+// }
 
 
 let func1 = (disableCells1 = ['B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'], resetColor = 'A', BoardColor = 'A') => {
     let disableCellsResult = disableCells(disableCells1);
     if (disableCellsResult) {
-        resetBbackgroundColor(resetColor);
+        resetBbackgroundColor(resetColor,);
         enableBoard(BoardColor);
 
     } else {
-        setBoardColorRed('A', 'light');
+        setBoardColorRed(resetColor, 'light');
         setBoardColorRed('a', 'warning');
     }
 }
-let func2 = () => {
-    let disableCells2 = disableCells(['A', 'B', 'C', 'E', 'F', 'G', 'H', 'I']);
-    if (disableCells2) {
-        enableBoard('D');
-        resetBbackgroundColor('D');
-    } else {
-        setBoardColorRed('D', 'light')
-        setBoardColorRed('A', 'warning');
-        setBoardColorRed('B', 'warning');
-        setBoardColorRed('C', 'warning');
-        setBoardColorRed('E', 'warning');
-        setBoardColorRed('F', 'warning');
-        setBoardColorRed('G', 'warning');
-        setBoardColorRed('H', 'warning');
-        setBoardColorRed('I', 'warning');
-    }
-}
+
+
+
+
+
+
+
+// let func2 = () => {
+//     let disableCells2 = disableCells(['A', 'B', 'C', 'E', 'F', 'G', 'H', 'I']);
+//     if (disableCells2) {
+//         enableBoard('D');
+//         resetBbackgroundColor('D');
+//     } else {
+//         setBoardColorRed('D', 'light')
+//         setBoardColorRed('A', 'warning');
+//         setBoardColorRed('B', 'warning');
+//         setBoardColorRed('C', 'warning');
+//         setBoardColorRed('E', 'warning');
+//         setBoardColorRed('F', 'warning');
+//         setBoardColorRed('G', 'warning');
+//         setBoardColorRed('H', 'warning');
+//         setBoardColorRed('I', 'warning');
+//     }
+// }
 let func3 = () => {
     let disableCells3 = disableCells(['A', 'B', 'C', 'D', 'E', 'F', 'H', 'I']);
     if (disableCells3) {
@@ -207,14 +215,7 @@ let func3 = () => {
         setBoardColorRed('G', 'light')
     } else {
         setBoardColorRed('G', 'light')
-        setBoardColorRed('A', 'warning');
-        setBoardColorRed('B', 'warning');
-        setBoardColorRed('C', 'warning');
-        setBoardColorRed('D', 'warning');
-        setBoardColorRed('E', 'warning');
-        setBoardColorRed('F', 'warning');
-        setBoardColorRed('H', 'warning');
-        setBoardColorRed('I', 'warning');
+        setBoardColorRed(['A', 'B', 'C', 'D', 'E', 'F', 'H', 'I'], 'warning');
     }
 }
 let func4 = () => {
@@ -332,7 +333,8 @@ let disableCellsBasedOnPlayer = function (cellId) {
         case 'G1':
         case 'H1':
         case 'I1':
-            func1(['B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'], 'A', 'a', 'success')
+            func1(['B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'], 'A', 'a')
+            checkWinner()
             break;
 
         case 'A2':
@@ -344,7 +346,7 @@ let disableCellsBasedOnPlayer = function (cellId) {
         case 'G2':
         case 'H2':
         case 'I2':
-            func2()
+            func1(['A', 'B', 'C', 'E', 'F', 'G', 'H', 'I'],'D','a')
             break;
 
         case 'A3':
