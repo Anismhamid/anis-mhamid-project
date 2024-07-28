@@ -32,6 +32,7 @@ function enableAllCells() {
     }
 }
 
+
 // פונקציה לטיפול בהזזת שחקן
 function insert_X_Y(cellId) {
     let boardId = cellId[0]; // קבל את מזהה הלוח (A עד I)
@@ -48,10 +49,12 @@ function insert_X_Y(cellId) {
         if (currentPlayer === 'X') {
             disableCellsBasedOnPlayer(cellId);
             cell.style.color = 'blue'
+            checkWinner()
         }
         else if (currentPlayer === 'O') {
             disableCellsBasedOnPlayer(cellId);
             cell.style.color = 'red';
+            checkWinner()
         }
 
         // עדכן את ממשק המשתמש כדי להציג X או O בתא שלוחצים
@@ -62,24 +65,19 @@ function insert_X_Y(cellId) {
 
         if (winner) {
             handleGameEnd(winner)
-
-        } else {
+        }
+        else {
             switchPlayers();
         }
         disableCellsBasedOnPlayer(cellId);
         setBoardColor(cellId);
     }
-    console.log(boardId);
-    return boardId
 }
-
-
 
 function switchPlayers() {
     currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
     document.getElementById('turn').innerHTML = currentPlayer;
 }
-
 
 
 
@@ -96,7 +94,18 @@ function handleGameEnd(winner) {
     // resetBoard();
 }
 
-// פונקציה לבדיקת זוכה
+
+let randomGameChange = () => {
+    let lastValue = [];
+    let mm = Math.floor(Math.random() * 9) + 1
+    let hh = ['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']
+    for (let i = 0; i < hh; i++) {
+        lastValue.push(hh[i])
+    }
+    return lastValue
+}
+
+// Function to check for a winner
 function checkWinner() {
     const winningCombinations = [
         [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
@@ -107,24 +116,30 @@ function checkWinner() {
     for (let boardId of Object.keys(boardState)) {
         let cells = boardState[boardId];
 
-
         for (let combination of winningCombinations) {
             let [a, b, c] = combination;
             if (cells[a] !== '' && cells[a] === cells[b] && cells[b] === cells[c]) {
+                // Disable the board and set its color to 'danger-subtle'
                 disableBoard(boardId);
-                setBoardColor(boardId, 'success');
-                // if (boardId == 'A1' || 'C1' || 'D1' || 'E1' || 'F1' || 'G1' || 'H1' || 'I1') {
-                //     console.log(boardId);
-                //     disableBoard(['A', 'B', 'C', 'D', 'E', 'G', 'H', 'I'
-                //     ]);
-                // }
-                return cells[a]; // Return the winner ('X' or 'O')
+                let colorSet = setBoardColor(boardId, 'dark');
+                if (colorSet == 'dark') {
+                    disableBoard(boardId);
+                    enableBoard(colorSet)
+                    // 
+                }
+
+
+
+                // Return the winner ('X' or 'O')
+                return cells[a];
             }
         }
     }
+
+
+    // Return null if no winner
     return null;
 }
-
 
 
 
@@ -151,9 +166,11 @@ function resetBoard() {
 function disableCells(cellIds) {
     cellIds.forEach(id => {
         disableBoard(id);
-        
+
     });
 }
+
+
 
 // פונקציה להשבתת קליקים בלוח מסוים
 function disableBoard(boardId) {
@@ -161,8 +178,8 @@ function disableBoard(boardId) {
     cells.forEach(cell => {
         cell.onclick = null;
     });
+    return boardId
 }
-
 
 
 let func1 = () => {
@@ -389,3 +406,21 @@ function resetGame() {
     setBoardColor('H', 'warning');
     setBoardColor('I', 'warning');
 }
+
+
+
+// Add event listeners for all cells
+let eventListener = () => {
+    let id = '';
+    document.querySelectorAll('.a').forEach(cell => {
+        cell.addEventListener('click', function () {
+            // insert_X_Y(cell.id);
+            id = ''
+            id += cell.id
+            console.log(id);
+        });
+    });
+
+    return id
+}
+eventListener()
