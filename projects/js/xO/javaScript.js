@@ -95,15 +95,12 @@ function handleGameEnd(winner) {
 }
 
 // Function to update the board color and enable the board
-const updateBoardColor = (charArray) => {
-    let chars = charArray;
-    let randomChar = chars[Math.floor(Math.random() * chars.length)];
-    setBoardColor(randomChar, 'light');
+let updateBoardColor = (charArray) => {
 
+    let randomChar = charArray[Math.floor(Math.random() * charArray.length - 3)];
     console.log(randomChar);
-
+    setBoardColor(randomChar, 'light');
     enableBoard(randomChar);
-    return randomChar;
 }
 
 const checkWinner = () => {
@@ -140,10 +137,10 @@ const checkWinner = () => {
                         updateBoardColor(boardCharMap[boardId]);
                     }
                 }
-                break; // Exit loop once a winning combination is found
             }
         }
     }
+    console.log(winner);
     return winner;
 }
 
@@ -206,7 +203,7 @@ let func1 = () => {
             setBoardColor('H', 'warning');
             setBoardColor('I', 'warning');
         }
-    }, 500);
+    }, 700);
 }
 let func2 = () => {
     let disableCells2 = disableCells(['A', 'B', 'C', 'E', 'F', 'G', 'H', 'I']);
@@ -222,7 +219,7 @@ let func2 = () => {
             setBoardColor('H', 'warning');
             setBoardColor('I', 'warning');
         }
-    }, 500)
+    }, 700)
 }
 let func3 = () => {
     let disableCells3 = disableCells(['A', 'B', 'C', 'D', 'E', 'F', 'H', 'I']);
@@ -238,7 +235,7 @@ let func3 = () => {
             setBoardColor('H', 'warning');
             setBoardColor('I', 'warning');
         }
-    }, 500)
+    }, 700)
 }
 let func4 = () => {
     setTimeout(() => {
@@ -254,7 +251,7 @@ let func4 = () => {
             setBoardColor('H', 'warning');
             setBoardColor('I', 'warning');
         }
-    }, 500)
+    }, 700)
 }
 let func5 = () => {
     setTimeout(() => {
@@ -271,7 +268,7 @@ let func5 = () => {
             setBoardColor('I', 'warning');
 
         }
-    }, 500)
+    }, 700)
 }
 let func6 = () => {
     setTimeout(() => {
@@ -287,7 +284,7 @@ let func6 = () => {
             setBoardColor('G', 'warning');
             setBoardColor('I', 'warning');
         }
-    }, 500)
+    }, 700)
 }
 let func7 = () => {
     setTimeout(() => {
@@ -304,7 +301,7 @@ let func7 = () => {
             setBoardColor('H', 'warning');
             setBoardColor('I', 'warning');
         }
-    }, 500)
+    }, 700)
 }
 let func8 = () => {
     setTimeout(() => {
@@ -321,7 +318,7 @@ let func8 = () => {
             setBoardColor('H', 'warning');
             setBoardColor('I', 'warning');
         }
-    }, 500)
+    }, 700)
 }
 let func9 = () => {
     setTimeout(() => {
@@ -338,7 +335,7 @@ let func9 = () => {
             setBoardColor('G', 'warning');
             setBoardColor('H', 'warning');
         }
-    }, 500)
+    }, 700)
 }
 
 let disableCellsBasedOnPlayer = function (cellId) {
@@ -346,9 +343,6 @@ let disableCellsBasedOnPlayer = function (cellId) {
     switch (cellId) {
         case 'A1': case 'B1': case 'C1': case 'D1': case 'E1': case 'F1': case 'G1': case 'H1': case 'I1':
             func1()
-            if (cellId == 'A1') {
-                // console.log(cellId);
-            }
             break;
         case 'A2': case 'B2': case 'C2': case 'D2': case 'E2': case 'F2': case 'G2': case 'H2': case 'I2':
             func2()
@@ -438,13 +432,3 @@ function resetGame() {
 }
 
 
-
-// Add event listeners for all cells
-let eventListener = () => {
-    document.querySelectorAll('.a').forEach(cell => {
-        cell.addEventListener('click', function () {
-            console.log(cell.id);
-        });
-    });
-}
-eventListener()

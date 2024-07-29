@@ -16,14 +16,14 @@
         <link rel="stylesheet" href="./style.css">
 
 </head>
-<div class="container-fluid container-lg bg-warning text-center ">
+<div class="container-fluid container-lg bg-black text-center ">
 
-    <div class="border border-black">
+    <div class="border">
 
 
 
-        <div class="card w-100">
-            <div class="row bg-warning-subtle sticky-top result border border-black">
+        <div class="card bg-black w-100">
+            <div class="row bg-dark-subtle sticky-top result border border-black">
 
                 <div class="row m-auto">
                     <div class="col-4 m-auto fs-4 text-primary fw-bold" id="player-X"></div>
@@ -34,7 +34,7 @@
 
 
 
-                <div class="row">
+                <div class="row m-auto bg-gradient">
                     <div class="col-4 text-primary fs-4 fw-bold" id="result-left">0</div>
                     <div class="col-4  fs-6  fw-bold" id="result-center">0</div>
                     <div class="col-4 text-danger text-center fs-4 fw-bold" id="result-right">0</div>
@@ -44,22 +44,22 @@
 
 
             <!-- A, D, G -->
-            <div class="row mt-3 m-auto">
+            <div class="row mt-1 m-auto">
 
                 <!--  game  A    -->
-                <div class="col-4 bg-light" id="A">
-                    <div class="row m-auto">
+                <div class="col-4 bg-dark" id="A">
+                    <div class="row d-flex justify-content-between">
                         <div class="col-4">
                             <div class="a my-1" id="A1" onclick="insert_X_Y(this.id)"></div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-4 m-auto">
                             <div class="a my-1" id="A2" onclick="insert_X_Y(this.id)"></div>
                         </div>
-                        <div class="col-4">
+                        <div class="col-4 m-auto">
                             <div class="a my-1" id="A3" onclick="insert_X_Y(this.id)"></div>
                         </div>
                     </div>
-                    <div class="row m-auto">
+                    <div class="row d-flex justify-content-between">
                         <div class="col-4 ">
                             <div class="a my-1" id="A4" onclick="insert_X_Y(this.id)"></div>
                         </div>
@@ -70,7 +70,7 @@
                             <div class="a my-1" id="A6" onclick="insert_X_Y(this.id)"></div>
                         </div>
                     </div>
-                    <div class="row m-auto ">
+                    <div class="row d-flex justify-content-between">
                         <div class="col-4">
                             <div class="a my-1" id="A7" onclick="insert_X_Y(this.id)"></div>
                         </div>
@@ -84,9 +84,9 @@
                 </div>
 
                 <!--     game  D    -->
-                <div class="col-4 " id="D">
+                <div class="col-4  bg-dark" id="D">
 
-                    <div class="row m-auto">
+                    <div class="row d-flex justify-content-between">
                         <div class="col-4 my-1">
                             <div class="a" id="D1" onclick="insert_X_Y(this.id)"></div>
                         </div>
@@ -100,7 +100,7 @@
                         </div>
                     </div>
 
-                    <div class="row m-auto">
+                    <div class="row d-flex justify-content-between">
                         <div class="col-4 my-1">
                             <div class="a d" id="D4" onclick="insert_X_Y(this.id)"></div>
                         </div>
@@ -112,7 +112,7 @@
                         </div>
                     </div>
 
-                    <div class="row  m-auto">
+                    <div class="row d-flex justify-content-between">
                         <div class="col-4 my-1">
                             <div class="a" id="D7" onclick="insert_X_Y(this.id)"></div>
                         </div>
@@ -126,9 +126,9 @@
                 </div>
 
                 <!--     game  G    -->
-                <div class="col-4 " id="G">
+                <div class="col-4  bg-dark" id="G">
 
-                    <div class="row  d-flex justify-content-between m-auto">
+                    <div class="row  d-flex justify-content-between">
                         <div class="col-4 my-1">
                             <div class="a" id="G1" onclick="insert_X_Y(this.id)"></div>
                         </div>
@@ -141,7 +141,7 @@
                     </div>
 
 
-                    <div class="row  d-flex justify-content-between m-auto">
+                    <div class="row  d-flex justify-content-between">
                         <div class="col-4 my-1">
                             <div class="a" id="G4" onclick="insert_X_Y(this.id)"></div>
                         </div>
@@ -154,7 +154,7 @@
                     </div>
 
 
-                    <div class="row  d-flex justify-content-between m-auto">
+                    <div class="row  d-flex justify-content-between">
                         <div class="col-4 my-1">
                             <div class="a" id="G7" onclick="insert_X_Y(this.id)"></div>
                         </div>
@@ -173,8 +173,8 @@
             <div class="row m-auto">
 
                 <!--     game  B    -->
-                <div class="col-4 bg-light " id="B">
-                    <div class="row d-flex justify-content-between m-auto">
+                <div class="col-4 bg-dark " id="B">
+                    <div class="row d-flex justify-content-between">
                         <div class="col-4 my-1">
                             <div class="a b" id="B1" onclick="insert_X_Y(this.id)"></div>
                         </div>
@@ -185,7 +185,7 @@
                             <div class="a b" id="B3" onclick="insert_X_Y(this.id)"></div>
                         </div>
                     </div>
-                    <div class="row  d-flex justify-content-between m-auto">
+                    <div class="row  d-flex justify-content-between">
                         <div class="col-4 my-1">
                             <div class="a b" id="B4" onclick="insert_X_Y(this.id)"></div>
                         </div>
@@ -196,7 +196,7 @@
                             <div class="a b" id="B6" onclick="insert_X_Y(this.id)"></div>
                         </div>
                     </div>
-                    <div class="row  d-flex justify-content-between m-auto">
+                    <div class="row  d-flex justify-content-between">
                         <div class="col-4 my-1">
                             <div class="a b" id="B7" onclick="insert_X_Y(this.id)"></div>
                         </div>
@@ -211,9 +211,9 @@
 
 
                 <!--     game  E    -->
-                <div class="col-4 bg-light " id="E">
+                <div class="col-4 bg-dark " id="E">
 
-                    <div class="row  d-flex justify-content-between m-auto">
+                    <div class="row  d-flex justify-content-between">
 
                         <div class="col-4 my-1">
                             <div class="a e" id="E1" onclick="insert_X_Y(this.id)"></div>
@@ -229,7 +229,7 @@
 
                     </div>
 
-                    <div class="row  d-flex justify-content-between m-auto">
+                    <div class="row  d-flex justify-content-between">
                         <div class="col-4 my-1 ">
                             <div class="a e" id="E4" onclick="insert_X_Y(this.id)"></div>
                         </div>
@@ -240,8 +240,7 @@
                             <div class="a e" id="E6" onclick="insert_X_Y(this.id)"></div>
                         </div>
                     </div>
-
-                    <div class="row  d-flex justify-content-between m-auto">
+                    <div class="row  d-flex justify-content-between">
                         <div class="col-4 my-1">
                             <div class="a e" id="E7" onclick="insert_X_Y(this.id)"></div>
                         </div>
@@ -257,8 +256,8 @@
 
 
                 <!--     game  H    -->
-                <div class="col-4 bg-light " id="H">
-                    <div class="row  d-flex justify-content-between m-auto">
+                <div class="col-4 bg-dark " id="H">
+                    <div class="row  d-flex justify-content-between">
                         <div class="col-4 my-1">
                             <div class="a f" id="H1" onclick="insert_X_Y(this.id)"></div>
                         </div>
@@ -271,7 +270,7 @@
                             <div class="a f" id="H3" onclick="insert_X_Y(this.id)"></div>
                         </div>
                     </div>
-                    <div class="row  d-flex justify-content-between m-auto">
+                    <div class="row  d-flex justify-content-between">
                         <div class="col-4 my-1">
                             <div class="a f" id="H4" onclick="insert_X_Y(this.id)"></div>
                         </div>
@@ -282,8 +281,7 @@
                             <div class="a f" id="H6" onclick="insert_X_Y(this.id)"></div>
                         </div>
                     </div>
-
-                    <div class="row  d-flex justify-content-between m-auto">
+                    <div class="row  d-flex justify-content-between">
                         <div class="col-4 my-1">
                             <div class="a f" id="H7" onclick="insert_X_Y(this.id)"></div>
                         </div>
@@ -304,8 +302,8 @@
             <div class="row m-auto">
 
                 <!--     game  C    -->
-                <div class="col-4 bg-light " id="C">
-                    <div class="row  d-flex justify-content-between m-auto">
+                <div class="col-4 bg-dark " id="C">
+                    <div class="row  d-flex justify-content-between">
                         <div class="col-4 my-1">
                             <div class="a g" id="C1" onclick="insert_X_Y(this.id)"></div>
                         </div>
@@ -318,7 +316,7 @@
                             <div class="a g" id="C3" onclick="insert_X_Y(this.id)"></div>
                         </div>
                     </div>
-                    <div class="row  d-flex justify-content-between m-auto">
+                    <div class="row  d-flex justify-content-between">
                         <div class="col-4 my-1">
                             <div class="a g" id="C4" onclick="insert_X_Y(this.id)"></div>
                         </div>
@@ -329,7 +327,7 @@
                             <div class="a g" id="C6" onclick="insert_X_Y(this.id)"></div>
                         </div>
                     </div>
-                    <div class="row  d-flex justify-content-between m-auto">
+                    <div class="row  d-flex justify-content-between">
                         <div class="col-4 my-1">
                             <div class="a g" id="C7" onclick="insert_X_Y(this.id)"></div>
                         </div>
@@ -343,8 +341,8 @@
                 </div>
 
                 <!--     game  F    -->
-                <div class="col-4 bg-light " id="F">
-                    <div class="row  d-flex justify-content-between m-auto">
+                <div class="col-4 bg-dark " id="F">
+                    <div class="row  d-flex justify-content-between">
                         <div class="col-4 my-1">
                             <div class="a h" id="F1" onclick="insert_X_Y(this.id)"></div>
                         </div>
@@ -357,7 +355,7 @@
                             <div class="a h" id="F3" onclick="insert_X_Y(this.id)"></div>
                         </div>
                     </div>
-                    <div class="row  d-flex justify-content-between m-auto">
+                    <div class="row  d-flex justify-content-between">
                         <div class="col-4 my-1">
                             <div class="a h" id="F4" onclick="insert_X_Y(this.id)"></div>
                         </div>
@@ -368,7 +366,7 @@
                             <div class="a h" id="F6" onclick="insert_X_Y(this.id)"></div>
                         </div>
                     </div>
-                    <div class="row  d-flex justify-content-between m-auto">
+                    <div class="row  d-flex justify-content-between">
                         <div class="col-4 my-1">
                             <div class="a h" id="F7" onclick="insert_X_Y(this.id)"></div>
                         </div>
@@ -382,8 +380,8 @@
                 </div>
 
                 <!--     game  I    -->
-                <div class="col-4 bg-light" id="I">
-                    <div class="row  d-flex justify-content-between m-auto">
+                <div class="col-4 bg-dark" id="I">
+                    <div class="row  d-flex justify-content-between">
                         <div class="col-4 my-1">
                             <div class="a i" id="I1" onclick="insert_X_Y(this.id)"></div>
                         </div>
@@ -396,7 +394,7 @@
                             <div class="a i" id="I3" onclick="insert_X_Y(this.id)"></div>
                         </div>
                     </div>
-                    <div class="row  d-flex justify-content-between m-auto">
+                    <div class="row  d-flex justify-content-between">
                         <div class="col-4 my-1">
                             <div class="a i" id="I4" onclick="insert_X_Y(this.id)"></div>
                         </div>
@@ -407,7 +405,7 @@
                             <div class="a i" id="I6" onclick="insert_X_Y(this.id)"></div>
                         </div>
                     </div>
-                    <div class="row  d-flex justify-content-between m-auto">
+                    <div class="row  d-flex justify-content-between">
                         <div class="col-4 my-1">
                             <div class="a i" id="I7" onclick="insert_X_Y(this.id)"></div>
                         </div>
