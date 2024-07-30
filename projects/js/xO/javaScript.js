@@ -49,12 +49,10 @@ function insert_X_Y(cellId) {
         if (currentPlayer === 'X') {
             disableCellsBasedOnPlayer(cellId);
             cell.style.color = 'blue'
-            checkWinner()
         }
         else if (currentPlayer === 'O') {
             disableCellsBasedOnPlayer(cellId);
             cell.style.color = 'red';
-            checkWinner()
         }
 
         // עדכן את ממשק המשתמש כדי להציג X או O בתא שלוחצים
@@ -93,24 +91,28 @@ function handleGameEnd(winner) {
     }
     // resetBoard();
 }
-
-// Function to update the board color and enable the board
 let updateBoardColor = (charArray) => {
+    let newArr = [];
+    for (let i = 0; i < charArray.length; i++) {
+        // Generate a random character from charArray
+        let randomIndex = Math.floor(Math.random() * charArray.length);
+        let randomChar = charArray[randomIndex];
 
-    let randomChar = charArray[Math.floor(Math.random() * charArray.length - 3)];
-    console.log(randomChar);
-    setBoardColor(randomChar, 'light');
-    enableBoard(randomChar);
-}
+        // Add the random character to the new array
+        newArr.push(randomChar);
 
-const checkWinner = () => {
+        // Assuming these functions are defined elsewhere
+        setBoardColor(newArr, 'light');
+        enableBoard(newArr);
+    }
+};
+
+let checkWinner = () => {
     const winningCombinations = [
-        [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
-        [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
-        [0, 4, 8], [2, 4, 6] // Diagonals
+        [0, 1, 2], [3, 4, 5], [6, 7, 8], // שורות
+        [0, 3, 6], [1, 4, 7], [2, 5, 8], // עמודים
+        [0, 4, 8], [2, 4, 6] // בלאכסון
     ];
-
-    let winner = null;
 
     const boardCharMap = {
         'A': ["B", "C", "D", "E", "F", "G", "H", "I"],
@@ -123,25 +125,27 @@ const checkWinner = () => {
         'I': ["A", "B", "C", "D", "E", "F", "G", "H"]
     };
 
-    for (let boardId of Object.keys(boardState)) {
-        let cells = boardState[boardId];
+    let winner = null;
 
+    for (var boardId of Object.keys(boardState)) {
+        let cells = boardState[boardId];
         for (let combination of winningCombinations) {
             let [a, b, c] = combination;
-            if (cells[a] !== '' && cells[a] === cells[b] && cells[b] === cells[c]) {
+            if (cells[a] && cells[a] === cells[b] && cells[b] === cells[c]) {
+                winner = cells[a];
                 disableBoard(boardId);
                 setBoardColor(boardId, 'dark');
-                if (winner === null) {
-                    winner = cells[a];
-                    if (boardCharMap[boardId]) {
-                        updateBoardColor(boardCharMap[boardId]);
-                    }
+                let colorUpdateArray = boardCharMap[boardId];
+                if (colorUpdateArray) {
+                    updateBoardColor(colorUpdateArray);
                 }
+
+                return {winner, boardId }// מחזיר X או O המנצח
             }
         }
     }
-    console.log(winner);
-    return winner;
+
+    return null; // אםאין מנצח
 }
 
 
@@ -191,19 +195,19 @@ function disableBoard(boardId) {
 
 let func1 = () => {
     let disableCells2 = disableCells(['B', 'C', 'D', 'E', 'F', 'G', 'H', 'I']);
-    setTimeout(() => {
-        if (!disableCells2) {
-            setBoardColor('A', 'light')
-            setBoardColor('B', 'warning');
-            setBoardColor('C', 'warning');
-            setBoardColor('D', 'warning');
-            setBoardColor('E', 'warning');
-            setBoardColor('F', 'warning');
-            setBoardColor('G', 'warning');
-            setBoardColor('H', 'warning');
-            setBoardColor('I', 'warning');
-        }
-    }, 700);
+
+    if (!disableCells2) {
+        setBoardColor('A', 'light')
+        setBoardColor('B', 'warning');
+        setBoardColor('C', 'warning');
+        setBoardColor('D', 'warning');
+        setBoardColor('E', 'warning');
+        setBoardColor('F', 'warning');
+        setBoardColor('G', 'warning');
+        setBoardColor('H', 'warning');
+        setBoardColor('I', 'warning');
+    }
+
 }
 let func2 = () => {
     let disableCells2 = disableCells(['A', 'B', 'C', 'E', 'F', 'G', 'H', 'I']);
