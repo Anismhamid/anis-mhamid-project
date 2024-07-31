@@ -84,28 +84,7 @@
             flex-direction: column;
             margin: 0 auto;
 
-            .input {
-                color: #fff;
-                font-size: 0.9rem;
-                background-color: transparent;
-                width: 100%;
-                box-sizing: border-box;
-                padding-inline: 0.5em;
-                padding-block: 0.7em;
-                border: none;
-                border-bottom: var(--border-height) solid var(--border-before-color);
-                box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-            }
 
-            .input-border {
-                position: absolute;
-                background: var(--border-after-color);
-                width: 0%;
-                height: 2px;
-                bottom: 0;
-                left: 0;
-                transition: width 0.3s cubic-bezier(0.6, -0.28, 0.735, 0.045);
-            }
 
             .input:focus {
                 outline: none;

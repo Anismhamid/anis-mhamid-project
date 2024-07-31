@@ -135,7 +135,7 @@ let checkWinner = () => {
 
                 disableBoard(boardId);
                 setBoardColor(boardId, 'dark');
-
+                applyColorAndDisableCells(boardId)
                 let colorUpdateArray = boardCharMap[boardId];
                 if (colorUpdateArray) {
                     updateBoardColor(colorUpdateArray);
@@ -192,26 +192,27 @@ function disableBoard(boardId) {
 }
 
 
-// دالة لتطبيق الألوان وتعطيل الخلايا بناءً على الموقع المحدد
 const applyColorAndDisableCells = (disableCellsList, lightCell) => {
-    disableCells(disableCellsList);
     setTimeout(() => {
         if (!disableCells(disableCellsList)) {
             setBoardColor(lightCell, 'light');
             disableCellsList.forEach(cell => {
                 if (cell !== lightCell) {
                     setBoardColor(cell, 'warning');
+                    disableBoard(cell);
+                    console.log("lightCell",lightCell);
+                    enableBoard(lightCell)
                 }
             });
+            console.log(disableCellsList[0]);
         }
-    }, 700);
+    }, 200);
 };
 
-// دالة للتعامل مع الخلايا بناءً على الـ cellId
+
 const disableCellsBasedOnPlayer = (cellId) => {
     enableAllCells();
 
-    // تحديد الخلايا التي سيتم تعطيلها وتطبيق الألوان بناءً على الـ cellId
     switch (cellId) {
         case 'A1': case 'B1': case 'C1': case 'D1': case 'E1': case 'F1': case 'G1': case 'H1': case 'I1':
             applyColorAndDisableCells(['B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'], 'A');
@@ -238,13 +239,13 @@ const disableCellsBasedOnPlayer = (cellId) => {
             applyColorAndDisableCells(['A', 'B', 'C', 'D', 'E', 'G', 'H', 'I'], 'F');
             break;
         case 'A9': case 'B9': case 'C9': case 'D9': case 'E9': case 'F9': case 'G9': case 'H9': case 'I9':
-            applyColorAndDisableCells(['A', 'B', 'C', 'D', 'E', 'F', 'H'], 'I');
+            applyColorAndDisableCells(['A', 'B', 'C', 'D', 'E', 'F', 'H'], 'I');    checkWinner();
             break;
         default:
             break;
     }
 
-    checkWinner();
+
 }
 
 
@@ -292,15 +293,7 @@ function resetGame() {
         cell.innerText = '';
         cell.style.backgroundColor = '#f8ad30'
     });
-    setBoardColor('A', 'warning');
-    setBoardColor('B', 'warning');
-    setBoardColor('C', 'warning');
-    setBoardColor('D', 'warning');
-    setBoardColor('E', 'warning');
-    setBoardColor('F', 'warning');
-    setBoardColor('G', 'warning');
-    setBoardColor('H', 'warning');
-    setBoardColor('I', 'warning');
+    setBoardColor(['A','B','C','D','E','F','G','H','I'], 'warning');
 }
 
 
