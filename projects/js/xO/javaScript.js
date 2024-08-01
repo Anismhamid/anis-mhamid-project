@@ -35,43 +35,28 @@ function enableAllCells() {
 
 // פונקציה לטיפול בהזזת שחקן
 function insert_X_Y(cellId) {
-    let boardId = cellId[0]; // קבל את מזהה הלוח (A עד I)
-    let index = parseInt(cellId.slice(1)) - 1; // קבל את אינדקס התא (0 עד 8)
+    let boardId = cellId[0];
+    let index = parseInt(cellId.slice(1)) - 1;
 
-    // בדוק אם התא ריק
     if (boardState[boardId][index] === '') {
-
-        // עדכן את מצב הלוח
         boardState[boardId][index] = currentPlayer;
-
         let cell = document.getElementById(cellId);
 
-        if (currentPlayer === 'X') {
-            disableCellsBasedOnPlayer(cellId);
-            cell.style.color = 'blue'
-            checkWinner()
-        }
-        else if (currentPlayer === 'O') {
-            disableCellsBasedOnPlayer(cellId);
-            cell.style.color = 'red';
-        }
-
-        // עדכן את ממשק המשתמש כדי להציג X או O בתא שלוחצים
+        cell.style.color = currentPlayer === 'X' ? 'blue' : 'red';
         cell.innerText = currentPlayer;
 
-        // בדוק אם יש מנצח לאחר כל מהלך
         let winner = checkWinner();
-
         if (winner) {
-            handleGameEnd(winner)
-        }
-        else {
+            handleGameEnd(winner);
+        } else {
             switchPlayers();
         }
+
         disableCellsBasedOnPlayer(cellId);
         setBoardColor(cellId);
     }
 }
+
 
 
 function switchPlayers() {
@@ -108,6 +93,11 @@ let updateBoardColor = (charArray) => {
     }
 };
 
+
+
+
+
+
 let checkWinner = () => {
     const winningCombinations = [
         [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
@@ -135,9 +125,10 @@ let checkWinner = () => {
 
                 disableBoard(boardId);
                 setBoardColor(boardId, 'dark');
-                applyColorAndDisableCells(boardId)
+                // applyColorAndDisableCells(boardId)
                 let colorUpdateArray = boardCharMap[boardId];
                 if (colorUpdateArray) {
+                    console.log(colorUpdateArray);
                     updateBoardColor(colorUpdateArray);
                 }
                 return cells[a]; // return X or O has win
@@ -151,67 +142,29 @@ let checkWinner = () => {
 
 
 
-
-
-// פונקציה לאיפוס הלוח
-function resetBoard() {
-    for (let boardId in boardState) {
-        boardState[boardId] = ['', '', '', '', '', '', '', '', ''];
-        let cells = document.querySelectorAll(`#${boardId} .a`);
-        cells.forEach(cell => {
-            cell.innerText = '';
-            cell.style.backgroundColor = '#f8ad30';
-            cell.onclick = function () {
-                insert_X_Y(cell.id);
-            };
-        });
-    }
-    currentPlayer = 'X';
-    switchPlayers();
-}
-
-
-
-
-function disableCells(cellIds) {
-    cellIds.forEach(id => {
-        disableBoard(id);
-
-    });
-}
-
-
-
-// פונקציה להשבתת קליקים בלוח מסוים
-function disableBoard(boardId) {
-    let cells = document.querySelectorAll(`#${boardId} .a`);
-    cells.forEach(cell => {
-        cell.onclick = null;
-    });
-    return boardId
-}
-
-
 const applyColorAndDisableCells = (disableCellsList, lightCell) => {
-    setTimeout(() => {
-        if (!disableCells(disableCellsList)) {
-            setBoardColor(lightCell, 'light');
-            disableCellsList.forEach(cell => {
-                if (cell !== lightCell) {
-                    setBoardColor(cell, 'warning');
-                    disableBoard(cell);
-                    console.log("lightCell",lightCell);
-                    enableBoard(lightCell)
-                }
-            });
-            console.log(disableCellsList[0]);
+    let newarr = [];
+    if (Array.isArray(disableCellsList) && disableCellsList.length > 0) {
+        setBoardColor(lightCell, 'light');
+        enableBoard(lightCell);
+        for (let cell of disableCellsList) {
+            if (cell !== lightCell) {
+                newarr.push(cell);
+                setBoardColor(cell, 'warning');
+                disableBoard(cell);
+                setBoardColor(lightCell, 'light');
+                enableBoard(lightCell);
+            }
         }
-    }, 200);
+        
+    }
+    return newarr
 };
 
 
+
+
 const disableCellsBasedOnPlayer = (cellId) => {
-    enableAllCells();
 
     switch (cellId) {
         case 'A1': case 'B1': case 'C1': case 'D1': case 'E1': case 'F1': case 'G1': case 'H1': case 'I1':
@@ -239,7 +192,7 @@ const disableCellsBasedOnPlayer = (cellId) => {
             applyColorAndDisableCells(['A', 'B', 'C', 'D', 'E', 'G', 'H', 'I'], 'F');
             break;
         case 'A9': case 'B9': case 'C9': case 'D9': case 'E9': case 'F9': case 'G9': case 'H9': case 'I9':
-            applyColorAndDisableCells(['A', 'B', 'C', 'D', 'E', 'F', 'H'], 'I');    checkWinner();
+            applyColorAndDisableCells(['A', 'B', 'C', 'D', 'E', 'F', 'H'], 'I');
             break;
         default:
             break;
@@ -249,7 +202,23 @@ const disableCellsBasedOnPlayer = (cellId) => {
 }
 
 
+function disableCells(cellIds) {
+    let newArr = []
+    for (let cellId of cellIds) {
+        newArr.push(cellId)
+        console.log(newArr[0]);
+        disableBoard(newArr[0]);
+    }
+};
 
+// פונקציה להשבתת קליקים בלוח מסוים
+function disableBoard(boardId) {
+    let cells = document.querySelectorAll(`#${boardId} .a`);
+    cells.forEach(cell => {
+        cell.onclick = null;
+    });
+    return boardId
+}
 
 
 // פונקציה לאפשר לחיצות על כל הלוחות
@@ -293,7 +262,24 @@ function resetGame() {
         cell.innerText = '';
         cell.style.backgroundColor = '#f8ad30'
     });
-    setBoardColor(['A','B','C','D','E','F','G','H','I'], 'warning');
+    setBoardColor(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'], 'warning');
+}
+
+// פונקציה לאיפוס הלוח
+function resetBoard() {
+    for (let boardId in boardState) {
+        boardState[boardId] = ['', '', '', '', '', '', '', '', ''];
+        let cells = document.querySelectorAll(`#${boardId} .a`);
+        cells.forEach(cell => {
+            cell.innerText = '';
+            cell.style.backgroundColor = '#f8ad30';
+            cell.onclick = function () {
+                insert_X_Y(cell.id);
+            };
+        });
+    }
+    currentPlayer = 'X';
+    switchPlayers();
 }
 
 

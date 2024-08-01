@@ -137,18 +137,15 @@
 
     #contact .content-box .contact-title-box {
         text-align: center;
-        width: 100vw;
-
-        & .title {
-            padding: 80px 10px;
-        }
+        width: 80vw;
     }
 
     #contact .content-box .form-box {
-        width: 100vw;
+        width: 80vw;
         padding-top: 30px;
 
         form {
+            width: 80%;
             & .filed-box {
                 width: 80%;
             }
@@ -162,8 +159,12 @@
 
 @media (max-width:$mobile) {
     .content-box {
+        width: 100%;
         .contact-title-box {
             padding-top: 30px;
+            .title{
+                font-size: 10px;
+            }
         }
 
         .form-box {
@@ -171,7 +172,7 @@
             margin: 0 auto;
 
             form {
-                width: 100%;
+                width: 80%;
             }
         }
     }

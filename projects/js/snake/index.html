@@ -15,9 +15,9 @@
 </head>
 
 <body>
-    <div class="container-fluid" id="main-container">
+    <div class="container-fluid bg-dark" id="main-container">
         <div class="card">
-            <h5 class="text-light-emphasis bg-light card-text text-center">Snake Game - Score: <span id="score">0</span>
+            <h5 class="text-light bg-dark card-text text-center">Snake Game - Score: <span id="score">0</span>
                 <hr class="border border-danger border-2 opacity-50">
                 You have <span id="score2" class="text-center card-text fw-bold"><span class="">10</span></span> left to
                 eat
@@ -29,10 +29,10 @@
             </div>
         </div>
 
-        <div class="row w-75 bg-black m-auto rounded-bottom-5">
+        <div class="row text-end w-75 bg-black m-auto rounded-bottom-4">
             <div class="col">
-                <h5 class="card-subtitle">speed</h5>
-                <select aria-valuetext="speed" name="selection" id="gameSpeed" class="w-25 mx-auto rounded-5"
+                <h5 class="card-subtitle text-info my-1">speed</h5>
+                <select aria-valuetext="speed" name="selection" id="gameSpeed" class="w-25 mx-auto rounded-3"
                     onchange="gameSpeed()">
                     <option value="1">1</option>
                     <option value="3">3</option>
@@ -41,7 +41,7 @@
                 </select>
             </div>
         </div>
-        <div class="row">
+        <div class="row" id="buttons">
             <div class="col-12 m-auto text-center">
                 <button class="btn btn-outline-light" onclick="changeDirection('up')" id="topp"><i
                         class="fa-solid fa-arrow-up"></i></button>

@@ -21,8 +21,8 @@
     position: absolute;
     bottom: 250px;
     right: auto;
-    animation: bicycle1 30s linear infinite;
-    transition: right 7s initial;
+    animation: bicycle1 20s linear infinite;
+    transition: right 5s initial;
     z-index: 3;
 }
 
@@ -31,21 +31,15 @@
 @keyframes bicycle1 {
     0% {
         right: 100%;
-        top: 100%;
-        transform: rotate(-30deg);
+        top: 92.2%;
     }
-
 
     50% {
-        top: 10%;
-    }
-
-    90% {
-        transform: rotate(0deg);
+        top: 92.2%;
     }
 
     100% {
-        right: 0;
-        transform: rotate(0deg);
+        top: 92.2%;
+        right: -100px;
     }
 }

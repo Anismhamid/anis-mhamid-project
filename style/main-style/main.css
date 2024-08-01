@@ -433,26 +433,22 @@ a {
   position: absolute;
   bottom: 250px;
   right: auto;
-  animation: bicycle1 30s linear infinite;
-  transition: right 7s initial;
+  animation: bicycle1 20s linear infinite;
+  transition: right 5s initial;
   z-index: 3;
 }
 
 @keyframes bicycle1 {
   0% {
     right: 100%;
-    top: 100%;
-    transform: rotate(-30deg);
+    top: 92.2%;
   }
   50% {
-    top: 10%;
-  }
-  90% {
-    transform: rotate(0deg);
+    top: 92.2%;
   }
   100% {
-    right: 0;
-    transform: rotate(0deg);
+    top: 92.2%;
+    right: -100px;
   }
 }
 #about {
@@ -534,7 +530,7 @@ a {
 #projects, #projects-js {
   width: 100%;
   text-align: center;
-  background: #e0e0e0;
+  background: #bebebe;
   color: #000;
   margin: 0 auto;
 }
@@ -550,7 +546,7 @@ a {
 #projects .content .description, #projects-js .content .description {
   width: 80%;
   margin: 50px auto;
-  font-size: 1.2em;
+  font-size: 2em;
 }
 
 @media (max-width: 568px) {
@@ -689,14 +685,14 @@ img:hover {
   }
   #contact .content-box .contact-title-box {
     text-align: center;
-    width: 100vw;
-  }
-  #contact .content-box .contact-title-box .title {
-    padding: 80px 10px;
+    width: 80vw;
   }
   #contact .content-box .form-box {
-    width: 100vw;
+    width: 80vw;
     padding-top: 30px;
+  }
+  #contact .content-box .form-box form {
+    width: 80%;
   }
   #contact .content-box .form-box form .filed-box {
     width: 80%;
@@ -706,15 +702,21 @@ img:hover {
   }
 }
 @media (max-width: 568px) {
+  .content-box {
+    width: 100%;
+  }
   .content-box .contact-title-box {
     padding-top: 30px;
+  }
+  .content-box .contact-title-box .title {
+    font-size: 10px;
   }
   .content-box .form-box {
     width: 100%;
     margin: 0 auto;
   }
   .content-box .form-box form {
-    width: 100%;
+    width: 80%;
   }
 }
 footer {

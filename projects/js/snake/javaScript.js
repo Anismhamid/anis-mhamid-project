@@ -20,10 +20,10 @@ function createFood() {
         document.getElementById('dd').appendChild(foodEl);
     }
 
-    let randomTop = Math.floor(Math.random() * (250 - 10) +10);
-    let randomLeft = Math.floor(Math.random() * (200- 10) + 10);
+    let randomLeft = Math.floor(Math.random() * (460- 10) );
+    let randomTop = Math.floor(Math.random() * (450 - 10) );
 
-    foodEl.style.top = randomTop + "px";
+    foodEl.style.top = randomTop  + "px";
     foodEl.style.left = randomLeft + "px";
 }
 
@@ -115,8 +115,8 @@ function moveSnake() {
         document.getElementById('score').innerText = score;
         document.getElementById('score2').innerText = --foodEatCounter;
         // Move food to a new random position
-        let randomTop = Math.floor(Math.random() * (150 - 20) + 10);
-        let randomLeft = Math.floor(Math.random() * (150 - 20) + 10);
+        let randomTop = Math.floor(Math.random() * (460 - 20) + 10);
+        let randomLeft = Math.floor(Math.random() * (350 - 20) + 10);
         foodEl.style.top = randomTop + "px";
         foodEl.style.left = randomLeft + "px";
 
