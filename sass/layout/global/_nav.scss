@@ -7,8 +7,9 @@
     font-size: 1.2em;
 
     &:hover {
-        color: #ff0099;
-        filter: drop-shadow(3px 3px 30px white);
+        color: aliceblue;
+        text-shadow:1px 1px 70px rgb(255, 255, 255);
+        transition: filter 3s ease-in-out;
     }
 }
 

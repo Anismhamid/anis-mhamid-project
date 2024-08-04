@@ -26,7 +26,7 @@
 
 .content-box {
     background: rgba(4, 193, 250, 0.732);
-    /* border-radius: 10px 100px 10px 10px; */
+    // border-radius: 10px 100px 10px 10px;
     transition: all 0.5s ease-in-out;
     padding: 60px 25px 25px 25px;
     transform-style: preserve-3d;
@@ -59,22 +59,22 @@
 }
 
 .content-box .see-more {
-    cursor: pointer;
     margin-top: 1rem;
     display: inline-block;
     font-weight: 900;
     font-size: 1rem;
     text-transform: uppercase;
     color: rgb(7, 185, 255);
-    /* border-radius: 5px; */
     background: white;
     padding: 0.5rem 0.7rem;
     transition: all 0.5s ease-in-out;
     transform: translate3d(0px, 0px, 20px);
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><foreignObject width="100%" height="100%"><div xmlns="http://www.w3.org/1999/xhtml"  style="width:100%;height:100%;background:linear-gradient(135deg,%23999 40%,%239950 0),linear-gradient(45deg, %230000 40%, %23777 0 60%,%230000 0)" ></div></foreignObject></svg>') 0 0, default;
 }
 
 .content-box .see-more:hover {
     transform: translate3d(0px, 0px, 60px);
+
 }
 
 .date-box {
@@ -101,4 +101,3 @@
     font-size: 1rem;
     font-weight: 700;
 }
-

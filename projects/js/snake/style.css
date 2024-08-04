@@ -18,7 +18,7 @@
     overflow: hidden;
     border-left: 5px solid #00ff04;
     border-right: 5px solid #00ff04;
-    background: linear-gradient(rgba(0, 0, 0, 0.818),purple, rgb(0, 0, 0));
+    background: linear-gradient(rgba(0, 0, 0, 0.818),rgb(69, 69, 69), rgb(0, 0, 0));
     background-position: bottom;
     background-size: cover;
 }

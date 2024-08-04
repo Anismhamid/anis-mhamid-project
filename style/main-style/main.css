@@ -5,7 +5,12 @@
   box-sizing: border-box;
 }
 
-ul, li {
+html {
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><foreignObject width="100%" height="100%"><div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;border-radius:50%;background:conic-gradient(from 90deg at 4px 4px,%230000 90deg, %232f2b2f 0) -4px -4px/calc(50% + 2px) calc(50% + 2px),repeating-radial-gradient(%230000 0 22%,%232f2b2f 23% 32%);" ></div></foreignObject></svg>') 24 24, auto;
+}
+
+ul,
+li {
   list-style-type: none;
 }
 
@@ -22,8 +27,9 @@ ul, li {
   font-size: 1.2em;
 }
 .links-settings:hover {
-  color: #ff0099;
-  filter: drop-shadow(3px 3px 30px white);
+  color: aliceblue;
+  text-shadow: 1px 1px 70px rgb(255, 255, 255);
+  transition: filter 3s ease-in-out;
 }
 
 .profile-picture-box, #about .about-picture {
@@ -68,7 +74,6 @@ ul, li {
 
 .content-box {
   background: rgba(4, 193, 250, 0.732);
-  /* border-radius: 10px 100px 10px 10px; */
   transition: all 0.5s ease-in-out;
   padding: 60px 25px 25px 25px;
   transform-style: preserve-3d;
@@ -101,18 +106,17 @@ ul, li {
 }
 
 .content-box .see-more {
-  cursor: pointer;
   margin-top: 1rem;
   display: inline-block;
   font-weight: 900;
   font-size: 1rem;
   text-transform: uppercase;
   color: rgb(7, 185, 255);
-  /* border-radius: 5px; */
   background: white;
   padding: 0.5rem 0.7rem;
   transition: all 0.5s ease-in-out;
   transform: translate3d(0px, 0px, 20px);
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><foreignObject width="100%" height="100%"><div xmlns="http://www.w3.org/1999/xhtml"  style="width:100%;height:100%;background:linear-gradient(135deg,%23999 40%,%239950 0),linear-gradient(45deg, %230000 40%, %23777 0 60%,%230000 0)" ></div></foreignObject></svg>') 0 0, default;
 }
 
 .content-box .see-more:hover {
@@ -383,7 +387,6 @@ a {
   font-size: 18px;
   border-radius: 0.5em;
   background: #eee;
-  cursor: pointer;
   border: 1px solid rgba(173, 173, 173, 0.333);
   background: linear-gradient(225deg, #000000, #000000);
   box-shadow: -20px 20px 60px #211911, 20px -20px 60px #181818;
@@ -406,6 +409,7 @@ a {
   border: 1px solid rgb(217, 217, 217);
   box-shadow: 0px 5px 12px rgb(255, 255, 255), 0px -2px 3px rgb(255, 255, 255) inset;
   transform: scale(0.9);
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><foreignObject width="100%" height="100%"><div xmlns="http://www.w3.org/1999/xhtml"  style="width:100%;height:100%;background:linear-gradient(135deg,%23999 40%,%239950 0),linear-gradient(45deg, %230000 40%, %23777 0 60%,%230000 0)" ></div></foreignObject></svg>') 0 0, default;
 }
 
 #button:active, #about .read-more-button:active {
@@ -560,11 +564,6 @@ a {
     font-size: 1.5em;
   }
 }
-img:hover {
-  transform: scale(1.1);
-  transition: transform 1s ease-in-out;
-}
-
 #contact {
   width: 100%;
   background-color: rgb(8, 10, 11);
