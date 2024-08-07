@@ -34,7 +34,6 @@ li {
   height: 70px;
   border-radius: 25%;
   overflow: hidden;
-  background-image: url("../../../img/gif/welcome.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -557,7 +556,7 @@ a {
 }
 #contact {
   width: 100%;
-  background-color: rgb(56, 77, 182);
+  background-color: rgb(36, 36, 36);
   text-align: right;
   border-top: 5px solid #dc4c36;
   color: white;

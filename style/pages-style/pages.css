@@ -35,7 +35,6 @@ li {
   height: 70px;
   border-radius: 25%;
   overflow: hidden;
-  background-image: url("../../../img/gif/welcome.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -216,14 +215,6 @@ a {
 #project-section {
   width: 100%;
   background-color: #212529;
-}
-#project-section > .project-picture-box {
-  width: 30%;
-  padding: 200px 0;
-  margin: 0 auto;
-}
-#project-section > .project-picture-box img {
-  width: 70;
 }
 
 #skills {
