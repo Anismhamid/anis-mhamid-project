@@ -3,13 +3,14 @@
     height: 130vh;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(to right, #00014acb, #281f6fb4),url('../../img/cosmic-timetraveler-iUY61D226QY-unsplash.jpg'),;
+    background: linear-gradient(to bottom, #00014acb, #110c33b4),url('../../img/cosmic-timetraveler-iUY61D226QY-unsplash.jpg'),;
     background-repeat: repeat;
     background-size: cover;
     @include flex;
     flex-direction: column;
     color: $mini-black;
     text-align: center;
+    ;
 
     .main-title-box {
         color: #ffffff;
@@ -44,10 +45,12 @@
         height: 100%;
         background-position: center;
         background-size: cover;
+        
     }
 
     .layer:nth-child(1) {
         background-image: $layer-1-background;
+        
 
     }
 

@@ -10,8 +10,10 @@
     width: 50%;
     text-align: center;
 
+
     img {
         width: 100%;
+        mix-blend-mode: screen;
     }
 }
 
@@ -117,7 +119,7 @@
             }
         }
 
-        button{
+        button {
             margin-top: 20px;
             padding: 20px;
             background: #dededebe;
@@ -146,6 +148,7 @@
 
         form {
             width: 80%;
+
             & .filed-box {
                 width: 80%;
             }
@@ -160,9 +163,11 @@
 @media (max-width:$mobile) {
     .content-box {
         width: 100%;
+
         .contact-title-box {
             padding-top: 30px;
-            .title{
+
+            .title {
                 font-size: 10px;
             }
         }
