@@ -4,14 +4,12 @@
     @include flex(flex, center, space-around);
     flex-wrap: wrap;
     box-shadow: $box-shadow;
-    background: rgb(11, 14, 15);
+    background: rgb(17, 22, 23);
 
 
 
     & img {
         height: 6vh;
-        @extend %hover;
-        transition: all 0.5s ease-in-out;
     }
 }
 

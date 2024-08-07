@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.3/css/bootstrap.min.css"
+    integrity="sha512-jnSuA4Ss2PkkikSOLtYs8BlYIeeIK1h99ty4YfvRPAlzr377vr3CXDb7sb7eEEBYjDtcYj+AjBH3FLv5uSJuXg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+    integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <title>  Document</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap");
+
+    html {
+      font-family: "Noto Sans Hebrew", sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .list-group-item {
+      background-color: rgb(51, 125, 150);
+      color: rgb(0, 0, 0);
+      font-size: 1.1rem;
+      margin-bottom: 5px;
+
+    }
+
+
+    #titlee {
+      animation: titlr 2s infinite;
+      padding: 1rem;
+      background-color: #158ff9;
+      color: #f8f9fa;
+    }
+
+    @keyframes titlr {
+      0% {
+        color: aqua;
+      }
+
+      50% {
+        color: rgb(77, 255, 0);
+      }
+
+      100% {
+        color: rgb(223, 216, 37);
+      }
+    }
+
+    .custom-wrap {
+      word-wrap: break-word;
+      overflow-wrap: break-word;
+      line-height: 1.5;
+    }
+
+    button {
+      cursor: pointer;
+    }
+  </style>
+</head>
+
+<body class="bg-secondary">
+  <div class="container bg-dark text-center shadow">
+
+    <div class="border bg-dark-subtle border-1">
+      <h1 id="titlee" class="display-4 p-3 bg-secondary">
+        MANAGE-U <i class="fa-solid fa-check-double text-warning"></i>
+      </h1>
+      <div class="form-floating mb-3 d-inline-block w-50">
+        <input type="text" class="form-control" id="description" placeholder="Task description" />
+        <label for="description">Add a Task description</label>
+      </div>
+      <button class="btn shadow btn-warning mx-3" onclick="addNewTask()"><i
+          class="fa-solid fa-file-circle-plus text-light fa-fade fs-1"></i></button>
+    </div>
+    <div>
+      <h5 class="display-5 text-success m-5">Active</h5>
+      <ul id="activeTasks" class="list-group mb-4"></ul>
+    </div>
+    <div>
+      <h5 class="display-5 text-danger m-5">Completed</h5>
+      <ul id="completedTasks" class="list-group mb-4 "></ul>
+    </div>
+  </div>
+  <div class="row m-auto" id="buttonRow">
+
+  </div>
+  <div class="row w-50 m-auto">
+
+    <button class="btn btn-primary shadow m-auto" onclick="showTodosFromApi()">
+      Get ToDos From <strong class="text-warning">jsonplaceholder.com</strong> api
+    </button>
+
+  </div>
+  <script src="./scripts.js" type="module"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</body>
+
+</html>

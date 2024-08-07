@@ -14,12 +14,18 @@
 
     // extended class profile picture from navbar 
     .about-picture {
-        @extend .profile-picture-box;
         margin: 50px auto;
-        width: 150px;
-        height: 150px;
-        @extend %hover;
-        transition: all 0.5s ease-in-out;
+        width:100%;
+        height: 500px;
+        border-radius: 0;
+        background-image: url('../../../img/gif/welcome.gif');
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: center;
+
+        img {
+            width: 100%;
+        }
     }
 
     .title-container {

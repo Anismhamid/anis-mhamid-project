@@ -35,17 +35,13 @@ li {
   height: 70px;
   border-radius: 25%;
   overflow: hidden;
-  background-image: url("../../img/ufmtech.gif");
+  background-image: url("../../../img/gif/welcome.gif");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 }
 .profile-picture-box img {
   width: 100%;
-}
-
-#skills img:hover {
-  transform: scale(1.6);
 }
 
 #main-section {
@@ -238,11 +234,10 @@ a {
   justify-content: space-around;
   flex-wrap: wrap;
   box-shadow: 0px 8px 9px rgba(255, 255, 255, 0.6392156863);
-  background: rgb(11, 14, 15);
+  background: rgb(17, 22, 23);
 }
 #skills img {
   height: 6vh;
-  transition: all 0.5s ease-in-out;
 }
 
 #bicycle-man1 {
