@@ -171,6 +171,14 @@ let javaScriptProjects = [
     },
     {
         id: 13,
+        title: "myAccount",
+        image: "",
+        alt: "anis mhamid MY-ACCOUNT",
+        description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
+        pageUrl: "./pages/myAccount.html",
+    },
+    {
+        id: 14,
         title: "Ultimata Tic Tac Toe",
         image: "./img/ultimate-TicTacToe.png",
         alt: "anis mhamid X O Game",
@@ -178,7 +186,7 @@ let javaScriptProjects = [
         pageUrl: "./pages/x-O.html",
     },
     {
-        id: 14,
+        id: 15,
         title: "Snake",
         image: "./img/dode.png",
         alt: "anis mhamid Snake Game",
@@ -186,7 +194,7 @@ let javaScriptProjects = [
         pageUrl: "./pages/snake.html",
     },
     {
-        id: 15,
+        id: 16,
         title: "Manage U",
         image: "./img/manageU2.png",
         alt: "anis mhamid Snake Game",
