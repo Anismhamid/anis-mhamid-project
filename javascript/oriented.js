@@ -93,7 +93,6 @@ let htmlCssProjects = [
     },
 ]
 for (let htmlProject of htmlCssProjects) {
-    console.log(htmlProject.title);
     document.getElementById("row1").innerHTML += `
         <!-- 1 -->
         <div class="col-sm-12 m-auto col-lg-3 my-4">

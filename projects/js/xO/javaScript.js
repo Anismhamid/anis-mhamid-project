@@ -26,11 +26,7 @@ if (player1Name != '' && player2Name != '') {
 
 
 
-function enableAllCells() {
-    for (let boardId in boardState) {
-        enableBoard(boardId);
-    }
-}
+
 
 
 // פונקציה לטיפול בהזזת שחקן
@@ -79,19 +75,20 @@ function handleGameEnd(winner) {
 }
 
 
-let updateBoardColor = (charArray) => {
-    let newArr = [];
-    for (let i = 0; i < charArray.length; i++) {
 
-        let randomIndex = Math.floor(Math.random() * charArray.length);
-        let randomChar = charArray[randomIndex];
 
-        newArr.push(randomChar);
+let randomCharToUpdateBoardColor = (charArray) => {
+    if (charArray.length === 0) return;
 
-        setBoardColor(newArr, 'light');
-        enableBoard(newArr);
-    }
+    let randomIndex = Math.floor(Math.random() * charArray.length);
+    let randomChar = charArray[randomIndex];
+
+    setBoardColor(randomChar, 'light');
+    enableBoard(randomChar);
+
+    return randomChar;
 };
+
 
 
 
@@ -106,14 +103,15 @@ let checkWinner = () => {
     ];
 
     const boardCharMap = {
-        'A': ["B", "C", "D", "E", "F", "G", "H", "I"],
-        'B': ["A", "C", "D", "E", "F", "G", "H", "I"],
-        'C': ["A", "B", "D", "E", "F", "G", "H", "I"],
-        'D': ["A", "B", "C", "E", "F", "G", "H", "I"],
-        'E': ["A", "B", "C", "D", "F", "G", "H", "I"],
-        'G': ["A", "B", "C", "D", "E", "F", "H", "I"],
-        'H': ["A", "B", "C", "D", "E", "F", "G", "I"],
-        'I': ["A", "B", "C", "D", "E", "F", "G", "H"]
+        A: ["B", "C", "D", "E", "F", "G", "H", "I"],
+        B: ["A", "C", "D", "E", "F", "G", "H", "I"],
+        C: ["A", "B", "D", "E", "F", "G", "H", "I"],
+        D: ["A", "B", "C", "E", "F", "G", "H", "I"],
+        E: ["A", "B", "C", "D", "F", "G", "H", "I"],
+        F: ["A", "B", "C", "D", "E", "G", "H", "I"],
+        G: ["A", "B", "C", "D", "E", "F", "H", "I"],
+        H: ["A", "B", "C", "D", "E", "F", "G", "I"],
+        I: ["A", "B", "C", "D", "E", "F", "G", "H"]
     };
 
 
@@ -123,15 +121,20 @@ let checkWinner = () => {
             let [a, b, c] = combination;
             if (cells[a] != "" && cells[a] === cells[b] && cells[b] === cells[c]) {
 
-                disableBoard(boardId);
-                setBoardColor(boardId, 'dark');
-                // applyColorAndDisableCells(boardId)
+                let setBoardColors =setBoardColor(boardId, 'dark');
+                let boards = disableBoard(boardId);
+
+
                 let colorUpdateArray = boardCharMap[boardId];
-                if (colorUpdateArray) {
-                    console.log(colorUpdateArray);
-                    updateBoardColor(colorUpdateArray);
+                for (let disabledboards of boards) {
+                    if (disabledboards == 'A' || setBoardColors == 'dark') {
+                        randomCharToUpdateBoardColor(colorUpdateArray)
+                        disableBoard(boardId);
+                    }else{
+                        setBoardColor(boardId, 'warning');
+                        disableBoard(boardId);
+                    }
                 }
-                return cells[a]; // return X or O has win
             }
         }
     }
@@ -142,30 +145,26 @@ let checkWinner = () => {
 
 
 
-const applyColorAndDisableCells = (disableCellsList, lightCell) => {
-    let newarr = [];
-    if (Array.isArray(disableCellsList) && disableCellsList.length > 0) {
-        setBoardColor(lightCell, 'light');
-        enableBoard(lightCell);
-        for (let cell of disableCellsList) {
-            if (cell !== lightCell) {
-                newarr.push(cell);
-                setBoardColor(cell, 'warning');
-                disableBoard(cell);
-                setBoardColor(lightCell, 'light');
-                enableBoard(lightCell);
+const applyColorAndDisableCells = (disableCellsListOfIds, lightCellId) => {
+    if (disableCellsListOfIds && disableCellsListOfIds.length > 0) {
+        let setBoardColors = setBoardColor(lightCellId, 'light');
+        enableBoard(lightCellId);
+        for (let cellIds of disableCellsListOfIds) {
+            if (cellIds == lightCellId && setBoardColors == 'dark') {
+
+            } else {
+                setBoardColor(cellIds, 'warning');
+                disableBoard(cellIds);
             }
         }
-        
     }
-    return newarr
+    return { disableCellsListOfIds, lightCellId };
 };
 
 
 
 
 const disableCellsBasedOnPlayer = (cellId) => {
-
     switch (cellId) {
         case 'A1': case 'B1': case 'C1': case 'D1': case 'E1': case 'F1': case 'G1': case 'H1': case 'I1':
             applyColorAndDisableCells(['B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'], 'A');
@@ -201,15 +200,21 @@ const disableCellsBasedOnPlayer = (cellId) => {
 
 }
 
-
+// פונקציה שמקבלת מערך ומוסיפה אותו לפונקצית השבתת קליקים
 function disableCells(cellIds) {
-    let newArr = []
     for (let cellId of cellIds) {
-        newArr.push(cellId)
-        console.log(newArr[0]);
-        disableBoard(newArr[0]);
+        disableBoard(cellId);
     }
 };
+
+
+// פונקציה שמפעילה את פונקצית המאפשרת את הקליקים 
+function enableAllCells() {
+    for (let boardId in boardState) {
+        enableBoard(boardId);
+    }
+}
+
 
 // פונקציה להשבתת קליקים בלוח מסוים
 function disableBoard(boardId) {
@@ -221,8 +226,7 @@ function disableBoard(boardId) {
 }
 
 
-// פונקציה לאפשר לחיצות על כל הלוחות
-
+// פונקציה  המקבלת מערך ומאפשרת קליקים על הלוחות
 function enableBoard(boardId) {
     let cells = document.querySelectorAll(`#${boardId} .a`);
     cells.forEach(cell => {
@@ -233,7 +237,6 @@ function enableBoard(boardId) {
         }
     });
 }
-
 
 
 
@@ -272,14 +275,13 @@ function resetBoard() {
         let cells = document.querySelectorAll(`#${boardId} .a`);
         cells.forEach(cell => {
             cell.innerText = '';
-            cell.style.backgroundColor = '#f8ad30';
+            cell.style.backgroundColor = 'white';
             cell.onclick = function () {
                 insert_X_Y(cell.id);
             };
         });
     }
     currentPlayer = 'X';
-    switchPlayers();
 }
 
 
