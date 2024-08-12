@@ -31,9 +31,9 @@ class ActionsManager {
     calcBalance() {
         let totalIncome = 0;
         let totalExpense = 0;
-        this.totalSavings = [];
-
-        this.savedAmount = 0;  // Reset savedAmount before recalculation
+        this.totalSavings = []; // If you need to keep individual savings entries
+        this.allTheSavingsAmount = 0; // To accumulate all savings
+        this.savedAmount = 0; // This will now hold the total savings
 
         for (let action of this.newAction) {
             if (action.type === 'Income') {
@@ -41,40 +41,32 @@ class ActionsManager {
             } else if (action.type === 'Expense') {
                 totalExpense += action.amount;
             } else if (action.type === 'Savings') {
-                this.savedAmount += action.amount
-                this.totalSavings.pop()
-                this.totalSavings.push(this.savedAmount)
-                this.totalSavings.push(action.amount)
+                this.savedAmount = action.amount;
+                this.totalSavings.push(this.savedAmount);
+                // Calculate balance
+                this.allTheSavingsAmount += this.savedAmount;
             }
         }
-
-        // Calculate total savings
-        totalIncome - totalExpense - this.savedAmount;
-        this.balance = totalIncome;  // Update the balance
+        let arr = 0
+        for (let i = 0; i < this.totalSavings.length; i++) {
+            arr += this.totalSavings[i]
+        }
+        this.balance = totalIncome - totalExpense - arr
+        // Save to local storage
         this.saveToLocal();
-        return this.balance
+
+        return this.balance;
     }
 
 
-
-    // calcAmount() {
-    //     // this.savedAmount = - action.amount;
-    //     {
-    //         let savedAmountAccumulator = saveAmount + action.amount || 0;
-    //         console.log(savedAmountAccumulator);
-
-    //         this.saveToLocal();
-    //         return savedAmountAccumulator
-    //     }
-    // }
-
     saveToLocal() {
-        // Save both actions and balance to local storage
+        // Save actions to local storage
         localStorage.setItem("actions", JSON.stringify(this.newAction));
 
     }
 
     loadFromLocal() {
+        // load actions from local storage
         let storedActions = localStorage.getItem('actions');
         return storedActions ? JSON.parse(storedActions) : [];
     }

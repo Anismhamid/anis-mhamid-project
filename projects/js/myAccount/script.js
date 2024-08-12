@@ -12,7 +12,7 @@ window.addNewAction = function addNewAction() {
     let formattedDate = formatDate(new Date());
 
     // if ((description != '' && amount != '')) {
-    manager.addAction(new Action(type, description, amount, formattedDate, manager.savedAmount || 0));
+    manager.addAction(new Action(type, description, amount, formattedDate, manager.savedAmount || 0, manager.totalSavings));
     manager.calcBalance();
     //     if (amount <= 0 || amount > manager.balance) {
     //         alert('Error, You Cannot be in debt!')
@@ -39,14 +39,14 @@ function formatDate(date) {
 }
 
 function showActions() {
-    
+    let SavingsAmountResult = manager.allTheSavingsAmount
     let currentDate = formatDate(new Date());
-    let balanceValue = manager.balance >= 0 ? 'green' : 'red';
-
-    document.getElementById("container").innerHTML = `
-    <h1 class="display-1 text-danger">MY <i class="text-secondary fa-solid fa-chart-pie"></i> ACCOUNT</h1>
+    let balanceColor = manager.balance >= 0 ? 'green' : 'red';
+        document.getElementById("container").innerHTML = `
+<div>
+    <h1 class=" sticky-top display-1 text-danger">MY <i class="text-secondary fa-solid fa-chart-pie"></i> ACCOUNT</h1>
     <div class="row">
-        <div style = "color: ${balanceValue}";  class="alert alert-secondary fs-2 fw-bold">Balance: ${manager.balance}</div>
+        <div style = "color: ${balanceColor}";  class=" alert alert-secondary fs-2 fw-bold">Balance: ${manager.balance}</div>
     </div>
     <div class="row">
         <div class="col-sm-4 border p-3 rounded bg-body-secondary">
@@ -92,22 +92,27 @@ function showActions() {
         <h6 class="text-bg-secondary display-6 p-2">תוכנית חיסכון</h6>
         <div class="row">
             <div class="col-sm-4 border bg-body-secondary">
-                
+                <h5 class="text-success h1"><span class="text-primary display-6  my-3">TotalSavings</span><hr>${SavingsAmountResult}<i class="fa-solid fs-6 fa-shekel-sign"></i></h5>
             </div>
             <div class="col-sm-8">
+            
                 <table class="table table-striped">
                     <thead>
-                        <hr>
+                        <tr>
                             <th>Date</th>
-                            <th>Saved amount</th>
-                            <th>Total Savings</th>
-                        </hr>
+
+                            <th>Saved Amount</th>
+                        </tr>
                     </thead>
                     <tbody id="saved-amount-table" >
 
                     </tbody>
                 </table>
+                </div class=" border bg-light w-75">
             </div>
+        </div>
+    </div>
+</div>
         `;
     showSaveAmount()
 }
@@ -150,11 +155,12 @@ window.getAll = function getAll() {
     let tbody = document.getElementById("body");
     tbody.innerHTML = '';
 
+
     for (let action of storedActions) {
-        let row = document.createElement('tr');
         let color = action.type === "Income" ? 'green' : 'red';
 
-        row.innerHTML = `
+        tbody.innerHTML += `
+        <tr>
             <td class='fw-bold' style="color: ${color};">${action.description}</td>
             <td class='fw-bold' style="color: ${color};">${action.amount} <i class="fa-solid fs-6 fa-shekel-sign"></i></td>
             <td class='fw-bold' style="color: ${color};">${action.date}</td>
@@ -168,25 +174,28 @@ window.getAll = function getAll() {
                     <i class="fa-regular fs-5 fa-pen-to-square text-success"></i>
                 </button>
             </td>
+            </tr>
         `;
-        tbody.appendChild(row);
     }
 };
 getAll()
 
 function showSaveAmount() {
+    let totalSavings = manager.totalSavings || 'No Savings'
+    let descripttion = manager.description || "No Data"
     let savedTbody = document.getElementById("saved-amount-table");
-    savedTbody.innerHTML = '';  
 
-    // Directly use manager.savedAmount which should be up-to-date
-    let row = document.createElement('tr');
-    row.innerHTML += `
-        <td>${formatDate(new Date())}</td>
-        <td>${manager.amount}</td> 
-        <td>${manager.totalSavings}</td>  <!-- Assuming you want the saved amount displayed twice -->
-    `;
-    savedTbody.appendChild(row);
+    savedTbody.innerHTML = '';
+    // Create a new row
+    for (let action = 0; action < totalSavings.length; action++) {
 
-    // Debugging logs
-    console.log('Saved Amount:', manager.savedAmount);
+        // Add cells to the row
+        savedTbody.innerHTML += `
+            <td class="text-primary fw-bold">${formatDate(new Date())}</td>
+            <td class="text-primary fw-bold">${totalSavings[action]}</td>
+        `;
+
+        // Append the row to the table body
+        // }
+    }
 }
