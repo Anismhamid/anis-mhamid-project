@@ -1,12 +1,11 @@
 #skills {
     width: $vpWidth;
     position: relative;
+    top: -40px;
     @include flex(flex, center, space-around);
     flex-wrap: wrap;
-    box-shadow: $box-shadow;
+    box-shadow: 1px 1px 20px wheat;
     background: rgb(17, 22, 23);
-
-
 
     & img {
         height: 6vh;
@@ -17,7 +16,6 @@
 #bicycle-man1 {
     height: 100px;
     position: absolute;
-    bottom: 250px;
     right: auto;
     animation: bicycle1 20s linear infinite;
     transition: right 5s initial;
@@ -29,15 +27,15 @@
 @keyframes bicycle1 {
     0% {
         right: 100%;
-        top: 92.2%;
+        top: 89%;
     }
 
     50% {
-        top: 92.2%;
+        top: 89%;
     }
 
     100% {
-        top: 92.2%;
+        top: 89%;
         right: -100px;
     }
 }

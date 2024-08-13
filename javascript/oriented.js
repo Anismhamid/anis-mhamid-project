@@ -1,13 +1,3 @@
-class Project {
-    constructor(title, subTitle, image, description, pageUrl) {
-        this.title = title;
-        this.subTitle = subTitle;
-        this.image = image;
-        this.description = description;
-        this.pageUrl = pageUrl;
-    }
-}
-
 
 let htmlCssProjects = [
     {
@@ -141,7 +131,6 @@ for (let htmlProject of htmlCssProjects) {
         </div>
 
 `
-    console.log(new Project(htmlProject.title))
 }
 
 let javaScriptProjects = [
@@ -171,8 +160,8 @@ let javaScriptProjects = [
     },
     {
         id: 13,
-        title: "myAccount",
-        image: "",
+        title: "My Account",
+        image: "./img/myAccount.png",
         alt: "anis mhamid MY-ACCOUNT",
         description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
         pageUrl: "./pages/myAccount.html",
@@ -208,7 +197,7 @@ for (let jSProject of javaScriptProjects) {
     document.getElementById("row2").innerHTML += `
         <div class="col-sm-12 m-auto col-lg-3 my-4">
             <div class="parent">
-                <div class="card" style="width: 20rem;">
+                <div class="card" style="width: 19rem;">
                     <div class="content-box">
                         <span class="card-title">${jSProject.title}</span>
                         <div class="card-img">

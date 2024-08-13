@@ -3,14 +3,13 @@
     height: 130vh;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(to bottom, #00014acb, #110c33b4),url('../../img/cosmic-timetraveler-iUY61D226QY-unsplash.jpg'),;
+    background: linear-gradient(to bottom, #00014acb, #110c33b4), url('../../img/cosmic-timetraveler-iUY61D226QY-unsplash.jpg'), ;
     background-repeat: repeat;
     background-size: cover;
     @include flex;
     flex-direction: column;
     color: $mini-black;
     text-align: center;
-    ;
 
     .main-title-box {
         color: #ffffff;
@@ -45,12 +44,12 @@
         height: 100%;
         background-position: center;
         background-size: cover;
-        
+
     }
 
     .layer:nth-child(1) {
         background-image: $layer-1-background;
-        
+
 
     }
 
@@ -69,7 +68,7 @@
     .layer:nth-child(5) {
         background-image: $layer-5-background;
         width: 80%;
-        background-position: -400px -100px ;
+        background-position: -400px -100px;
     }
 
     .layer:nth-child(6) {
@@ -79,32 +78,12 @@
     .layer:nth-child(7) {
         background-image: $layer-7-background;
     }
+
     .layer:nth-child(8) {
         background-image: $layer-1-background;
         background-position: center;
         background-size: cover;
     }
-}
-
-
-
-.back-to-top {
-    width: 50px;
-    height: 150px;
-    position: fixed;
-    right: 0;
-    bottom: 0;
-    z-index: 2;
-
-    &::before {
-        content: 'top';
-        color: $white;
-        font-size: 1.3em;
-        font-weight: bold;
-        color: $black;
-        text-shadow: 0px 0px 12px rgba(255, 255, 255, 0.905);
-    }
-
 }
 
 @media (max-width:$laptop) {
