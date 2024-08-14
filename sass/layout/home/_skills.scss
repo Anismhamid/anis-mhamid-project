@@ -1,7 +1,7 @@
 #skills {
     width: $vpWidth;
     position: relative;
-    top: -40px;
+    top: 0px;
     @include flex(flex, center, space-around);
     flex-wrap: wrap;
     box-shadow: 1px 1px 20px wheat;
@@ -16,13 +16,17 @@
 #bicycle-man1 {
     height: 100px;
     position: absolute;
+    top: 400px;
     right: auto;
     animation: bicycle1 20s linear infinite;
-    transition: right 5s initial;
-    z-index: 3;
+    transition: all 5s ease-in-out;
+    z-index: 2;
 }
 
 
+/* 
+    moving bicycle from left to right
+*/
 
 @keyframes bicycle1 {
     0% {
