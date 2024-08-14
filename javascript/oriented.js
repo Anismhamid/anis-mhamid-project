@@ -190,6 +190,14 @@ let javaScriptProjects = [
         description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
         pageUrl: "./pages/manageU.html",
     },
+    {
+        id: 17,
+        title: "Flags API",
+        image: "./img/flagsProject.png",
+        alt: "anis mhamid Snake Game",
+        description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
+        pageUrl: "./pages/flagsApi.html",
+    },
 
 ]
 
