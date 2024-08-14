@@ -15,15 +15,15 @@ window.addNewAction = function addNewAction() {
         manager.addAction(new Action(type, description, amount, formattedDate, manager.savedAmount || 0, manager.totalSavings));
         manager.calcBalance();
         if (amount <= 0 || amount > manager.balance) {
-            alert('Error, You Cannot be in debt!')
+            alert('שגיאה, אתה לא יכול להיות בחובות')
             return null
         }
     } else if (description == '' && amount == '') {
-        alert('Error, Please fill the fields')
+        alert('שגיאה, אנא מלא את השדות')
     } else if (description != '' || description == '' && amount == '') {
-        alert("Error, you cannot set amount to Empty")
+        alert("שגיאה, לא ניתן להגדיר את הכמות לריק")
     } else if (description == '' && amount != '') {
-        alert("Error, you cannot set description to Empty")
+        alert("שגיאה, אינך יכול להגדיר את התיאור לריק")
     }
     showSaveAmount();
     showActions();
@@ -43,45 +43,55 @@ function showActions() {
 
     let currentDate = formatDate(new Date());
 
-    let balanceColor = manager.balance >= 0 ? 'green' : 'red';
-
+    let balanceColor = manager.balance > 0 ? 'green' : 'red';
 
     document.getElementById("container").innerHTML = `
-    <div>
-        <h1 class=" sticky-top display-1 text-danger">MY <i class="text-secondary fa-solid fa-chart-pie"></i> ACCOUNT</h1>
-        <div class="row">
-            <div style = "color: ${balanceColor}";  class=" alert alert-secondary fs-2 fw-bold">Balance: ${manager.balance}</div>
+    <div class="row mb-4">
+            <h1 class="text-center display-1 text-primary">החשבון <i class="text-success fa-solid fa-chart-pie"></i> שלי</h1>
         </div>
+
+        <div class="row mb-4">
+            <div class="col-12 card card-custom p-4 ">
+            <div class="alert alert-secondary display-6 text-center" style="color: ${balanceColor};">יתרה<h1 class="text-center"> <hr> ${manager.balance} <i class=" fa-solid fs-6 fa-shekel-sign"></i></h1>
+                </div>
+            </div>
+        </div>
+
         <div class="row">
-            <div class="col-sm-4 border p-3 rounded bg-body-secondary">
+            <div class="col-sm-4 card card-custom p-4 mb-4 bg-white">
                 <!-- Form -->
-                <select id="type" class="form-select">
-                    <option value="Income">Income</option>
-                    <option value="Expense">Expense</option>
-                    <option value="Savings">Savings</option>
-                </select>
-                <div class="form-floating my-3">
-                    <input type="text" class="form-control" id="description" placeholder="Description">
-                    <label for="description">Description</label>
-                </div>
-                <div class="form-floating my-3">
-                    <input type="date" class="form-control" id="start" name='start' value="${currentDate}">
-                    <label for="start">Date</label>
-                </div>
-                <div class="form-floating my-3">
-                    <input type="number" class="form-control" id="amount-input" placeholder="Amount">
-                    <label for="amount-input">Amount</label>
-                </div>
-                <button class="btn btn-primary w-100 my-3" onclick="addNewAction()">Add</button>
+                <form id="action-form">
+                    <div class="mb-3">
+                        <label for="type" class="form-label">סוג פעולה</label>
+                        <select id="type" class="form-select">
+                            <option value="Income">הכנסה</option>
+                            <option value="Expense">הוצאה</option>
+                            <option value="Savings">חיסכון</option>
+                        </select>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="text" class="form-control" id="description">
+                        <label for="description">תיאור</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="date" class="form-control" id="start" name='start' value="${currentDate}">
+                        <label for="start">תאריך</label>
+                    </div>
+                    <div class="form-floating mb-3">
+                        <input type="number" class="form-control" id="amount-input" placeholder="Amount">
+                        <label for="amount-input">סכום</label>
+                    </div>
+                    <button class="btn btn-custom w-100" type="button" onclick="addNewAction()">הוספה</button>
+                </form>
             </div>
             <div class="col-sm-8">
                 <!-- Table -->
-                <table class="table table-striped">
-                    <thead>
+                <table class="table table-custom table-striped">
+                    <thead  class=" text-center">
                         <tr>
-                            <th class="col-4">Description</th>
-                            <th class="col-2">Amount</th>
-                            <th class="col-4">Date</th>
+                            <th class="col-4">תיאור</th>
+                            <th class="col-2">סכום</th>
+                            <th class="col-4">תאריך</th>
                             <th class="col-1"></th>
                             <th class="col-1"></th>
                         </tr>
@@ -89,46 +99,44 @@ function showActions() {
                     <tbody id="body"></tbody>
                 </table>
             </div>
-            </div>
-                <hr class="border border-danger border-2 my-5">
+        </div>
 
-            <div class="row">
-            <h6 class="text-bg-secondary display-6 p-2">תוכנית חיסכון</h6>
-            <div class="row">
-                <div class="col-sm-4 border bg-body-secondary">
-                    <h5 class="text-success h1"><span class="text-primary display-6  my-3">TotalSavings</span><hr>${SavingsAmountResult}<i class="fa-solid fs-6 fa-shekel-sign"></i></h5>
+        <hr class="border border-danger border-2 my-5">
+
+        <div class="row">
+            <h6 class="section-title text-primary display-6 p-2">תוכנית חיסכון</h6>
+            <div class="row mb-4">
+                <div class="col-sm-4 card card-custom p-4 bg-light">
+                    <h5 class="text-success h1">
+                        <span class="text-primary display-6 my-3">סה"כ חיסכון</span>
+                        <hr>
+                        ${SavingsAmountResult} <i class="fa-solid fs-6 fa-shekel-sign"></i>
+                    </h5>
                 </div>
                 <div class="col-sm-8">
-                
-                    <table class="table table-striped">
-                        <thead>
+                    <table class="table table-custom table-striped mt-4">
+                        <thead class=" text-center">
                             <tr>
-                                <th>Date</th>
-
-                                <th>Saved Amount</th>
+                                <th>תאריך</th>
+                                <th>סכום שנחסך</th>
                             </tr>
                         </thead>
-                        <tbody id="saved-amount-table" >
-
-                        </tbody>
+                        <tbody id="saved-amount-table"></tbody>
                     </table>
-                    </div class=" border bg-light w-75">
                 </div>
             </div>
         </div>
-    </div>
 `;
     showSaveAmount()
 }
 showActions();
 
 window.deleteAction = function deleteAction(id) {
-    if (confirm("Are you sure you want to delete this action?")) {
+    if (confirm("האם אתה בטוח שאתה רוצה למחוק את הפעולה הזו?")) {
         try {
             manager.deleteAction(id);
         } catch (error) {
-            console.error("An error occurred while deleting the action:", error);
-            alert("Failed to delete the action");
+            alert("אירעה שגיאה בעת מחיקת הפעולה:", error, id);
         }
     }
     showSaveAmount();
@@ -163,6 +171,7 @@ window.getAll = function getAll() {
     for (let action of storedActions) {
         let color = action.type === "Income" ? 'green' : 'red';
 
+        
         tbody.innerHTML += `
         <tr>
             <td class='fw-bold' style="color: ${color};">${action.description}</td>
@@ -185,8 +194,7 @@ window.getAll = function getAll() {
 getAll()
 
 function showSaveAmount() {
-    let totalSavings = manager.totalSavings || 'No Savings'
-    let descripttion = manager.description || "No Data"
+    let totalSavings = manager.totalSavings || 'אין נתונים'
     let savedTbody = document.getElementById("saved-amount-table");
 
     savedTbody.innerHTML = '';
@@ -195,7 +203,7 @@ function showSaveAmount() {
 
         savedTbody.innerHTML += `
             <td class="text-primary fw-bold">${formatDate(new Date())}</td>
-            <td class="text-primary fw-bold">${totalSavings[action]}</td>
+            <td class="text-primary text-center fw-bold">${totalSavings[action]}</td>
         `;
 
     }

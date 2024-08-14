@@ -31,19 +31,18 @@ class ActionsManager {
     calcBalance() {
         let totalIncome = 0;
         let totalExpense = 0;
-        this.totalSavings = []; // If you need to keep individual savings entries
-        this.allTheSavingsAmount = 0; // To accumulate all savings
-        this.savedAmount = 0; // This will now hold the total savings
+        this.totalSavings = [];
+        this.allTheSavingsAmount = 0;
+        this.savedAmount = 0;
 
         for (let action of this.newAction) {
             if (action.type === 'Income') {
                 totalIncome += action.amount;
             } else if (action.type === 'Expense') {
                 totalExpense += action.amount;
-            } else if (action.type === 'Savings') {
+            } else {
                 this.savedAmount = action.amount;
                 this.totalSavings.push(this.savedAmount);
-                // Calculate balance
                 this.allTheSavingsAmount += this.savedAmount;
             }
         }
@@ -52,21 +51,22 @@ class ActionsManager {
             arr += this.totalSavings[i]
         }
         this.balance = totalIncome - totalExpense - arr
-        // Save to local storage
+
         this.saveToLocal();
 
         return this.balance;
     }
 
 
+    // Save actions to local storage
+    
     saveToLocal() {
-        // Save actions to local storage
-        localStorage.setItem("actions", JSON.stringify(this.newAction));
-
+        localStorage.setItem("actions", JSON.stringify(this.newAction))
     }
 
+    // load actions from local storage
+
     loadFromLocal() {
-        // load actions from local storage
         let storedActions = localStorage.getItem('actions');
         return storedActions ? JSON.parse(storedActions) : [];
     }
