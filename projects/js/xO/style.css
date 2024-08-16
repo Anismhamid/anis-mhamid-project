@@ -27,7 +27,6 @@
 .a {
     width: 100px;
     height: 100px;
-    /* background-color: #fdc54a; */
     display: flex;
     justify-content: center;
     align-items: center;
@@ -39,11 +38,9 @@
     margin: 0 auto;
     box-shadow: inset 4px -0px 8px rgb(0, 0, 0), 0 0 #fffbfb;
 }
-/* .col-4{
-    padding: 12px;
-} */
+
 .a:hover {
-    background: #00000015;
+    background: #4fef10a4;
 }
 
 #turn {

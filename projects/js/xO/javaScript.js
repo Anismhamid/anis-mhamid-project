@@ -2,9 +2,10 @@ let currentPlayer = 'X';
 let gamesCounter = 0;
 let xCounter = 0;
 let oCounter = 0;
-
-// let player1Name = prompt('שם שחקן של ה - X :') || `<i class="fa-solid fa-x fa-spin"></i> - Player`;
-// let player2Name = prompt('שם שחקן של ה - O :') || `<i class="fa-solid fa-o fa-spin text-danger"></i> - Player`;
+// prompt('שם שחקן של ה - X :') ||
+// prompt('שם שחקן של ה - O :') ||
+let player1Name = `<i class="fa-solid fa-x fa-spin"></i> - Player`;
+let player2Name = `<i class="fa-solid fa-o fa-spin text-danger"></i> - Player`;
 
 
 
@@ -53,17 +54,13 @@ function switchPlayers() {
     document.getElementById('turn').innerHTML = currentPlayer
 }
 
-// Generating a random char
-const enableRandomBoard = () => {
-    // Get the list of boards that have not been won
-    const availableBoards = Object.keys(boardState).filter(boardId => !wonBoards.has(boardId));
+let enableRandomBoard = () => {
+    let availableBoards = Object.keys(boardState).filter(boardId => !wonBoards[boardId]);
 
-    // If there are available boards, enable one at random
     if (availableBoards.length > 0) {
         const randomIndex = Math.floor(Math.random() * availableBoards.length);
         const randomBoardId = availableBoards[randomIndex];
         enableBoard(randomBoardId);
-        console.log(`Enabled a new random board: ${randomBoardId}`);
         console.log(availableBoards);
     } else {
         console.log("No available boards to enable.");
@@ -72,8 +69,7 @@ const enableRandomBoard = () => {
 
 
 
-let gameActive = true;
-let wonBoards = new Set();
+let wonBoards = [];
 
 let checkWinner = () => {
     let winningCombinationsArr = [
@@ -81,9 +77,6 @@ let checkWinner = () => {
         [0, 3, 6], [1, 4, 7], [2, 5, 8], // Win columns
         [0, 4, 8], [2, 4, 6] // Win diagonals
     ];
-
-    // Flag to track if a win was found
-    let foundWinner = false;
 
     for (let boardId of Object.keys(boardState)) {
         let cells = boardState[boardId];
@@ -94,33 +87,22 @@ let checkWinner = () => {
             // Check if the combination is a winning one
             if (cells[a] !== "" && cells[a] === cells[b] && cells[b] === cells[c]) {
                 try {
-                    // Mark the board as won
-                    setBoardColor(boardId, 'dark');
-                    disableBoard(boardId);
-                    wonBoards.add(boardId); // Add to won boards list
-                    console.log(wonBoards);
+                    setBoardColor(boardId, 'dark'); // sets the board's color
+                    disableBoard(boardId); // disables the board
+                    wonBoards.push(boardId); // Add to won boards list
 
-                    // Enable a random new board
-                    enableRandomBoard();
 
-                    // Mark that a win has been found
-                    foundWinner = true;
+                    applyColorAndDisableCells('a', 'd');
 
-                    break;
-                    // Exit the combination loop for the current board
+                    break; // Exit loop once a win is detected
                 } catch (error) {
-                    console.log(error);
+                    console.error(error);
                 }
-                console.log(indexOff(cells[a]));
             }
         }
-
-        if (foundWinner) {
-            break; // Exit the board loop if a win was found
-        }
     }
-    return;
 };
+
 
 
 
@@ -140,19 +122,18 @@ let applyColorAndDisableCells = (disableCellsListOfIds, lightCellId) => {
     try {
         let setBoardColors = setBoardColor(lightCellId, 'light');
         enableBoard(lightCellId);
-        for (let cellIds of disableCellsListOfIds) {
-            if (cellIds == lightCellId && setBoardColors == 'dark') {
+        for (let boardId of disableCellsListOfIds) {
+            if (boardId == lightCellId && setBoardColors == 'dark') {
 
             } else {
-                setBoardColor(cellIds, 'warning');
-                disableBoard(cellIds);
+                setBoardColor(boardId, 'warning');
+                disableBoard(boardId);
             }
         }
     } catch (error) {
         console.log(error);
     }
-
-    return { disableCellsListOfIds, lightCellId };
+    return [disableCellsListOfIds, lightCellId];
 };
 
 
