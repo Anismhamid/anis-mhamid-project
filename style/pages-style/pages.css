@@ -157,14 +157,14 @@ li {
 }
 #button {
   border: none;
-  color: #e58225;
+  color: #141414;
   padding: 0.7em 1.7em;
-  font-size: 18px;
+  font-size: 1.2rem;
+  font-weight: bold;
   border-radius: 0.5em;
-  background: linear-gradient(225deg, #000000, #ffffff, black);
+  background: linear-gradient(225deg, #353535, #ffffff, rgb(85, 85, 85));
   box-shadow: -20px 20px 60px #e7b787, 20px -20px 60px #ffffff;
   animation: buttonsAnime 3s infinite;
-  transition: animation 3s ease-in-out;
 }
 
 @keyframes buttonsAnime {
@@ -175,31 +175,45 @@ li {
     box-shadow: 0px 5px 12px rgb(72, 72, 72), 0px -2px 3px rgb(32, 32, 32) inset;
   }
   20% {
-    box-shadow: 0px 5px 12px rgb(126, 197, 227), rgb(123, 201, 229) inset;
+    box-shadow: 0px 5px 12px rgb(255, 255, 255), 0px -2px 3px rgb(255, 0, 0) inset;
+  }
+  30% {
+    box-shadow: 0px 5px 12px rgb(72, 72, 72), 0px -2px 3px rgb(32, 32, 32) inset;
   }
   50% {
-    box-shadow: 0px 5px 12px rgb(255, 7, 7), 0px -2px 3px rgb(255, 0, 0) inset;
+    box-shadow: 0px 5px 12px rgb(255, 255, 255), 0px -2px 3px rgb(105, 178, 255) inset;
+  }
+  70% {
+    box-shadow: 0px 5px 12px rgb(72, 72, 72), 0px -2px 3px rgb(32, 32, 32) inset;
   }
   100% {
-    box-shadow: 0px 5px 12px rgb(2, 178, 67), 0px -2px 3px rgb(128, 225, 80) inset;
+    box-shadow: 0px 5px 12px rgb(255, 255, 255), 0px -2px 3px rgb(255, 255, 255) inset;
   }
 }
 #button:hover {
-  background: linear-gradient(225deg, #ffffff, #000000, rgb(255, 255, 255));
-  transform: scale(1);
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><foreignObject width="100%" height="100%"><div xmlns="http://www.w3.org/1999/xhtml"  style="width:100%;height:100%;background:linear-gradient(135deg,%23999 40%,%239950 0),linear-gradient(45deg, %230000 40%, %23777 0 60%,%230000 0)" ></div></foreignObject></svg>') 0 0, default;
+  background: linear-gradient(225deg, #ffffff, #717171, rgb(255, 255, 255));
+  transform: scale(1.06);
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><foreignObject width="100%" height="100%"><div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;background:linear-gradient(135deg,%23999 40%,%239950 0),linear-gradient(45deg, %230000 40%, %23777 0 60%,%230000 0)" ></div></foreignObject></svg>') 0 0, default;
 }
 
 #button:active {
   box-shadow: 0px 5px 12px rgb(255, 255, 255), 0px -2px 3px rgb(255, 255, 255) inset;
-  transform: scale(0.8);
+  transform: scale(0.9);
 }
 
 #project-section {
   width: 100%;
   background-color: #212529;
 }
+#project-section img {
+  width: 35rem;
+}
 
+@media (max-width: 556px) {
+  #project-section img {
+    width: 80%;
+  }
+}
 #skills {
   width: 100%;
   position: relative;

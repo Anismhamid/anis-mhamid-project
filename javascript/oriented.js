@@ -3,7 +3,6 @@ let htmlCssProjects = [
     {
         id: 1,
         title: "תן לנו להוביל אותך קדימה",
-        subTitle: "",
         image: "./img/pages-images/takeTheFuture.png",
         description: "הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים, שכן הוא משקף הקפדה על פרטים ועיצוב משוכלל המשלב אלגנטיות ופונקציונליות יעילה, המבטיח אינטראקציה חלקה ונוחה למשתמשים עם התוכן.",
         pageUrl: "./pages/future.html",
@@ -12,7 +11,6 @@ let htmlCssProjects = [
     {
         id: 2,
         title: "כאן ועכשיו",
-        subTitle: "",
         image: "./img/pages-images/hereAndNow.png",
         description: "עמוד זה מאופיין ביופיו האלגנטי. העמוד משדר אווירה נהדרת. העיצוב הנקי והמאורגן שלו הופך את חווית הגלישה למהנה ונוחה למשתמשים. הטקסטים הקיימים מנחים את המבקרים בעדינות וקלים להבנה, גורמים להם להרגיש רצוי ומבורכים. בנוסף, התמונה הכוללת של העמוד משקפת משיכה מיוחדת שגורמת למבקרים לרצות לחקור יותר מהתוכן שלו ולנצל את ההצעות הזמינות. בסך הכל, לדף יש אסתטיקה בולטת שמושכת את העין והופכת את החוויה המקוונת למשתמשים למהנה ומרגשת.",
         pageUrl: "./pages/here-and-now.html",
@@ -21,7 +19,6 @@ let htmlCssProjects = [
     {
         id: 3,
         title: "ייעוץ חינם",
-        subTitle: "",
         image: "./img/pages-images/free-consultation-porject5-image2.png",
         description: 'דף רספונסיבי שמשמש להצגת שירות "ייעוץ חינם" למשתמשים. מופיע כותרת "ייעוץ חינם" עם תיאור קצר של השירות.קיים טופס למילוי פרטים אישיים כגון שם מלא, דוא"ל ופרטי הפניה. קיימות גם סמלים חברתיים ליצירת קשר ומספר טלפון ליצירת קשר ישיר.הדף מכיל עיצוב רספונסיבי שמתאים לגדלי מסכים ולתצורות שונות של התקנים',
         pageUrl: "./pages/free-consultation-page.html",
@@ -30,7 +27,6 @@ let htmlCssProjects = [
     {
         id: 4,
         title: "תן לנו להוביל אותך קדימה",
-        subTitle: "",
         image: "./img/pages-images/leading-forward.png",
         description: 'עמוד זה מאופיין ביופיו האלגנטי. העמוד משדר אווירה נהדרת. העיצוב הנקי והמאורגן שלו הופך את חווית הגלישה למהנה ונוחה למשתמשים. הטקסטים הקיימים מנחים את המבקרים בעדינות וקלים להבנה, גורמים להם להרגיש רצוי ומבורכים. בנוסף, התמונה הכוללת של העמוד משקפת משיכה מיוחדת שגורמת למבקרים לרצות לחקור יותר מהתוכן שלו ולנצל את ההצעות הזמינות. בסך הכל, לדף יש אסתטיקה בולטת שמושכת את העין והופכת את החוויה המקוונת למשתמשים למהנה ומרגשת',
         pageUrl: "./pages/leading-forward.html",
@@ -39,8 +35,7 @@ let htmlCssProjects = [
     {
         id: 5,
         title: "קפה טוב לבוקר",
-        subTitle: "",
-        image: "./img/pages-images/morning-coffe.jpg",
+        image: "./img/pages-images/morning-coffe.png",
         description: 'העמוד תוכנן בצורה שמאפשרת חוויית משתמש חלקה ונעימה לכל סוגי המסכים.בעת פתיחת העמוד במסך גדול, האיזור הימני מוקדש לתמונה גדולה ומרשימה של הקפה, יחד עם טופס ההרשמה המצורף',
         pageUrl: "./pages/morning-coffe-page.html",
         alt: "anis mhamid Morning Coffe"
@@ -48,8 +43,7 @@ let htmlCssProjects = [
     {
         id: 6,
         title: "תראה את העולם מקרוב",
-        subTitle: "",
-        image: "./img/pages-images/see-the-wold.jpg",
+        image: "./img/pages-images/see-the-wold.png",
         description: 'העמוד תוכנן בצורה שמאפשרת חוויית משתמש חלקה ונעימה לכל סוגי המסכים.בעת פתיחת העמוד במסך גדול, האיזור הימני מוקדש לתמונה גדולה ומרשימה של הקפה, יחד עם טופס ההרשמה המצורף',
         pageUrl: "./pages/see-the-wold-page.html",
         alt: "anis mhamid See The Wold"
@@ -57,7 +51,6 @@ let htmlCssProjects = [
     {
         id: 7,
         title: "לחשוב מחוץ לקופסה",
-        subTitle: "",
         image: "./img/pages-images/think-so-far.png",
         description: 'הדף רספונסיבי למכשירים שונים, מה שאומר שעיצובו מתאים לגדלי מסכים שונים ולסוגי מכשירים שונים, ממחשבים שולחניים עד הטלפונים הניידים.העיצוב הזה מקל על חוויית המשתמש, מספק נוחות וקלות למשתמשים במגוון מכשירים, ומבטיח חוויית משתמש חלקה ונעימה',
         pageUrl: "./pages/think-so-far-page.html",
@@ -66,8 +59,7 @@ let htmlCssProjects = [
     {
         id: 8,
         title: "תן לנו לבנות את בית החלומות שלך",
-        subTitle: "",
-        image: "./img/dream-home.png",
+        image: "./img/pages-images/dream-home.png",
         description: ' הדף רספונסיבי למכשירים שונים, מה שאומר שעיצובו מתאים לגדלי מסכים שונים ולסוגי מכשירים שונים, ממחשבים שולחניים עד הטלפונים הניידים.העיצוב הזה מקל על חוויית המשתמש',
         pageUrl: "/pages/dream-home.html",
         alt: "anis mhamid Dream Home"
@@ -75,13 +67,13 @@ let htmlCssProjects = [
     {
         id: 9,
         title: "עולם האופנה שלנו",
-        image: "./img/pages-images/sashion.jpg",
+        image: "./img/pages-images/fashion.png",
         alt: "anis mhamid Fashion World",
         description: ' הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים',
-        pageUrl: "",
-        subTitle: "",
+        pageUrl: "pages/fation.html",
     },
 ]
+
 for (let htmlProject of htmlCssProjects) {
     document.getElementById("row1").innerHTML += `
         <!-- 1 -->
@@ -170,7 +162,7 @@ let javaScriptProjects = [
         id: 14,
         title: "Ultimata Tic Tac Toe",
         image: "./img/ultimate-TicTacToe.png",
-        alt: "anis mhamid X O Game",
+        alt: "anis mhamid Ultimata Tic Tac Toe",
         description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
         pageUrl: "./pages/x-O.html",
     },
@@ -186,7 +178,7 @@ let javaScriptProjects = [
         id: 16,
         title: "Manage U",
         image: "./img/manageU2.png",
-        alt: "anis mhamid Snake Game",
+        alt: "anis mhamid Manage U",
         description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
         pageUrl: "./pages/manageU.html",
     },
@@ -194,11 +186,18 @@ let javaScriptProjects = [
         id: 17,
         title: "Flags API",
         image: "./img/flagsProject.png",
-        alt: "anis mhamid Snake Game",
+        alt: "anis mhamid Flags API",
         description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
         pageUrl: "./pages/flagsApi.html",
     },
-
+    {
+        id: 18,
+        title: "Api fetching To Cards",
+        image: "./img/marketingApi.png",
+        alt: "anis mhamid Api fetching To Cards",
+        description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
+        pageUrl: "./pages/fetchMarketApi.html",
+    },
 ]
 
 for (let jSProject of javaScriptProjects) {
@@ -250,5 +249,3 @@ for (let jSProject of javaScriptProjects) {
 
 `
 }
-
-

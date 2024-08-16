@@ -1,30 +1,24 @@
 let currentPlayer = 'X';
-let boardState = {
-    A: ['', '', '', '', '', '', '', '', ''],
-    B: ['', '', '', '', '', '', '', '', ''],
-    C: ['', '', '', '', '', '', '', '', ''],
-    D: ['', '', '', '', '', '', '', '', ''],
-    E: ['', '', '', '', '', '', '', '', ''],
-    F: ['', '', '', '', '', '', '', '', ''],
-    G: ['', '', '', '', '', '', '', '', ''],
-    H: ['', '', '', '', '', '', '', '', ''],
-    I: ['', '', '', '', '', '', '', '', ''],
-};
 let gamesCounter = 0;
 let xCounter = 0;
 let oCounter = 0;
-let player1Name = ''; /*=  prompt('שם שחקן של ה - X :'); */
-let player2Name = '' /* = prompt('שם שחקן של ה - O :'); */
 
-if (player1Name != '' && player2Name != '') {
-    document.getElementById('player-X').innerText = player1Name
-    document.getElementById('player-O').innerText = player2Name
-} else {
-    document.getElementById('player-X').innerHTML = `<i class="fa-solid fa-x fa-spin"></i> - Player`
-    document.getElementById('player-O').innerHTML = `<i class="fa-solid fa-o fa-spin text-danger"></i> - Player`
-}
+// let player1Name = prompt('שם שחקן של ה - X :') || `<i class="fa-solid fa-x fa-spin"></i> - Player`;
+// let player2Name = prompt('שם שחקן של ה - O :') || `<i class="fa-solid fa-o fa-spin text-danger"></i> - Player`;
 
 
+
+let boardState = {
+    a: ['', '', '', '', '', '', '', '', ''],
+    b: ['', '', '', '', '', '', '', '', ''],
+    c: ['', '', '', '', '', '', '', '', ''],
+    d: ['', '', '', '', '', '', '', '', ''],
+    e: ['', '', '', '', '', '', '', '', ''],
+    f: ['', '', '', '', '', '', '', '', ''],
+    g: ['', '', '', '', '', '', '', '', ''],
+    h: ['', '', '', '', '', '', '', '', ''],
+    i: ['', '', '', '', '', '', '', '', ''],
+};
 
 
 
@@ -54,12 +48,79 @@ function insert_X_Y(cellId) {
 }
 
 
-
 function switchPlayers() {
     currentPlayer = (currentPlayer === 'X') ? 'O' : 'X';
     document.getElementById('turn').innerHTML = currentPlayer
 }
 
+// Generating a random char
+const enableRandomBoard = () => {
+    // Get the list of boards that have not been won
+    const availableBoards = Object.keys(boardState).filter(boardId => !wonBoards.has(boardId));
+
+    // If there are available boards, enable one at random
+    if (availableBoards.length > 0) {
+        const randomIndex = Math.floor(Math.random() * availableBoards.length);
+        const randomBoardId = availableBoards[randomIndex];
+        enableBoard(randomBoardId);
+        console.log(`Enabled a new random board: ${randomBoardId}`);
+        console.log(availableBoards);
+    } else {
+        console.log("No available boards to enable.");
+    }
+};
+
+
+
+let gameActive = true;
+let wonBoards = new Set();
+
+let checkWinner = () => {
+    let winningCombinationsArr = [
+        [0, 1, 2], [3, 4, 5], [6, 7, 8], // Win rows
+        [0, 3, 6], [1, 4, 7], [2, 5, 8], // Win columns
+        [0, 4, 8], [2, 4, 6] // Win diagonals
+    ];
+
+    // Flag to track if a win was found
+    let foundWinner = false;
+
+    for (let boardId of Object.keys(boardState)) {
+        let cells = boardState[boardId];
+
+        for (let combination of winningCombinationsArr) {
+            let [a, b, c] = combination;
+
+            // Check if the combination is a winning one
+            if (cells[a] !== "" && cells[a] === cells[b] && cells[b] === cells[c]) {
+                try {
+                    // Mark the board as won
+                    setBoardColor(boardId, 'dark');
+                    disableBoard(boardId);
+                    wonBoards.add(boardId); // Add to won boards list
+                    console.log(wonBoards);
+
+                    // Enable a random new board
+                    enableRandomBoard();
+
+                    // Mark that a win has been found
+                    foundWinner = true;
+
+                    break;
+                    // Exit the combination loop for the current board
+                } catch (error) {
+                    console.log(error);
+                }
+                console.log(indexOff(cells[a]));
+            }
+        }
+
+        if (foundWinner) {
+            break; // Exit the board loop if a win was found
+        }
+    }
+    return;
+};
 
 
 
@@ -75,78 +136,8 @@ function handleGameEnd(winner) {
 }
 
 
-
-
-let randomCharToUpdateBoardColor = (charArray) => {
-    if (charArray.length === 0) return;
-
-    let randomIndex = Math.floor(Math.random() * charArray.length);
-    let randomChar = charArray[randomIndex];
-
-    setBoardColor(randomChar, 'light');
-    enableBoard(randomChar);
-
-    return randomChar;
-};
-
-
-
-
-
-
-
-let checkWinner = () => {
-    const winningCombinations = [
-        [0, 1, 2], [3, 4, 5], [6, 7, 8], // Rows
-        [0, 3, 6], [1, 4, 7], [2, 5, 8], // Columns
-        [0, 4, 8], [2, 4, 6] // Diagonals
-    ];
-
-    const boardCharMap = {
-        A: ["B", "C", "D", "E", "F", "G", "H", "I"],
-        B: ["A", "C", "D", "E", "F", "G", "H", "I"],
-        C: ["A", "B", "D", "E", "F", "G", "H", "I"],
-        D: ["A", "B", "C", "E", "F", "G", "H", "I"],
-        E: ["A", "B", "C", "D", "F", "G", "H", "I"],
-        F: ["A", "B", "C", "D", "E", "G", "H", "I"],
-        G: ["A", "B", "C", "D", "E", "F", "H", "I"],
-        H: ["A", "B", "C", "D", "E", "F", "G", "I"],
-        I: ["A", "B", "C", "D", "E", "F", "G", "H"]
-    };
-
-
-    for (let boardId of Object.keys(boardState)) {
-        let cells = boardState[boardId];
-        for (let combination of winningCombinations) {
-            let [a, b, c] = combination;
-            if (cells[a] != "" && cells[a] === cells[b] && cells[b] === cells[c]) {
-
-                let setBoardColors =setBoardColor(boardId, 'dark');
-                let boards = disableBoard(boardId);
-
-
-                let colorUpdateArray = boardCharMap[boardId];
-                for (let disabledboards of boards) {
-                    if (disabledboards == 'A' || setBoardColors == 'dark') {
-                        randomCharToUpdateBoardColor(colorUpdateArray)
-                        disableBoard(boardId);
-                    }else{
-                        setBoardColor(boardId, 'warning');
-                        disableBoard(boardId);
-                    }
-                }
-            }
-        }
-    }
-    return null; // return null if no winner
-};
-
-
-
-
-
-const applyColorAndDisableCells = (disableCellsListOfIds, lightCellId) => {
-    if (disableCellsListOfIds && disableCellsListOfIds.length > 0) {
+let applyColorAndDisableCells = (disableCellsListOfIds, lightCellId) => {
+    try {
         let setBoardColors = setBoardColor(lightCellId, 'light');
         enableBoard(lightCellId);
         for (let cellIds of disableCellsListOfIds) {
@@ -157,7 +148,10 @@ const applyColorAndDisableCells = (disableCellsListOfIds, lightCellId) => {
                 disableBoard(cellIds);
             }
         }
+    } catch (error) {
+        console.log(error);
     }
+
     return { disableCellsListOfIds, lightCellId };
 };
 
@@ -166,32 +160,32 @@ const applyColorAndDisableCells = (disableCellsListOfIds, lightCellId) => {
 
 const disableCellsBasedOnPlayer = (cellId) => {
     switch (cellId) {
-        case 'A1': case 'B1': case 'C1': case 'D1': case 'E1': case 'F1': case 'G1': case 'H1': case 'I1':
-            applyColorAndDisableCells(['B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'], 'A');
+        case 'a1': case 'b1': case 'c1': case 'd1': case 'e1': case 'f1': case 'g1': case 'h1': case 'i1':
+            applyColorAndDisableCells(['b', 'c', 'd', 'e', 'f', 'g', 'h', 'i'], 'a');
             break;
-        case 'A2': case 'B2': case 'C2': case 'D2': case 'E2': case 'F2': case 'G2': case 'H2': case 'I2':
-            applyColorAndDisableCells(['A', 'B', 'C', 'E', 'F', 'G', 'H', 'I'], 'D');
+        case 'a2': case 'b2': case 'c2': case 'd2': case 'e2': case 'f2': case 'g2': case 'h2': case 'i2':
+            applyColorAndDisableCells(['a', 'b', 'c', 'e', 'f', 'g', 'h', 'i'], 'd');
             break;
-        case 'A3': case 'B3': case 'C3': case 'D3': case 'E3': case 'F3': case 'G3': case 'H3': case 'I3':
-            applyColorAndDisableCells(['A', 'B', 'C', 'D', 'E', 'F', 'H', 'I'], 'G');
+        case 'a3': case 'b3': case 'c3': case 'c3': case 'e3': case 'f3': case 'g3': case 'h3': case 'i3':
+            applyColorAndDisableCells(['a', 'b', 'c', 'd', 'e', 'f', 'h', 'i'], 'g');
             break;
-        case 'A4': case 'B4': case 'C4': case 'D4': case 'E4': case 'F4': case 'G4': case 'H4': case 'I4':
-            applyColorAndDisableCells(['A', 'C', 'D', 'E', 'F', 'G', 'H', 'I'], 'B');
+        case 'a4': case 'b4': case 'c4': case 'd4': case 'e4': case 'f4': case 'g4': case 'h4': case 'i4':
+            applyColorAndDisableCells(['a', 'c', 'd', 'e', 'f', 'g', 'h', 'i'], 'b');
             break;
-        case 'A5': case 'B5': case 'C5': case 'D5': case 'E5': case 'F5': case 'G5': case 'H5': case 'I5':
-            applyColorAndDisableCells(['A', 'B', 'C', 'D', 'F', 'G', 'H', 'I'], 'E');
+        case 'a5': case 'b5': case 'c5': case 'd5': case 'e5': case 'f5': case 'g5': case 'h5': case 'i5':
+            applyColorAndDisableCells(['a', 'b', 'c', 'd', 'f', 'g', 'h', 'i'], 'e');
             break;
-        case 'A6': case 'B6': case 'C6': case 'D6': case 'E6': case 'F6': case 'G6': case 'H6': case 'I6':
-            applyColorAndDisableCells(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'I'], 'H');
+        case 'a6': case 'b6': case 'c6': case 'd6': case 'e6': case 'f6': case 'g6': case 'h6': case 'i6':
+            applyColorAndDisableCells(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'i'], 'h');
             break;
-        case 'A7': case 'B7': case 'C7': case 'D7': case 'E7': case 'F7': case 'G7': case 'H7': case 'I7':
-            applyColorAndDisableCells(['A', 'B', 'D', 'E', 'F', 'G', 'H', 'I'], 'C');
+        case 'a7': case 'b7': case 'c7': case 'd7': case 'e7': case 'f7': case 'g7': case 'h7': case 'i7':
+            applyColorAndDisableCells(['a', 'b', 'd', 'e', 'f', 'g', 'h', 'i'], 'c');
             break;
-        case 'A8': case 'B8': case 'C8': case 'D8': case 'E8': case 'F8': case 'G8': case 'H8': case 'I8':
-            applyColorAndDisableCells(['A', 'B', 'C', 'D', 'E', 'G', 'H', 'I'], 'F');
+        case 'a8': case 'b8': case 'c8': case 'd8': case 'e8': case 'f8': case 'g8': case 'h8': case 'i8':
+            applyColorAndDisableCells(['a', 'b', 'c', 'd', 'e', 'g', 'h', 'i'], 'f');
             break;
-        case 'A9': case 'B9': case 'C9': case 'D9': case 'E9': case 'F9': case 'G9': case 'H9': case 'I9':
-            applyColorAndDisableCells(['A', 'B', 'C', 'D', 'E', 'F', 'H'], 'I');
+        case 'a9': case 'b9': case 'c9': case 'd9': case 'e9': case 'f9': case 'g9': case 'h9': case 'i9':
+            applyColorAndDisableCells(['a', 'b', 'c', 'd', 'e', 'f', 'h'], 'i');
             break;
         default:
             break;

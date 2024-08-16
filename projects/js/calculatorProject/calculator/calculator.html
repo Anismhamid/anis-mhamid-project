@@ -9,103 +9,96 @@
     <title>CALCULATOR</title>
 </head>
 
-<body class="bg-black">
-    <div class="container-sm">
-        <div class="card w-100 my-5 m-auto">
-            <div class="card-body m-auto bg-black">
-                <div class="row w-100" dir="ltr">
-                    <div class="col-sm-12 col-md-12 col-lg-12 my-5">
-                        <h1 class="display-1 text-center text-bg-dark">CALCULAT<i class="fa-solid fa-calculator"></i>R
-                        </h1>
-                        <div class="row mt-2">
-                            <div class="col-9 col-sm-8">
-                                <input type="text" class="form-control h-100 fs-4" id="display" />
-                            </div>
-                            <div class="col-3 col-sm-2">
-                                <button onclick="deleteLastNumber()" class="btn btn-danger w-100 p-4 fs-6">
-                                    <i class="fa-solid fa-delete-left"></i>
-                                </button>
-                            </div>
-                            <div class="col-3 col-sm-2 mt-3">
-                                <button onclick="clearing()" class="btn btn-danger w-100 p-4 fs-6">
-                                    <i class="fa-solid fa-trash"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <div class="row mt-2">
-                            <div class="col-3 col-sm-4 my-2">
-                                <button onclick="sino()" class="btn btn-info w-100 p-4 fs-6">sin</button>
-                            </div>
-                            <div class="col col-sm-4 my-2">
-                                <button onclick="coso()" class="btn btn-info w-100 p-4 fs-6">cos</button>
-                            </div>
-                            <div class="col col-sm-4 my-2">
-                                <button onclick="appendChar('/')" class="btn btn-info w-100 p-4 fs-6"><i
-                                        class="fa-solid fa-divide"></i></button>
-                            </div>
-                        </div>
-                        <div class="row mt-2">
-                            <div class="col-3 col-sm-3">
-                                <button onclick="appendChar('1')" class="btn btn-dark w-100 p-4 fs-4">1</button>
-                            </div>
-                            <div class="col-3 col-sm-3">
-                                <button onclick="appendChar('2')" class="btn btn-dark w-100 p-4 fs-4">2</button>
-                            </div>
-                            <div class="col-3 col-sm-3">
-                                <button onclick="appendChar('3')" class="btn btn-dark w-100 p-4 fs-4">3</button>
-                            </div>
-                            <div class="col-3 col-sm-3">
-                                <button onclick="appendChar('**')" class="btn btn-warning w-100 p-4 fs-6  ">Pow</button>
-                            </div>
-                        </div>
-                        <div class="row mt-2">
-                            <div class="col-3 col-sm-3">
-                                <button onclick="appendChar('4')" class="btn btn-dark w-100 p-4 fs-4">4</button>
-                            </div>
-                            <div class="col-3 col-sm-3">
-                                <button onclick="appendChar('5')" class="btn btn-dark w-100 p-4 fs-4">5</button>
-                            </div>
-                            <div class="col-3 col-sm-3">
-                                <button onclick="appendChar('6')" class="btn btn-dark w-100 p-4 fs-4">6</button>
-                            </div>
-                            <div class="col-3 col-sm-3">
-                                <button onclick="appendChar('*')" class="btn btn-warning w-100 p-4 fs-4">X</button>
-                            </div>
-                        </div>
-                        <div class="row mt-2">
-                            <div class="col-3 col-sm-3">
-                                <button onclick="appendChar('7')" class="btn btn-dark w-100 p-4 fs-4">7</button>
-                            </div>
-                            <div class="col-3 col-sm-3">
-                                <button onclick="appendChar('8')" class="btn btn-dark w-100 p-4 fs-4">8</button>
-                            </div>
-                            <div class="col-3 col-sm-3">
-                                <button onclick="appendChar('9')" class="btn btn-dark w-100 p-4 fs-4">9</button>
-                            </div>
-                            <div class="col-3 col-sm-3">
-                                <button onclick="appendChar('-')" class="btn btn-warning w-100 p-4 fs-4">-</button>
-                            </div>
-                        </div>
-                        <div class="row mt-2">
-                            <div class="col-3 col-md-3">
-                                <button onclick="appendChar('0')" class="btn btn-dark w-100 p-4 fs-4">0</button>
-                            </div>
-                            <div class="col-3 col-md-3">
-                                <button onclick="appendChar('.')" class="btn btn-dark w-100 p-4 fs-4">.</button>
-                            </div>
-                            <div class="col-3 col-md-3">
-                                <button onclick="showResult()" class="btn btn-success w-100 p-4 fs-4">=</button>
-                            </div>
-                            <div class="col-3 col-md-3">
-                                <button onclick="appendChar('+')" class="btn btn-warning w-100 p-4 fs-4">+</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+<body>
+    <main class="bg-light-subtle container h-100">
+        <h1 class="display-1 text-center text-bg-dark">CALCULAT<i class="fa-solid fa-calculator"></i>R
+        </h1>
+        <div class="row mt-2">
+            <div class="col-9 col-sm-8">
+                <input type="text" class="form-control h-100 fs-4" id="display" />
+            </div>
+            <div class="col-3 col-sm-2">
+                <button onclick="deleteLastNumber()" class="btn btn-danger w-100 p-4 fs-6">
+                    <i class="fa-solid fa-delete-left"></i>
+                </button>
+            </div>
+            <div class="col-3 col-sm-2 mt-3">
+                <button onclick="clearing()" class="btn btn-danger w-100 p-4 fs-6">
+                    <i class="fa-solid fa-trash"></i>
+                </button>
             </div>
         </div>
-        <script src="https://kit.fontawesome.com/d6e20efe99.js" crossorigin="anonymous"></script>
-        <script src="./script.js"></script>
+        <div class="row mt-2">
+            <div class="col-3 col-sm-4 my-2">
+                <button onclick="sino()" class="btn btn-info w-100 p-4 fs-6">sin</button>
+            </div>
+            <div class="col col-sm-4 my-2">
+                <button onclick="coso()" class="btn btn-info w-100 p-4 fs-6">cos</button>
+            </div>
+            <div class="col col-sm-4 my-2">
+                <button onclick="appendChar('/')" class="btn btn-info w-100 p-4 fs-6"><i
+                        class="fa-solid fa-divide"></i></button>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-3 col-sm-3">
+                <button onclick="appendChar('1')" class="btn btn-dark w-100 p-4 fs-4">1</button>
+            </div>
+            <div class="col-3 col-sm-3">
+                <button onclick="appendChar('2')" class="btn btn-dark w-100 p-4 fs-4">2</button>
+            </div>
+            <div class="col-3 col-sm-3">
+                <button onclick="appendChar('3')" class="btn btn-dark w-100 p-4 fs-4">3</button>
+            </div>
+            <div class="col-3 col-sm-3">
+                <button onclick="appendChar('**')" class="btn btn-warning w-100 p-4 fs-6  ">Pow</button>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-3 col-sm-3">
+                <button onclick="appendChar('4')" class="btn btn-dark w-100 p-4 fs-4">4</button>
+            </div>
+            <div class="col-3 col-sm-3">
+                <button onclick="appendChar('5')" class="btn btn-dark w-100 p-4 fs-4">5</button>
+            </div>
+            <div class="col-3 col-sm-3">
+                <button onclick="appendChar('6')" class="btn btn-dark w-100 p-4 fs-4">6</button>
+            </div>
+            <div class="col-3 col-sm-3">
+                <button onclick="appendChar('*')" class="btn btn-warning w-100 p-4 fs-4">X</button>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-3 col-sm-3">
+                <button onclick="appendChar('7')" class="btn btn-dark w-100 p-4 fs-4">7</button>
+            </div>
+            <div class="col-3 col-sm-3">
+                <button onclick="appendChar('8')" class="btn btn-dark w-100 p-4 fs-4">8</button>
+            </div>
+            <div class="col-3 col-sm-3">
+                <button onclick="appendChar('9')" class="btn btn-dark w-100 p-4 fs-4">9</button>
+            </div>
+            <div class="col-3 col-sm-3">
+                <button onclick="appendChar('-')" class="btn btn-warning w-100 p-4 fs-4">-</button>
+            </div>
+        </div>
+        <div class="row mt-2">
+            <div class="col-3 col-md-3">
+                <button onclick="appendChar('0')" class="btn btn-dark w-100 p-4 fs-4">0</button>
+            </div>
+            <div class="col-3 col-md-3">
+                <button onclick="appendChar('.')" class="btn btn-dark w-100 p-4 fs-4">.</button>
+            </div>
+            <div class="col-3 col-md-3">
+                <button onclick="showResult()" class="btn btn-success w-100 p-4 fs-4">=</button>
+            </div>
+            <div class="col-3 col-md-3">
+                <button onclick="appendChar('+')" class="btn btn-warning w-100 p-4 fs-4">+</button>
+            </div>
+        </div>
+    </main>
+    <script src="https://kit.fontawesome.com/d6e20efe99.js" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
 </body>
 
 </html>
