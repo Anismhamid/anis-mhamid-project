@@ -2,22 +2,17 @@ import ActionsManager from "./js/actionManager.js";
 import Action from "./js/actions.js";
 
 let manager = new ActionsManager();
-
+let currentDate = formatDate(new Date());
 
 window.addNewAction = function addNewAction() {
     let type = document.getElementById("type").value;
     let description = document.getElementById("description").value;
     let amount = +document.getElementById("amount-input").value || 0;
 
-    let formattedDate = formatDate(new Date());
-
     if ((description != '' && amount != '')) {
-        manager.addAction(new Action(type, description, amount, formattedDate, manager.savedAmount || 0, manager.totalSavings));
+        manager.addAction(new Action(type, description, amount, currentDate, manager.savedAmount || 0, manager.totalSavings));
         manager.calcBalance();
-        if (amount <= 0 || amount > manager.balance) {
-            alert('שגיאה, אתה לא יכול להיות בחובות')
-            return null
-        }
+
     } else if (description == '' && amount == '') {
         alert('שגיאה, אנא מלא את השדות')
     } else if (description != '' || description == '' && amount == '') {
@@ -41,7 +36,7 @@ function formatDate(date) {
 function showActions() {
     let SavingsAmountResult = manager.allTheSavingsAmount
 
-    let currentDate = formatDate(new Date());
+
 
     let balanceColor = manager.balance > 0 ? 'green' : 'red';
 
@@ -171,7 +166,7 @@ window.getAll = function getAll() {
     for (let action of storedActions) {
         let color = action.type === "Income" ? 'green' : 'red';
 
-        
+
         tbody.innerHTML += `
         <tr>
             <td class='fw-bold' style="color: ${color};">${action.description}</td>
@@ -194,7 +189,7 @@ window.getAll = function getAll() {
 getAll()
 
 function showSaveAmount() {
-    let totalSavings = manager.totalSavings || 'אין נתונים'
+    let totalSavings = manager.totalSavings
     let savedTbody = document.getElementById("saved-amount-table");
 
     savedTbody.innerHTML = '';
@@ -202,9 +197,19 @@ function showSaveAmount() {
     for (let action = 0; action < totalSavings.length; action++) {
 
         savedTbody.innerHTML += `
-            <td class="text-primary fw-bold">${formatDate(new Date())}</td>
+            <td class="text-primary fw-bold">${currentDate}</td>
             <td class="text-primary text-center fw-bold">${totalSavings[action]}</td>
         `;
 
+    }
+}
+
+
+window.resetAaa = function resetAll() {
+    if (confirm("שים לב!, האם אתה מאשר/ת שהכל ימחק ויתחיל דף חדש?")) {
+        manager.reset()
+        showSaveAmount();
+        showActions();
+        getAll();
     }
 }

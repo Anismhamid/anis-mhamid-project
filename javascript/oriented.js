@@ -79,7 +79,7 @@ for (let htmlProject of htmlCssProjects) {
         <!-- 1 -->
         <div class="col-sm-12 m-auto col-lg-3 my-4">
             <div class="parent">
-                <div class="card" style="width: 20rem;">
+                <div class="card" style="width: 18rem;">
                     <div class="content-box">
                         <span class="card-title">${htmlProject.title}</span>
                         <div class="card-img">
@@ -133,6 +133,8 @@ let javaScriptProjects = [
         alt: "anis mhamid Calculator",
         description: "HTML לבניית מבנה העמוד והחזית Bootstrap כדי לשפר את עיצוב הממשק ולהפוך אותו למגיב. JavaScript ליישום היגיון תכנות וחישובים",
         pageUrl: "./pages/calculator.html",
+        date: 'June',
+
     },
     {
         id: 11,
@@ -141,6 +143,7 @@ let javaScriptProjects = [
         alt: "anis mhamid Flappy Bird game",
         description: "משחק רספונסיבי למכשירים שונים, מה שאומר שעיצובו מתאים לגדלי מסכים שונים ולסוגי מכשירים שונים, ממחשבים שולחניים עד הטלפונים הניידים, ",
         pageUrl: "./pages/flappyBird.html",
+        date: 'Jule',
     },
     {
         id: 12,
@@ -149,6 +152,7 @@ let javaScriptProjects = [
         alt: "anis mhamid products page",
         description: "הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
         pageUrl: "./pages/products-cart.html",
+        date: 'July'
     },
     {
         id: 13,
@@ -157,6 +161,8 @@ let javaScriptProjects = [
         alt: "anis mhamid MY-ACCOUNT",
         description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
         pageUrl: "./pages/myAccount.html",
+        date: 'August',
+
     },
     {
         id: 14,
@@ -165,6 +171,7 @@ let javaScriptProjects = [
         alt: "anis mhamid Ultimata Tic Tac Toe",
         description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
         pageUrl: "./pages/x-O.html",
+        dat: 'July'
     },
     {
         id: 15,
@@ -173,6 +180,7 @@ let javaScriptProjects = [
         alt: "anis mhamid Snake Game",
         description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
         pageUrl: "./pages/snake.html",
+        dat:'July'
     },
     {
         id: 16,
@@ -181,6 +189,8 @@ let javaScriptProjects = [
         alt: "anis mhamid Manage U",
         description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
         pageUrl: "./pages/manageU.html",
+        date: 'July'
+
     },
     {
         id: 17,
@@ -189,6 +199,8 @@ let javaScriptProjects = [
         alt: "anis mhamid Flags API",
         description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
         pageUrl: "./pages/flagsApi.html",
+        date: 'July'
+
     },
     {
         id: 18,
@@ -197,14 +209,16 @@ let javaScriptProjects = [
         alt: "anis mhamid Api fetching To Cards",
         description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
         pageUrl: "./pages/fetchMarketApi.html",
+        date:'July'
     },
 ]
 
 for (let jSProject of javaScriptProjects) {
     document.getElementById("row2").innerHTML += `
+        <!-- 1 -->
         <div class="col-sm-12 m-auto col-lg-3 my-4">
             <div class="parent">
-                <div class="card" style="width: 19rem;">
+                <div class="card" style="width: 18rem;">
                     <div class="content-box">
                         <span class="card-title">${jSProject.title}</span>
                         <div class="card-img">
@@ -217,7 +231,7 @@ for (let jSProject of javaScriptProjects) {
                         </button>
                     </div>
                     <div class="date-box">
-                        <span class="month">April</span>
+                        <span class="month">${jSProject.date}</span>
                     </div>
                 </div>
             </div>

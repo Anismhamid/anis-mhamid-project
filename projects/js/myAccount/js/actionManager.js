@@ -70,6 +70,12 @@ class ActionsManager {
         let storedActions = localStorage.getItem('actions');
         return storedActions ? JSON.parse(storedActions) : [];
     }
+
+    reset(){
+        localStorage.setItem("actions", JSON.stringify(this.newAction =[]))
+        this.calcBalance()
+        this.loadFromLocal()
+    }
 }
 
 export default ActionsManager;

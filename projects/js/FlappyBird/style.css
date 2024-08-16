@@ -5,18 +5,39 @@
 }
 
 
-
-
 #game {
-    width: 100%;
-    height: 800px;
+    width: 100vw;
+    height: 100vh;
     margin: auto;
     overflow: hidden;
-    background: url('./gameImages/deshe2.png');
-    /* background: #000; */
+        background: url('./gameImages/sky-day-game-background_7814-306.avif');
     background-size: cover;
     background-position: center;
 
+}
+
+#geme {
+    background: url('./gameImages/pngegg.png');
+    width: 500px;
+    height: 200px;
+    position: absolute;
+    z-index: 1;
+    top: 70px;
+    right: 0;
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    animation: gyom 20s linear infinite;
+}
+
+@keyframes gyom {
+    0% {
+        right: -100px;
+    }
+
+    100% {
+        right: 100%;
+    }
 }
 
 #block {
@@ -25,7 +46,6 @@
     position: relative;
     left: 100%;
     animation: block 5s infinite linear;
-    background: url('./gameImages/aniss.png');
     background: transparent;
     background-size: cover;
     background-position: center;
@@ -66,7 +86,8 @@
     border-bottom: 10px solid #fff;
     border-top: 10px solid #fff;
     border-radius: 10%;
-    background: rgba(255, 255, 255, 0.096);
+    background: url('./gameImages/OEcM.gif');
+    background-position: center;
 }
 
 #character {
