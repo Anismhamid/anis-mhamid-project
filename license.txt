@@ -2,7 +2,7 @@ Software Rights and License,  Application
 
 Copyright © Anis Zakaria, 2023
 
-Permission is hereby granted to any person obtaining a copy of this software and associated documentation files (the "Worker Manager Application") for use only. The distribution, sale, rental, leasing, or granting of a commercial license or sublicensing the Software or any modifications thereof is prohibited.
+Permission is hereby granted to any person obtaining a copy of this software and associated documentation files (the "Portfolio") for use only. The distribution, sale, rental, leasing, or granting of a commercial license or sublicensing the Software or any modifications thereof is prohibited.
 
 This license does not grant you any rights regarding your modifications to the Software. All rights not expressly granted here are reserved.
 

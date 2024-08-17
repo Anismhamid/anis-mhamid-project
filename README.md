@@ -1,130 +1,224 @@
+# Portfolio Website - Anis Mhamid
+
+This project is a website developed by Anis Mhamid to showcase his work in web development and demonstrate his skills and achievements. The site includes sections such as "About Us," "Services," "Our Projects," and "Contact Us." It serves as a platform for Anis Mhamid to present his expertise in web development and highlight his accomplishments in the field.
+
+## Table of Contents
+
+- [Description](#description)
+- [Features](#features)
+- [File Structure](#file-structure)
+- [Projects](#projects)
+- [Publishing](#publishing)
+- [Dependencies](#dependencies)
+- [Contact Information](#contact-information)
+- [Author](#author)
+
 ## Description
 
-This project is a website developed by Anis Mahamid to showcase his work in web development and demonstrate his skills and achievements. The site includes sections such as "About Us," "Services," "Our Projects," and "Contact Us." It serves as a platform for Anis Mahamid to present his expertise in web development and highlight his accomplishments in the field.
-
-## table of contents
-
-- [Introduction](#Introduction)
-- [Features Features](#Features)
-- [File Structure](#file-structure)
-- [Publishing](#Publishing)
-- [Dependencies](#Dependencies)
-- [Projects](#Projects)
-- [Contact Information](#Contact-Information)
-- [Author](#Author)
+This project is a portfolio website created to highlight Anis Mhamid's skills and achievements in web development. It features various sections that provide insight into his work, services, and contact information.
 
 ## Features
 
-- **Navbar:**: Provides easy navigation through the website, and remains available on all pages.
-- **About Us:**: Provides insight into the project or company's mission, values, and background.
-- **Services:**: The services provided are presented clearly and concisely to visitors.
-- **Our Projects:**: Highlighting previous projects or work and demonstrating capabilities and expertise.
-- **Contact Us:**: Provides a platform for visitors to communicate via the contact form or direct contact information.
+- **Navbar:** Provides easy navigation through the website and remains available on all pages.
+- **About Us:** Offers insight into the project or individual's mission, values, and background.
+- **Services:** Clearly presents the services provided.
+- **Our Projects:** Showcases previous projects or work, demonstrating capabilities and expertise.
+- **Contact Us:** Provides a platform for visitors to communicate via a contact form or direct contact information.
 - **Footer:** Contains useful additional links, including quick links to different website sections, social media links, and copyright information.
 
-## File structure
+## File Structure
 
-- **HTML Files:**: Contains well-organized HTML files for different sections of the site.
-- **SASS Folders:**: Used to organize CSS styles and make them more manageable and easy to maintain.
-- **main.css:**: Contains all SASS styles.
-- **pages.css:**: Contains all SASS styles. - Other files created to organize the patterns logically and structurally.
+- **HTML Files:** Contains well-organized HTML files for different sections of the site.
+- **SASS Folders:** Used to organize CSS styles, making them more manageable and easy to maintain.
+- **main.css:** Compiled CSS file from SASS styles.
+- **pages.css:** Additional styles for specific pages, if applicable.
 
 ## Projects
 
-
 ### Take the Future
 
-- **Description:** Take the Future is a project designed to deliver an advanced and visually appealing user experience across various devices.
-
+- **Description:** Designed to deliver an advanced and visually appealing user experience across various devices.
 - **Skills Used:** HTML, CSS, SASS, Bootstrap.
-
-- **Results:** The page offers an attractive and intuitive user experience on different devices, featuring a sophisticated design that seamlessly blends elegance and functionality.
-
+- **Results:** Offers an attractive and intuitive user experience on different devices, blending elegance and functionality.
+- **Page URL:** [Take the Future](./pages/future.html)
+- **Image:** ![Take the Future](./img/pages-images/takeTheFuture.png)
+- **Alt Text:** Anis Mhamid Let Us Lead You Forward
 
 ### Here and Now
 
-- **Description:** Here and Now stands out with its elegant design, creating a delightful browsing experience for users. 
-
+- **Description:** Features an elegant design, creating a delightful browsing experience for users.
 - **Skills Used:** HTML, CSS, SASS.
-
-- **Results:** The page impresses with its clean and organized design, enhancing user experience and ease of navigation.
-
+- **Results:** Impressive clean and organized design that enhances user experience and ease of navigation.
+- **Page URL:** [Here and Now](./pages/here-and-now.html)
+- **Image:** ![Here and Now](./img/pages-images/hereAndNow.png)
+- **Alt Text:** Anis Mhamid Here and Now
 
 ### Free Consultation
 
-- **Description:** Free Consultation is an interactive page showcasing the "Free Consultation" service to users.
-
+- **Description:** Interactive page showcasing the "Free Consultation" service to users.
 - **Skills Used:** HTML, CSS, SASS.
-
-- **Results:** The page boasts a responsive design, ensuring optimal viewing experience across various devices.
-
+- **Results:** Boasts a responsive design, ensuring an optimal viewing experience across various devices.
+- **Page URL:** [Free Consultation](./pages/free-consultation-page.html)
+- **Image:** ![Free Consultation](./img/pages-images/free-consultation-porject5-image2.png)
+- **Alt Text:** Anis Mhamid Free Consultation Page
 
 ### Let Us Lead You Forward
 
-- **Description:** Let Us Lead You Forward offers a unique, attractive, and elegant user experience.
-
+- **Description:** Offers a unique, attractive, and elegant user experience.
 - **Skills Used:** HTML, CSS, SASS.
+- **Results:** Provides a distinct and captivating user experience, leaving a lasting impression on visitors.
+- **Page URL:** [Let Us Lead You Forward](./pages/leading-forward.html)
+- **Image:** ![Let Us Lead You Forward](./img/pages-images/leading-forward.png)
+- **Alt Text:** Anis Mhamid Free Consultation Page
 
-- **Results:** The page provides a distinct and captivating user experience, leaving a lasting impression on visitors.
+### Good Coffee for the Morning
 
-
-### Let Us Build Your Dream Home
-
-- **Description:**  This design facilitates user experience.
-
+- **Description:** Designed to provide a pleasant user experience across all screen sizes, featuring an impressive image and registration form.
 - **Skills Used:** HTML, CSS, SASS.
+- **Results:** Provides a high-quality experience for users across various devices.
+- **Page URL:** [Good Coffee for the Morning](./pages/morning-coffe-page.html)
+- **Image:** ![Good Coffee for the Morning](./img/pages-images/morning-coffe.png)
+- **Alt Text:** Anis Mhamid Morning Coffee
 
-- **Results:** The page is responsive to different devices, meaning its design is suitable for different screen sizes and types of devices, from desktop computers to mobile phones.
+### See the World Up Close
 
-
-### Welcome to Our Fashion World
-
-- **Description:** The page provides an attractive and easy-to-use user experience on different devices.
-
+- **Description:** Combines elegance and functionality in web design with an emphasis on readability and visual comfort.
 - **Skills Used:** HTML, CSS, SASS.
+- **Results:** Offers a smooth user experience with a responsive design that balances aesthetics and functionality.
+- **Page URL:** [See the World Up Close](./pages/see-the-wold-page.html)
+- **Image:** ![See the World Up Close](./img/pages-images/see-the-wold.png)
+- **Alt Text:** Anis Mhamid See The World
 
 ### Thinking Outside the Box
 
-- **Description:**  The page is responsive to different devices, meaning its design is suitable for different screen sizes and types of devices, from desktop computers to mobile phones.
-
+- **Description:** Responsive design suitable for various screen sizes, ensuring a smooth user experience.
 - **Skills Used:** HTML, CSS, SASS.
+- **Results:** Facilitates user experience with a design that adapts to different devices.
+- **Page URL:** [Thinking Outside the Box](./pages/think-so-far-page.html)
+- **Image:** ![Thinking Outside the Box](./img/pages-images/think-so-far.png)
+- **Alt Text:** Anis Mhamid Think Far
 
-- **Results:** design facilitates user experience, providing convenience and ease for users on a variety of devices, ensuring a smooth and pleasant user experience.
+### Let Us Build Your Dream Home
 
-### See the world up close
-
-- **Description:** This page is a perfect example of a combination of elegance and functionality in web design, using the "Assistant" font that allows for pleasant reading and magnificent colors that relax the eye.
-
+- **Description:** Facilitates user experience with a responsive design suitable for various screen sizes.
 - **Skills Used:** HTML, CSS, SASS.
+- **Results:** Responsive design adapts to different devices, ensuring a seamless user experience.
+- **Page URL:** [Let Us Build Your Dream Home](./pages/dream-home.html)
+- **Image:** ![Let Us Build Your Dream Home](./img/pages-images/dream-home.png)
+- **Alt Text:** Anis Mhamid Dream Home
 
-- **Results:** Its responsiveness to all screen sizes, which makes the user experience smooth. Adheres to the high quality and interactivity, offers an impressive balance between design and functionality.
+### Welcome to Our Fashion World
 
-### Good coffee for the morning
-
-- **Description:** The page was designed in a way that allows for a smooth and pleasant user experience for all types of screens. When opening the page on a large screen, the right area is dedicated to a large and impressive image of the coffee, along with the attached registration form. This reflects the design of the page and allows the user to fill in the details easily. At the same time, the larger the The screen is smaller, the design adapts itself accordingly: the image is merged and adapted to the size of the screen and the form is arranged in a more efficient way in order to maintain the user's comfort and make it easier for him to fill in the details.
-
+- **Description:** Provides an attractive and easy-to-use user experience on different devices.
 - **Skills Used:** HTML, CSS, SASS.
+- **Results:** Ensures an engaging user experience with an elegant design.
+- **Page URL:** [Welcome to Our Fashion World](./pages/fation.html)
+- **Image:** ![Welcome to Our Fashion World](./img/pages-images/fashion.png)
+- **Alt Text:** Anis Mhamid Fashion World
 
-- **Results:** the page provides a high-quality and pleasant experience for users of all types of screens and devices.
+### Additional Projects
 
-## employment
+#### מחשבון
+
+- **Description:** HTML for page structure and Bootstrap for improved interface design and responsiveness. JavaScript for implementing programming logic and calculations.
+- **Skills Used:** HTML, Bootstrap, JavaScript.
+- **Page URL:** [Calculator](./pages/calculator.html)
+- **Image:** ![Calculator](./img/Calculator.png)
+- **Alt Text:** Anis Mhamid Calculator
+- **Date:** June
+
+#### Flappy Bird Game
+
+- **Description:** A responsive game suitable for various devices, from desktop computers to mobile phones.
+- **Skills Used:** HTML, CSS, JavaScript.
+- **Page URL:** [Flappy Bird](./pages/flappyBird.html)
+- **Image:** ![Flappy Bird](./img/FlappyBird.png)
+- **Alt Text:** Anis Mhamid Flappy Bird Game
+- **Date:** July
+
+#### עגלת קניו
+
+- **Description:** Provides an attractive and user-friendly experience across different devices.
+- **Skills Used:** HTML, CSS, JavaScript.
+- **Page URL:** [Products Cart](./pages/products-cart.html)
+- **Image:** ![Products Cart](./img/products.png)
+- **Alt Text:** Anis Mhamid Products Page
+- **Date:** July
+
+#### My Account
+
+- **Description:** An interactive page offering an engaging and user-friendly experience.
+- **Skills Used:** HTML, CSS, JavaScript.
+- **Page URL:** [My Account](./pages/myAccount.html)
+- **Image:** ![My Account](./img/myAccount.png)
+- **Alt Text:** Anis Mhamid My Account
+- **Date:** August
+
+#### Ultimata Tic Tac Toe
+
+- **Description:** A game providing an engaging user experience across different devices.
+- **Skills Used:** HTML, CSS, JavaScript.
+- **Page URL:** [Ultimata Tic Tac Toe](./pages/x-O.html)
+- **Image:** ![Ultimata Tic Tac Toe](./img/ultimate-TicTacToe.png)
+- **Alt Text:** Anis Mhamid Ultimata Tic Tac Toe
+- **Date:** July
+
+#### Snake
+
+- **Description:** A game designed for a pleasant user experience on various devices.
+- **Skills Used:** HTML, CSS, JavaScript.
+- **Page URL:** [Snake](./pages/snake.html)
+- **Image:** ![Snake](./img/dode.png)
+- **Alt Text:** Anis Mhamid Snake Game
+- **Date:** July
+
+#### Manage U
+
+- **Description:** An interactive page providing an engaging and user-friendly experience.
+- **Skills Used:** HTML, CSS, JavaScript.
+- **Page URL:** [Manage U](./pages/manageU.html)
+- **Image:** ![Manage U](./img/manageU2.png)
+- **Alt Text:** Anis Mhamid Manage U
+- **Date:** July
+
+#### Flags API
+
+- **Description:** An interactive page showcasing a user-friendly experience with various flags.
+- **Skills Used:** HTML, CSS, JavaScript.
+- **Page URL:** [Flags API](./pages/flagsApi.html)
+- **Image:** ![Flags API](./img/flagsProject.png)
+- **Alt Text:** Anis Mhamid Flags API
+- **Date:** July
+
+#### Api Fetching To Cards
+
+- **Description:** A page demonstrating API fetching to display data in card format.
+- **Skills Used:** HTML, CSS, JavaScript.
+- **Page URL:** [Api Fetching To Cards](./pages/fetchMarketApi.html)
+- **Image:** ![Api Fetching To Cards](./img/marketingApi.png)
+- **Alt Text:** Anis Mhamid Api Fetching To Cards
+- **Date:** July
+
+## Publishing
 
 1. Download the project files.
-2. Open the Index.html file in your web browser to view the site.
+2. Open the `index.html` file in your web browser to view the site.
 
 ## Dependencies
+- **HTML:**  
+- **CSS:** 
+- **SASS:** Used to organize and improve the writing of CSS styles.
+- **javaScript:** 
+- **Bootstrap:** Creates a responsive and attractive design.
+- **FontAwesome:** Provides web icons.
 
-- **SASS:**: It is used to organize and improve the writing of CSS styles.
-- **Bootstrap:**: Used to create a responsive and attractive design.
-- **FontAwesome:**: Used for web icons.
-
-## contact-information
+## Contact Information
 
 For any inquiries or comments, please contact us:
 
-- **E-mail:** anesmhamed1@gmail.com
-- **the phone:** +972 538346915
+- **Email:** anesmhamed1@gmail.com
+- **Phone:** +972 538346915
 
 ## Author
 
-anis mhamid
+Anis Mhamid
