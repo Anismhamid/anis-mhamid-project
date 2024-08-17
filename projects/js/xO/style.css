@@ -24,7 +24,7 @@
 
 
 
-.a {
+.cell {
     width: 100px;
     height: 100px;
     display: flex;
@@ -39,7 +39,7 @@
     box-shadow: inset 4px -0px 8px rgb(0, 0, 0), 0 0 #fffbfb;
 }
 
-.a:hover {
+.cell:hover {
     background: #4fef10a4;
 }
 
@@ -55,7 +55,7 @@
 
 
 @media (max-width:970px) {
-    .a {
+    .cell {
         width: 60px;
         height: 60px;
         margin: auto;
@@ -65,7 +65,7 @@
 }
 
 @media (max-width:576px) {
-    .a {
+    .cell {
         position: relative;
         left: 8px;
         width: 30px;
@@ -81,3 +81,11 @@
         top: -110px;
     }
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+

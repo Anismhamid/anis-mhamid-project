@@ -41,6 +41,7 @@ function insert_X_Y(cellId) {
             handleGameEnd(winner);
         } else {
             switchPlayers();
+            winner
         }
 
         disableCellsBasedOnPlayer(cellId);
@@ -89,12 +90,8 @@ let checkWinner = () => {
                 try {
                     setBoardColor(boardId, 'dark'); // sets the board's color
                     disableBoard(boardId); // disables the board
-                    wonBoards.push(boardId); // Add to won boards list
-
-
-                    applyColorAndDisableCells('a', 'd');
-
-                    break; // Exit loop once a win is detected
+                    wonBoards.push(...boardId); // won boards list
+                    applyColorAndDisableCells(boardId, 'd');
                 } catch (error) {
                     console.error(error);
                 }
@@ -133,6 +130,7 @@ let applyColorAndDisableCells = (disableCellsListOfIds, lightCellId) => {
     } catch (error) {
         console.log(error);
     }
+    console.log("applyColorAndDisableCells()=> ", [disableCellsListOfIds, lightCellId]);
     return [disableCellsListOfIds, lightCellId];
 };
 
@@ -142,7 +140,8 @@ let applyColorAndDisableCells = (disableCellsListOfIds, lightCellId) => {
 const disableCellsBasedOnPlayer = (cellId) => {
     switch (cellId) {
         case 'a1': case 'b1': case 'c1': case 'd1': case 'e1': case 'f1': case 'g1': case 'h1': case 'i1':
-            applyColorAndDisableCells(['b', 'c', 'd', 'e', 'f', 'g', 'h', 'i'], 'a');
+            var ColorAndDisable = applyColorAndDisableCells(['b', 'c', 'd', 'e', 'f', 'g', 'h', 'i'], 'a');
+
             break;
         case 'a2': case 'b2': case 'c2': case 'd2': case 'e2': case 'f2': case 'g2': case 'h2': case 'i2':
             applyColorAndDisableCells(['a', 'b', 'c', 'e', 'f', 'g', 'h', 'i'], 'd');
@@ -180,6 +179,8 @@ function disableCells(cellIds) {
     for (let cellId of cellIds) {
         disableBoard(cellId);
     }
+    console.log("disableCells()", cellIds);
+    return cellIds
 };
 
 
@@ -188,22 +189,25 @@ function enableAllCells() {
     for (let boardId in boardState) {
         enableBoard(boardId);
     }
+    console.log("enableAllCells()", boardId);
+    return boardId
 }
 
 
 // פונקציה להשבתת קליקים בלוח מסוים
 function disableBoard(boardId) {
-    let cells = document.querySelectorAll(`#${boardId} .a`);
+    let cells = document.querySelectorAll(`#${boardId} .cell`);
     cells.forEach(cell => {
         cell.onclick = null;
     });
+    console.log('disableBoard()=> ', boardId);
     return boardId
 }
 
 
 // פונקציה  המקבלת מערך ומאפשרת קליקים על הלוחות
 function enableBoard(boardId) {
-    let cells = document.querySelectorAll(`#${boardId} .a`);
+    let cells = document.querySelectorAll(`#${boardId} .cell`);
     cells.forEach(cell => {
         if (cell.innerHTML === '') {
             cell.onclick = function () {
@@ -211,17 +215,20 @@ function enableBoard(boardId) {
             };
         }
     });
+    console.log("enableBoard()=> ", boardId);
+    return boardId;
 }
 
 
 
 // פונקציה להגדיר את צבע הרקע של לוח ספציפי לאדום
 function setBoardColor(boardId, newColor) {
-    let cells = document.querySelectorAll(`#${boardId} .a`);
+    let cells = document.querySelectorAll(`#${boardId} .cell`);
     cells.forEach(cell => {
         cell.classList.remove('bg-light', 'bg-warning');
         cell.classList.add(`bg-${newColor}`);
     });
+    console.log('setBoardColor()=> color ', boardId, newColor)
     return newColor;
 }
 
@@ -236,11 +243,11 @@ function resetGame() {
     document.getElementById('result-left').innerText = xCounter;
     document.getElementById('result-right').innerText = oCounter;
     document.getElementById('result-center').innerText = gamesCounter;
-    document.querySelectorAll('.a').forEach(cell => {
+    document.querySelectorAll('.cell').forEach(cell => {
         cell.innerText = '';
         cell.style.backgroundColor = '#f8ad30'
     });
-    setBoardColor(['A', 'B', 'C', 'D', 'E', 'F', 'G', 'H', 'I'], 'warning');
+    setBoardColor(['a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i'], 'warning');
 }
 
 // פונקציה לאיפוס הלוח
