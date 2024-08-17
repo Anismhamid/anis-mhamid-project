@@ -95,7 +95,7 @@ li {
   position: relative;
   overflow: hidden;
   background: linear-gradient(to bottom, rgba(0, 1, 74, 0.7960784314), rgba(17, 12, 51, 0.7058823529)), url("../../img/cosmic-timetraveler-iUY61D226QY-unsplash.jpg");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -103,6 +103,7 @@ li {
   flex-direction: column;
   color: #101010;
   text-align: center;
+  animation: thiii 25s infinite;
 }
 #main-section .main-title-box {
   color: #ffffff;
@@ -126,6 +127,20 @@ li {
   color: #dc4c36;
 }
 
+@keyframes thiii {
+  0% {
+    background: rgb(0, 0, 0);
+  }
+  50% {
+    background: rgba(20, 20, 125, 0.842);
+  }
+  70% {
+    background: rgba(0, 1, 74, 0.882);
+  }
+  100% {
+    background: rgb(0, 0, 0);
+  }
+}
 .animatedBackground .layer {
   position: absolute;
   top: 0;

@@ -46,7 +46,7 @@
     }
 
     .read-more-button {
-        @extend #button;
+        @extend .button;
         margin-bottom: 100px;
     }
 }

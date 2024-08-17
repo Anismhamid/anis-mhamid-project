@@ -149,7 +149,7 @@ li {
   position: relative;
   overflow: hidden;
   background: linear-gradient(to bottom, rgba(0, 1, 74, 0.7960784314), rgba(17, 12, 51, 0.7058823529)), url("../../img/cosmic-timetraveler-iUY61D226QY-unsplash.jpg");
-  background-repeat: repeat;
+  background-repeat: no-repeat;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -157,6 +157,7 @@ li {
   flex-direction: column;
   color: #101010;
   text-align: center;
+  animation: thiii 25s infinite;
 }
 #main-section .main-title-box {
   color: #ffffff;
@@ -180,6 +181,20 @@ li {
   color: #dc4c36;
 }
 
+@keyframes thiii {
+  0% {
+    background: rgb(0, 0, 0);
+  }
+  50% {
+    background: rgba(20, 20, 125, 0.842);
+  }
+  70% {
+    background: rgba(0, 1, 74, 0.882);
+  }
+  100% {
+    background: rgb(0, 0, 0);
+  }
+}
 .animatedBackground .layer {
   position: absolute;
   top: 0;
@@ -355,7 +370,7 @@ li {
     border-radius: 10px;
   }
 }
-#button, #about .read-more-button {
+.button, #about .read-more-button {
   border: none;
   color: #141414;
   padding: 0.7em 1.7em;
@@ -390,13 +405,13 @@ li {
     box-shadow: 0px 5px 12px rgb(255, 255, 255), 0px -2px 3px rgb(255, 255, 255) inset;
   }
 }
-#button:hover, #about .read-more-button:hover {
+.button:hover, #about .read-more-button:hover {
   background: linear-gradient(225deg, #ffffff, #717171, rgb(255, 255, 255));
   transform: scale(1.06);
   cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><foreignObject width="100%" height="100%"><div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;background:linear-gradient(135deg,%23999 40%,%239950 0),linear-gradient(45deg, %230000 40%, %23777 0 60%,%230000 0)" ></div></foreignObject></svg>') 0 0, default;
 }
 
-#button:active, #about .read-more-button:active {
+.button:active, #about .read-more-button:active {
   box-shadow: 0px 5px 12px rgb(255, 255, 255), 0px -2px 3px rgb(255, 255, 255) inset;
   transform: scale(0.9);
 }
