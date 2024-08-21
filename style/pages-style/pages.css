@@ -247,11 +247,11 @@ li {
 #bicycle-man1 {
   height: 100px;
   position: absolute;
-  top: 400px;
+  bottom: 0;
   right: auto;
   animation: bicycle1 20s linear infinite;
   transition: all 5s ease-in-out;
-  z-index: 2;
+  z-index: 1;
 }
 
 /* 
@@ -260,13 +260,13 @@ li {
 @keyframes bicycle1 {
   0% {
     right: 100%;
-    top: 89%;
+    bottom: 0;
   }
   50% {
-    top: 89%;
+    bottom: 0;
   }
   100% {
-    top: 89%;
+    bottom: 0;
     right: -100px;
   }
 }
