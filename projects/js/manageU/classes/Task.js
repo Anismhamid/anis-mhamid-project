@@ -6,11 +6,4 @@ class Task {
   }
 }
 
-
 export default Task;
-// function func() {
-//     num = false
-// }
-
-// let num = true
-// export { Task, num, func };

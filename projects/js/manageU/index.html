@@ -11,59 +11,13 @@
     integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
     crossorigin="anonymous" referrerpolicy="no-referrer" />
   <title>  Document</title>
-  <style>
-    @import url("https://fonts.googleapis.com/css2?family=Noto+Sans+Hebrew:wght@100..900&display=swap");
-
-    html {
-      font-family: "Noto Sans Hebrew", sans-serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-
-    .list-group-item {
-      background-color: rgb(51, 125, 150);
-      color: rgb(0, 0, 0);
-      font-size: 1.1rem;
-      margin-bottom: 5px;
-
-    }
-
-
-    #titlee {
-      animation: titlr 2s infinite;
-      padding: 1rem;
-      background-color: #158ff9;
-      color: #f8f9fa;
-    }
-
-    @keyframes titlr {
-      0% {
-        color: aqua;
-      }
-
-      50% {
-        color: rgb(77, 255, 0);
-      }
-
-      100% {
-        color: rgb(223, 216, 37);
-      }
-    }
-
-    .custom-wrap {
-      word-wrap: break-word;
-      overflow-wrap: break-word;
-      line-height: 1.5;
-    }
-
-    button {
-      cursor: pointer;
-    }
-  </style>
+  <link rel="stylesheet" href="./style.css">
 </head>
 
 <body class="bg-secondary">
-  <div class="container bg-dark text-center shadow">
+  <div class="container  text-center ">
 
-    <div class="border bg-dark-subtle border-1">
+    <div class="border bg-dark-subtle border-1 rounded rounded-5">
       <h1 id="titlee" class="display-4 p-3 bg-secondary">
         MANAGE-U <i class="fa-solid fa-check-double text-warning"></i>
       </h1>
@@ -75,11 +29,11 @@
           class="fa-solid fa-file-circle-plus text-light fa-fade fs-1"></i></button>
     </div>
     <div>
-      <h5 class="display-5 text-success m-5">Active</h5>
+      <h5 id="active" class="display-5 m-5">Active</h5>
       <ul id="activeTasks" class="list-group mb-4"></ul>
     </div>
     <div>
-      <h5 class="display-5 text-danger m-5">Completed</h5>
+      <h5 id="complete" class="display-5 m-5">Completed</h5>
       <ul id="completedTasks" class="list-group mb-4 "></ul>
     </div>
   </div>

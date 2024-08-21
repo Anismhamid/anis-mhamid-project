@@ -1,3 +1,7 @@
 {
-    "liveServer.settings.port": 5502
+    "liveServer.settings.port": 5502,
+    "prettier.printWidth": 100,
+    "prettier.tabWidth": 4,
+    "prettier.useTabs": true,
+    "prettier.arrowParens": "always"
 }
