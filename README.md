@@ -41,7 +41,6 @@ This project is a portfolio website created to highlight Anis Mhamid's skills an
 - **Skills Used:** HTML, CSS, SASS, Bootstrap.
 - **Results:** Offers an attractive and intuitive user experience on different devices, blending elegance and functionality.
 - **Page URL:** [Take the Future](./pages/future.html)
-- **Image:** ![Take the Future](./img/pages-images/takeTheFuture.png)
 - **Alt Text:** Anis Mhamid Let Us Lead You Forward
 
 ### Here and Now
@@ -50,7 +49,6 @@ This project is a portfolio website created to highlight Anis Mhamid's skills an
 - **Skills Used:** HTML, CSS, SASS.
 - **Results:** Impressive clean and organized design that enhances user experience and ease of navigation.
 - **Page URL:** [Here and Now](./pages/here-and-now.html)
-- **Image:** ![Here and Now](./img/pages-images/hereAndNow.png)
 - **Alt Text:** Anis Mhamid Here and Now
 
 ### Free Consultation
@@ -59,7 +57,6 @@ This project is a portfolio website created to highlight Anis Mhamid's skills an
 - **Skills Used:** HTML, CSS, SASS.
 - **Results:** Boasts a responsive design, ensuring an optimal viewing experience across various devices.
 - **Page URL:** [Free Consultation](./pages/free-consultation-page.html)
-- **Image:** ![Free Consultation](./img/pages-images/free-consultation-porject5-image2.png)
 - **Alt Text:** Anis Mhamid Free Consultation Page
 
 ### Let Us Lead You Forward
@@ -68,7 +65,6 @@ This project is a portfolio website created to highlight Anis Mhamid's skills an
 - **Skills Used:** HTML, CSS, SASS.
 - **Results:** Provides a distinct and captivating user experience, leaving a lasting impression on visitors.
 - **Page URL:** [Let Us Lead You Forward](./pages/leading-forward.html)
-- **Image:** ![Let Us Lead You Forward](./img/pages-images/leading-forward.png)
 - **Alt Text:** Anis Mhamid Free Consultation Page
 
 ### Good Coffee for the Morning
@@ -77,7 +73,6 @@ This project is a portfolio website created to highlight Anis Mhamid's skills an
 - **Skills Used:** HTML, CSS, SASS.
 - **Results:** Provides a high-quality experience for users across various devices.
 - **Page URL:** [Good Coffee for the Morning](./pages/morning-coffe-page.html)
-- **Image:** ![Good Coffee for the Morning](./img/pages-images/morning-coffe.png)
 - **Alt Text:** Anis Mhamid Morning Coffee
 
 ### See the World Up Close
@@ -86,7 +81,6 @@ This project is a portfolio website created to highlight Anis Mhamid's skills an
 - **Skills Used:** HTML, CSS, SASS.
 - **Results:** Offers a smooth user experience with a responsive design that balances aesthetics and functionality.
 - **Page URL:** [See the World Up Close](./pages/see-the-wold-page.html)
-- **Image:** ![See the World Up Close](./img/pages-images/see-the-wold.png)
 - **Alt Text:** Anis Mhamid See The World
 
 ### Thinking Outside the Box
@@ -95,7 +89,6 @@ This project is a portfolio website created to highlight Anis Mhamid's skills an
 - **Skills Used:** HTML, CSS, SASS.
 - **Results:** Facilitates user experience with a design that adapts to different devices.
 - **Page URL:** [Thinking Outside the Box](./pages/think-so-far-page.html)
-- **Image:** ![Thinking Outside the Box](./img/pages-images/think-so-far.png)
 - **Alt Text:** Anis Mhamid Think Far
 
 ### Let Us Build Your Dream Home
@@ -104,7 +97,6 @@ This project is a portfolio website created to highlight Anis Mhamid's skills an
 - **Skills Used:** HTML, CSS, SASS.
 - **Results:** Responsive design adapts to different devices, ensuring a seamless user experience.
 - **Page URL:** [Let Us Build Your Dream Home](./pages/dream-home.html)
-- **Image:** ![Let Us Build Your Dream Home](./img/pages-images/dream-home.png)
 - **Alt Text:** Anis Mhamid Dream Home
 
 ### Welcome to Our Fashion World
@@ -113,17 +105,15 @@ This project is a portfolio website created to highlight Anis Mhamid's skills an
 - **Skills Used:** HTML, CSS, SASS.
 - **Results:** Ensures an engaging user experience with an elegant design.
 - **Page URL:** [Welcome to Our Fashion World](./pages/fation.html)
-- **Image:** ![Welcome to Our Fashion World](./img/pages-images/fashion.png)
 - **Alt Text:** Anis Mhamid Fashion World
 
 ### Additional Projects
 
-#### מחשבון
+#### Calculstor
 
 - **Description:** HTML for page structure and Bootstrap for improved interface design and responsiveness. JavaScript for implementing programming logic and calculations.
 - **Skills Used:** HTML, Bootstrap, JavaScript.
 - **Page URL:** [Calculator](./pages/calculator.html)
-- **Image:** ![Calculator](./img/Calculator.png)
 - **Alt Text:** Anis Mhamid Calculator
 - **Date:** June
 
@@ -132,16 +122,14 @@ This project is a portfolio website created to highlight Anis Mhamid's skills an
 - **Description:** A responsive game suitable for various devices, from desktop computers to mobile phones.
 - **Skills Used:** HTML, CSS, JavaScript.
 - **Page URL:** [Flappy Bird](./pages/flappyBird.html)
-- **Image:** ![Flappy Bird](./img/FlappyBird.png)
 - **Alt Text:** Anis Mhamid Flappy Bird Game
 - **Date:** July
 
-#### עגלת קניו
+#### Products Cart
 
 - **Description:** Provides an attractive and user-friendly experience across different devices.
 - **Skills Used:** HTML, CSS, JavaScript.
 - **Page URL:** [Products Cart](./pages/products-cart.html)
-- **Image:** ![Products Cart](./img/products.png)
 - **Alt Text:** Anis Mhamid Products Page
 - **Date:** July
 
@@ -150,7 +138,6 @@ This project is a portfolio website created to highlight Anis Mhamid's skills an
 - **Description:** An interactive page offering an engaging and user-friendly experience.
 - **Skills Used:** HTML, CSS, JavaScript.
 - **Page URL:** [My Account](./pages/myAccount.html)
-- **Image:** ![My Account](./img/myAccount.png)
 - **Alt Text:** Anis Mhamid My Account
 - **Date:** August
 
@@ -159,7 +146,6 @@ This project is a portfolio website created to highlight Anis Mhamid's skills an
 - **Description:** A game providing an engaging user experience across different devices.
 - **Skills Used:** HTML, CSS, JavaScript.
 - **Page URL:** [Ultimata Tic Tac Toe](./pages/x-O.html)
-- **Image:** ![Ultimata Tic Tac Toe](./img/ultimate-TicTacToe.png)
 - **Alt Text:** Anis Mhamid Ultimata Tic Tac Toe
 - **Date:** July
 
@@ -168,7 +154,6 @@ This project is a portfolio website created to highlight Anis Mhamid's skills an
 - **Description:** A game designed for a pleasant user experience on various devices.
 - **Skills Used:** HTML, CSS, JavaScript.
 - **Page URL:** [Snake](./pages/snake.html)
-- **Image:** ![Snake](./img/dode.png)
 - **Alt Text:** Anis Mhamid Snake Game
 - **Date:** July
 
@@ -177,7 +162,6 @@ This project is a portfolio website created to highlight Anis Mhamid's skills an
 - **Description:** An interactive page providing an engaging and user-friendly experience.
 - **Skills Used:** HTML, CSS, JavaScript.
 - **Page URL:** [Manage U](./pages/manageU.html)
-- **Image:** ![Manage U](./img/manageU2.png)
 - **Alt Text:** Anis Mhamid Manage U
 - **Date:** July
 
@@ -186,7 +170,6 @@ This project is a portfolio website created to highlight Anis Mhamid's skills an
 - **Description:** An interactive page showcasing a user-friendly experience with various flags.
 - **Skills Used:** HTML, CSS, JavaScript.
 - **Page URL:** [Flags API](./pages/flagsApi.html)
-- **Image:** ![Flags API](./img/flagsProject.png)
 - **Alt Text:** Anis Mhamid Flags API
 - **Date:** July
 
@@ -195,9 +178,14 @@ This project is a portfolio website created to highlight Anis Mhamid's skills an
 - **Description:** A page demonstrating API fetching to display data in card format.
 - **Skills Used:** HTML, CSS, JavaScript.
 - **Page URL:** [Api Fetching To Cards](./pages/fetchMarketApi.html)
-- **Image:** ![Api Fetching To Cards](./img/marketingApi.png)
 - **Alt Text:** Anis Mhamid Api Fetching To Cards
 - **Date:** July
+
+### Weather API Application
+- **Description:** Simple weather application that fetches weather data using the OpenWeatherMap API and displays it to the user.
+- **Skills Used:** HTML, CSS, JavaScript.
+- **Page URL:** [Api Fetching To Cards](./pages/weather.html)
+
 
 ## Publishing
 
@@ -205,10 +193,10 @@ This project is a portfolio website created to highlight Anis Mhamid's skills an
 2. Open the `index.html` file in your web browser to view the site.
 
 ## Dependencies
-- **HTML:**  
-- **CSS:** 
+- **HTML:**   Structure of the web pages.
+- **CSS:** Styling for visual appearance.
 - **SASS:** Used to organize and improve the writing of CSS styles.
-- **javaScript:** 
+- **javaScript:** Adds interactivity and functionality
 - **Bootstrap:** Creates a responsive and attractive design.
 - **FontAwesome:** Provides web icons.
 
