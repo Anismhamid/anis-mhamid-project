@@ -1,4 +1,4 @@
-# Think So Far
+### -----Think So Far------
 
 Welcome to the Think So Far website! This project focuses on providing digital innovation, product development, and UX/UI design services. The website is designed to be responsive, ensuring a seamless experience across various devices and screen sizes.
 

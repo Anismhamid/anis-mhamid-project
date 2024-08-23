@@ -1,4 +1,4 @@
-# See The World
+### -----See The World------
 
 Welcome to the "See The World" project! This web application is designed to share and celebrate travel experiences, offering users a platform to describe their journeys and explore various images from around the world.
 

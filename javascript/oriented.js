@@ -77,9 +77,9 @@ let htmlCssProjects = [
 for (let htmlProject of htmlCssProjects) {
     document.getElementById("row1").innerHTML += `
         <!-- 1 -->
-        <div class="col-sm-12 m-auto col-lg-3 my-4">
+        <div class="col-sm-12 col-md-6 m-auto col-lg-4 my-4">
             <div class="parent">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 20rem;">
                     <div class="content-box">
                         <span class="card-title">${htmlProject.title}</span>
                         <div class="card-img">
@@ -122,103 +122,102 @@ for (let htmlProject of htmlCssProjects) {
             </div>
         </div>
 
-`
+`;
 }
 
 let javaScriptProjects = [
-    {
-        id: 10,
-        title: "מחשבון",
-        image: "./img/Calculator.png",
-        alt: "anis mhamid Calculator",
-        description: "HTML לבניית מבנה העמוד והחזית Bootstrap כדי לשפר את עיצוב הממשק ולהפוך אותו למגיב. JavaScript ליישום היגיון תכנות וחישובים",
-        pageUrl: "./pages/calculator.html",
-        date: 'June',
-
-    },
-    {
-        id: 11,
-        title: "Flappy Bird game",
-        image: "./img/FlappyBird.png",
-        alt: "anis mhamid Flappy Bird game",
-        description: "משחק רספונסיבי למכשירים שונים, מה שאומר שעיצובו מתאים לגדלי מסכים שונים ולסוגי מכשירים שונים, ממחשבים שולחניים עד הטלפונים הניידים, ",
-        pageUrl: "./pages/flappyBird.html",
-        date: 'Jule',
-    },
-    {
-        id: 12,
-        title: "עגלת קניו",
-        image: "./img/products.png",
-        alt: "anis mhamid products page",
-        description: "הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
-        pageUrl: "./pages/products-cart.html",
-        date: 'July'
-    },
-    {
-        id: 13,
-        title: "My Account",
-        image: "./img/myAccount.png",
-        alt: "anis mhamid MY-ACCOUNT",
-        description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
-        pageUrl: "./pages/myAccount.html",
-        date: 'August',
-
-    },
-    {
-        id: 14,
-        title: "Ultimata Tic Tac Toe",
-        image: "./img/ultimate-TicTacToe.png",
-        alt: "anis mhamid Ultimata Tic Tac Toe",
-        description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
-        pageUrl: "./pages/x-O.html",
-        dat: 'July'
-    },
-    {
-        id: 15,
-        title: "Snake",
-        image: "./img/dode.png",
-        alt: "anis mhamid Snake Game",
-        description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
-        pageUrl: "./pages/snake.html",
-        dat:'July'
-    },
-    {
-        id: 16,
-        title: "Manage U",
-        image: "./img/manageU2.png",
-        alt: "anis mhamid Manage U",
-        description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
-        pageUrl: "./pages/manageU.html",
-        date: 'July'
-
-    },
-    {
-        id: 17,
-        title: "Flags API",
-        image: "./img/flagsProject.png",
-        alt: "anis mhamid Flags API",
-        description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
-        pageUrl: "./pages/flagsApi.html",
-        date: 'July'
-
-    },
-    {
-        id: 18,
-        title: "Api fetching To Cards",
-        image: "./img/marketingApi.png",
-        alt: "anis mhamid Api fetching To Cards",
-        description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
-        pageUrl: "./pages/fetchMarketApi.html",
-        date:'July'
-    },
-]
+	{
+		id: 10,
+		title: "מחשבון",
+		image: "./img/Calculator.png",
+		alt: "anis mhamid Calculator",
+		description:
+			"הפרויקט הוא מחשבון עם פונקציות בסיסיות וטריגונומטריות, כולל סינוס וקוסינוס, עם ממשק משתמש פשוט וקל לשימוש. HTML לבניית מבנה העמוד והחזית Bootstrap כדי לשפר את עיצוב הממשק ולהפוך אותו למגיב. JavaScript ליישום היגיון תכנות וחישובים",
+		pageUrl: "./pages/calculator.html",
+		date: "June",
+	},
+	{
+		id: 11,
+		title: "Flappy Bird game",
+		image: "./img/FlappyBird.png",
+		alt: "anis mhamid Flappy Bird game",
+		description:
+			"משחק רספונסיבי למכשירים שונים, מה שאומר שעיצובו מתאים לגדלי מסכים שונים ולסוגי מכשירים שונים, ממחשבים שולחניים עד הטלפונים הניידים, ",
+		pageUrl: "./pages/flappyBird.html",
+		date: "Jule",
+	},
+	{
+		id: 12,
+		title: "עגלת קניו",
+		image: "./img/products.png",
+		alt: "anis mhamid products page",
+		description: "הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
+		pageUrl: "./pages/products-cart.html",
+		date: "July",
+	},
+	{
+		id: 13,
+		title: "My Account",
+		image: "./img/myAccount.png",
+		alt: "anis mhamid MY-ACCOUNT",
+		description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
+		pageUrl: "./pages/myAccount.html",
+		date: "August",
+	},
+	{
+		id: 14,
+		title: "Ultimata Tic Tac Toe",
+		image: "./img/ultimate-TicTacToe.png",
+		alt: "anis mhamid Ultimata Tic Tac Toe",
+		description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
+		pageUrl: "./pages/x-O.html",
+		dat: "July",
+	},
+	{
+		id: 15,
+		title: "Snake",
+		image: "./img/dode.png",
+		alt: "anis mhamid Snake Game",
+		description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
+		pageUrl: "./pages/snake.html",
+		dat: "July",
+	},
+	{
+		id: 16,
+		title: "Manage U",
+		image: "./img/manageU2.png",
+		alt: "anis mhamid Manage U",
+		description:
+			"הפרויקט מנהל משימות עם אפשרויות להוספה, מחיקה, עדכון והשלמה, תוך שמירה ב-`localStorage` והצגה בממשק משתמש ידידותי.",
+		pageUrl: "./pages/manageU.html",
+		date: "July",
+	},
+	{
+		id: 17,
+		title: "Flags API",
+		image: "./img/flagsProject.png",
+		alt: "anis mhamid Flags API",
+		description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
+		pageUrl: "./pages/flagsApi.html",
+		date: "July",
+	},
+	{
+		id: 18,
+		title: "Api fetching To Cards",
+		image: "./img/marketingApi.png",
+		alt: "anis mhamid Api fetching To Cards",
+		description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
+		pageUrl: "./pages/fetchMarketApi.html",
+		date: "July",
+	},
+];
 
 for (let jSProject of javaScriptProjects) {
     document.getElementById("row2").innerHTML += `
         <!-- 1 -->
-        <div class="col-sm-12 m-auto col-lg-3 my-4">
+        <div class="col-sm-12 col-md-6 m-auto col-lg-4 my-4">
             <div class="parent">
-                <div class="card" style="width: 18rem;">
+                <div class="card" style="width: 20rem;">
                     <div class="content-box">
                         <span class="card-title">${jSProject.title}</span>
                         <div class="card-img">
@@ -261,5 +260,5 @@ for (let jSProject of javaScriptProjects) {
             </div>
         </div>
 
-`
+`;
 }

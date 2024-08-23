@@ -14,7 +14,7 @@
 </head>
 
 <body>
-    <div class="container-sm w-100 text-center mt-5">
+    <div class="container-sm text-center pt-5">
         <h3 class="display-3 text-secondary mb-5">
             PR<i class="fas fa-cart-shopping"></i>DUCTS
         </h3>
@@ -58,11 +58,11 @@
             <table class="table table-striped">
                 <thead>
                     <tr>
-                        <th scope="col">זמין במלאי</th>
-                        <th scope="col">קטגוריה</th>
-                        <th scope="col">דירוג</th>
-                        <th scope="col">שם מוצר</th>
-                        <th scope="col">מחיר</th>
+                        <th scope="col-2">זמין במלאי</th>
+                        <th scope="col-2">קטגוריה</th>
+                        <th scope="col-2">דירוג</th>
+                        <th scope="col-2">שם מוצר</th>
+                        <th scope="col-2">מחיר</th>
                     </tr>
                 </thead>
                 <tbody id="products">
@@ -79,22 +79,37 @@
             let price = document.getElementById('price').value;
             let inOut = document.getElementById('inOut').checked ? '<i class="fa-solid fa-check text-success"></i>' : '<i class="fa-solid fa-x text-danger"></i>';
             let products = document.getElementById('products');
+            
+            let data = {
+                inStock:inOut,
+                category:category,
+                rate:rate,
+                name:name,
+                price:price
+            }
+            if(name!='' && price!=''&&inOut!=''){
 
             products.innerHTML += `
                 <tr>
-                    <td>${inOut}</td>
-                    <td>${category}</td>
-                    <td>${rate}</td>
-                    <td>${name}</td>
-                    <td>${price}</td>
+                    <td>${data.inStock}</td>
+                    <td>${data.category}</td>
+                    <td>${data.rate}</td>
+                    <td>${data.name}</td>
+                    <td>${data.price}</td>
                 </tr>`;
+}
 
-            document.getElementById('inOut').checked = false;
-            document.getElementById('rate').selectedIndex = 0;
-            document.getElementById('category').value = '';
-            document.getElementById('name').value = '';
-            document.getElementById('price').value = '';
+
+            inOut.checked = false;
+            rate.selectedIndex = 0;
+            category.value = '';
+            name.value = '';
+            price.value = '';
+           let a =  JSON.parse(data)
+           localStorage.setItem('products',a)
         }
+
+
     </script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js" integrity="sha512-..."

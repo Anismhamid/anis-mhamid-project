@@ -1,0 +1,85 @@
+/* montserrat-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 400;
+  src: url('./fonts/montserrat-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* montserrat-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: 'Montserrat';
+  font-style: normal;
+  font-weight: 600;
+  src: url('./fonts/montserrat-v26-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat","clibri",sans-serif;
+}
+
+body{
+    background: linear-gradient(rgba(255, 0, 0, 0.377),rgba(0, 0, 255, 0.445)),url('./images/bluesky.en.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-blend-mode:  saturation;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height:  100vh;
+}
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 600px;
+padding: 20px;
+background: #2582b4;
+margin: 0 auto;
+opacity: 0.8;
+border-radius: 20px;
+box-shadow: 20px 20px 10px rgb(32 32 32 /20%);
+margin-bottom: 20px;
+
+}
+
+input{
+    border-radius: 20px;
+    padding: 5px 10px;
+    &:focus{
+        outline-color: rgb(230, 255, 128);
+    }
+}
+
+.weatherInfo{
+    height: 60%;
+    text-align: center;
+    color: aliceblue;
+    background: #53a5fd;
+    padding: 1.5rem;
+    border-radius: 20px;
+    box-shadow: 10px 5px 20px lavender;
+    margin-block: 50px;
+    min-width: 70%;
+    line-height: 1.5;
+text-align: right;
+}
+h1{
+    text-align: center;
+}
+
+.weatherIcon{
+    background: yellow;
+    color: yellow;
+}
+
+button{
+    padding: 10px;
+    border-radius: 10px;
+}

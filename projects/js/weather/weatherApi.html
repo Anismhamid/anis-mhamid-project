@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title> weather API Applicatin</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-control">
+            <label for="cityInput">Enter City</label>
+                <input type="text" id="cityInput" placeholder="city" autofocus>
+                <button id="search">search</button>
+        </div>
+
+        <div class="weatherInfo">
+            <img id="weatherIcon">
+            <h1 id="cityName"></h1>
+            <p id="temprature"></p>
+            <p id="description"></p>
+            <p id="errorMessage"></p>
+
+
+            <p id="humidity"></p>
+            <p id="sea_level"></p>
+            <p id="grnd_level"></p>
+            <p id="speed"></p>
+            <p id="deg"></p>
+            <p id="gust"></p>
+        </div>
+
+        <script src="./script.js"></script>
+    </div>
+</body>
+</html>
