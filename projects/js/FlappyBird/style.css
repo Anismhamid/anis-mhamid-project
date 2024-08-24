@@ -5,53 +5,54 @@
 }
 
 
-#game {
+#container .row-gap-0 #game {
     width: 100vw;
     height: 100vh;
     margin: auto;
     overflow: hidden;
-        background: url('./gameImages/sky-day-game-background_7814-306.avif');
+    background: url('./gameImages/sky-day-game-background_7814-306.avif');
     background-size: cover;
     background-position: center;
 
 }
 
-#geme {
-    background: url('./gameImages/pngegg.png');
-    width: 500px;
-    height: 200px;
-    position: absolute;
-    z-index: 1;
-    top: 70px;
-    right: 0;
-    background-size: cover;
-    background-position: left;
-    background-repeat: no-repeat;
-    animation: gyom 20s linear infinite;
-}
-
-@keyframes gyom {
-    0% {
-        right: -100px;
-    }
-
-    100% {
-        right: 100%;
-    }
-}
 
 #block {
-    width: 80px;
+    width: 40px;
     height: 800px;
     position: relative;
     left: 100%;
     animation: block 5s infinite linear;
-    background: transparent;
+    background: rgb(222, 50, 24);
     background-size: cover;
     background-position: center;
     z-index: 2;
     border-top: 10px solid #fff;
     border-bottom: 10px solid #fff;
+}
+
+
+#block::before {
+    content: '';
+    position: absolute;
+    top: 780px;
+    bottom: 0;
+    right: 0;
+    width: 100vw;
+    height:10px;
+    background: rgb(0, 0, 0);
+}
+
+
+#block::after {
+    content: '';
+    position: absolute;
+    top: 780px;
+    left: 0;
+    right: 0;
+    width: 100vw;
+    height:10px;
+    background: rgb(0, 0, 0);
 }
 
 
@@ -61,61 +62,68 @@
     }
 
     100% {
-        left: -60px
+        left: -40px
     }
 }
 
 #hole {
-    width: 20px;
+    width: 40px;
     height: 200px;
     position: relative;
     left: 100%;
     top: 200px;
     animation: block 5s infinite linear;
     z-index: 3;
-    background-size: cover;
-    background-position: center;
-
+    background: #05000094;
 }
 
 #hole::before {
     content: '';
-    width: 100px;
+    width: 10px;
     height: 100%;
     position: absolute;
     border-bottom: 10px solid #fff;
     border-top: 10px solid #fff;
     border-radius: 10%;
-    background: url('./gameImages/OEcM.gif');
+    background:url('./gameImages/OEcM.gif');
+    background-position: center;    background:transparent;
+}
+
+
+#hole::after {
+    content: '';
+    width: 250px;
+    height: 20px;
+    position: absolute;
+    top: 180px;
+    border-top: 10px solid #fff;
+    border-radius: 10%;
+
     background-position: center;
 }
 
 #character {
-    width: 50px;
-    height: 50px;
+    width: 80px;
+    height: auto;
     position: absolute;
     top: 100px;
     left: 100px;
     border-radius: 50%;
     z-index: 1;
-    transition: all 1s inherit;
 }
+
 
 #score-div {
+    max-width:250px;
+    min-height: 200px;
+    border: 1px solid #559fd7;
+    box-shadow: 1px 1px 20px black inset;
     position: absolute;
-    top: 0px;
-    left: 0;
-    z-index: 4;
+    top: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    left: 50%;
+    z-index: 1;
     font-size: 1.5rem;
-}
-
-
-@media(max-width:560) {
-    #container {
-        height: 80%;
-    }
-
-    #game {
-        height: 80%;
-    }
 }

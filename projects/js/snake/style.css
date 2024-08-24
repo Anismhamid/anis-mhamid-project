@@ -5,13 +5,10 @@
 }
 
 #main-container {
-    /* background: url('./e327f46027899af3e9573ef51450bb54.avif'); */
-    background-position: bottom;
-    background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
 }
 
-#dd {
+#game {
     width: 100%;
     height: 600px;
     position: relative;
@@ -22,19 +19,22 @@
     background-position: bottom;
     background-size: cover;
 }
-
+#buttons{
+height: 20px;
+}
 #topp,
 #bottomm {
-    width: 100px;
-    height: 60px;
+    padding: 10px 20px;
     background: #2e2e2e;
+    margin: 5px;
+    
 }
 
 #leftt,
 #rightt {
-    width: 100px;
-    height: 70px;
+    padding: 20px;
     background: #000;
+    margin: 5px;
 }
 
 #snake {
@@ -53,7 +53,7 @@
     position: absolute;
     top: 30px;
     left: 30px;
-    border-radius: 50%;
+    border-radius: 20%;
 }
 
 #food {
@@ -89,7 +89,7 @@
 }
 
 @media(max-width:960px) {
-    #dd {
+    #game {
         height: 60vh
     }
 

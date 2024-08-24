@@ -14,7 +14,7 @@
     <script src="./javaScript.js" defer></script>
 </head>
 
-<body>
+<body id="body">
     <div class="container-fluid bg-dark" id="main-container">
         <div class="card">
             <h5 class="text-light bg-dark card-text text-center">Snake Game - Score: <span id="score">0</span>
@@ -23,7 +23,7 @@
                 eat
             </h5>
             <div class="card-body">
-                <div id="dd" class="w-100"> 
+                <div id="game" class="w-100"> 
                     <div id="snake"></div>
                 </div>
             </div>
@@ -34,6 +34,7 @@
                 <h5 class="card-subtitle text-info my-1">speed</h5>
                 <select aria-valuetext="speed" name="selection" id="gameSpeed" class="w-25 mx-auto rounded-3"
                     onchange="gameSpeed()">
+                    <option value="1">0</option>
                     <option value="1">1</option>
                     <option value="3">3</option>
                     <option value="5">5</option>

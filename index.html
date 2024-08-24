@@ -7,7 +7,7 @@
     <title>Portfolio-Home-AnisMhamid</title>
     <link rel="stylesheet" href="./sass/components/bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="./style/main-style/main.css">
-    <script src="./javascript/oriented.js" defer></script>
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,44 +15,11 @@
 
 
 <body>
-    <header class="fixed-top">
-        <nav class="navbar navo navbar-expand-lg">
-            <div class="profile-picture-box">
-                <a class="navbar-brand" href="./index.html">
-                    <img src="img/profile.jpg" alt="anis mhamid profile picture">
-                </a>
-            </div>
-            <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
-                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
-                aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
 
-
-            <div class="collapse navbar-collapse" dir="ltr" id="navbarSupportedContent">
-                <ul class="navbar-nav me-3 mb-2 mb-lg-0 h6">
-                    <li class="nav-item">
-                        <a class="nav-link links-settings me-auto" aria-current="page" href="#main-section">Home</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link links-settings" href="#about" alt>About me</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link links-settings" href="#projects">HTML - CSS</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link links-settings" href="#js">javaScript - Bootstrap</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link links-settings" href="#contact">Contact Us</a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <header class="fixed-top bg-body-secondary" id="header"></header>
 
     <main>
-
+<div class="container-fluid g-0"></div>
         <!-- main section -->
         <section id="main-section">
             <div class="main-title-box">
@@ -77,9 +44,9 @@
             <div class="layer"></div>
             <div class="layer"></div>
         </div>
-
-
-
+        
+        
+        
         <!-- Tools was i know -->
         <section id="skills">
             <img src="./img/powerImages/javascript-series.jpg" alt="javascript picture">
@@ -107,7 +74,7 @@
         <section id="about">
             <div class="title-container">
                 <h2 class="title">קצת עלי</h2>
-
+                
                 <p class="description lead pb-4">
                     אני מייצג מומחיות מרשימה ועשייה מקצועית בתחום הטכנולוגיה. עם הידע והכישורים שלי בפיתוח תוכנה,
                     עיצוב
@@ -115,7 +82,7 @@
                     וניהול מערכות
                     מורכבות, מסוגל ליצור פתרונות מותאמים אישית שעונים על צרכי המשתמשים בצורה מקצועית ויעילה.
                 </p>
-
+                
                 <p class="description lead pb-4">
                     ביכולתי להתמודד עם אתגרים טכנולוגיים מורכבים ולפתור בעיות בצורה יצירתית, מספק למשתמשים חוויות
                     משתמש
@@ -123,7 +90,7 @@
                     ופתרונות
                     מתקדמים שמתאימים לצרכיהם הייחודיים.
                 </p>
-
+                
                 <p class="description lead pb-4">
                     הידע שלי ב-HTML, CSS, SASS, Bootstrap, מאפשר לי ליצור ממשקים מודרניים, רספונסיביים ומתקדמים
                     שמספקים
@@ -178,7 +145,7 @@
             <script src="./javascript/readmore.js"></script>
         </section>
 
-
+        
         <!-- HTML CSS projects section -->
         <section id="projects">
             <div class="container-fluid">
@@ -191,31 +158,32 @@
                         המחויבות שלנו לאיכות וחדשנות
                     </p>
                 </div>
-
+                
                 <div id="row1" class="row my-4"></div>
 
-        <!-- JavaScript projects section -->
-
+                <!-- JavaScript projects section -->
+        </section>
         <section id="projects-js">
             <div class="container-fluid">
 
                 <div id="js" class="row my-4">
                     <h2 class="display-3 shadow text-bg-dark text-center">Bootstrap - JavaScript</h2>
-
+                    
                     <div id="row2" class="row my-4"></div>
 
-
-                    <h2 class="display-3 shadow text-bg-dark text-center">Python</h2>
+                    
                 </div>
+            </div>
         </section>
 
 
         <!-- Python projects section -->
-        <div class="row my-4">
+        
+        <section id="PythonProjects" class="border border-4 border-danger">
+                <h2 class="display-3 shadow text-bg-dark text-center">Python</h2>
 
             <!-- 20 -->
             <div class="col-sm-12 m-auto col-lg-3 my-4">
-                <div class="parent" style="width: 23rem;">
                     <div class="card">
                         <div class="content-box">
                             <span class="card-title">ניהול שכר עובד</span>
@@ -264,7 +232,7 @@
                                 </h4>
 
                                 <h5>מחבר</h5>
-
+                                
                                 <p>
                                     פותח על ידי אניס מחאמיד
                                 </p>
@@ -281,11 +249,9 @@
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
+        </section>
 
-
-
+        
 
         <!-- don't hesitate to contact us if you have any question -->
         <section id="contact" class="d-flex ">
@@ -298,7 +264,7 @@
                         אלינו. אנו
                         מבטיחים להגיב
                         במהירות ולספק את כל התמיכה שאתה צריך</p>
-                </div>
+                    </div>
                 <div class="form-box">
                     <form action="">
                         <div class="mb-3 filed-box">
@@ -354,44 +320,15 @@
 
     </main>
 
-    <footer class="bg-dark">
-        <div class="footer-section">
 
-            <h3>קישורים מהירים</h3>
-            <ul>
-                <li><a href="#about">מי אנחנו</a></li>
-                <li><a href="#projects">הפרויקטים שלנו</a></li>
-                <li><a href="#contact">צור קשר</a></li>
-            </ul>
-        </div>
+    <footer class="bg-dark" id="footer"></footer>
 
-        <div class="footer-section">
-            <h3>עקוב אחרינו</h3>
-            <ul class="social-links">
-                <li><a href="tel:+972538346915">
-                        <img src="./img/contact-us/call.png" alt="call us">
-                    </a>
-                </li>
-                <li><a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="./img/contact-us/instagram-logo.png" alt="instagram">
-                    </a>
-                </li>
-                <li><a href="https://www.linkedin.com/in/anis-mhamid-2303a3b6/" target="_blank"
-                        rel="noopener noreferrer">
-                        <img src="./img/contact-us/linkedin-big-logo.png" alt="linkedin">
-                    </a>
-                </li>
-                <li><a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">
-                        <img src="./img/contact-us/facebook-app-symbol.png" alt="facebook">
-                    </a>
-                </li>
-            </ul>
-        </div>
-        <div class="copy" dir="ltr">This website has been created by, Anis Mahamid. &copy;</div>
-    </footer>
 
+    <script src="./javascript/projectsObjects.js"></script>
     <script src="./javascript/animatedBackground.js"></script>
     <script src="./javascript/bootstrap.min.js"></script>
+    <script src="./header_Footer/mainHeader.js"></script>
+    <script src="./header_Footer/mainFooter.js"></script>
 </body>
 
 </html>
