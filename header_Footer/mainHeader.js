@@ -3,7 +3,7 @@ function header(){
     <nav class="navbar navo navbar-expand-lg">
             <div class="profile-picture-box">
                 <a class="navbar-brand" href="./index.html">
-                    <img src="../img/profile.jpg" alt="anis mhamid profile picture">
+                    <img src="./img/profile.jpg" alt="anis mhamid profile picture">
                 </a>
             </div>
             <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"
