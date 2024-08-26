@@ -1,3 +1,5 @@
+
+
 function header(){
     document.getElementById("header").innerHTML += `
     <nav class="navbar navo navbar-expand-lg">
@@ -28,7 +30,7 @@ function header(){
                         <a class="nav-link links-settings" href="#js">javaScript - Bootstrap</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link links-settings" href="#js">Pytone</a>
+                        <a class="nav-link links-settings" href="#pythonProjects">Pyton</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link links-settings" href="#contact">Contact Us</a>

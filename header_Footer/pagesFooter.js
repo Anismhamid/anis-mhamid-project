@@ -5,10 +5,10 @@ function mainFooter() {
             <div class="footer-section">
                 <h3>קישורים מהירים</h3>
                 <ul>
-                    <li><a href="../index.html #about">מי אנחנו</a></li>
-                    <li><a href="../index.html #projects">השירותים שלנו</a></li>
-                    <li><a href="../index.html #projects">הפרויקטים שלנו</a></li>
-                    <li><a href="../index.html #contact">צור קשר</a></li>
+                    <li><a href="../index.html#about">מי אנחנו</a></li>
+                    <li><a href="../index.html#projects">השירותים שלנו</a></li>
+                    <li><a href="../index.html#projects">הפרויקטים שלנו</a></li>
+                    <li><a href="../index.html#contact">צור קשר</a></li>
                 </ul>
             </div>
 
