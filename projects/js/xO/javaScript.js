@@ -62,8 +62,10 @@ function switchPlayers() {
 	document.getElementById("turn").innerHTML = currentPlayer;
 }
 
-function enableRandomBoard() {
-	let availableBoards = Object.keys(boardState).filter((boardId) => !wonBoards[boardId]);
+function enableRandomBoard(boardId) {
+	let availableBoards = Object.keys(boardState).filter(
+		(id) => !wonBoards[id] && id !== boardId
+	); // Exclude the current boardId
 
 	if (availableBoards.length > 0) {
 		const randomIndex = Math.floor(Math.random() * availableBoards.length);
@@ -73,7 +75,6 @@ function enableRandomBoard() {
 	} else {
 		alert("GAME OVER");
 	}
-
 }
 
 let checkWinner = () => {
