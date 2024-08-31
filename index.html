@@ -7,19 +7,19 @@
     <title>Portfolio-Home-AnisMhamid</title>
     <link rel="stylesheet" href="./sass/components/bootstrap-5.3.3-dist/css/bootstrap.rtl.min.css">
     <link rel="stylesheet" href="./style/main-style/main.css">
-
+    <link rel="shortcut icon" href="./img/briefcase-svgrepo-com.svg" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
         integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
 
 
-<body>
+<body class="">
+    <header class="sticky-top" id="header"></header>    
 
-    <header class="fixed-top bg-black" id="header"></header>
 
     <main>
-<div class="container-fluid g-0"></div>
+
         <!-- main section -->
         <section id="main-section">
             <div class="main-title-box">
@@ -44,29 +44,27 @@
             <div class="layer"></div>
             <div class="layer"></div>
         </div>
-        
-        
-        
+    
         <!-- Tools was i know -->
         <section id="skills">
-            <img src="./img/powerImages/javascript-series.jpg" alt="javascript picture">
+            <img src="./img/powerImages/database.png" alt="SQL picture">
             <img src="./img/powerImages/img-Bootstrap.png" alt="Bootstrap picture">
             <img src="./img/powerImages/img-SASS.png" alt="SASS picture">
             <img src="./img/powerImages/python.png" alt="Python picture">
-
+            
             <!-- animated screen on Home -->
             <div class="responsive-design-container">
                 <div class="loader"></div>
                 <div class="loader"></div>
                 <div class="loader"></div>
             </div>
-
+            
+            <img src="./img/powerImages/javascript-series.jpg" alt="javascript picture">
             <img src="./img/powerImages/img-CSS.png" alt="CSS picture">
             <img src="./img/powerImages/img-HTML.png" alt="HTML picture">
             <a href="https://msywzfkb.elementor.cloud" target="_blank" rel="noopener noreferrer">
                 <img src="./img/powerImages/wordpress.png" alt="wordpress picture">
             </a>
-            <img src="./img/powerImages/database.png" alt="SQL picture">
         </section>
 
 
@@ -133,7 +131,6 @@
             <button id="button" class="read-more-button my-5" onclick="toggleVisibility()">
                 <span id="read-more">הצג עוד</span>
             </button>
-            </span>
 
             <!-- Button to download the CV  -->
             <a class="my-5" href="../CV.docx" download="../CV.docx">
@@ -159,10 +156,10 @@
                     </p>
                 </div>
                 
-                <div id="row1" class="row my-4"></div>
-
-                <!-- JavaScript projects section -->
+                <div id="row1" class=" row my-4"></div>
         </section>
+
+        <!-- JavaScript projects section -->
         <section id="projects-js">
             <div class="container-fluid">
 
@@ -312,7 +309,7 @@
 
 
 
-        <div class="fixed-bottom ">
+        <div class="fixed-bottom text-center ">
             <a href="#top">
                 <i class="fa-solid fa-circle-arrow-up fs-1"></i>
             </a>
@@ -323,8 +320,7 @@
 
     <footer class="bg-dark" id="footer"></footer>
 
-
-    <script src="./javascript/projectsObjects.js"></script>
+    <script src="./javascript/generatingProjects.js"></script>
     <script src="./javascript/animatedBackground.js"></script>
     <script src="./javascript/bootstrap.min.js"></script>
     <script src="./header_Footer/mainHeader.js"></script>

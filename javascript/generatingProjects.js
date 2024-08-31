@@ -7,6 +7,7 @@ const htmlCssProjects = [
 			"הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים, שכן הוא משקף הקפדה על פרטים ועיצוב משוכלל המשלב אלגנטיות ופונקציונליות יעילה, המבטיח אינטראקציה חלקה ונוחה למשתמשים עם התוכן.",
 		pageUrl: "./pages/future.html",
 		alt: "anis mhamid let us lead you forward",
+		buildYear: 2024,
 	},
 	{
 		id: 2,
@@ -16,14 +17,17 @@ const htmlCssProjects = [
 			"עמוד זה מאופיין ביופיו האלגנטי. העמוד משדר אווירה נהדרת. העיצוב הנקי והמאורגן שלו הופך את חווית הגלישה למהנה ונוחה למשתמשים. הטקסטים הקיימים מנחים את המבקרים בעדינות וקלים להבנה, גורמים להם להרגיש רצוי ומבורכים. בנוסף, התמונה הכוללת של העמוד משקפת משיכה מיוחדת שגורמת למבקרים לרצות לחקור יותר מהתוכן שלו ולנצל את ההצעות הזמינות. בסך הכל, לדף יש אסתטיקה בולטת שמושכת את העין והופכת את החוויה המקוונת למשתמשים למהנה ומרגשת.",
 		pageUrl: "./pages/here-and-now.html",
 		alt: "anis mhamid here and now",
+		buildYear: 2024,
 	},
 	{
 		id: 3,
 		title: "ייעוץ חינם",
 		image: "./img/pages-images/free-consultation-porject5-image2.png",
-		description:"דף רספונסיבי שמשמש להצגת שירות 'ייעוץ חינם' למשתמשים. מופיע כותרת 'ייעוץ חינם' עם תיאור קצר של השירות.קיים טופס למילוי פרטים אישיים כגון שם מלא, דואל ופרטי הפניה. קיימות גם סמלים חברתיים ליצירת קשר ומספר טלפון ליצירת קשר ישיר.הדף מכיל עיצוב רספונסיבי שמתאים לגדלי מסכים ולתצורות שונות של התקנים",
+		description:
+			"דף רספונסיבי שמשמש להצגת שירות 'ייעוץ חינם' למשתמשים. מופיע כותרת 'ייעוץ חינם' עם תיאור קצר של השירות.קיים טופס למילוי פרטים אישיים כגון שם מלא, דואל ופרטי הפניה. קיימות גם סמלים חברתיים ליצירת קשר ומספר טלפון ליצירת קשר ישיר.הדף מכיל עיצוב רספונסיבי שמתאים לגדלי מסכים ולתצורות שונות של התקנים",
 		pageUrl: "./pages/free-consultation-page.html",
 		alt: "anis mhamid free-consultation-page",
+		buildYear: 2024,
 	},
 	{
 		id: 4,
@@ -33,6 +37,7 @@ const htmlCssProjects = [
 			"עמוד זה מאופיין ביופיו האלגנטי. העמוד משדר אווירה נהדרת. העיצוב הנקי והמאורגן שלו הופך את חווית הגלישה למהנה ונוחה למשתמשים. הטקסטים הקיימים מנחים את המבקרים בעדינות וקלים להבנה, גורמים להם להרגיש רצוי ומבורכים. בנוסף, התמונה הכוללת של העמוד משקפת משיכה מיוחדת שגורמת למבקרים לרצות לחקור יותר מהתוכן שלו ולנצל את ההצעות הזמינות. בסך הכל, לדף יש אסתטיקה בולטת שמושכת את העין והופכת את החוויה המקוונת למשתמשים למהנה ומרגשת",
 		pageUrl: "./pages/leading-forward.html",
 		alt: "anis mhamid Free Consultation Page",
+		buildYear: 2024,
 	},
 	{
 		id: 5,
@@ -42,6 +47,7 @@ const htmlCssProjects = [
 			"העמוד תוכנן בצורה שמאפשרת חוויית משתמש חלקה ונעימה לכל סוגי המסכים.בעת פתיחת העמוד במסך גדול, האיזור הימני מוקדש לתמונה גדולה ומרשימה של הקפה, יחד עם טופס ההרשמה המצורף",
 		pageUrl: "./pages/morning-coffe-page.html",
 		alt: "anis mhamid Morning Coffe",
+		buildYear: 2024,
 	},
 	{
 		id: 6,
@@ -51,6 +57,7 @@ const htmlCssProjects = [
 			"העמוד תוכנן בצורה שמאפשרת חוויית משתמש חלקה ונעימה לכל סוגי המסכים.בעת פתיחת העמוד במסך גדול, האיזור הימני מוקדש לתמונה גדולה ומרשימה של הקפה, יחד עם טופס ההרשמה המצורף",
 		pageUrl: "./pages/see-the-wold-page.html",
 		alt: "anis mhamid See The Wold",
+		buildYear: 2024,
 	},
 	{
 		id: 7,
@@ -60,6 +67,7 @@ const htmlCssProjects = [
 			"הדף רספונסיבי למכשירים שונים, מה שאומר שעיצובו מתאים לגדלי מסכים שונים ולסוגי מכשירים שונים, ממחשבים שולחניים עד הטלפונים הניידים.העיצוב הזה מקל על חוויית המשתמש, מספק נוחות וקלות למשתמשים במגוון מכשירים, ומבטיח חוויית משתמש חלקה ונעימה",
 		pageUrl: "./pages/think-so-far-page.html",
 		alt: "anis mhamid Think Far",
+		buildYear: 2024,
 	},
 	{
 		id: 8,
@@ -69,6 +77,7 @@ const htmlCssProjects = [
 			" הדף רספונסיבי למכשירים שונים, מה שאומר שעיצובו מתאים לגדלי מסכים שונים ולסוגי מכשירים שונים, ממחשבים שולחניים עד הטלפונים הניידים.העיצוב הזה מקל על חוויית המשתמש",
 		pageUrl: "/pages/dream-home.html",
 		alt: "anis mhamid Dream Home",
+		buildYear: 2024,
 	},
 	{
 		id: 9,
@@ -77,62 +86,9 @@ const htmlCssProjects = [
 		alt: "anis mhamid Fashion World",
 		description: " הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
 		pageUrl: "pages/fation.html",
+		buildYear: 2024,
 	},
-];
-
-// for (let htmlProject of htmlCssProjects) {
-// 	document.getElementById("row1").innerHTML += `
-//         <!-- 1 -->
-//         <div class="col-sm-12 col-md-6 m-auto col-lg-4 my-4">
-//             <div class="parent">
-//                 <div class="card" style="width: 19rem;">
-//                     <div class="content-box">
-//                         <span class="card-title">${htmlProject.title}</span>
-//                         <div class="card-img">
-//                             <img src="${htmlProject.image}" class="card-img-top"
-//                                 alt="${htmlProject.alt}">
-//                         </div>
-//                         <button type="button" class="see-more btn btn-outline-primary" data-bs-toggle="modal"
-//                             data-bs-target="#exampleModal${htmlProject.id}">
-//                             פרטים נוספים
-//                         </button>
-//                     </div>
-//                     <div class="date-box">
-//                         <span class="month">April</span>
-//                     </div>
-//                 </div>
-//             </div>
-
-//             <!-- Modal -->
-//             <div class="modal fade" id="exampleModal${htmlProject.id}" tabindex="-1" aria-labelledby="exampleModalLabel${htmlProject.id}"
-//                 aria-hidden="true">
-//                 <div class="modal-dialog">
-//                     <div class="modal-content">
-//                         <div class="modal-header">
-//                             <h1 class="modal-title fs-5" id="exampleModalLabel${htmlProject.id}">${htmlProject.title}</h1>
-//                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-//                         </div>
-//                         <div class="modal-body">
-//                             <p class="lead pb-4">
-//                                 ${htmlProject.description}
-//                             </p>
-// 							<div class='card-img'>
-// 							<img class="img-fluid" src="${htmlProject.image}">
-// 							</div>
-//                         </div>
-//                         <div class="modal-footer">
-//                             <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">סגירה</button>
-//                             <a href="${htmlProject.pageUrl}" target="_blank">
-//                                 <button type="button" class="btn btn-outline-primary">לעמוד הפרויקט</button>
-//                             </a>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-
-// `;
-// }
+]
 
 const javaScriptProjects = [
 	{
@@ -143,7 +99,7 @@ const javaScriptProjects = [
 		description:
 			"הפרויקט הוא מחשבון עם פונקציות בסיסיות וטריגונומטריות, כולל סינוס וקוסינוס, עם ממשק משתמש פשוט וקל לשימוש. HTML לבניית מבנה העמוד והחזית Bootstrap כדי לשפר את עיצוב הממשק ולהפוך אותו למגיב. JavaScript ליישום היגיון תכנות וחישובים",
 		pageUrl: "./pages/calculator.html",
-		date: "June",
+		buildYear: 2024,
 	},
 	{
 		id: 11,
@@ -153,7 +109,7 @@ const javaScriptProjects = [
 		description:
 			"משחק רספונסיבי למכשירים שונים, מה שאומר שעיצובו מתאים לגדלי מסכים שונים ולסוגי מכשירים שונים, ממחשבים שולחניים עד הטלפונים הניידים, ",
 		pageUrl: "./pages/flappyBird.html",
-		date: "Jule",
+		buildYear: 2024,
 	},
 	{
 		id: 12,
@@ -162,7 +118,7 @@ const javaScriptProjects = [
 		alt: "anis mhamid products page",
 		description: "הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
 		pageUrl: "./pages/products-cart.html",
-		date: "July",
+		buildYear: 2024,
 	},
 	{
 		id: 13,
@@ -171,7 +127,7 @@ const javaScriptProjects = [
 		alt: "anis mhamid MY-ACCOUNT",
 		description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
 		pageUrl: "./pages/myAccount.html",
-		date: "August",
+		buildYear: 2024,
 	},
 	{
 		id: 14,
@@ -180,7 +136,7 @@ const javaScriptProjects = [
 		alt: "anis mhamid Ultimata Tic Tac Toe",
 		description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
 		pageUrl: "./pages/x-O.html",
-		date: "July",
+		buildYear: 2024,
 	},
 	{
 		id: 15,
@@ -189,7 +145,7 @@ const javaScriptProjects = [
 		alt: "anis mhamid Snake Game",
 		description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
 		pageUrl: "./pages/snake.html",
-		date: "July",
+		buildYear: 2024,
 	},
 	{
 		id: 16,
@@ -199,7 +155,7 @@ const javaScriptProjects = [
 		description:
 			"הפרויקט מנהל משימות עם אפשרויות להוספה, מחיקה, עדכון והשלמה, תוך שמירה ב-`localStorage` והצגה בממשק משתמש ידידותי.",
 		pageUrl: "./pages/manageU.html",
-		date: "July",
+		buildYear: 2024,
 	},
 	{
 		id: 17,
@@ -208,7 +164,7 @@ const javaScriptProjects = [
 		alt: "anis mhamid Flags API",
 		description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
 		pageUrl: "./pages/flagsApi.html",
-		date: "July",
+		buildYear: 2024,
 	},
 	{
 		id: 18,
@@ -217,7 +173,7 @@ const javaScriptProjects = [
 		alt: "anis mhamid Api fetching To Cards",
 		description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
 		pageUrl: "./pages/fetchMarketApi.html",
-		date: "July",
+		buildYear: 2024,
 	},
 	{
 		id: 19,
@@ -226,74 +182,23 @@ const javaScriptProjects = [
 		alt: "anis mhamid Api fetching To Cards",
 		description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
 		pageUrl: "./pages/fetchMarketApi.html",
-		date: "July",
+		buildYear: 2024,
 	},
-];
-
-// for (let jSProject of javaScriptProjects) {
-// 	document.getElementById("row2").innerHTML += `
-//         <!-- 1 -->
-//         <div class="col-sm-12 col-md-6 m-auto col-lg-4 my-4">
-//             <div class="parent">
-//                 <div class="card" style="width: 19rem;">
-//                     <div class="content-box">
-//                         <span class="card-title">${jSProject.title}</span>
-//                         <div class="card-img">
-//                             <img src="${jSProject.image}" class="card-img-top"
-//                                 alt="${jSProject.alt}">
-//                         </div>
-//                         <button type="button" class="see-more btn btn-outline-primary" data-bs-toggle="modal"
-//                             data-bs-target="#exampleModal${jSProject.id}">
-//                             פרטים נוספים
-//                         </button>
-//                     </div>
-//                     <div class="date-box">
-//                         <span class="month">${jSProject.date}</span>
-//                     </div>
-//                 </div>
-//             </div>
-
-//             <!-- Modal -->
-//             <div class="modal fade" id="exampleModal${jSProject.id}" tabindex="-1" aria-labelledby="exampleModalLabel${jSProject.id}"
-//                 aria-hidden="true">
-//                 <div class="modal-dialog">
-//                     <div class="modal-content">
-//                         <div class="modal-header">
-//                             <h1 class="modal-title fs-5" id="exampleModalLabel${jSProject.id}">${jSProject.title}</h1>
-//                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-//                         </div>
-//                         <div class="modal-body">
-//                             <p class="lead pb-4">
-//                                 ${jSProject.description}
-//                             </p>
-//                         </div>
-//                         <div class="modal-footer">
-//                             <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">סגירה</button>
-//                             <a href="${jSProject.pageUrl}" target="_blank">
-//                                 <button type="button" class="btn btn-outline-primary">לעמוד הפרויקט</button>
-//                             </a>
-//                         </div>
-//                     </div>
-//                 </div>
-//             </div>
-//         </div>
-
-// `;
-// }
+]
 
 function generateProjectHTML(projects, isHtmlCss) {
-	const fragment = document.createDocumentFragment();
+	const fragment = document.createDocumentFragment()
 
 	projects.forEach((project) => {
-		// Create a new div element
-		const div = document.createElement("div");
-		div.className = "col-sm-12 col-md-6 m-auto col-lg-4 my-4";
+		//creating a new div element
+		const div = document.createElement("div")
+		div.className = "col-sm-12 col-md-6 col-lg-4 my-4"
 
 		div.innerHTML = `
-            <div class="parent">
-                <div class="card" style="width: 19rem;">
+            <div class="parent m-auto h-100  border border-dark box-shadow rounded-5">
+                <div class="card">
                     <div class="content-box">
-                        <span class="card-title">${project.title}</span>
+                        <span class="card-title text-dark">${project.title}</span>
                         <div class="card-img">
                             <img src="${project.image}" class="card-img-top" alt="${project.alt}">
                         </div>
@@ -304,7 +209,7 @@ function generateProjectHTML(projects, isHtmlCss) {
                         </button>
                     </div>
                     <div class="date-box">
-                        <span class="month">${project.date || "April"}</span>
+                        <span class="month">${project.buildYear}</span>
                     </div>
                 </div>
             </div>
@@ -316,7 +221,9 @@ function generateProjectHTML(projects, isHtmlCss) {
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel${project.id}">${project.title}</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel${project.id}">${
+			project.title
+		}</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
@@ -336,17 +243,16 @@ function generateProjectHTML(projects, isHtmlCss) {
                     </div>
                 </div>
             </div>
-        `;
+        `
 
-		// Append the div to the fragment
-		fragment.appendChild(div);
-	});
+		fragment.appendChild(div)
+	})
 
-	return fragment;
+	return fragment
 }
 
 // Append HTML for HTML/CSS projects
-document.getElementById("row1").appendChild(generateProjectHTML(htmlCssProjects, true));
+document.getElementById("row1").appendChild(generateProjectHTML(htmlCssProjects, true))
 
 // Append HTML for JavaScript projects
-document.getElementById("row2").appendChild(generateProjectHTML(javaScriptProjects, false));
+document.getElementById("row2").appendChild(generateProjectHTML(javaScriptProjects, false))

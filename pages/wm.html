@@ -1,148 +1,204 @@
 <!DOCTYPE html>
 <html lang="he" dir="rtl">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>WM</title>
+		<link rel="stylesheet" href="../style/pages-style/pages.css" />
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+			crossorigin="anonymous"
+		/>
+		<link rel="stylesheet" href="../style/pages-style/pages.css" />
+	</head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WM</title>
-    <link rel="stylesheet" href="../style/pages-style/pages.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="../style/pages-style/pages.css">
-</head>
+	<body>
+		<header class="fixed-top" id="header"></header>
 
-<body>
+		<main>
+			<section id="main-section">
+				<div class="container-fluid">
+					<div class="main-title-box">
+						<h1 class="title">Worker Manager</h1>
 
-        <header class="fixed-top" id="header"></header>
+						<div class="buttons-container">
+							<!-- Buttons -->
+							<!--link for Worker Manager repository -->
+							<a
+								href="https://github.com/Anismhamid/NiholOvdem-version-2.5.4"
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="Worker Manager"
+							>
+								<button class="button my-5" type="button">
+									לצפיה בקוד ב Github
+								</button>
+							</a>
+							<!--link for Worker Manager MD FIle -->
+							<a
+								href="https://github.com/Anismhamid/NiholOvdem-version-2.5.4/blob/main/README.md"
+								target="_blank"
+								rel="noopener noreferrer"
+								aria-label="Worker Manager"
+							>
+								<button class="button my-5" type="button">
+									לצפיה בקובץ - MD ב Github
+								</button>
+							</a>
+							<!-- Download Worker Manager code -->
+							<a
+								href="../projects/NiholOvdem-version-2.5.4/NiholOvdem-version-2.5.4.rar"
+								download="../projects/NiholOvdem-version-2.5.4/NiholOvdem-version-2.5.4.rar"
+								aria-label="Worker Manager code"
+							>
+								<button class="button" type="button">
+									להורדת תקיית הפרוייקט
+								</button>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
 
+			<section id="skills" class="container-fluid">
+				<a href="#"><img src="../img/powerImages/python.png" alt="Python logo" /></a>
+				<a href="#"><img src="../img/powerImages/database.png" alt="Database logo" /></a>
+			</section>
 
-    <main>
-        <section id="main-section">
-            <div class="container-fluid">
-                <div class="main-title-box">
-                    <h1 class="title">Worker Manager</h1>
+			<section id="project-section" class="text-center py-5">
+				<img
+					class="img-fluid my-5"
+					src="../img/WM2.png"
+					alt="Workers Manager application image"
+				/>
 
-                    <div class="buttons-container"> <!-- Buttons -->
-                        <!--link for Worker Manager repository -->
-                        <a href="https://github.com/Anismhamid/NiholOvdem-version-2.5.4" target="_blank"
-                            rel="noopener noreferrer" aria-label="Worker Manager">
-                            <button class="button my-5" type="button">
-                                View Worker Manager code
-                            </button>
-                        </a>
-                        <!-- Download Worker Manager code -->
-                        <a href="../projects/NiholOvdem-version-2.5.4/NiholOvdem-version-2.5.4.rar"
-                            download="../projects/NiholOvdem-version-2.5.4/NiholOvdem-version-2.5.4.rar"
-                            aria-label="Worker Manager code">
-                            <button class="button" type="button">
-                                Download Worker Manager code
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </div>
-        </section>
+				<div class="container bg-dark">
+					<h5 class="text-center text-light-emphasis display-6 my-5">FAQ</h5>
+					<div class="accordion my-md-5 my-sm-3" id="accordionExample">
+						<div class="accordion-item text-center">
+							<h2 class="accordion-header display-6">
+								<button
+									class="accordion-button"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseOne"
+									aria-expanded="false"
+									aria-controls="collapseOne"
+								>
+									סקירה כללית
+								</button>
+							</h2>
+							<div
+								id="collapseOne"
+								class="accordion-collapse collapse show"
+								data-bs-parent="#accordionExample"
+							>
+								<div class="accordion-body">
+									פרויקט זה הוא מערכת מנהלי עובדים (WM) שפותחה עבור ניהול ביעילות
+									את נתוני העובדים, לעקוב אחר תשלומי השכר, ולהקל על ניהול רשומות
+									באמצעות ממשק ידידותי למשתמש. הוא כולל חלון אחד, והוא נועד לייעל
+									היבטים שונים של ניהול עובדים ביעילות.
+								</div>
+							</div>
+						</div>
 
-        <section id="skills" class="container-fluid">
-            <a href="#"><img src="../img/powerImages/python.png" alt="Python logo"></a>
-            <a href="#"><img src="../img/powerImages/database.png" alt="Database logo"></a>
-        </section>
+						<div class="accordion-item">
+							<h2 class="accordion-header">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseTwo"
+									aria-expanded="false"
+									aria-controls="collapseTwo"
+								>
+									Application Features
+								</button>
+							</h2>
+							<div
+								id="collapseTwo"
+								class="accordion-collapse collapse"
+								data-bs-parent="#accordionExample"
+							>
+								<div class="accordion-body">
+									<ul>
+										<strong>ניהול עובדים בקלות וביעילות</strong>
+										<li>
+											<h5>משתמשים יכולים להוסיף, להציג, לעדכן ולמחוק עובד</h5>
+										</li>
+										<li>
+											<h5>מעקב מדויק אחר נתוני השכר כולל ניכויים.</h5>
+										</li>
+									</ul>
 
+									<ul>
+										<strong>טכנולוגיות חדישות ומסד נתונים מאובטח</strong>
+										<li>
+											משתמש ב-MySQL ו-SQLAlchemy לאחסון וניהול נתונים יעילים.
+										</li>
+									</ul>
 
-        <section id="project-section" class="text-center py-5">
+									<ul>
+										<strong>תמיכת API לאינטראקציה עם נתונים</strong>
+										<li>
+											מספק נקודות קצה RESTful API לגישה מאובטחת לנתונים
+											ולמניפולציה.
+										</li>
+									</ul>
 
-            <img class="img-fluid my-5" src="../img/WM2.png" alt="Workers Manager application image">
+									<ul>
+										<strong>גמישות בפריסה</strong>
+										<li>
+											ניתן לפרוס ב-Windows, macOS ו-Linux באמצעות PyInstaller
+											או cx_Freeze. בנוי עם Flask ו-Python לביצועים אופטימליים
+											וקלות תחזוקה.
+										</li>
+									</ul>
+								</div>
+							</div>
+						</div>
 
-            <div class="container bg-dark">
-                <h5 class="text-center text-light-emphasis display-6 my-5">FAQ</h5>
-                <div class="accordion my-md-5 my-sm-3" id="accordionExample">
-                    <div class="accordion-item text-center">
-                        <h2 class="accordion-header display-6">
-                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                                סקירה כללית
-                            </button>
-                        </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show"
-                            data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                פרויקט זה הוא מערכת מנהלי עובדים (WM) שפותחה עבור ניהול ביעילות את נתוני העובדים,
-                                לעקוב אחר תשלומי השכר, ולהקל על ניהול רשומות באמצעות ממשק ידידותי למשתמש. הוא כולל חלון
-                                אחד,
-                                והוא נועד לייעל היבטים שונים של ניהול עובדים ביעילות.
-                            </div>
-                        </div>
-                    </div>
+						<div class="accordion-item m-auto">
+							<h2 class="accordion-header">
+								<button
+									class="accordion-button collapsed"
+									type="button"
+									data-bs-toggle="collapse"
+									data-bs-target="#collapseThree"
+									aria-expanded="false"
+									aria-controls="collapseThree"
+								>
+									מבנה הקובץ
+								</button>
+							</h2>
+							<div
+								id="collapseThree"
+								class="accordion-collapse collapse"
+								data-bs-parent="#accordionExample"
+							>
+								<div class="accordion-body">
+									<h5>
+										<strong><code>--main_Screen--</code></strong> קובץ Python
+										הראשי המכיל את היגיון היישום
+									</h5>
+									<h5>
+										<strong><code>--API--</code></strong> מטפל בפעולות מסד
+										נתונים
+									</h5>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+		</main>
 
-                    <div class="accordion-item">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Application Features
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <ul>
-                                    <strong>ניהול עובדים בקלות וביעילות</strong>
-                                    <li>
-                                        <h5>משתמשים יכולים להוסיף, להציג, לעדכן ולמחוק עובד</h5>
-                                    </li>
-                                    <li>
-                                        <h5>מעקב מדויק אחר נתוני השכר כולל ניכויים.</h5>
-                                    </li>
-                                </ul>
+		<footer class="bg-dark" id="footer"></footer>
 
-
-                                <ul>
-                                    <strong>טכנולוגיות חדישות ומסד נתונים מאובטח</strong>
-                                    <li> משתמש ב-MySQL ו-SQLAlchemy לאחסון וניהול נתונים יעילים.</li>
-                                </ul>
-
-
-                                <ul>
-                                    <strong>תמיכת API לאינטראקציה עם נתונים</strong>
-                                    <li>מספק נקודות קצה RESTful API לגישה מאובטחת לנתונים ולמניפולציה.</li>
-                                </ul>
-
-
-                                <ul><strong>גמישות בפריסה</strong></ul>
-                                <li>ניתן לפרוס ב-Windows, macOS ו-Linux באמצעות PyInstaller או cx_Freeze.
-
-                                    בנוי עם Flask ו-Python לביצועים אופטימליים וקלות תחזוקה.</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="accordion-item m-auto">
-                        <h2 class="accordion-header">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                                מבנה הקובץ
-                            </button>
-                        </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
-                            <div class="accordion-body">
-                                <h5><strong><code>--main_Screen--</code></strong> קובץ Python הראשי המכיל את היגיון
-                                    היישום
-                                </h5>
-                                <h5><strong><code>--API--</code></strong> מטפל בפעולות מסד נתונים</h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-    </main>
-
-       <footer class="bg-dark" id="footer"></footer>
-
-    <script src="../javascript/bootstrap.min.js"></script>
-    <script src="../header_Footer/pagesHeaders.js"></script>
-    <script src="../header_Footer/pagesFooter.js"></script>
-
-</body>
-
+		<script src="../javascript/bootstrap.min.js"></script>
+		<script src="../header_Footer/pagesHeaders.js"></script>
+		<script src="../header_Footer/pagesFooter.js"></script>
+	</body>
 </html>

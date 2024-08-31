@@ -1,29 +1,35 @@
 .navo {
-    width: 100vw;
+	width: 100%;
+	background: #ffffffd5;
+
+	.navbar-toggler {
+		height: 60px;
+		margin-left: 10px;
+	}
 }
+
+
 
 .links-settings {
-    color: #d70683;
-    font-size: 1.2em;
+	color: #d70683;
+	font-size: 1.2em;
+	margin-left: 30px;
 
-    &:hover {
-        color: aliceblue;
-        text-shadow:1px 1px 70px rgb(255, 255, 255);
-        transition: filter 3s ease-in-out;
-    }
+	&:hover {
+		color: aliceblue;
+		text-shadow: 1px 1px 70px rgb(255, 255, 255);
+		transition: filter 3s ease-in-out;
+	}
 }
 
-.profile-picture-box {
-    margin: auto 20px auto 0;
-    width: 70px;
-    height: 70px;
-    border-radius: 25%;
-    overflow: hidden;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
+div.profile-picture-box {
+	margin: auto 10px auto 0;
+	width: 50px;
+	height: auto;
 
-    img {
-        width: 100%;
-    }
+	a {
+		img {
+			cursor: pointer
+		}
+	}
 }

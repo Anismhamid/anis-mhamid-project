@@ -1,28 +1,28 @@
 /* montserrat-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  src: url("./fonts/montserrat-v26-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("./fonts/montserrat-v26-latin-regular.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 /* montserrat-600 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: "Montserrat";
   font-style: normal;
   font-weight: 600;
-  src: url("./fonts/montserrat-v26-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url("./fonts/montserrat-v26-latin-600.woff2") format("woff2");
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 * {
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-}
-
-html {
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><foreignObject width="100%" height="100%"><div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;border-radius:50%;background:conic-gradient(from 90deg at 4px 4px,%230000 90deg, %232f2b2f 0) -4px -4px/calc(50% + 2px) calc(50% + 2px),repeating-radial-gradient(%230000 0 22%,%232f2b2f 23% 32%);" ></div></foreignObject></svg>') 24 24, auto;
-  font-family: "Montserrat", sans-serif;
+  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><foreignObject width="100%" height="100%"><div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;background:linear-gradient(135deg,%23999 40%,%239950 0),linear-gradient(45deg, %230000 40%, %23777 0 60%,%230000 0)" ></div></foreignObject></svg>') 0 0, default;
 }
 
 ul,
@@ -31,12 +31,18 @@ li {
 }
 
 .navo {
-  width: 100vw;
+  width: 100%;
+  background: rgba(255, 255, 255, 0.8352941176);
+}
+.navo .navbar-toggler {
+  height: 60px;
+  margin-left: 10px;
 }
 
 .links-settings {
   color: #d70683;
   font-size: 1.2em;
+  margin-left: 30px;
 }
 .links-settings:hover {
   color: aliceblue;
@@ -44,37 +50,32 @@ li {
   transition: filter 3s ease-in-out;
 }
 
-.profile-picture-box {
-  margin: auto 20px auto 0;
-  width: 70px;
-  height: 70px;
-  border-radius: 25%;
-  overflow: hidden;
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
+div.profile-picture-box {
+  margin: auto 10px auto 0;
+  width: 50px;
+  height: auto;
 }
-.profile-picture-box img {
-  width: 100%;
+div.profile-picture-box a img {
+  cursor: pointer;
 }
 
 .parent {
   width: 300px;
   padding: 20px;
   perspective: 1000px;
+  box-shadow: inset 0px 0px 20px rgb(0, 0, 0);
 }
 
 .card {
   padding-top: 50px;
-  /* border-radius: 10px; */
   border: 3px solid rgb(255, 255, 255);
   transform-style: preserve-3d;
-  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 18.75%, #f3f3f3 0 31.25%, rgba(0, 0, 0, 0) 0), repeating-linear-gradient(45deg, #f3f3f3 -6.25% 6.25%, #ffffff 0 18.75%);
+  background: linear-gradient(135deg, rgba(0, 0, 0, 0) 18.75%, #f3f3f3 0 31.25%, rgba(0, 0, 0, 0) 0), repeating-linear-gradient(45deg, #ededed -6.25% 0.25%, #ffffff 0 18.75%);
   background-size: 60px 60px;
   background-position: 0 0, 0 0;
   background-color: #f0f0f0;
   width: 100%;
-  box-shadow: rgba(104, 104, 105, 0.808) 0px 30px 30px -10px;
+  box-shadow: inset rgba(104, 104, 105, 0.808) 0px 30px 30px -10px;
   transition: all 0.5s ease-in-out;
 }
 
@@ -84,7 +85,7 @@ li {
 }
 
 .content-box {
-  background: rgba(5, 6, 86, 0.732);
+  background: rgba(26, 26, 26, 0);
   transition: all 0.5s ease-in-out;
   padding: 60px 25px 25px 25px;
   transform-style: preserve-3d;
@@ -388,47 +389,31 @@ li {
 }
 .button, #about .read-more-button {
   border: none;
-  color: #141414;
+  color: #aaaaaa;
   padding: 0.7em 1.7em;
   font-size: 1.2rem;
   font-weight: bold;
   border-radius: 0.5em;
-  background: linear-gradient(225deg, #353535, #ffffff, rgb(85, 85, 85));
-  box-shadow: -20px 20px 60px #e7b787, 20px -20px 60px #ffffff;
-  animation: buttonsAnime 3s infinite;
+  border: 1px solid rgba(0, 0, 0, 0.3058823529);
+  background: linear-gradient(225deg, #000000, #000000, rgb(85, 85, 85));
+  box-shadow: inset -8px 10px 12px rgb(255, 255, 255), 0px -2px 3px rgb(255, 255, 255) inset;
+  text-shadow: -20px 15px 2px rgba(255, 255, 255, 0.217);
+  transform: skewX(10deg);
+  margin: 100px;
+  transition: all 0.5s ease-in-out;
 }
 
-@keyframes buttonsAnime {
-  0% {
-    box-shadow: 0px 5px 12px rgb(255, 255, 255), 0px -2px 3px rgb(255, 255, 255) inset;
-  }
-  10% {
-    box-shadow: 0px 5px 12px rgb(72, 72, 72), 0px -2px 3px rgb(32, 32, 32) inset;
-  }
-  20% {
-    box-shadow: 0px 5px 12px rgb(255, 255, 255), 0px -2px 3px rgb(255, 0, 0) inset;
-  }
-  30% {
-    box-shadow: 0px 5px 12px rgb(72, 72, 72), 0px -2px 3px rgb(32, 32, 32) inset;
-  }
-  50% {
-    box-shadow: 0px 5px 12px rgb(255, 255, 255), 0px -2px 3px rgb(105, 178, 255) inset;
-  }
-  70% {
-    box-shadow: 0px 5px 12px rgb(72, 72, 72), 0px -2px 3px rgb(32, 32, 32) inset;
-  }
-  100% {
-    box-shadow: 0px 5px 12px rgb(255, 255, 255), 0px -2px 3px rgb(255, 255, 255) inset;
-  }
-}
 .button:hover, #about .read-more-button:hover {
-  background: linear-gradient(225deg, #ffffff, #717171, rgb(255, 255, 255));
-  transform: scale(1.06);
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><foreignObject width="100%" height="100%"><div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;background:linear-gradient(135deg,%23999 40%,%239950 0),linear-gradient(45deg, %230000 40%, %23777 0 60%,%230000 0)" ></div></foreignObject></svg>') 0 0, default;
+  color: aliceblue;
+  text-shadow: 2px 2px 2px rgba(255, 255, 255, 0.312);
+  background: #1f1d1d;
+  box-shadow: -5px 5px 12px rgb(160, 202, 248), 0px 0px 30px rgb(160, 202, 248);
+  transform: rotate(0deg) scale(1.06);
+  transition: all 0.3s ease-in-out;
 }
 
 .button:active, #about .read-more-button:active {
-  box-shadow: 0px 5px 12px rgb(255, 255, 255), 0px -2px 3px rgb(255, 255, 255) inset;
+  box-shadow: inset 0px 5px 12px rgb(255, 255, 255), 0px -2px 3px rgb(255, 255, 255) inset;
   transform: scale(0.9);
 }
 
@@ -485,10 +470,9 @@ li {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: linear-gradient(to bottom, rgba(7, 1, 45, 0.9137254902), rgba(255, 255, 255, 0.706));
-  background-position: center;
-  background-size: cover;
-  font-style: normal;
+  background: url("../../../img/pngegg.png"), linear-gradient(to bottom, rgba(7, 1, 45, 0.9137254902), rgba(255, 255, 255, 0.706));
+  background-position: bottom;
+  background-repeat: no-repeat;
   color: #fff;
 }
 #about .title-container {
@@ -565,23 +549,27 @@ li {
     margin: 50px auto;
   }
 }
-#projects, #projects-js {
+#projects,
+#projects-js {
   width: 100%;
   text-align: center;
   background: #bebebe;
   color: #000;
   margin: 0 auto;
 }
-#projects .content, #projects-js .content {
+#projects .content,
+#projects-js .content {
   text-align: center;
 }
-#projects .content .title, #projects-js .content .title {
+#projects .content .title,
+#projects-js .content .title {
   padding: 100px;
   font-size: 4rem;
   font-weight: 900;
   box-shadow: 0px 4px 20px #ffffff;
 }
-#projects .content .description, #projects-js .content .description {
+#projects .content .description,
+#projects-js .content .description {
   width: 80%;
   margin: 50px auto;
   font-size: 2em;
@@ -640,10 +628,10 @@ li {
 
 @keyframes formBG {
   0% {
-    filter: blur(50px) hue-rotate(0deg);
+    filter: blur(140px) hue-rotate(0deg);
   }
   100% {
-    filter: blur(50px) hue-rotate(360deg);
+    filter: blur(140px) hue-rotate(360deg);
   }
 }
 #contact .content-box .form-box {
@@ -656,9 +644,8 @@ li {
   width: 100%;
   height: 100%;
   background: conic-gradient(from 90deg at 40% -25%, #ffd700, #f79d03, #ee6907, #e6390a, #de0d0d, #d61039, #cf1261, #c71585, #cf1261, #d61039, #de0d0d, #ee6907, #f79d03, #ffd700, #ffd700, #ffd700, #ffd700, #ffd700, #ffd700);
-  filter: blur(100%);
   animation: formBG 3s infinite;
-  transition: all 0.5s linear inherit;
+  transition: all 0.5s ease-in-out;
 }
 #contact .content-box .form-box form {
   position: relative;

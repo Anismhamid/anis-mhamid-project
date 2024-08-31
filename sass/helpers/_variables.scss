@@ -1,34 +1,37 @@
 /* montserrat-regular - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 400;
-  src: url('./fonts/montserrat-v26-latin-regular.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('./fonts/montserrat-v26-latin-regular.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
+
 /* montserrat-600 - latin */
 @font-face {
-  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-display: swap;
+  /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
   font-family: 'Montserrat';
   font-style: normal;
   font-weight: 600;
-  src: url('./fonts/montserrat-v26-latin-600.woff2') format('woff2'); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+  src: url('./fonts/montserrat-v26-latin-600.woff2') format('woff2');
+  /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
 }
 
+
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    
-}
-html{
-cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><foreignObject width="100%" height="100%"><div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;border-radius:50%;background:conic-gradient(from 90deg at 4px 4px,%230000 90deg, %232f2b2f 0) -4px -4px/calc(50% + 2px) calc(50% + 2px),repeating-radial-gradient(%230000 0 22%,%232f2b2f 23% 32%);" ></div></foreignObject></svg>') 24 24, auto;
-font-family: "Montserrat",sans-serif;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+    cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><foreignObject width="100%" height="100%"><div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;background:linear-gradient(135deg,%23999 40%,%239950 0),linear-gradient(45deg, %230000 40%, %23777 0 60%,%230000 0)" ></div></foreignObject></svg>') 0 0,
+    default;
 }
 
 ul,
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 $main-bg-color: #bebebe;
@@ -52,7 +55,7 @@ $percentW80: 80%;
 $title-color: $white;
 
 $main-section-gradient: radial-gradient(ellipse at 28% 0%, $white 0%, rgba(0, 0, 0, 0.5) 100%),
-    linear-gradient(180deg, $black 0%, $black 69%, $black 70%, $black 100%);
+  linear-gradient(180deg, $black 0%, $black 69%, $black 70%, $black 100%);
 
 
 $gradient: linear-gradient(to right, #00000094, $black);
