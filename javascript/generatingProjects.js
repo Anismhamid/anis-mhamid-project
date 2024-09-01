@@ -91,111 +91,118 @@ const htmlCssProjects = [
 ]
 
 const javaScriptProjects = [
-	{
-		id: 10,
-		title: "מחשבון",
-		image: "./img/Calculator.png",
-		alt: "anis mhamid Calculator",
-		description:
-			"הפרויקט הוא מחשבון עם פונקציות בסיסיות וטריגונומטריות, כולל סינוס וקוסינוס, עם ממשק משתמש פשוט וקל לשימוש. HTML לבניית מבנה העמוד והחזית Bootstrap כדי לשפר את עיצוב הממשק ולהפוך אותו למגיב. JavaScript ליישום היגיון תכנות וחישובים",
-		pageUrl: "./pages/calculator.html",
-		buildYear: 2024,
-	},
-	{
-		id: 11,
-		title: "Flappy Bird game",
-		image: "./img/FlappyBird.png",
-		alt: "anis mhamid Flappy Bird game",
-		description:
-			"משחק רספונסיבי למכשירים שונים, מה שאומר שעיצובו מתאים לגדלי מסכים שונים ולסוגי מכשירים שונים, ממחשבים שולחניים עד הטלפונים הניידים, ",
-		pageUrl: "./pages/flappyBird.html",
-		buildYear: 2024,
-	},
-	{
-		id: 12,
-		title: "עגלת קניו",
-		image: "./img/products.png",
-		alt: "anis mhamid products page",
-		description: "הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
-		pageUrl: "./pages/products-cart.html",
-		buildYear: 2024,
-	},
-	{
-		id: 13,
-		title: "My Account",
-		image: "./img/myAccount.png",
-		alt: "anis mhamid MY-ACCOUNT",
-		description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
-		pageUrl: "./pages/myAccount.html",
-		buildYear: 2024,
-	},
-	{
-		id: 14,
-		title: "Ultimata Tic Tac Toe",
-		image: "./img/ultimate-TicTacToe.png",
-		alt: "anis mhamid Ultimata Tic Tac Toe",
-		description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
-		pageUrl: "./pages/x-O.html",
-		buildYear: 2024,
-	},
-	{
-		id: 15,
-		title: "Snake",
-		image: "./img/dode.png",
-		alt: "anis mhamid Snake Game",
-		description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
-		pageUrl: "./pages/snake.html",
-		buildYear: 2024,
-	},
-	{
-		id: 16,
-		title: "Manage U",
-		image: "./img/manageU2.png",
-		alt: "anis mhamid Manage U",
-		description:
-			"הפרויקט מנהל משימות עם אפשרויות להוספה, מחיקה, עדכון והשלמה, תוך שמירה ב-`localStorage` והצגה בממשק משתמש ידידותי.",
-		pageUrl: "./pages/manageU.html",
-		buildYear: 2024,
-	},
-	{
-		id: 17,
-		title: "Flags API",
-		image: "./img/flagsProject.png",
-		alt: "anis mhamid Flags API",
-		description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
-		pageUrl: "./pages/flagsApi.html",
-		buildYear: 2024,
-	},
-	{
-		id: 18,
-		title: "Api fetching To Cards",
-		image: "./img/marketingApi.png",
-		alt: "anis mhamid Api fetching To Cards",
-		description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
-		pageUrl: "./pages/fetchMarketApi.html",
-		buildYear: 2024,
-	},
-	{
-		id: 19,
-		title: "weather API",
-		image: "./img/weatherApi.png",
-		alt: "anis mhamid Api fetching To Cards",
-		description: "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
-		pageUrl: "./pages/fetchMarketApi.html",
-		buildYear: 2024,
-	},
+    {
+        id: 10,
+        title: "מחשבון",
+        image: "./img/Calculator.png",
+        alt: "anis mhamid Calculator",
+        description:
+            "הפרויקט הוא מחשבון עם פונקציות בסיסיות וטריגונומטריות, כולל סינוס וקוסינוס, עם ממשק משתמש פשוט וקל לשימוש. HTML לבניית מבנה העמוד והחזית Bootstrap כדי לשפר את עיצוב הממשק ולהפוך אותו למגיב. JavaScript ליישום היגיון תכנות וחישובים",
+        pageUrl: "./pages/calculator.html",
+        buildYear: 2024,
+    },
+    {
+        id: 11,
+        title: "Flappy Bird game",
+        image: "./img/FlappyBird.png",
+        alt: "anis mhamid Flappy Bird game",
+        description:
+            "משחק רספונסיבי למכשירים שונים, מה שאומר שעיצובו מתאים לגדלי מסכים שונים ולסוגי מכשירים שונים, ממחשבים שולחניים עד הטלפונים הניידים, ",
+        pageUrl: "./pages/flappyBird.html",
+        buildYear: 2024,
+    },
+    {
+        id: 12,
+        title: "עגלת קניו",
+        image: "./img/products.png",
+        alt: "anis mhamid products page",
+        description:
+            "הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
+        pageUrl: "./pages/products-cart.html",
+        buildYear: 2024,
+    },
+    {
+        id: 13,
+        title: "My Account",
+        image: "./img/myAccount.png",
+        alt: "anis mhamid MY-ACCOUNT",
+        description:
+            "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
+        pageUrl: "./pages/myAccount.html",
+        buildYear: 2024,
+    },
+    {
+        id: 14,
+        title: "Ultimata Tic Tac Toe",
+        image: "./img/ultimate-TicTacToe.png",
+        alt: "anis mhamid Ultimata Tic Tac Toe",
+        description:
+            "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
+        pageUrl: "./pages/x-O.html",
+        buildYear: 2024,
+    },
+    {
+        id: 15,
+        title: "Snake",
+        image: "./img/dode.png",
+        alt: "anis mhamid Snake Game",
+        description:
+            "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
+        pageUrl: "./pages/snake.html",
+        buildYear: 2024,
+    },
+    {
+        id: 16,
+        title: "Manage U",
+        image: "./img/manageU2.png",
+        alt: "anis mhamid Manage U",
+        description:
+            "הפרויקט מנהל משימות עם אפשרויות להוספה, מחיקה, עדכון והשלמה, תוך שמירה ב-`localStorage` והצגה בממשק משתמש ידידותי.",
+        pageUrl: "./pages/manageU.html",
+        buildYear: 2024,
+    },
+    {
+        id: 17,
+        title: "Flags API",
+        image: "./img/flagsProject.png",
+        alt: "anis mhamid Flags API",
+        description:
+            "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
+        pageUrl: "./pages/flagsApi.html",
+        buildYear: 2024,
+    },
+    {
+        id: 18,
+        title: "Api fetching To Cards",
+        image: "./img/marketingApi.png",
+        alt: "anis mhamid Api fetching To Cards",
+        description:
+            "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
+        pageUrl: "./pages/fetchMarketApi.html",
+        buildYear: 2024,
+    },
+    {
+        id: 19,
+        title: "weather API",
+        image: "./img/weatherApi.png",
+        alt: "anis mhamid weather Api",
+        description:
+            "המשחק מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
+        pageUrl: "./pages/weather.html",
+        buildYear: 2024,
+    },
 ]
 
 function generateProjectHTML(projects, isHtmlCss) {
 	const fragment = document.createDocumentFragment()
 
 	projects.forEach((project) => {
-		//creating a new div element
+		//creating a new div
 		const div = document.createElement("div")
 		div.className = "col-sm-12 col-md-6 col-lg-4 my-4"
 
 		div.innerHTML = `
-            <div class="parent m-auto h-100  border border-dark box-shadow rounded-5">
+            <div class="parent m-auto h-100">
                 <div class="card">
                     <div class="content-box">
                         <span class="card-title text-dark">${project.title}</span>

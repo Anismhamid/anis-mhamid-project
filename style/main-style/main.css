@@ -63,7 +63,6 @@ div.profile-picture-box a img {
   width: 300px;
   padding: 20px;
   perspective: 1000px;
-  box-shadow: inset 0px 0px 20px rgb(0, 0, 0);
 }
 
 .card {
@@ -143,7 +142,6 @@ div.profile-picture-box a img {
   width: 60px;
   background: white;
   border: 1px solid rgb(7, 185, 255);
-  /* border-radius: 10px; */
   padding: 10px;
   transform: translate3d(0px, 0px, 80px);
   box-shadow: rgba(100, 100, 111, 0.2) 0px 17px 10px -10px;
