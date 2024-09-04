@@ -69,7 +69,6 @@ div.profile-picture-box a img {
   border-radius: 0.5em;
   border: 1px solid rgba(0, 0, 0, 0.3058823529);
   background: linear-gradient(225deg, #000000, #000000, rgb(85, 85, 85));
-  box-shadow: inset -8px 10px 12px rgb(255, 255, 255), 0px -2px 3px rgb(255, 255, 255) inset;
   text-shadow: -20px 15px 2px rgba(255, 255, 255, 0.217);
   transform: skewX(10deg);
   margin: 100px;
@@ -105,6 +104,20 @@ div.profile-picture-box a img {
   color: #101010;
   text-align: center;
   animation: thiii 25s infinite;
+}
+#main-section #moon {
+  position: relative;
+  z-index: 100;
+  width: 100%;
+  height: 100vh;
+  mix-blend-mode: screen;
+  animation: thiii 0.5 ease-in-out;
+}
+#main-section #moon #moon-img {
+  position: absolute;
+  bottom: 0;
+  right: 10px;
+  top: 0;
 }
 #main-section .main-title-box {
   color: #ffffff;
