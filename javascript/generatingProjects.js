@@ -1,93 +1,94 @@
 const htmlCssProjects = [
-	{
-		id: 1,
-		title: "תן לנו להוביל אותך קדימה",
-		image: "./img/pages-images/takeTheFuture.png",
-		description:
-			"הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים, שכן הוא משקף הקפדה על פרטים ועיצוב משוכלל המשלב אלגנטיות ופונקציונליות יעילה, המבטיח אינטראקציה חלקה ונוחה למשתמשים עם התוכן.",
-		pageUrl: "./pages/future.html",
-		alt: "anis mhamid let us lead you forward",
-		buildYear: 2024,
-	},
-	{
-		id: 2,
-		title: "כאן ועכשיו",
-		image: "./img/pages-images/hereAndNow.png",
-		description:
-			"עמוד זה מאופיין ביופיו האלגנטי. העמוד משדר אווירה נהדרת. העיצוב הנקי והמאורגן שלו הופך את חווית הגלישה למהנה ונוחה למשתמשים. הטקסטים הקיימים מנחים את המבקרים בעדינות וקלים להבנה, גורמים להם להרגיש רצוי ומבורכים. בנוסף, התמונה הכוללת של העמוד משקפת משיכה מיוחדת שגורמת למבקרים לרצות לחקור יותר מהתוכן שלו ולנצל את ההצעות הזמינות. בסך הכל, לדף יש אסתטיקה בולטת שמושכת את העין והופכת את החוויה המקוונת למשתמשים למהנה ומרגשת.",
-		pageUrl: "./pages/here-and-now.html",
-		alt: "anis mhamid here and now",
-		buildYear: 2024,
-	},
-	{
-		id: 3,
-		title: "ייעוץ חינם",
-		image: "./img/pages-images/free-consultation-porject5-image2.png",
-		description:
-			"דף רספונסיבי שמשמש להצגת שירות 'ייעוץ חינם' למשתמשים. מופיע כותרת 'ייעוץ חינם' עם תיאור קצר של השירות.קיים טופס למילוי פרטים אישיים כגון שם מלא, דואל ופרטי הפניה. קיימות גם סמלים חברתיים ליצירת קשר ומספר טלפון ליצירת קשר ישיר.הדף מכיל עיצוב רספונסיבי שמתאים לגדלי מסכים ולתצורות שונות של התקנים",
-		pageUrl: "./pages/free-consultation-page.html",
-		alt: "anis mhamid free-consultation-page",
-		buildYear: 2024,
-	},
-	{
-		id: 4,
-		title: "תן לנו להוביל אותך קדימה",
-		image: "./img/pages-images/leading-forward.png",
-		description:
-			"עמוד זה מאופיין ביופיו האלגנטי. העמוד משדר אווירה נהדרת. העיצוב הנקי והמאורגן שלו הופך את חווית הגלישה למהנה ונוחה למשתמשים. הטקסטים הקיימים מנחים את המבקרים בעדינות וקלים להבנה, גורמים להם להרגיש רצוי ומבורכים. בנוסף, התמונה הכוללת של העמוד משקפת משיכה מיוחדת שגורמת למבקרים לרצות לחקור יותר מהתוכן שלו ולנצל את ההצעות הזמינות. בסך הכל, לדף יש אסתטיקה בולטת שמושכת את העין והופכת את החוויה המקוונת למשתמשים למהנה ומרגשת",
-		pageUrl: "./pages/leading-forward.html",
-		alt: "anis mhamid Free Consultation Page",
-		buildYear: 2024,
-	},
-	{
-		id: 5,
-		title: "קפה טוב לבוקר",
-		image: "./img/pages-images/morning-coffe.png",
-		description:
-			"העמוד תוכנן בצורה שמאפשרת חוויית משתמש חלקה ונעימה לכל סוגי המסכים.בעת פתיחת העמוד במסך גדול, האיזור הימני מוקדש לתמונה גדולה ומרשימה של הקפה, יחד עם טופס ההרשמה המצורף",
-		pageUrl: "./pages/morning-coffe-page.html",
-		alt: "anis mhamid Morning Coffe",
-		buildYear: 2024,
-	},
-	{
-		id: 6,
-		title: "תראה את העולם מקרוב",
-		image: "./img/pages-images/see-the-wold.png",
-		description:
-			"העמוד תוכנן בצורה שמאפשרת חוויית משתמש חלקה ונעימה לכל סוגי המסכים.בעת פתיחת העמוד במסך גדול, האיזור הימני מוקדש לתמונה גדולה ומרשימה של הקפה, יחד עם טופס ההרשמה המצורף",
-		pageUrl: "./pages/see-the-wold-page.html",
-		alt: "anis mhamid See The Wold",
-		buildYear: 2024,
-	},
-	{
-		id: 7,
-		title: "לחשוב מחוץ לקופסה",
-		image: "./img/pages-images/think-so-far.png",
-		description:
-			"הדף רספונסיבי למכשירים שונים, מה שאומר שעיצובו מתאים לגדלי מסכים שונים ולסוגי מכשירים שונים, ממחשבים שולחניים עד הטלפונים הניידים.העיצוב הזה מקל על חוויית המשתמש, מספק נוחות וקלות למשתמשים במגוון מכשירים, ומבטיח חוויית משתמש חלקה ונעימה",
-		pageUrl: "./pages/think-so-far-page.html",
-		alt: "anis mhamid Think Far",
-		buildYear: 2024,
-	},
-	{
-		id: 8,
-		title: "תן לנו לבנות את בית החלומות שלך",
-		image: "./img/pages-images/dream-home.png",
-		description:
-			" הדף רספונסיבי למכשירים שונים, מה שאומר שעיצובו מתאים לגדלי מסכים שונים ולסוגי מכשירים שונים, ממחשבים שולחניים עד הטלפונים הניידים.העיצוב הזה מקל על חוויית המשתמש",
-		pageUrl: "/pages/dream-home.html",
-		alt: "anis mhamid Dream Home",
-		buildYear: 2024,
-	},
-	{
-		id: 9,
-		title: "עולם האופנה שלנו",
-		image: "./img/pages-images/fashion.png",
-		alt: "anis mhamid Fashion World",
-		description: " הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
-		pageUrl: "pages/fation.html",
-		buildYear: 2024,
-	},
+    {
+        id: 1,
+        title: "תן לנו להוביל אותך קדימה",
+        image: "./img/pages-images/takeTheFuture.png",
+        description:
+            "הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים, שכן הוא משקף הקפדה על פרטים ועיצוב משוכלל המשלב אלגנטיות ופונקציונליות יעילה, המבטיח אינטראקציה חלקה ונוחה למשתמשים עם התוכן.",
+        pageUrl: "./pages/future.html",
+        alt: "anis mhamid let us lead you forward",
+        buildYear: 2024,
+    },
+    {
+        id: 2,
+        title: "כאן ועכשיו",
+        image: "./img/pages-images/hereAndNow.png",
+        description:
+            "עמוד זה מאופיין ביופיו האלגנטי. העמוד משדר אווירה נהדרת. העיצוב הנקי והמאורגן שלו הופך את חווית הגלישה למהנה ונוחה למשתמשים. הטקסטים הקיימים מנחים את המבקרים בעדינות וקלים להבנה, גורמים להם להרגיש רצוי ומבורכים. בנוסף, התמונה הכוללת של העמוד משקפת משיכה מיוחדת שגורמת למבקרים לרצות לחקור יותר מהתוכן שלו ולנצל את ההצעות הזמינות. בסך הכל, לדף יש אסתטיקה בולטת שמושכת את העין והופכת את החוויה המקוונת למשתמשים למהנה ומרגשת.",
+        pageUrl: "./pages/here-and-now.html",
+        alt: "anis mhamid here and now",
+        buildYear: 2024,
+    },
+    {
+        id: 3,
+        title: "ייעוץ חינם",
+        image: "./img/pages-images/free-consultation-porject5-image2.png",
+        description:
+            "דף רספונסיבי שמשמש להצגת שירות 'ייעוץ חינם' למשתמשים. מופיע כותרת 'ייעוץ חינם' עם תיאור קצר של השירות.קיים טופס למילוי פרטים אישיים כגון שם מלא, דואל ופרטי הפניה. קיימות גם סמלים חברתיים ליצירת קשר ומספר טלפון ליצירת קשר ישיר.הדף מכיל עיצוב רספונסיבי שמתאים לגדלי מסכים ולתצורות שונות של התקנים",
+        pageUrl: "./pages/free-consultation-page.html",
+        alt: "anis mhamid free-consultation-page",
+        buildYear: 2024,
+    },
+    {
+        id: 4,
+        title: "תן לנו להוביל אותך קדימה",
+        image: "./img/pages-images/leading-forward.png",
+        description:
+            "עמוד זה מאופיין ביופיו האלגנטי. העמוד משדר אווירה נהדרת. העיצוב הנקי והמאורגן שלו הופך את חווית הגלישה למהנה ונוחה למשתמשים. הטקסטים הקיימים מנחים את המבקרים בעדינות וקלים להבנה, גורמים להם להרגיש רצוי ומבורכים. בנוסף, התמונה הכוללת של העמוד משקפת משיכה מיוחדת שגורמת למבקרים לרצות לחקור יותר מהתוכן שלו ולנצל את ההצעות הזמינות. בסך הכל, לדף יש אסתטיקה בולטת שמושכת את העין והופכת את החוויה המקוונת למשתמשים למהנה ומרגשת",
+        pageUrl: "./pages/leading-forward.html",
+        alt: "anis mhamid Free Consultation Page",
+        buildYear: 2024,
+    },
+    {
+        id: 5,
+        title: "קפה טוב לבוקר",
+        image: "./img/pages-images/morning-coffe.png",
+        description:
+            "העמוד תוכנן בצורה שמאפשרת חוויית משתמש חלקה ונעימה לכל סוגי המסכים.בעת פתיחת העמוד במסך גדול, האיזור הימני מוקדש לתמונה גדולה ומרשימה של הקפה, יחד עם טופס ההרשמה המצורף",
+        pageUrl: "./pages/morning-coffe-page.html",
+        alt: "anis mhamid Morning Coffe",
+        buildYear: 2024,
+    },
+    {
+        id: 6,
+        title: "תראה את העולם מקרוב",
+        image: "./img/pages-images/see-the-wold.png",
+        description:
+            "העמוד תוכנן בצורה שמאפשרת חוויית משתמש חלקה ונעימה לכל סוגי המסכים.בעת פתיחת העמוד במסך גדול, האיזור הימני מוקדש לתמונה גדולה ומרשימה של הקפה, יחד עם טופס ההרשמה המצורף",
+        pageUrl: "./pages/see-the-wold-page.html",
+        alt: "anis mhamid See The Wold",
+        buildYear: 2024,
+    },
+    {
+        id: 7,
+        title: "לחשוב מחוץ לקופסה",
+        image: "./img/pages-images/think-so-far.png",
+        description:
+            "הדף רספונסיבי למכשירים שונים, מה שאומר שעיצובו מתאים לגדלי מסכים שונים ולסוגי מכשירים שונים, ממחשבים שולחניים עד הטלפונים הניידים.העיצוב הזה מקל על חוויית המשתמש, מספק נוחות וקלות למשתמשים במגוון מכשירים, ומבטיח חוויית משתמש חלקה ונעימה",
+        pageUrl: "./pages/think-so-far-page.html",
+        alt: "anis mhamid Think Far",
+        buildYear: 2024,
+    },
+    {
+        id: 8,
+        title: "תן לנו לבנות את בית החלומות שלך",
+        image: "./img/pages-images/dream-home.png",
+        description:
+            " הדף רספונסיבי למכשירים שונים, מה שאומר שעיצובו מתאים לגדלי מסכים שונים ולסוגי מכשירים שונים, ממחשבים שולחניים עד הטלפונים הניידים.העיצוב הזה מקל על חוויית המשתמש",
+        pageUrl: "/pages/dream-home.html",
+        alt: "anis mhamid Dream Home",
+        buildYear: 2024,
+    },
+    {
+        id: 9,
+        title: "עולם האופנה שלנו",
+        image: "./img/pages-images/fashion.png",
+        alt: "anis mhamid Fashion World",
+        description:
+            " הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים",
+        pageUrl: "pages/fation.html",
+        buildYear: 2024,
+    },
 ]
 
 const javaScriptProjects = [
@@ -194,24 +195,28 @@ const javaScriptProjects = [
 ]
 
 function generateProjectHTML(projects, isHtmlCss) {
-	const fragment = document.createDocumentFragment()
+    const fragment = document.createDocumentFragment()
 
-	projects.forEach((project) => {
-		//creating a new div
-		const div = document.createElement("div")
-		div.className = "col-sm-12 col-md-6 col-lg-4 my-4"
+    projects.forEach((project) => {
+        //creating a new div
+        const div = document.createElement("div")
+        div.className = "col-sm-12 col-md-6 col-lg-4 my-4"
 
-		div.innerHTML = `
+        div.innerHTML = `
             <div class="parent m-auto h-100">
                 <div class="card">
                     <div class="content-box">
-                        <span class="card-title text-dark">${project.title}</span>
+                        <span class="card-title text-dark">${
+                            project.title
+                        }</span>
                         <div class="card-img">
-                            <img src="${project.image}" class="card-img-top" alt="${project.alt}">
+                            <img src="${
+                                project.image
+                            }" class="card-img-top" alt="${project.alt}">
                         </div>
                         <button type="button" class="see-more btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal${
-							project.id
-						}">
+                            project.id
+                        }">
                             פרטים נוספים
                         </button>
                     </div>
@@ -223,23 +228,25 @@ function generateProjectHTML(projects, isHtmlCss) {
 
             <!-- Modal -->
             <div class="modal fade" id="exampleModal${
-				project.id
-			}" tabindex="-1" aria-labelledby="exampleModalLabel${project.id}" aria-hidden="true">
+                project.id
+            }" tabindex="-1" aria-labelledby="exampleModalLabel${
+            project.id
+        }" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
                         <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel${project.id}">${
-			project.title
-		}</h1>
+                            <h1 class="modal-title fs-5" id="exampleModalLabel${
+                                project.id
+                            }">${project.title}</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
                             <p class="lead pb-4">${project.description}</p>
                             ${
-								isHtmlCss
-									? `<div class='card-img'><img class="img-fluid" src="${project.image}" alt="${project.alt}"></div>`
-									: ""
-							}
+                                isHtmlCss
+                                    ? `<div class='card-img'><img class="img-fluid" src="${project.image}" alt="${project.alt}"></div>`
+                                    : `<div class='card-img'><img class="img-fluid" src="${project.image}" alt="${project.alt}"></div>`
+                            }
                         </div>
                         <div class="modal-footer">
                             <button type="button" class="btn btn-outline-danger" data-bs-dismiss="modal">סגירה</button>
@@ -252,14 +259,18 @@ function generateProjectHTML(projects, isHtmlCss) {
             </div>
         `
 
-		fragment.appendChild(div)
-	})
+        fragment.appendChild(div)
+    })
 
-	return fragment
+    return fragment
 }
 
 // Append HTML for HTML/CSS projects
-document.getElementById("row1").appendChild(generateProjectHTML(htmlCssProjects, true))
+document
+    .getElementById("row1")
+    .appendChild(generateProjectHTML(htmlCssProjects, false))
 
 // Append HTML for JavaScript projects
-document.getElementById("row2").appendChild(generateProjectHTML(javaScriptProjects, false))
+document
+    .getElementById("row2")
+    .appendChild(generateProjectHTML(javaScriptProjects, true))
