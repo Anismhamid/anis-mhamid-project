@@ -22,7 +22,7 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  cursor: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="48" height="48" viewBox="0 0 48 48"><foreignObject width="100%" height="100%"><div xmlns="http://www.w3.org/1999/xhtml" style="width:100%;height:100%;background:linear-gradient(135deg,%23999 40%,%239950 0),linear-gradient(45deg, %230000 40%, %23777 0 60%,%230000 0)" ></div></foreignObject></svg>') 0 0, default;
+  cursor: url("../../img/X.png") 0 0, default;
 }
 
 ul,
@@ -56,7 +56,7 @@ div.profile-picture-box {
   height: auto;
 }
 div.profile-picture-box a img {
-  cursor: pointer;
+  cursor: url("../../../img/HandPointer.png") 0 0, default;
 }
 
 .parent {
@@ -163,7 +163,7 @@ div.profile-picture-box a img {
   height: 130vh;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(to bottom, rgba(0, 1, 74, 0.7960784314), rgba(17, 12, 51, 0.7058823529)), url("../../img/cosmic-timetraveler-iUY61D226QY-unsplash.jpg");
+  background: linear-gradient(to bottom, rgba(0, 1, 74, 0.7960784314), rgba(17, 12, 51, 0.7058823529)), url("../../../img/win.png");
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -306,7 +306,6 @@ div.profile-picture-box a img {
   margin-top: -45px;
   margin-left: -75px;
   border-radius: 3px;
-  background-image: url("../../img/alberto-bigoni-p_O3tf0YhS4-unsplash.jpg");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -349,18 +348,25 @@ div.profile-picture-box a img {
     width: 150px;
     margin-left: -75px;
     margin-top: -45px;
+    background-image: url("../../img/win.png");
   }
   30%, 36% {
     width: 70px;
     height: 96px;
     margin-left: -35px;
     margin-top: -48px;
+    background-image: url("../../img/56789.jpg");
   }
   63%, 69% {
     width: 32px;
     height: 60px;
     margin-left: -16px;
     margin-top: -30px;
+    background-image: url("../../img/123456.png");
+    background-blend-mode: darken;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
   }
 }
 @keyframes dot3_ {
@@ -398,6 +404,7 @@ div.profile-picture-box a img {
   transform: skewX(10deg);
   margin: 100px;
   transition: all 0.5s ease-in-out;
+  cursor: url(../../img/HandPointer.png) 0 0, default;
 }
 
 .button:hover, #about .read-more-button:hover {

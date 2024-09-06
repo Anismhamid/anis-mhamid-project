@@ -214,10 +214,10 @@ function generateProjectHTML(projects, isHtmlCss) {
                                 project.image
                             }" class="card-img-top" alt="${project.alt}">
                         </div>
-                        <button type="button" class="see-more btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#exampleModal${
+                        <button type="button" class="see-more fs-5 btn btn-outline-warning" data-bs-toggle="modal" data-bs-target="#exampleModal${
                             project.id
-                        }">
-                            פרטים נוספים
+                        } ">
+                            פרטים נוספים <img class=" img-thumbnail" src="./img/help-contents.png"></img>
                         </button>
                     </div>
                     <div class="date-box">

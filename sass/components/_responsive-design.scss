@@ -8,9 +8,10 @@
     margin-left: -80px;
     margin-top: -50px;
     border-radius: 5px;
-    background:$white;
+    background: $white;
     -webkit-animation: dot1_ 3s cubic-bezier(0.55, 0.3, 0.24, 0.99) infinite;
     animation: dot1_ 3s cubic-bezier(0.55, 0.3, 0.24, 0.99) infinite;
+
 }
 
 .loader:nth-child(2) {
@@ -20,7 +21,7 @@
     margin-top: -45px;
     margin-left: -75px;
     border-radius: 3px;
-    background-image: url('../../img/alberto-bigoni-p_O3tf0YhS4-unsplash.jpg');
+
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
@@ -38,6 +39,7 @@
     background: #4151be;
     -webkit-animation-name: dot3_;
     animation-name: dot3_;
+
 }
 
 @-webkit-keyframes dot1_ {
@@ -48,6 +50,7 @@
         height: 100px;
         margin-top: -50px;
         margin-left: -80px;
+        
     }
 
     30%,
@@ -129,6 +132,7 @@
         width: 150px;
         margin-left: -75px;
         margin-top: -45px;
+         background-image: url('../../img/win.png');
     }
 
     30%,
@@ -137,6 +141,7 @@
         height: 96px;
         margin-left: -35px;
         margin-top: -48px;
+        background-image: url('../../img/56789.jpg');
     }
 
     63%,
@@ -145,6 +150,11 @@
         height: 60px;
         margin-left: -16px;
         margin-top: -30px;
+        background-image: url('../../img/123456.png');
+        background-blend-mode: darken;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
     }
 }
 
@@ -165,6 +175,7 @@
         margin-left: -5px;
         margin-top: 49px;
         border-radius: 8px;
+
     }
 
     63%,
@@ -185,6 +196,7 @@
         width: 40px;
         margin-left: -20px;
         margin-top: 50px;
+
     }
 
     30%,
