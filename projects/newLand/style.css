@@ -1,0 +1,88 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.nav-item a {
+  font-weight: bold;
+  color: aliceblue;
+  margin-right: 30px;
+}
+
+header {
+  background: linear-gradient(90deg, #0569cd 0%, #24346e 100%);
+  height: 100px;
+}
+header .navbar-nav {
+  display: flex;
+  justify-content: space-around;
+}
+header .navbar-brand {
+  font-size: 20px;
+  color: aliceblue;
+}
+header .navbar-toggler {
+  background: blueviolet;
+  color: aliceblue;
+}
+header .nav-item .nav-link button {
+  border: none;
+  margin-top: 0px;
+  background: #F56296;
+  border-radius: 30px;
+  padding: 10px 50px;
+  font-size: 1rem;
+  font-weight: bold;
+}
+
+@media (max-width: 660px) {
+  #navbarNav {
+    display: inline-flex;
+  }
+}
+.gradient {
+  min-height: 89vh;
+  background: linear-gradient(to right, #316FE1 0%, #263774 100%);
+  display: flex;
+}
+.gradient div {
+  width: 50%;
+  min-height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+.gradient div h1 {
+  max-width: 80%;
+  font-size: 2rem;
+  color: aliceblue;
+  line-height: 1.5;
+}
+.gradient div p {
+  margin-top: 20px;
+  color: aliceblue;
+  font-size: 1.5rem;
+}
+.gradient div button {
+  margin-top: 20px;
+  background: #F56296;
+  border-radius: 30px;
+  padding: 10px 50px;
+  font-size: 1.5rem;
+}
+
+@media (max-width: 660px) {
+  .gradient {
+    background: linear-gradient(to right, #316FE1 0%, #263774 100%);
+    display: block;
+  }
+  .gradient div {
+    width: 100%;
+    min-height: 50vh;
+  }
+}
+footer {
+  background: linear-gradient(to right, #316FE1 0%, #263774 100%);
+}/*# sourceMappingURL=style.css.map */

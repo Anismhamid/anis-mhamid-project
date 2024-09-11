@@ -1,0 +1,49 @@
+.gradient {
+    min-height: 89vh;
+    background: linear-gradient(to right, #316FE1 0%, #263774 100%);
+    display: flex;
+
+    div {
+        width: 50%;
+        min-height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+
+        h1 {
+            max-width: 80%;
+            font-size: 2rem;
+            color: aliceblue;
+            line-height: 1.5;
+        }
+
+        p {
+            margin-top: 20px;
+            color: aliceblue;
+            font-size: 1.5rem;
+        }
+
+        button {
+            margin-top: 20px;
+            background: #F56296;
+            border-radius: 30px;
+            padding: 10px 50px;
+            font-size: 1.5rem;
+        }
+    }
+}
+
+
+@media(max-width:660px) {
+    .gradient {
+        background: linear-gradient(to right, #316FE1 0%, #263774 100%);
+        display: block;
+
+        div {
+
+            width: 100%;
+            min-height: 50vh;
+        }
+    }
+}

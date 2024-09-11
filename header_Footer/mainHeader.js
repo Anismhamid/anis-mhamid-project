@@ -5,7 +5,7 @@ function header(){
     <nav class="navbar navo navbar-expand-lg">
             <div class="profile-picture-box">
                 <a class="navbar-brand" href="./index.html">
-                    <img class=" img-fluid" src="./img/go-home.png" alt="anis mhamid profile picture">
+                    <img class=" img-fluid" src="./img/application-brackets-outline.svg" alt="anis mhamid profile picture">
                 </a>
             </div>
             <button class="navbar-toggler bg-light g-0" type="button" data-bs-toggle="collapse"
