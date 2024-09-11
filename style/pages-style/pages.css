@@ -221,13 +221,55 @@ div.profile-picture-box a img {
   width: 100%;
   background-color: #212529;
 }
-#project-section img {
+#project-section .phoneImg {
   width: 20rem;
 }
+#project-section img {
+  width: 50rem;
+}
 
-@media (max-width: 556px) {
+#dependencies #dependenciesUl {
+  line-height: 1.5;
+  margin-top: 100px;
+  display: grid;
+  grid-template-rows: auto;
+  grid-template-columns: repeat(3, 1fr);
+}
+#dependencies #dependenciesUl li {
+  width: 200px;
+  border: 1px groove rgba(253, 114, 114, 0.5607843137);
+  border-collapse: separate;
+  padding: 0.5rem;
+  font-size: 1.5rem;
+  margin: 150px auto;
+  font-weight: bold;
+}
+#dependencies #dependenciesUl li a {
+  color: rgb(0, 123, 255);
+  text-decoration: none;
+}
+#dependencies #dependenciesUl li a:hover {
+  cursor: pointer;
+  text-decoration: underline;
+}
+
+@media (max-width: 1000px) {
+  #dependencies #dependenciesUl {
+    line-height: 1.5;
+    margin-top: 100px;
+    grid-template-columns: auto auto;
+    margin: auto;
+  }
+}
+@media (max-width: 650px) {
   #project-section img {
-    width: 80%;
+    width: 100%;
+  }
+  #dependencies #dependenciesUl {
+    line-height: 1.5;
+    margin-top: 100px;
+    grid-template-columns: auto;
+    margin: auto;
   }
 }
 #skills {

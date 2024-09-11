@@ -30,9 +30,7 @@
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 aria-label="Worker Manager">
-                                <button
-                                    class="button my-2"
-                                    type="button">
+                                <button class="button my-2" type="button">
                                     לצפיה בקוד ב Github
                                 </button>
                             </a>
@@ -206,18 +204,86 @@
                                 class="accordion-collapse collapse"
                                 data-bs-parent="#accordionExample">
                                 <div class="accordion-body">
-                                    
                                     <h5>
-                                        <strong><code><a href="http://localhost:5000/apidocs" rel="noopener noreferrer">apidocs</a></code></strong>
+                                        <strong
+                                            ><code
+                                                >run the
+                                                <a
+                                                    href="../projects/NiholOvdem-version-2.5.4"
+                                                    >Api.py</a
+                                                >
+                                                file to open the:
+                                                <a
+                                                    href="http://localhost:5000/apidocs"
+                                                    rel="noopener noreferrer">
+                                                    api docs</a
+                                                ></code
+                                            ></strong
+                                        >
                                     </h5>
                                 </div>
                             </div>
                         </div>
-                      
-                        
-
-
                     </div>
+                </div>
+            </section>
+
+            <!-- Dependencies Section -->
+            <section
+                id="dependencies"
+                class="container-fluid text-center bg-dark p-1">
+                <div class="bg-light p-4 w-75 display-6 m-auto rounded">
+                    <h2 class="my-5 text-center display-3">Dependencies</h2>
+                    <p class="text-primary">
+                        To run this project, you need to install the following
+                        Python packages
+                    </p>
+                    <ul id="dependenciesUl" class="my-5">
+                        <li>Python 3.x</li>
+                        <li>Tkinter</li>
+                        <li>customtkinter</li>
+                        <li>ttkbootstrap</li>
+                        <li>webbrowser</li>
+                        <li>requests</li>
+                        <li>pymysql</li>
+                        <li>logging</li>
+                        <li>flask</li>
+                        <li>flask_sqlalchemy</li>
+                        <li>sqlalchemy</li>
+                        <li>datetime</li>
+                        <li>openpyxl</li>
+                        <li>docx</li>
+                        <li>pptx</li>
+                        <li>reportlab</li>
+                    </ul>
+                    <p class="h1">
+                        To install all required packages, you can use the
+                        following command
+                    </p>
+                    <pre
+                        class="bg-dark my-5"><code class=" display-6 text-danger">pip install -r requirements.txt</code></pre>
+                    <p>
+                        Ensure you have a <code>requirements.txt</code> file in
+                        your project directory with the following content
+                    </p>
+                    <pre><code>
+Python==3.x
+Tkinter
+customtkinter
+ttkbootstrap
+webbrowser
+requests
+pymysql
+logging
+flask
+flask_sqlalchemy
+sqlalchemy
+datetime
+openpyxl
+docx
+pptx
+reportlab
+                </code></pre>
                 </div>
             </section>
 
@@ -226,7 +292,7 @@
                     Run the software
                 </h5>
                 <hr />
-                <img src="" class="" alt="">
+                <img src="" class="" alt="" />
                 <ul class="text-center">
                     <h2 class="text-danger mb-5">
                         <span class="text-primary">(1.)</span> התקן localwp
@@ -362,27 +428,36 @@
                                 <img
                                     class="img-fluid"
                                     src="../img/WmInfoImages/largeDatabase.png"
-                                    alt="" />
+                                    alt="פתח את ה Database" />
                             </li>
                             <li>
                                 <h2 class="text-danger my-5">לחץ על יבא</h2>
                                 <img
                                     class="img-fluid"
                                     src="../img/WmInfoImages/importTable.png"
-                                    alt="" />
+                                    alt="לחץ על יבא" />
                             </li>
                             <li>
                                 <h2 class="text-danger my-5">בחר את הקובצ</h2>
                                 <img
                                     class="img-fluid"
                                     src="../img/WmInfoImages/excute.png"
-                                    alt="" />
+                                    alt="בחר את הקובצ" />
                             </li>
                             <li>
                                 <img
                                     class="img-fluid"
                                     src="../img/WmInfoImages/SQLchoose.png"
-                                    alt="" />
+                                    alt="בחר את הקובצ" />
+                            </li>
+                            <li>
+                                <h2 class="text-danger my-5">
+                                    עכשיו יש לך רשימה חדשה בשם workers
+                                </h2>
+                                <img
+                                    class="img-fluid"
+                                    src="../img/WmInfoImages/youHaveAnewTable.png"
+                                    alt="עכשיו יש לך רשימה חדשה בשם workers" />
                             </li>
                             <li>
                                 <h2 class="text-danger my-5">
@@ -419,6 +494,65 @@
                                     class="img-fluid"
                                     src="../img/WmInfoImages/addFirstWorker.png"
                                     alt="" />
+                            </li>
+                            <li>
+                                <h2 class="text-danger my-5">הוספת שמות</h2>
+                                <img
+                                    class="img-fluid"
+                                    src="../img/WmInfoImages/addFirstWorker.png"
+                                    alt="" />
+                            </li>
+                            <li>
+                                <h2 class="text-danger my-5">
+                                    אחרי הוספת שמות
+                                </h2>
+                                <img
+                                    class="img-fluid"
+                                    src="../img/WmInfoImages/afterAddSomeNames.png"
+                                    alt="" />
+                            </li>
+                            <li>
+                                <h2 class="text-danger my-5">תיקון</h2>
+                                <img
+                                    class="img-fluid"
+                                    src="../img/WmInfoImages/update.png"
+                                    alt="תיקון" />
+                            </li>
+                            <li>
+                                <h2 class="text-danger my-5">חישוב</h2>
+                                <img
+                                    class="img-fluid"
+                                    src="../img/WmInfoImages/calculate.png"
+                                    alt="חישוב" />
+                            </li>
+                            <li>
+                                <h2 class="text-danger my-5">
+                                    בדיקת ימי עבודה לכל פועל
+                                </h2>
+                                <img
+                                    class="img-fluid"
+                                    src="../img/WmInfoImages/checkDayes.png"
+                                    alt="בדיקת ימי עבודה לכל פועל " />
+                            </li>
+                            <li>
+                                <h2 class="text-danger my-5">
+                                    הדפסה ל Exel ו Docx
+                                </h2>
+                                <img
+                                    class="img-fluid"
+                                    src="../img/WmInfoImages/specificPrint.png"
+                                    alt="הדפסה ל Exel ו Docx" />
+                                <img
+                                    class="img-fluid"
+                                    src="../img/WmInfoImages/saveThePrint.png"
+                                    alt="הדפסה ל Exel ו Docx" />
+                            </li>
+                            <li>
+                                <h2 class="text-danger my-5">מחיקה</h2>
+                                <img
+                                    class="img-fluid"
+                                    src="../img/WmInfoImages/checkDayes.png"
+                                    alt="בדיקת ימי עבודה לכל פועל " />
                             </li>
                         </ul>
                     </li>
