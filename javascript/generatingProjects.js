@@ -86,7 +86,7 @@ const htmlCssProjects = [
         alt: 'anis mhamid Fashion World',
         description:
             ' הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים',
-        pageUrl: 'pages/fation.html',
+        pageUrl: './pages/fation.html',
         buildYear: 2024,
     },
     {
@@ -96,7 +96,7 @@ const htmlCssProjects = [
         alt: 'anis mhamid Landing Page',
         description:
             ' הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים',
-        pageUrl: './projects/newLand/new-land.html',
+        pageUrl: './pages/landingPage.html',
         buildYear: 2024,
     },
 ]
