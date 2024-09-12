@@ -507,6 +507,12 @@ div.profile-picture-box a img {
   margin-bottom: 100px;
 }
 
+.knowNames {
+  color: rgb(252, 213, 85);
+  font-weight: bold;
+  text-shadow: 5px 5px 5px black;
+}
+
 #about .title-container::after {
   content: "";
   position: absolute;
