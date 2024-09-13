@@ -21,7 +21,7 @@ function header(){
                         <a class="nav-link links-settings me-auto" aria-current="page" href="#main-section">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link links-settings" href="#about" alt>About me</a>
+                        <a class="nav-link links-settings" href="#about" >About me</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link links-settings" href="#projects">HTML - CSS</a>
