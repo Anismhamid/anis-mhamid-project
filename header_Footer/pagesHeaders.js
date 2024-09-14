@@ -1,9 +1,9 @@
 function header() {
 	document.getElementById('header').innerHTML += `
-    <nav class="navbar navo navbar-expand-lg">
+    <nav class="navbar navo navbar-expand-lg bg-black">
             <div class="profile-picture-box">
                 <a class="navbar-brand" href="../index.html">
-                    <img  class="img-fluid" src="../img/application-brackets-outline.svg" alt="anis mhamid profile picture">
+                    <img  class=" bg-body img-fluid" src="../img/application-brackets-outline.svg" alt="anis mhamid profile picture">
                 </a>
             </div>
             <button class="navbar-toggler bg-light" type="button" data-bs-toggle="collapse"

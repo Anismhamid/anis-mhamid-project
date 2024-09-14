@@ -163,7 +163,7 @@ div.profile-picture-box a img {
   height: 130vh;
   position: relative;
   overflow: hidden;
-  background: linear-gradient(to bottom, rgba(0, 1, 74, 0.7960784314), rgba(17, 12, 51, 0.7058823529)), url("../../../img/win.png");
+  background: rgb(0, 0, 0);
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -172,7 +172,6 @@ div.profile-picture-box a img {
   flex-direction: column;
   color: #101010;
   text-align: center;
-  animation: thiii 25s infinite;
 }
 #main-section .main-title-box {
   color: #ffffff;
@@ -196,19 +195,8 @@ div.profile-picture-box a img {
   color: #dc4c36;
 }
 
-@keyframes thiii {
-  0% {
-    background: rgb(0, 0, 0);
-  }
-  50% {
-    background: rgba(20, 20, 125, 0.842);
-  }
-  70% {
-    background: rgba(0, 1, 74, 0.882);
-  }
-  100% {
-    background: rgb(0, 0, 0);
-  }
+.animatedBackground {
+  width: 100%;
 }
 .animatedBackground .layer {
   position: absolute;
@@ -216,28 +204,42 @@ div.profile-picture-box a img {
   right: 0;
   width: 100%;
   height: 100%;
-  background-position: center;
   background-size: cover;
+  background-position: left;
 }
 .animatedBackground .layer:nth-child(1) {
   background-image: url(../../img/1.png);
+  z-index: 0;
 }
 .animatedBackground .layer:nth-child(2) {
+  width: 50%;
+  height: 50%;
   background-image: url(../../img/2.png);
+  z-index: 2;
 }
 .animatedBackground .layer:nth-child(3) {
+  width: 70%;
   background-image: url(../../img/3.png);
+  animation: rotationAnimatedBackground 220s infinite;
+  z-index: 2;
 }
 .animatedBackground .layer:nth-child(4) {
+  width: 90%;
   background-image: url(../../img/4.png);
+  animation: rotationAnimatedBackground 220s infinite;
+  z-index: 2;
 }
 .animatedBackground .layer:nth-child(5) {
   background-image: url(../../img/5.png);
-  width: 80%;
   background-position: -400px -100px;
+  width: 70%;
+  z-index: 2;
 }
 .animatedBackground .layer:nth-child(6) {
+  width: 70%;
   background-image: url(../../img/6.png);
+  animation: rotationAnimatedBackground 120s infinite;
+  z-index: 2;
 }
 .animatedBackground .layer:nth-child(7) {
   background-image: url(../../img/7.png);
@@ -271,8 +273,20 @@ div.profile-picture-box a img {
   .animatedBackground .layer:nth-child(5) {
     z-index: 0;
   }
-  .animatedBackground .layer:nth-child(7) {
-    background-image: none;
+  .animatedBackground .layer:nth-child(1) {
+    background-image: url(../../img/1.png);
+    background-size: contain;
+  }
+  .animatedBackground .layer:nth-child(1),
+  .animatedBackground .layer:nth-child(2),
+  .animatedBackground .layer:nth-child(3),
+  .animatedBackground .layer:nth-child(4),
+  .animatedBackground .layer:nth-child(5),
+  .animatedBackground .layer:nth-child(6),
+  .animatedBackground .layer:nth-child(7),
+  .animatedBackground .layer:nth-child(8) {
+    background-image: url(../../img/1.png);
+    animation: none;
   }
 }
 @media (max-width: 375px) {
@@ -283,6 +297,14 @@ div.profile-picture-box a img {
   #main-section .main-title-box .description {
     font-size: 1.1em;
     min-width: 200px;
+  }
+}
+@keyframes rotationAnimatedBackground {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(1000deg);
   }
 }
 .loader {
@@ -594,6 +616,18 @@ div.profile-picture-box a img {
   }
   #projects .content .title {
     font-size: 1.5em;
+  }
+}
+#react {
+  animation: rectRotationAnimation 20s linear infinite;
+}
+
+@keyframes rectRotationAnimation {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
   }
 }
 #contact {

@@ -9,8 +9,8 @@
     border-bottom: $border;
     @include flex;
     flex-direction: column;
-    background: url('../../img/pngegg.png'),linear-gradient(to bottom, #07012de9, rgba(255, 255, 255, 0.706),);
-    background-position:bottom;
+    background: url('../../img/pngegg.png'), linear-gradient(to bottom, #07012de9, rgba(255, 255, 255, 0.706), );
+    background-position: bottom;
     background-repeat: no-repeat;
     color: $title-color;
 
@@ -49,11 +49,13 @@
         margin-bottom: 100px;
     }
 }
-.knowNames{
+
+.knowNames {
     color: rgb(252, 213, 85);
     font-weight: bold;
     text-shadow: 5px 5px 5px black;
 }
+
 #about .title-container::after {
     content: '';
     position: absolute;

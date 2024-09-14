@@ -3,15 +3,13 @@
     height: 130vh;
     position: relative;
     overflow: hidden;
-    background: linear-gradient(to bottom, #00014acb, #110c33b4),
-        url('../../../img/win.png');
+    background: rgb(0, 0, 0);
     background-repeat: no-repeat;
     background-size: cover;
     @include flex;
     flex-direction: column;
     color: $mini-black;
     text-align: center;
-    animation: thiii 25s infinite;
 
 
     .main-title-box {
@@ -38,62 +36,61 @@
     }
 }
 
-@keyframes thiii {
-    0% {
-        background: rgb(0, 0, 0)
-    }
 
-    50% {
-        background: rgba(20, 20, 125, 0.842)
-    }
-
-    70% {
-        background: rgba(0, 1, 74, 0.882)
-    }
-
-    100% {
-        background: rgb(0, 0, 0)
-    }
-}
 
 .animatedBackground {
+    width: 100%;
+
     .layer {
         position: absolute;
         top: 0;
         right: 0;
         width: 100%;
         height: 100%;
-        background-position: center;
         background-size: cover;
+        background-position: left;
 
     }
 
     .layer:nth-child(1) {
         background-image: $layer-1-background;
-
+        z-index: 0;
 
     }
 
     .layer:nth-child(2) {
+        width: 50%;
+        height: 50%;
         background-image: $layer-2-background;
+        z-index: 2;
     }
 
     .layer:nth-child(3) {
+        width: 70%;
         background-image: $layer-3-background;
+        animation: rotationAnimatedBackground 220s infinite;
+        z-index: 2;
     }
 
     .layer:nth-child(4) {
+        width: 90%;
         background-image: $layer-4-background;
+        animation: rotationAnimatedBackground 220s infinite;
+        z-index: 2;
     }
 
     .layer:nth-child(5) {
         background-image: $layer-5-background;
-        width: 80%;
         background-position: -400px -100px;
+        width: 70%;
+        z-index: 2;
     }
 
     .layer:nth-child(6) {
+        width: 70%;
         background-image: $layer-6-background;
+        animation: rotationAnimatedBackground 120s infinite;
+        z-index: 2;
     }
 
     .layer:nth-child(7) {
@@ -137,13 +134,24 @@
     }
 
     .animatedBackground {
-
         .layer:nth-child(5) {
             z-index: 0;
         }
+        .layer:nth-child(1) {
+            background-image: $layer-1-background;
+            background-size: contain;
+        }
 
-        .layer:nth-child(7) {
-            background-image: none;
+        .layer:nth-child(1),
+        .layer:nth-child(2),
+        .layer:nth-child(3),
+        .layer:nth-child(4),
+        .layer:nth-child(5),
+        .layer:nth-child(6),
+        .layer:nth-child(7),
+        .layer:nth-child(8) {
+            background-image: $layer-1-background;
+            animation: none;
         }
     }
 }
@@ -162,5 +170,15 @@
             }
         }
 
+    }
+}
+
+@keyframes rotationAnimatedBackground {
+    from {
+        transform: rotate(0deg);
+    }
+
+    to {
+        transform: rotate(1000deg);
     }
 }
