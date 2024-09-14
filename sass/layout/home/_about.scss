@@ -9,7 +9,7 @@
     border-bottom: $border;
     @include flex;
     flex-direction: column;
-    background: url('../../../img/pngegg.png'),linear-gradient(to bottom, #07012de9, rgba(255, 255, 255, 0.706),);
+    background: url('../../img/pngegg.png'),linear-gradient(to bottom, #07012de9, rgba(255, 255, 255, 0.706),);
     background-position:bottom;
     background-repeat: no-repeat;
     color: $title-color;
