@@ -3,24 +3,36 @@
 	width: 100%;
 	text-align: center;
 	background: $main-bg-color;
-	color: $black;
+	color: $white;
 	margin: 0 auto;
+
 
 	.content {
 		text-align: center;
+		box-shadow: 0px 4px 20px #ffffff;
+		margin: 0 auto;
 
-		.title {
-			padding: 100px;
-			font-size: $main-font-size;
-			font-weight: $bold;
+		.title-div {
+			width: 50%;
+			margin:0 auto;
+			margin-bottom: 30px;
 			box-shadow: 0px 4px 20px #ffffff;
-		}
+			border-radius: 10px;
+			position: relative;
+			top: 10px;
 
-		.description {
-			width: $percentW80;
-			margin: 50px auto;
-			font-size: 2em;
+			.title {
+				padding: 50px;
+				font-size: $main-font-size;
+				font-weight: $bold;
+			}
 		}
+	}
+
+	.description {
+		width: $percentW80;
+		margin: 50px auto;
+		font-size: 2em;
 	}
 }
 
@@ -35,8 +47,10 @@
 		}
 
 		.content {
-			.title {
-				font-size: 1.5em;
+			.title-div {
+				.title {
+					font-size: 1.5em;
+				}
 			}
 		}
 	}

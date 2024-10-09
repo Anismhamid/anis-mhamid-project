@@ -32,7 +32,7 @@ li {
 
 .navo {
   width: 100%;
-  background: rgba(255, 255, 255, 0.8352941176);
+  background: #191F36;
 }
 .navo .navbar-toggler {
   height: 60px;
@@ -163,7 +163,7 @@ div.profile-picture-box a img {
   height: 130vh;
   position: relative;
   overflow: hidden;
-  background: rgb(0, 0, 0);
+  background: #191F36;
   background-repeat: no-repeat;
   background-size: cover;
   display: flex;
@@ -251,16 +251,21 @@ div.profile-picture-box a img {
 }
 
 @media (max-width: 992px) {
-  .animatedBackground .layer:nth-child(4) {
-    background-image: none;
-  }
-  .animatedBackground .layer:nth-child(7) {
-    background-image: none;
+  .animatedBackground .layer:nth-child(1),
+  .animatedBackground .layer:nth-child(2),
+  .animatedBackground .layer:nth-child(3),
+  .animatedBackground .layer:nth-child(4),
+  .animatedBackground .layer:nth-child(5),
+  .animatedBackground .layer:nth-child(6),
+  .animatedBackground .layer:nth-child(7),
+  .animatedBackground .layer:nth-child(8) {
+    background-image: url(../../img/1.png);
+    animation: none;
   }
 }
 @media (max-width: 568px) {
   #main-section {
-    width: 100vw;
+    max-width: 100vw;
   }
   #main-section .main-title-box .title {
     font-size: 2.5em;
@@ -317,7 +322,7 @@ div.profile-picture-box a img {
   margin-left: -80px;
   margin-top: -50px;
   border-radius: 5px;
-  background: #fff;
+  background: #ffffff;
   animation: dot1_ 3s cubic-bezier(0.55, 0.3, 0.24, 0.99) infinite;
 }
 
@@ -496,10 +501,10 @@ div.profile-picture-box a img {
   align-items: center;
   justify-content: center;
   flex-direction: column;
-  background: url("../../img/pngegg.png"), linear-gradient(to bottom, rgba(7, 1, 45, 0.9137254902), rgba(255, 255, 255, 0.706));
+  background: url("../../img/pngegg.png"), linear-gradient(to bottom, #191F36, rgb(0, 0, 0));
   background-position: bottom;
   background-repeat: no-repeat;
-  color: #fff;
+  color: #ffffff;
 }
 #about .title-container {
   position: relative;
@@ -530,7 +535,7 @@ div.profile-picture-box a img {
 }
 
 .knowNames {
-  color: rgb(252, 213, 85);
+  color: rgb(57, 163, 62);
   font-weight: bold;
   text-shadow: 5px 5px 5px black;
 }
@@ -585,23 +590,34 @@ div.profile-picture-box a img {
 #projects-js {
   width: 100%;
   text-align: center;
-  background: #bebebe;
-  color: #000;
+  background: #000101;
+  color: #ffffff;
   margin: 0 auto;
 }
 #projects .content,
 #projects-js .content {
   text-align: center;
+  box-shadow: 0px 4px 20px #ffffff;
+  margin: 0 auto;
 }
-#projects .content .title,
-#projects-js .content .title {
-  padding: 100px;
+#projects .content .title-div,
+#projects-js .content .title-div {
+  width: 50%;
+  margin: 0 auto;
+  margin-bottom: 30px;
+  box-shadow: 0px 4px 20px #ffffff;
+  border-radius: 10px;
+  position: relative;
+  top: 10px;
+}
+#projects .content .title-div .title,
+#projects-js .content .title-div .title {
+  padding: 50px;
   font-size: 4rem;
   font-weight: 900;
-  box-shadow: 0px 4px 20px #ffffff;
 }
-#projects .content .description,
-#projects-js .content .description {
+#projects .description,
+#projects-js .description {
   width: 80%;
   margin: 50px auto;
   font-size: 2em;
@@ -614,7 +630,7 @@ div.profile-picture-box a img {
   #projects .rows {
     width: 100%;
   }
-  #projects .content .title {
+  #projects .content .title-div .title {
     font-size: 1.5em;
   }
 }
@@ -787,7 +803,7 @@ div.profile-picture-box a img {
 footer {
   width: 100%;
   border-top: 5px solid #dc4c36;
-  color: #fff;
+  color: #ffffff;
   padding: 40px 0;
   text-align: center;
 }
@@ -821,7 +837,7 @@ footer {
   text-decoration: none;
   font-size: 1em;
   font-weight: 500;
-  color: #fff;
+  color: #ffffff;
 }
 .footer-section ul li a:hover {
   color: #dc4c36;
