@@ -32,15 +32,21 @@ li {
 
 .navo {
   width: 100%;
-  background: #191F36;
+  height: 60px;
+  background: #fff;
 }
 .navo .navbar-toggler {
-  height: 60px;
+  height: 50px;
   margin-left: 10px;
 }
 
+@media (max-width: 992px) {
+  .navo {
+    width: 100%;
+  }
+}
 .links-settings {
-  color: #d70683;
+  color: #dc4c36;
   font-size: 1.2em;
   margin-left: 30px;
 }
