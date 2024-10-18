@@ -2,6 +2,7 @@
 
 function header(){
     document.getElementById("header").innerHTML += `
+    
     <nav class="navbar navo navbar-expand-lg">
             <div class="profile-picture-box">
                 <a class="navbar-brand" href="./index.html">

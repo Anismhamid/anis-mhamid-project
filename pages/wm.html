@@ -16,7 +16,7 @@
     <body>
         <header class="fixed-top" id="header"></header>
 
-        <main>
+        <main class="m-auto">
             <section id="main-section">
                 <div class="container-fluid">
                     <div class="main-title-box">
@@ -233,12 +233,14 @@
                 id="dependencies"
                 class="container-fluid text-center bg-dark p-1">
                 <div class="bg-light p-4 w-75 display-6 m-auto rounded">
-                    <h2 class="my-5 text-center display-3">Dependencies</h2>
-                    <p class="text-primary">
+                    <h2 class="my-3 text-center display-1">Dependencies</h2>
+                    <p class="fw-bold">
                         To run this project, you need to install the following
                         Python packages
                     </p>
-                    <ul id="dependenciesUl" class="my-5">
+
+                    <div class="ul"></div>
+                    <ul id="dependenciesUl">
                         <li>Python 3.x</li>
                         <li>Tkinter</li>
                         <li>customtkinter</li>
@@ -256,17 +258,12 @@
                         <li>pptx</li>
                         <li>reportlab</li>
                     </ul>
-                    <p class="h1">
-                        To install all required packages, you can use the
-                        following command
-                    </p>
-                    <pre
-                        class="bg-dark my-5"><code class=" display-6 text-danger">pip install -r requirements.txt</code></pre>
                     <p>
                         Ensure you have a <code>requirements.txt</code> file in
                         your project directory with the following content
                     </p>
-                    <pre><code>
+                    <pre>
+                    <code>
 Python==3.x
 Tkinter
 customtkinter
@@ -283,7 +280,14 @@ openpyxl
 docx
 pptx
 reportlab
-                </code></pre>
+</code>
+</pre>
+                    <h5 class="display-6 mt-4 text-primary fw-bold">
+                        To install all required packages, you can use the
+                        following command
+                    </h5>
+                    <pre
+                        class="bg-dark my-3"><code class="h1 text-danger">pip install -r requirements.txt</code></pre>
                 </div>
             </section>
 

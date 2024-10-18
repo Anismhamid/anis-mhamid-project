@@ -34,7 +34,7 @@ li {
 .navo {
   width: 100%;
   height: 60px;
-  background: #fff;
+  background: #000000;
 }
 .navo .navbar-toggler {
   height: 50px;
@@ -252,7 +252,10 @@ div.profile-picture-box a img {
 }
 #project-section {
   width: 100%;
-  background-color: #212529;
+  background: url("../../../img/mern-stack.png");
+  background-size: cover;
+  background-position: bottom;
+  background-repeat: no-repeat;
 }
 #project-section .phoneImg {
   width: 20rem;
@@ -261,21 +264,32 @@ div.profile-picture-box a img {
   width: 50rem;
 }
 
+#dependenciesdiv.ul {
+  width: 100%;
+  height: 300px;
+  background: url("../../../img/lean-daily-management-system.webp");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 #dependencies #dependenciesUl {
   line-height: 1.5;
-  margin-top: 100px;
+  margin-top: 10px;
   display: grid;
   grid-template-rows: auto;
   grid-template-columns: repeat(3, 1fr);
+  font-weight: bold;
 }
 #dependencies #dependenciesUl li {
-  width: 200px;
-  border: 1px groove rgba(253, 114, 114, 0.5607843137);
-  border-collapse: separate;
+  width: 100%;
+  border: 3px groove rgba(12, 62, 136, 0.685);
+  border-collapse: collapse;
   padding: 0.5rem;
   font-size: 1.5rem;
-  margin: 150px auto;
+  margin: 10px auto;
   font-weight: bold;
+  background-color: rgba(207, 226, 255, 0.445);
 }
 #dependencies #dependenciesUl li a {
   color: rgb(0, 123, 255);
