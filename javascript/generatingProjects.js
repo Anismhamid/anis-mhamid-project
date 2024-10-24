@@ -237,21 +237,24 @@ function generateProjectHTML(projects, isHtmlCss) {
             </div>
 
             <!-- Modal -->
-            <div class="modal fade" id="exampleModal${
+            <div class="modal bg-dark fade" id="exampleModal${
                 project.id
             }" tabindex="-1" aria-labelledby="exampleModalLabel${
             project.id
         }" aria-hidden="true">
                 <div class="modal-dialog">
                     <div class="modal-content">
-                        <div class="modal-header">
-                            <h1 class="modal-title fs-5" id="exampleModalLabel${
+                        <div class="modal-header bg-dark-subtle">
+                            <h1 class="modal-title text-center text-dark fs-5" id="exampleModalLabel${
                                 project.id
                             }">${project.title}</h1>
                             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                         </div>
                         <div class="modal-body">
-                            <p class="lead pb-4">${project.description}</p>
+                            <p class="lead pb-4 text-dark">${
+                                project.description
+                            }</p>
+                            <hr class="border border-black mb-2"/>
                             ${
                                 isHtmlCss
                                     ? `<div class='card-img'><img class="img-fluid" src="${project.image}" alt="${project.alt}"></div>`
