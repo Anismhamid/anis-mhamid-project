@@ -34,7 +34,7 @@ This project is a portfolio website created to highlight Anis Mhamid's skills an
 ### Project Definition
 The projects are categorized into two main types:
 1. **HTML/CSS Projects:** Web projects primarily using HTML and CSS.
-2. **JavaScript Projects:** Interactive projects primarily using JavaScript.
+2. **JavaScript Projects:** Interactive projects and games primarily using JavaScript.
 
 ### Data Structure
 Each project contains the following fields:
