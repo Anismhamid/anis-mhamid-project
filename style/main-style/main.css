@@ -595,7 +595,7 @@ div.profile-picture-box a img {
 #projects-js {
   width: 100%;
   text-align: center;
-  background: #000101;
+  background: rgba(18, 102, 172, 0.6235294118);
   color: #ffffff;
   margin: 0 auto;
 }

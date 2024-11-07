@@ -207,7 +207,7 @@ const javaScriptProjects = [
 function generateProjectHTML(projects, isHtmlCss) {
     const fragment = document.createDocumentFragment()
 
-    projects.forEach((project) => {
+    projects.map((project) => {
         //creating a new div
         const div = document.createElement("div")
         div.className = "col-sm-12 col-md-6 col-lg-4 my-4"
