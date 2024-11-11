@@ -213,7 +213,7 @@ function generateProjectHTML(projects, isHtmlCss) {
         div.className = "col-sm-12 col-md-6 col-lg-4 my-4"
 
         div.innerHTML = `
-            <div class="parent m-auto h-100">
+            <div class="parent m-auto">
                 <div class="card">
                     <div class="content-box">
                         <span class="card-title text-dark">${

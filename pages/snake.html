@@ -12,46 +12,9 @@
     </head>
 
     <body>
-        <header class="fixed-top" id="header"></header>
+        <header class="sticky-top" id="header"></header>
 
-        <main>
-            <section id="main-section">
-                <!-- Website Facing Section -->
-                <div class="main-title-box">
-                    <h1 class="title">משחק הנחש</h1>
-                    <!-- First Title user Facing Section -->
-                    <p class="description my-3 lead">
-                        הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים
-                        שונים, שכן הוא משקף הקפדה על פרטים ועיצוב משוכלל המשלב
-                        אלגנטיות ופונקציונליות יעילה, המבטיח אינטראקציה חלקה
-                        ונוחה למשתמשים עם התוכן.
-                    </p>
-                    <!-- description -->
-                    <div class="buttons-container">
-                        <!-- buttons-container -->
-
-                        <!-- Project Watch button -->
-                        <a
-                            href="../projects/js/snake/index.html"
-                            target="_blank"
-                            aria-label="לצפיה בפרויקט">
-                            <button class="button my-5" type="button">
-                                <span> שחק </span>
-                            </button>
-                        </a>
-                        <!-- Project Download button -->
-                        <a
-                            href="../projects/js/snake/snake.rar"
-                            download="../projects/js/snake/snake.rar"
-                            aria-label="להורדת פרויקט">
-                            <button class="button" type="button">
-                                להורדת הפרויקט
-                            </button>
-                        </a>
-                    </div>
-                </div>
-            </section>
-
+        <main id="main">
             <!-- used tools in this project-->
             <section id="skills">
                 <img src="../img/powerImages/img-CSS.png" alt="CSS picture" />
@@ -62,12 +25,48 @@
                     alt="js picture" />
             </section>
 
-            <section id="project-section" class="text-center">
+            <section id="project-section" class="text-center py-5">
                 <img
-                    class="phoneImg img-fluid my-5"
+                    class="phoneImg img-fluid"
                     src="../img/dode.png"
                     alt="dream home image" />
             </section>
+
+            <hr class="w-50 text-start border-5 border-danger" />
+            
+            <div class="main-title-box p-3">
+                <h1 class="title">משחק הנחש</h1>
+                <!-- First Title user Facing Section -->
+                <p class="description my-3 lead w-75">
+                    הדף מספק חווית משתמש אטרקטיבית וקלה לשימוש במכשירים שונים,
+                    שכן הוא משקף הקפדה על פרטים ועיצוב משוכלל המשלב אלגנטיות
+                    ופונקציונליות יעילה, המבטיח אינטראקציה חלקה ונוחה למשתמשים
+                    עם התוכן.
+                </p>
+                <!-- description -->
+                <div class="buttons-container">
+                    <!-- buttons-container -->
+
+                    <!-- Project Watch button -->
+                    <a
+                        href="../projects/js/snake/index.html"
+                        target="_blank"
+                        aria-label="לצפיה בפרויקט">
+                        <button class="button my-5" type="button">
+                            <span> שחק </span>
+                        </button>
+                    </a>
+                    <!-- Project Download button -->
+                    <a
+                        href="../projects/js/snake/snake.rar"
+                        download="../projects/js/snake/snake.rar"
+                        aria-label="להורדת פרויקט">
+                        <button class="button" type="button">
+                            להורדת הפרויקט
+                        </button>
+                    </a>
+                </div>
+            </div>
         </main>
 
         <footer class="bg-dark" id="footer"></footer>

@@ -1,15 +1,22 @@
+header {
+    background: rgba(25, 31, 54, 0.678);
+    box-shadow: 0px 0px 30px rgb(15, 18, 32);
+}
+
 #main-section {
     width: 100%;
     height: 130vh;
     position: relative;
     overflow: hidden;
-    background: #191F36;
-    background-repeat: no-repeat;
-    background-size: cover;
     @include flex;
     flex-direction: column;
     color: $mini-black;
     text-align: center;
+    background: linear-gradient(rgb(11, 14, 44), rgba(3, 3, 12, 0.644)),url('../../../img/mern-stack.png');
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 
 
     .main-title-box {
@@ -106,17 +113,18 @@
 
 @media (max-width:$laptop) {
     .animatedBackground {
+
         .layer:nth-child(1),
-            .layer:nth-child(2),
-            .layer:nth-child(3),
-            .layer:nth-child(4),
-            .layer:nth-child(5),
-            .layer:nth-child(6),
-            .layer:nth-child(7),
-            .layer:nth-child(8) {
-                background-image: $layer-1-background;
-                animation: none;
-            }
+        .layer:nth-child(2),
+        .layer:nth-child(3),
+        .layer:nth-child(4),
+        .layer:nth-child(5),
+        .layer:nth-child(6),
+        .layer:nth-child(7),
+        .layer:nth-child(8) {
+            background-image: $layer-1-background;
+            animation: none;
+        }
     }
 }
 
@@ -141,6 +149,7 @@
         .layer:nth-child(5) {
             z-index: 0;
         }
+
         .layer:nth-child(1) {
             background-image: $layer-1-background;
             background-size: contain;

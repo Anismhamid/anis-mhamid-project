@@ -4,8 +4,8 @@
     top: 0px;
     @include flex(flex, center, space-around);
     flex-wrap: wrap;
-    box-shadow: 1px 1px 20px wheat;
-    background: rgb(17, 22, 23);
+    box-shadow: 1px 1px 300px rgb(25, 31, 54),1px 1px 200px rgb(25, 31, 54) inset;
+    background: rgb(201, 201, 201);
 
     & img {
         height: 6vh;

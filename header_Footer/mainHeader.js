@@ -3,10 +3,10 @@
 function header(){
     document.getElementById("header").innerHTML += `
     
-    <nav class="navbar navo navbar-expand-lg shadow-lg p-3 mb-5 bg-body rounded">
+    <nav class="navbar navo navbar-expand-lg shadow-lg p-3 mb-5 rounded-bottom">
             <div class="profile-picture-box">
                 <a class="navbar-brand" href="./index.html">
-                    <img class=" bg-body img-fluid rounded" src="./img/application-brackets-outline.svg" alt="anis mhamid profile picture">
+                    <img class=" bg-danger img-fluid rounded" src="./img/application-brackets-outline.svg" alt="anis mhamid profile picture">
                 </a>
             </div>
             <button class="navbar-toggler bg-light g-0" type="button" data-bs-toggle="collapse"

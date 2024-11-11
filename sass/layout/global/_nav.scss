@@ -1,30 +1,32 @@
 .navo {
 	width: 100%;
-	height: 60px;
-	background: #000000;
+	min-width: 60px;
+	border-bottom: 1px solid #ffffff8e;
 
 	.navbar-toggler {
 		height: 50px;
 		margin-left: 10px;
 	}
 
-	
+
 }
+
 @media (max-width:$laptop) {
-		.navo {
-			width: 100%;
-		}
+	.navo {
+		width: 100%;
 	}
+}
 
 .links-settings {
-	color:  $border-color;
+	color: $border-color;
 	font-size: 1.2em;
 	margin-left: 30px;
 
 	&:hover {
 		color: aliceblue;
-		text-shadow: 1px 1px 70px rgb(255, 255, 255);
-		transition: filter 3s ease-in-out;
+		transition: box-shadow .5s ease-in-out;
+		box-shadow: 1px 1px 300px rgb(25, 31, 54), 1px 1px 200px rgb(25, 31, 54) inset;
+		filter: blur(1px);
 	}
 }
 
@@ -33,9 +35,4 @@ div.profile-picture-box {
 	width: 50px;
 	height: auto;
 
-	a {
-		img {
-			cursor: url('../../../img/HandPointer.png') 0 0, default
-		}
-	}
 }

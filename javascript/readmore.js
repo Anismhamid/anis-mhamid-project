@@ -7,6 +7,6 @@ function toggleVisibility() {
         buttonText.innerHTML = "פחות";
     } else {
         moreText.style.display = "none";
-        buttonText.innerHTML = "הצג עוד";
+        buttonText.innerHTML = "...לקרא עוד"
     }
 }
