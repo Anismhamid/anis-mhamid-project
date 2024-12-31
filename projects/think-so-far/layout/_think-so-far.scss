@@ -10,21 +10,18 @@ html {
     box-sizing: border-box;
 }
 
-.container {
-    width: 100vw;
-}
 
 #main-section {
     display: flex;
     align-items: center;
     justify-content: space-evenly;
     width: 100%;
-    height: 60vh;
+    min-height: 60vh;
     background-color: #0EE1E1;
     grid-row: auto;
 
     .image-box {
-        width: 30%;
+        width: 50rem;
 
         img {
             width: 90%;
