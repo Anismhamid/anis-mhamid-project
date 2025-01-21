@@ -75,7 +75,7 @@ const htmlCssProjects = [
         image: './img/pages-images/dream-home.png',
         description:
             ' הדף רספונסיבי למכשירים שונים, מה שאומר שעיצובו מתאים לגדלי מסכים שונים ולסוגי מכשירים שונים, ממחשבים שולחניים עד הטלפונים הניידים.העיצוב הזה מקל על חוויית המשתמש',
-        pageUrl: '/pages/dream-home.html',
+        pageUrl: './pages/dream-home.html',
         alt: 'anis mhamid Dream Home',
         buildYear: 2024,
     },
